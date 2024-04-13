@@ -9,3 +9,6 @@ https://chromewebstore.google.com/detail/chatgpt-writer-write-mail/pdnenlnelpdom
 https://chromewebstore.google.com/detail/unlimited-summary-generat/eelolnalmpdjemddgmpnmobdhnglfpje
 ## Harpa AI
 https://harpa.ai/
+## Merlin AI
+https://www.getmerlin.in/es
+
