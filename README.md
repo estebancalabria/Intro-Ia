@@ -11,4 +11,6 @@ https://chromewebstore.google.com/detail/unlimited-summary-generat/eelolnalmpdje
 https://harpa.ai/
 ## Merlin AI
 https://www.getmerlin.in/es
+## ChatGPT Exporter
+https://chromewebstore.google.com/detail/chatgpt-exportador-extrae/ilmdofdhpnhffldihboadndccenlnfll?hl=es
 
