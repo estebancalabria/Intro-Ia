@@ -1,4 +1,3 @@
-"# Intro-Ia" 
 # Curso de Inteligencia Artificial y Prompt Engineering 🤖🚀
 
 ¡Bienvenidos al emocionante mundo de la inteligencia artificial (IA) y el prompt engineering! En este  es mi repositorio de Github sobre este curso donde exploraremos las últimas tendencias y herramientas en estas áreas revolucionarias, impartido por su servidor Esteban Calabria, un apasionado Microsoft Certified Trainer (MCT) 💻📚
