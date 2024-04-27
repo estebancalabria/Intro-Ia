@@ -6,12 +6,14 @@
 - 🔭 **Gemini (ex Bard)**: Asistente conversacional de Google. [Enlace](https://bard.google.com)
 - 🐦 **Copilot**: Asistente de codificación integrado en Visual Studio Code y GitHub Copilot.
 - 🧩 **Perplexity**: Modelo de lenguaje de Anthropic. [Enlace](https://www.anthropic.com/product)
-- 🦙 **Llama 3**: Modelo de Meta conocido por su capacidad multilingüe. [Enlace](https://ai.facebook.com/blog/introducing-llama-open-and-closed-source-models/)
+- 🦙 **Llama 3**: Modelo de Meta conocido por su capacidad multilingüe. [Enlace](https://llama.meta.com/llama3/)
+> 🦙 Actualmente no funciona en Argentina por lo que para probarlo uso la web Anakin Ai [Enlace](https://app.anakin.ai/)
+- 🧠  **Reka** : Entiende Imagenes, Audio y Video [Enlace](chat.reka.ai)
 - 🕳️ **BlackBox**: LLM para desarrolladores. [Enlace](https://github.com/blackbox-ai/blackbox)
 - 🧠 **Grok**: LLM de Elon Musk y su startup Neuralink. [Enlace](https://www.neuralink.com/)
 - 📄 **ChatPDF**: Asistente para chatear con PDFs. [Enlace](https://www.chatpdf.com/)
 - 💧 **H2OGPT**: Plataforma de Hugging Face para probar modelos LLM. [Enlace](https://huggingface.co/spaces/ANThingNULL/h2ogpt)
-- 🧠  **Reka** : Entiende Imagenes, Audio y Video [Enlace](chat.reka.ai)
+
 
 ## Empresas de IA
 - 🔥 **OpenAI**: Empresa pionera en IA, creadora de GPT-3 y ChatGPT. [Enlace](https://openai.com)
