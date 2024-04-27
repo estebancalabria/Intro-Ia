@@ -11,6 +11,7 @@
 - 🧠 **Grok**: LLM de Elon Musk y su startup Neuralink. [Enlace](https://www.neuralink.com/)
 - 📄 **ChatPDF**: Asistente para chatear con PDFs. [Enlace](https://www.chatpdf.com/)
 - 💧 **H2OGPT**: Plataforma de Hugging Face para probar modelos LLM. [Enlace](https://huggingface.co/spaces/ANThingNULL/h2ogpt)
+- 🧠  **Reka** : Entiende Imagenes, Audio y Video [Enlace](chat.reka.ai)
 
 ## Empresas de IA
 - 🔥 **OpenAI**: Empresa pionera en IA, creadora de GPT-3 y ChatGPT. [Enlace](https://openai.com)
