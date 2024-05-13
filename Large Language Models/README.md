@@ -1,6 +1,6 @@
 # 🤖 Lista de Modelos de Lenguaje Grandes (LLMs)
 
-## Modelos Popularesv
+## Modelos Populares
 - 🧠 **ChatGPT**: Modelo de conversación de OpenAI. [Enlace](https://chat.openai.com)
 - 🦾 **Claude v3**: Modelo de Anthropic conocido por su razonamiento. [Enlace](https://www.anthropic.com)
 - 🔭 **Gemini (ex Bard)**: Asistente conversacional de Google. [Enlace](https://bard.google.com)
