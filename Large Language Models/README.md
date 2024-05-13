@@ -1,10 +1,13 @@
 # 🤖 Lista de Modelos de Lenguaje Grandes (LLMs)
 
-## Modelos Populares
+## Modelos Popularesv
 - 🧠 **ChatGPT**: Modelo de conversación de OpenAI. [Enlace](https://chat.openai.com)
 - 🦾 **Claude v3**: Modelo de Anthropic conocido por su razonamiento. [Enlace](https://www.anthropic.com)
 - 🔭 **Gemini (ex Bard)**: Asistente conversacional de Google. [Enlace](https://bard.google.com)
 - 🐦 **Copilot**: Asistente de codificación integrado en Visual Studio Code y GitHub Copilot.
+
+## Otros Modelos Populares
+
 - 🧩 **Perplexity**: Modelo de lenguaje de Anthropic. [Enlace](https://www.anthropic.com/product)
 - 🦙 **Llama 3**: Modelo de Meta conocido por su capacidad multilingüe. [Enlace](https://llama.meta.com/llama3/)
 > 🦙 Actualmente no funciona en Argentina por lo que para probarlo uso la web Anakin Ai [Enlace](https://app.anakin.ai/)
@@ -14,6 +17,10 @@
 - 📄 **ChatPDF**: Asistente para chatear con PDFs. [Enlace](https://www.chatpdf.com/)
 - 💧 **H2OGPT**: Plataforma de Hugging Face para probar modelos LLM. [Enlace](https://huggingface.co/spaces/ANThingNULL/h2ogpt)
 
+## Otros enlaces de LLM
+
+- 🔥**Anakin.ai** Plataforma de Aplicaciones de Inteligencia Artificial Todo en Uno [Enlace](https://anakin.ai/)
+- ⚔️**Lmsys Chatbot Arena** na. Es una plataforma donde puedes interactuar con dos chatbots diferentes y elegir el que prefieras.[Enlace](https://chat.lmsys.org/)
 
 ## Empresas de IA
 - 🔥 **OpenAI**: Empresa pionera en IA, creadora de GPT-3 y ChatGPT. [Enlace](https://openai.com)
