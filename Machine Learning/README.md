@@ -15,3 +15,6 @@ https://www.kaggle.com/datasets/brendan45774/test-file
 
 ## Mockaroo
 Para Generar Datos de Prueba : https://www.mockaroo.com/
+
+## Towardsdatascience
+https://towardsdatascience.com/
