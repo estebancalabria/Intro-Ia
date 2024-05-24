@@ -8,6 +8,7 @@
 
 ## Otros Modelos Populares
 
+- 🔥**groq** Modelo de Inferencia RAPIDISIMO[Enlace](https://groq.com/)
 - 🧩 **Perplexity**: Modelo de lenguaje de Anthropic. [Enlace](https://www.anthropic.com/product)
 - 🦙 **Llama 3**: Modelo de Meta conocido por su capacidad multilingüe. [Enlace](https://llama.meta.com/llama3/)
 > 🦙 Actualmente no funciona en Argentina por lo que para probarlo uso la web Anakin Ai [Enlace](https://app.anakin.ai/)
