@@ -1,4 +1,4 @@
-# 🔗 Enlaces de Data Mining
+# 🔗 Enlaces de Machine Learning
 
 > Aquí tienes una lista de herramientas y recursos útiles para el data mining y machine learning:
 
