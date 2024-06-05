@@ -12,6 +12,7 @@
 - 🧩 **Perplexity**: Modelo de lenguaje de Anthropic. [Enlace](https://www.anthropic.com/product)
 - 🦙 **Llama 3**: Modelo de Meta conocido por su capacidad multilingüe. [Enlace](https://llama.meta.com/llama3/)
 > 🦙 Actualmente no funciona en Argentina por lo que para probarlo uso la web Anakin Ai [Enlace](https://app.anakin.ai/)
+- 🥐 **Mistral** : LLM Frances que ultimamente saco su version Codestral especializada en codigo [Enlace](https://chat.mistral.ai/)
 - 🧠  **Reka** : Entiende Imagenes, Audio y Video [Enlace](chat.reka.ai)
 - 🕳️ **BlackBox**: LLM para desarrolladores. [Enlace](https://github.com/blackbox-ai/blackbox)
 - 🧠 **Grok**: LLM de Elon Musk y su startup Neuralink. [Enlace](https://www.neuralink.com/)
