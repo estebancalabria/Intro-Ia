@@ -32,3 +32,8 @@ Es una de las mas populares pero lamentablemente es Paga
 Funciona en Discord
 
     https://www.midjourney.com/home
+
+## OpenAI art
+
+    https://openart.ai/
+    
