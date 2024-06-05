@@ -1,6 +1,6 @@
 # Extensiones de Chrome
 
-Este listado presenta diversas extensiones de Chrome que integran la inteligencia artificial de ChatGPT en diferentes plataformas y aplicaciones. Desde controles de voz y exportación de conversaciones en ChatGPT, pasando por redacción asistida en Gmail y generación de resúmenes en YouTube, hasta herramientas de automatización web y funcionalidades avanzadas en Google Sheets. Estas extensiones mejoran la productividad y facilitan la interacción con IA en múltiples contextos.
+> Este listado presenta diversas extensiones de Chrome que integran la inteligencia artificial de ChatGPT en diferentes plataformas y aplicaciones. Desde controles de voz y exportación de conversaciones en ChatGPT, pasando por redacción asistida en Gmail y generación de resúmenes en YouTube, hasta herramientas de automatización web y funcionalidades avanzadas en Google Sheets. Estas extensiones mejoran la productividad y facilitan la interacción con IA en múltiples contextos.
 
 ## 💬 Extensiones de ChatGPT
 
