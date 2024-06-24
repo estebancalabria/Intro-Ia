@@ -18,4 +18,7 @@
 ### Pika Art
 
     https://pika.art/
-    
+
+### Luma Labs
+
+    https://lumalabs.ai/
