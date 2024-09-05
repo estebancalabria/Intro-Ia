@@ -47,6 +47,9 @@ A lo largo del curso, tendrás la oportunidad de practicar con herramientas de v
 
 # NOVEDADES
 
+## 2024-09-05
+* Notebook LM : https://notebooklm.google.com/
+
 ## Clase 2-Julio-2024
 * Me pasaron los siguiens links para compartir:
 * Para hacer apps web en pyton: https://reflex.dev/ 
