@@ -47,6 +47,9 @@ A lo largo del curso, tendrás la oportunidad de practicar con herramientas de v
 
 # NOVEDADES
 
+## 2024-09-12
+* Generador de videos de Adobe : https://www.youtube.com/watch?v=puEgugluadk
+
 ## 2024-09-05
 * Notebook LM : https://notebooklm.google.com/
 
