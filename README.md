@@ -47,6 +47,12 @@ A lo largo del curso, tendrás la oportunidad de practicar con herramientas de v
 
 # NOVEDADES
 
+## 2024-09-18 (A dos dias del cumple del profe 🎂)
+
+* Api de Google : https://aistudio.google.com/
+
+* Herramienta para Base de Daots con IA: https://postgres.new/
+
 ## 2024-09-12
 * Generador de videos de Adobe : https://www.youtube.com/watch?v=puEgugluadk
 
