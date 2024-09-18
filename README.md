@@ -49,7 +49,7 @@ A lo largo del curso, tendrás la oportunidad de practicar con herramientas de v
 
 ## 2024-09-18 (A dos dias del cumple del profe 🎂)
 
-* Api de Google : https://aistudio.google.com/
+* Api de Google (Gracias Ezequiel) : https://aistudio.google.com/
 
 * Herramienta para Base de Daots con IA: https://postgres.new/
 
