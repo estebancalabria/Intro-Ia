@@ -50,6 +50,7 @@ A lo largo del curso, tendrás la oportunidad de practicar con herramientas de v
 ## 2024-09-27
 * https://www.builderbot.app/en
 * https://pypi.org/project/pyTelegramBotAPI/
+* https://notebooklm.google.com/
 
 ## 2024-09-18 (A dos dias del cumple del profe 🎂)
 
