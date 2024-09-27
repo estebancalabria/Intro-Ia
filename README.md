@@ -51,6 +51,7 @@ A lo largo del curso, tendrás la oportunidad de practicar con herramientas de v
 * https://www.builderbot.app/en
 * https://pypi.org/project/pyTelegramBotAPI/
 * https://notebooklm.google.com/
+* https://replit.com/pricing  
 
 ## 2024-09-18 (A dos dias del cumple del profe 🎂)
 
