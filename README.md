@@ -44,3 +44,32 @@ A lo largo del curso, tendrás la oportunidad de practicar con herramientas de v
 - Acceso a una cuenta de Gmail y OpenAI (se proporcionarán instrucciones)
 
 ¡Únete a esta emocionante aventura y descubre cómo la IA y el prompt engineering pueden revolucionar tu forma de trabajar y crear! 🎉 Inscríbete ahora y prepárate para adentrarte en un futuro lleno de innovación. 🔮
+
+# NOVEDADES
+
+## 2024-09-27
+* https://www.builderbot.app/en
+* https://pypi.org/project/pyTelegramBotAPI/
+* https://notebooklm.google.com/
+* https://replit.com/pricing  
+
+## 2024-09-18 (A dos dias del cumple del profe 🎂)
+
+* Api de Google (Gracias Ezequiel) : https://aistudio.google.com/
+
+* Herramienta para Base de Daots con IA: https://postgres.new/
+
+* Api para subir archivos (Gracias Luciano): https://gofile.io/api
+
+## 2024-09-12
+* Generador de videos de Adobe : https://www.youtube.com/watch?v=puEgugluadk
+
+## 2024-09-05
+* Notebook LM : https://notebooklm.google.com/
+
+## Clase 2-Julio-2024
+* Me pasaron los siguiens links para compartir:
+* Para hacer apps web en pyton: https://reflex.dev/ 
+* Curso de automatizacion con Coursera : https://www.coursera.org/professional-certificates/google-it-automation?action=enroll&authMode=login
+* App Transcrpcion y Resumen de videos : https://tammy.ai/es
+* Retos de Programacion : https://github.com/mouredev/retos-programacion-2023

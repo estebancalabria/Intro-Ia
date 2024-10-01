@@ -11,6 +11,8 @@
 * taqtic [Enlace](https://tactiq.io/)
 * Otter [Enlace](https://otter.ai/)
 * Bluedot [Enlace](https://www.bluedothq.com/)
+* TurboScribe [Enlace](https://turboscribe.ai/)
+* ReadAI [Enlace](https://www.read.ai/)
 
 | Característica                     | Otter                                              | TL;DV                                           | Blue Dot                                           | Tactiq                                      |
 |------------------------------------|----------------------------------------------------|-------------------------------------------------|----------------------------------------------------|---------------------------------------------|

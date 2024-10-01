@@ -18,6 +18,7 @@
 - 🧠 **Grok**: LLM de Elon Musk y su startup Neuralink. [Enlace](https://www.neuralink.com/)
 - 📄 **ChatPDF**: Asistente para chatear con PDFs. [Enlace](https://www.chatpdf.com/)
 - 💧 **H2OGPT**: Plataforma de Hugging Face para probar modelos LLM. [Enlace](https://huggingface.co/spaces/ANThingNULL/h2ogpt)
+- 🧠 **You** LLM especializado en busquedas en internet comepetencia de google [Enlace](https://you.com/)
 
 ## Otros enlaces de LLM
 

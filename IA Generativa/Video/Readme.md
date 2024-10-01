@@ -22,3 +22,11 @@
 ### Luma Labs
 
     https://lumalabs.ai/
+
+## Hedra 
+
+    https://www.hedra.com/
+
+## Noissee (Generacion de Videos Musicales)
+
+    https://noisee.ai/
