@@ -8,5 +8,9 @@
 
     https://gamma.app/
 
+## Slides GO
+
+    https://slidesgo.com/ai-presentations
+
 ## Tome App (Paga)
     https://tome.app/
