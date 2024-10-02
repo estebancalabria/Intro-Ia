@@ -63,7 +63,7 @@ En este laboratorio, aprenderás a crear una automatización utilizando [Make](h
 
 1. Vamos a trabajar con una API de Groq. Dirígete a [Groq](https://console.groq.com/keys) y genera una API Key.
 
-> **Ejemplo de API Key:** `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`
+> **Ejemplo de API Key:** `gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
 
 ---
 
