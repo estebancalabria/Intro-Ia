@@ -1,3 +1,7 @@
+
+Para hacer investigaciones (VER)
+  https://storm.genie.stanford.edu/
+
 Mermaid
   https://mermaid.live/
   
