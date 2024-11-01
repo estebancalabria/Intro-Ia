@@ -1,6 +1,10 @@
 
+Previsualizador HTML
+  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic
+
 Para hacer investigaciones (VER) (Gracias Leandro!)
   https://storm.genie.stanford.edu/
+  
 
 Mermaid
   https://mermaid.live/
