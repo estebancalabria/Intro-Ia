@@ -9,7 +9,8 @@
 ## Otros Modelos Populares
 
 - 🔥**groq** Modelo de Inferencia RAPIDISIMO[Enlace](https://groq.com/)
-- 🧩 **Perplexity**: Modelo de lenguaje de Anthropic. [Enlace](https://www.anthropic.com/product)
+- 🧩 **Perplexity**: Modelo de lenguaje para investigacion. [Enlace](https://www.anthropic.com/product)
+- 🧩 **You.com**: Modelo de lenguaje para investigacion[Enlace](https://you.com/)
 - 🦙 **Llama 3**: Modelo de Meta conocido por su capacidad multilingüe. [Enlace](https://llama.meta.com/llama3/)
 > 🦙 Actualmente no funciona en Argentina por lo que para probarlo uso la web Anakin Ai [Enlace](https://app.anakin.ai/)
 - 🥐 **Mistral** : LLM Frances que ultimamente saco su version Codestral especializada en codigo [Enlace](https://chat.mistral.ai/)
