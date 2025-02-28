@@ -5,9 +5,11 @@
 - 🦾 **Claude v3**: Modelo de Anthropic conocido por su razonamiento. [Enlace](https://www.anthropic.com)
 - 🔭 **Gemini (ex Bard)**: Asistente conversacional de Google. [Enlace](https://bard.google.com)
 - 🐦 **Copilot**: Asistente de codificación integrado en Visual Studio Code y GitHub Copilot.
+- 🧠 **Grok**: El modelo de lengjuaje de Elon Musk [Enlace](https://grok.com/)
 
 ## Otros Modelos Populares
 
+- 🧩 **DeepSeek** Modelo Open Source de China [Enlace](https://chat.deepseek.com/)
 - 🔥**groq** Modelo de Inferencia RAPIDISIMO[Enlace](https://groq.com/)
 - 🧩 **Perplexity**: Modelo de lenguaje para investigacion. [Enlace](https://www.anthropic.com/product)
 - 🧩 **You.com**: Modelo de lenguaje para investigacion[Enlace](https://you.com/)
