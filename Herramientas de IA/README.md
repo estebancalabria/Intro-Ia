@@ -5,6 +5,10 @@
 
 * There Is an AI for That [Enlace](https://theresanaiforthat.com/)
 
+## Text to Speech
+
+* Naturals Readers [Enlace](https://www.naturalreaders.com/)
+
 ## Transcribir y resumir reuniones
 
 * tl;dv [Enlace](https://tldv.io/es/)
