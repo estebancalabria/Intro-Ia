@@ -1,5 +1,5 @@
 
-# Apps para la Generaacion de Imagenes
+# Apps para la Generacion de Imagenes
 
 ## Leonardo AI
 
@@ -37,3 +37,7 @@ Funciona en Discord
 
     https://openart.ai/
     
+## PromeAI
+# Para Generar Reners
+
+    https://www.promeai.pro/
