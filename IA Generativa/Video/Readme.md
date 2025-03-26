@@ -8,6 +8,9 @@
 ### Hey Gen
     https://app.heygen.com/home
 
+## Hedra 
+
+    https://www.hedra.com/
 
 ## Videos Artisticos
 
@@ -23,9 +26,9 @@
 
     https://lumalabs.ai/
 
-## Hedra 
+## Kling AI
 
-    https://www.hedra.com/
+    https://klingai.com/
 
 ## Noissee (Generacion de Videos Musicales)
 
