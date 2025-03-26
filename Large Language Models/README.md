@@ -36,3 +36,7 @@
 ## Modelos Open Source
 - 🌀 **Mistral**: Modelo de lenguaje multilingüe open source. [Enlace](https://github.com/microsoft/mistral)
 - 🦙 **LLaMA**: Modelo de Facebook/Meta liberado como open source. [Enlace](https://ai.facebook.com/blog/introducing-llama-open-and-closed-source-modelos/)
+
+## Chatbots con base de conocimiento personalizada
+
+- NotebookLM [Enlace](https://notebooklm.google.com/)
