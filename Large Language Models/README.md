@@ -40,3 +40,7 @@
 ## Chatbots con base de conocimiento personalizada
 
 - NotebookLM [Enlace](https://notebooklm.google.com/)
+
+## Chatbots con generacion de Diagramas
+
+- Napkin.ai [Enlace](https://www.napkin.ai/)
