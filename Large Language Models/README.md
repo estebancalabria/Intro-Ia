@@ -44,3 +44,5 @@
 ## Chatbots con generacion de Diagramas
 
 - Napkin.ai [Enlace](https://www.napkin.ai/)
+- Editor Mermaid (para ver diagramas generados por GPT) [Enlace](https://mermaid.live/)
+  
