@@ -22,6 +22,7 @@
 - 📄 **ChatPDF**: Asistente para chatear con PDFs. [Enlace](https://www.chatpdf.com/)
 - 💧 **H2OGPT**: Plataforma de Hugging Face para probar modelos LLM. [Enlace](https://huggingface.co/spaces/ANThingNULL/h2ogpt)
 - 🧠 **You** LLM especializado en busquedas en internet comepetencia de google [Enlace](https://you.com/)
+- 📄 **Monica**: LLM que incluye otros (gracias Edgar) [Enlace](https://monica.im/home)
 
 ## Otros enlaces de LLM
 
