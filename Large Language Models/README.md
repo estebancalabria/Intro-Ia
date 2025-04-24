@@ -3,6 +3,7 @@
 ## Modelos Populares
 - 🧠 **ChatGPT**: Modelo de conversación de OpenAI. [Enlace](https://chat.openai.com)
 - 🦾 **Claude v3**: Modelo de Anthropic conocido por su razonamiento. [Enlace](https://www.anthropic.com)
+      - Se puede bajar la version desktop de Claude en [Enlace](https://claude.ai/download)
 - 🔭 **Gemini (ex Bard)**: Asistente conversacional de Google. [Enlace](https://bard.google.com)
 - 🐦 **Copilot**: Asistente de codificación integrado en Visual Studio Code y GitHub Copilot.
 - 🧠 **Grok**: El modelo de lengjuaje de Elon Musk [Enlace](https://grok.com/)
