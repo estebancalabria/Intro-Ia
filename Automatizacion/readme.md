@@ -31,10 +31,10 @@ Las herramientas no-code son perfectas para automatizar procesos de manera senci
    - **Pros**: Ideal para integraciones y automatizaciones avanzadas en entornos empresariales.
    - **Ideal para**: Empresas que necesitan automatizar procesos complejos y escalables.
 
-### 6. **N8N**  (Enlace)[https://n8n.io/]
+### 6. **N8N** - [Enlace](https://n8n.io/)
    - **Descripción**: No la probe mucho la estoy investigando.
 
-### 7. **Latenode** [Enlace](https://latenode.com/)
+### 7. **Latenode** - [Enlace](https://latenode.com/)
    - **Descripción**: No la probe mucho la estoy investigando.
 
 ## 🤖 Comparativa de Herramientas No-Code
