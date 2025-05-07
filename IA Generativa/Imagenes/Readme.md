@@ -5,18 +5,22 @@
 
     https://leonardo.ai/
 
-## BlueWillow
-
-    https://www.bluewillow.ai/
-
 ## Microsoft Designer
 
     https://designer.microsoft.com/
 
-
 ## Ideogram
 
     https://ideogram.ai/
+
+## Image FX Google
+
+    https://labs.google/fx/es/tools/image-fx
+
+## BlueWillow
+
+    https://www.bluewillow.ai/
+
 
 ## Crayon AI
 
