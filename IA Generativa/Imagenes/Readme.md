@@ -17,6 +17,11 @@
 
     https://labs.google/fx/es/tools/image-fx
 
+## Modelo de Generacion de Imagenes de Google 
+
+    https://aistudio.google.com/  
+    > Usar modelo Gemini 2.0 Flash con Generacion de Imagenes
+
 ## BlueWillow
 
     https://www.bluewillow.ai/
