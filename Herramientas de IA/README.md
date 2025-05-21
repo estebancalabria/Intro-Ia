@@ -46,4 +46,10 @@
 
 ## Generar Interfaces para chatBots de ChatGPT
 
-https://botpress.com/es
+> https://botpress.com/es
+
+# Gestion de Tiempo y tareas
+
+> https://reclaim.ai/  
+
+Gracias Franchesca 🌞
