@@ -1,0 +1,45 @@
+# Prompt Engineering
+   - System Prompt
+         -Alimentando  ChatGPT con un system prompt especifico puedo generar mis propios GPTs
+   - Memoria   
+   - Plantilla de prompt : Un prompt reutilizable que tiene algunos fragmentos generalmente entre corchetes [] a completer antes de utilizarlos
+
+   - Contexto
+       - TIP : explayarse en los prompts (Utilizar la voz)
+       - Utilizar las conversaciones en forma inteligente para manejar major el context
+       - Alimentar a la IA con el contexto necesario antes de preguntarle lo que queremos
+       - Prompt Chainning : Encadenar los prompts para armar una conversacion coherente con el major contexto para mi objetivo
+
+   - Patrones de Prompting
+       - Persona
+            - Tip : Utilizar ChatGPT como expert en Prompt Engineering
+       - Interaccio : Pedirle a ChatGPT que me haga preguntas relevantes para alimentar el contexto
+       - Personalizacion de Salida
+           - JSON, XML 
+           - HTML (Claude se destaca en la generacion de HTML ultimamente)
+           - Un lenguaje de programacion
+           - CSV (texto separado por comas)  ---> Ideal para interfacear con Excel
+           - Markdown /Plantillas en Markdown
+           - Mermaid
+
+Plantilla Markdown
+
+# [Titulo]
+**[Año]**
+*[Director]*
+
+## Actores
+* [Actor 1]
+* [Actor 2]
+
+## Reseña
+> [Reseña]
+---
+
+
+       
+Prompts de Ejemplo 
+1) Me podes decir un plan de matketing para una tienda de mascotas
+2) Actua como un experto de marketing, veterninario, orientado a redes sociales especialista en el nicho de mascotas y generame una plan de marketing para mi tienda de mascotas en la Argentina.
+3) Actua como Ricardo Fort y dime un plan de matketing para una tienda de mascotas.
+4) Actua como un experto de marketing, veterninario, orientado a redes sociales especialista en el nicho de mascotas y generame una plan de marketing para mi tienda de mascotas en la Argentina. Me podes hacer las preguntas relevantes que necesites para armarme el mejor plan de marketing. Por favor HACERME LAS PREGUNTAS DE A UNA. Cuando tengas toda la informacion que necesitas armame el plan.   
