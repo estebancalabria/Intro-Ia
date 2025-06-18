@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #0f0f23, #1a1a3a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Courier New', monospace;
+            color: white;
+        }
+        
+        .game-container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+        }
+        
+        canvas {
+            border: 3px solid #00ffff;
+            background: #000;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+        
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+            text-shadow: 0 0 10px #00ffff;
+        }
+        
+        .controls {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #aaa;
+        }
+        
+        .controls div {
+            margin: 5px 0;
+        }
+        
+        .glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #00ffff; }
+            to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="score glow">
+            <span id="leftScore">0</span> - <span id="rightScore">0</span>
+        </div>
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div class="controls">
+            <div><strong>Jugador Izquierdo:</strong> A (Arriba) / Z (Abajo)</div>
+            <div><strong>Jugador Derecho:</strong> ↑ (Arriba) / ↓ (Abajo)</div>
+            <div><strong>Espacio:</strong> Pausar/Reanudar</div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        const leftScoreEl = document.getElementById('leftScore');
+        const rightScoreEl = document.getElementById('rightScore');
+
+        // Game state
+        let gameRunning = true;
+        let leftScore = 0;
+        let rightScore = 0;
+
+        // Paddle properties
+        const paddleWidth = 10;
+        const paddleHeight = 80;
+        const paddleSpeed = 6;
+
+        // Left paddle
+        const leftPaddle = {
+            x: 10,
+            y: canvas.height / 2 - paddleHeight / 2,
+            width: paddleWidth,
+            height: paddleHeight,
+            speed: paddleSpeed,
+            upPressed: false,
+            downPressed: false
+        };
+
+        // Right paddle
+        const rightPaddle = {
+            x: canvas.width - paddleWidth - 10,
+            y: canvas.height / 2 - paddleHeight / 2,
+            width: paddleWidth,
+            height: paddleHeight,
+            speed: paddleSpeed,
+            upPressed: false,
+            downPressed: false
+        };
+
+        // Ball properties
+        const ball = {
+            x: canvas.width / 2,
+            y: canvas.height / 2,
+            radius: 8,
+            speedX: 5,
+            speedY: 3,
+            maxSpeed: 12
+        };
+
+        // Particle system for effects
+        const particles = [];
+
+        function createParticles(x, y, color) {
+            for (let i = 0; i < 8; i++) {
+                particles.push({
+                    x: x,
+                    y: y,
+                    speedX: (Math.random() - 0.5) * 8,
+                    speedY: (Math.random() - 0.5) * 8,
+                    life: 1.0,
+                    color: color
+                });
+            }
+        }
+
+        function updateParticles() {
+            for (let i = particles.length - 1; i >= 0; i--) {
+                const p = particles[i];
+                p.x += p.speedX;
+                p.y += p.speedY;
+                p.life -= 0.02;
+                
+                if (p.life <= 0) {
+                    particles.splice(i, 1);
+                }
+            }
+        }
+
+        function drawParticles() {
+            particles.forEach(p => {
+                ctx.save();
+                ctx.globalAlpha = p.life;
+                ctx.fillStyle = p.color;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.restore();
+            });
+        }
+
+        // Input handling
+        const keys = {};
+
+        document.addEventListener('keydown', (e) => {
+            keys[e.key.toLowerCase()] = true;
+            
+            if (e.key === ' ') {
+                e.preventDefault();
+                gameRunning = !gameRunning;
+            }
+        });
+
+        document.addEventListener('keyup', (e) => {
+            keys[e.key.toLowerCase()] = false;
+        });
+
+        function updatePaddles() {
+            // Left paddle (A/Z keys)
+            if (keys['a'] && leftPaddle.y > 0) {
+                leftPaddle.y -= leftPaddle.speed;
+            }
+            if (keys['z'] && leftPaddle.y < canvas.height - leftPaddle.height) {
+                leftPaddle.y += leftPaddle.speed;
+            }
+
+            // Right paddle (Arrow keys)
+            if (keys['arrowup'] && rightPaddle.y > 0) {
+                rightPaddle.y -= rightPaddle.speed;
+            }
+            if (keys['arrowdown'] && rightPaddle.y < canvas.height - rightPaddle.height) {
+                rightPaddle.y += rightPaddle.speed;
+            }
+        }
+
+        function updateBall() {
+            ball.x += ball.speedX;
+            ball.y += ball.speedY;
+
+            // Ball collision with top and bottom walls
+            if (ball.y - ball.radius <= 0 || ball.y + ball.radius >= canvas.height) {
+                ball.speedY = -ball.speedY;
+                createParticles(ball.x, ball.y, '#ffff00');
+            }
+
+            // Ball collision with left paddle
+            if (ball.x - ball.radius <= leftPaddle.x + leftPaddle.width &&
+                ball.y >= leftPaddle.y &&
+                ball.y <= leftPaddle.y + leftPaddle.height &&
+                ball.speedX < 0) {
+                
+                ball.speedX = -ball.speedX;
+                // Add some angle based on where the ball hits the paddle
+                const hitPos = (ball.y - leftPaddle.y) / leftPaddle.height;
+                ball.speedY = (hitPos - 0.5) * 8;
+                
+                // Increase speed slightly
+                ball.speedX = Math.min(ball.speedX * 1.05, ball.maxSpeed);
+                createParticles(ball.x, ball.y, '#00ff00');
+            }
+
+            // Ball collision with right paddle
+            if (ball.x + ball.radius >= rightPaddle.x &&
+                ball.y >= rightPaddle.y &&
+                ball.y <= rightPaddle.y + rightPaddle.height &&
+                ball.speedX > 0) {
+                
+                ball.speedX = -ball.speedX;
+                // Add some angle based on where the ball hits the paddle
+                const hitPos = (ball.y - rightPaddle.y) / rightPaddle.height;
+                ball.speedY = (hitPos - 0.5) * 8;
+                
+                // Increase speed slightly
+                ball.speedX = Math.max(ball.speedX * 1.05, -ball.maxSpeed);
+                createParticles(ball.x, ball.y, '#00ff00');
+            }
+
+            // Ball goes out of bounds
+            if (ball.x < 0) {
+                rightScore++;
+                rightScoreEl.textContent = rightScore;
+                resetBall();
+                createParticles(canvas.width / 2, canvas.height / 2, '#ff0000');
+            } else if (ball.x > canvas.width) {
+                leftScore++;
+                leftScoreEl.textContent = leftScore;
+                resetBall();
+                createParticles(canvas.width / 2, canvas.height / 2, '#ff0000');
+            }
+        }
+
+        function resetBall() {
+            ball.x = canvas.width / 2;
+            ball.y = canvas.height / 2;
+            ball.speedX = (Math.random() > 0.5 ? 1 : -1) * 5;
+            ball.speedY = (Math.random() - 0.5) * 6;
+        }
+
+        function drawPaddle(paddle) {
+            ctx.fillStyle = '#00ffff';
+            ctx.shadowColor = '#00ffff';
+            ctx.shadowBlur = 10;
+            ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
+            ctx.shadowBlur = 0;
+        }
+
+        function drawBall() {
+            ctx.fillStyle = '#ffffff';
+            ctx.shadowColor = '#ffffff';
+            ctx.shadowBlur = 15;
+            ctx.beginPath();
+            ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.shadowBlur = 0;
+        }
+
+        function drawCenterLine() {
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 2;
+            ctx.setLineDash([10, 10]);
+            ctx.beginPath();
+            ctx.moveTo(canvas.width / 2, 0);
+            ctx.lineTo(canvas.width / 2, canvas.height);
+            ctx.stroke();
+            ctx.setLineDash([]);
+        }
+
+        function draw() {
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw center line
+            drawCenterLine();
+
+            // Draw paddles
+            drawPaddle(leftPaddle);
+            drawPaddle(rightPaddle);
+
+            // Draw ball
+            drawBall();
+
+            // Draw particles
+            drawParticles();
+
+            // Draw pause message
+            if (!gameRunning) {
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                ctx.font = '36px Courier New';
+                ctx.textAlign = 'center';
+                ctx.fillText('PAUSADO', canvas.width / 2, canvas.height / 2);
+                ctx.font = '18px Courier New';
+                ctx.fillText('Presiona ESPACIO para continuar', canvas.width / 2, canvas.height / 2 + 40);
+            }
+        }
+
+        function gameLoop() {
+            if (gameRunning) {
+                updatePaddles();
+                updateBall();
+            }
+            
+            updateParticles();
+            draw();
+            requestAnimationFrame(gameLoop);
+        }
+
+        // Start the game
+        gameLoop();
+    </script>
+</body>
+</html>
