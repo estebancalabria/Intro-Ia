@@ -28,10 +28,9 @@
         * Nivel de censura menor a otros modelos
     * Prerplexity (https://www.perplexity.ai/)
         * Para tener citas de las fuentes de donde saca la informacion
-* Modelos de Lenguaje Open Source  
+* Modelos de Lenguaje Open Source   
       * LLama (Meta) : Familia de modelos Open source generados por la empresa meta que podemos ejecutar en una web como Groq (https://groq.com/)  
-      * DeepSeek : https://www.deepseek.com/  
-             * Fue uno de los primeros en introducir el modo razonamiento (chain of thoughts) en los modelos de lenguaje para resolver problemas
+      * DeepSeek : https://www.deepseek.com/ :  Fue uno de los primeros en introducir el modo razonamiento (chain of thoughts) en los modelos de lenguaje para resolver problemas
       * Qwen : https://chat.qwen.ai/ : Permite analizar videos
   
 
