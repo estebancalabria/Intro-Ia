@@ -24,12 +24,12 @@ Un prompt Tiene
 * Formato
 * Tono
 
-### Patrones de Prompting
-
-#### System Prompt
+### System Prompt
 
 > Es una instruccion inicial oculta que la empresa que entreno el modelo de lenguaje le da inicialmente mediante la cual se parametriza la "personalidad" del llm y como se tiene que comportar
 > No se puede conocer ni cambiar pero si se puede personalizar un poco en chatgpt en las opciones de personalizacion
+
+### Patrones de Prompting
 
 #### Patron Persona / Rol (Relacionado con Rol)
 > **Ejemplos**    
@@ -53,9 +53,10 @@ ChatGPT permite no solo manejar el formate de texto libre sino que puedo especif
 * **En XML** : Dame la lista en xml
 * **En HTML** : Dame la lista en una pagina html en una tabla con formato profesional y elegante
 > Para previsualizar el html sin guardarlo en un archivo les dejo esta pagina : https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic
-> Si guardo el html como un archivo con extension html lo puedo imprimir como pdf. Util para generar pdfs...
+> Si guardo el html como un archivo con extension html lo puedo imprimir como pdf. Util para generar pdfs...  
+* **En CSV (Comma Separated Values)** : Me podes generar la lista como un csv
+> Formato Ideal para exportar a excel
 
-> * **En HTML** : Dame la lista en una pagina html en una tabla con formato profesional y elegante
 
 
 
