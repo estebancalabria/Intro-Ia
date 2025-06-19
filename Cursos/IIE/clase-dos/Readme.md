@@ -25,9 +25,9 @@ Un prompt Tiene
 
 #### Patron Persona / Rol (Relacionado con Rol)
 > **Ejemplos** :
-> **Sin Persona** 1) Explicame el cambio climatico 
-> **Como un experto** 2) Actua como un cientifico experto en el clima y ecologista y experto en ciclos planetarios y eras terrrestres y quiero que me expliques el cambio climatico y que me des sugerencias como podemos prevenirlo
-> **Como un politico** 3) Actua como Donald Trump y explicame el cambio climatico
+> **Sin Persona** 1) Explicame el cambio climatico    
+> **Como un experto** 2) Actua como un cientifico experto en el clima y ecologista y experto en ciclos planetarios y eras terrrestres y quiero que me expliques el cambio climatico y que me des sugerencias como podemos prevenirlo    
+> **Como un politico** 3) Actua como Donald Trump y explicame el cambio climatico   
 
 #### Patron Interaccion (Relacionado con el contexto)
 > **Ejemplo** : Escribime un mail para pedirle un aumento a mi jefe.  Haceme preguntas de a una con toda la informacion que necesites para escribir el mejor mail que puedas y mas persuasivo. IMPORTANTE. Hazme las preguntas una por vez
