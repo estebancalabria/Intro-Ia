@@ -21,5 +21,5 @@ Un prompt Tiene
 Tips
 > Iniciar una conversacion nueva cuando cambio de tema 
 > Contexto : No escatimar en palabras. Darle a chatgpt todo el contexto necesario para que tenga informacion con la que trabajar
-
+> Pedirle que pregunte de a una vez : No escribas toda la conversación de una vez. Hazme las preguntas una
 
