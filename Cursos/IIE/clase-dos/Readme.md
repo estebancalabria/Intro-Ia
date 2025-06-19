@@ -1,3 +1,5 @@
+# LA CLASE QUE VIENE VAMOS A SEGUIR CON EL PATRON PERSONALIZACION DE SALIDA CON LOS FORMATOS MARKDOWN Y MERMAID y VAMOS A UTILIZAR UN LLM POR DE LA API EN PYTHON
+
 # Modelos Propietarios vs Modelos Open Source
 
 ## Modelos Open Source
@@ -52,7 +54,7 @@ ChatGPT permite no solo manejar el formate de texto libre sino que puedo especif
 * **En JSON** : Dame la lista en json separando en otro campo el pais, y una descripcion. Devolver el json sin acotar nada.
 * **En XML** : Dame la lista en xml
 * **En HTML** : Dame la lista en una pagina html en una tabla con formato profesional y elegante
-> Para previsualizar el html sin guardarlo en un archivo les dejo esta pagina : https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic
+> Para previsualizar el html sin guardarlo en un archivo les dejo esta pagina : https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic   
 > Si guardo el html como un archivo con extension html lo puedo imprimir como pdf. Util para generar pdfs...  
 * **En CSV (Comma Separated Values)** : Me podes generar la lista como un csv
 > Formato Ideal para exportar a excel
