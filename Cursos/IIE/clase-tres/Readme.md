@@ -41,3 +41,26 @@ Plantilla
 [ Descripcion porque debo de conocerlo ]
 ---
 ```
+
+### Patron Personalizacion de Salida : Mermaid
+
+Previsualizador de Mermaid
+> https://mermaid.live/
+
+Prompt Usado
+>Me armas un diagrama pie mermaid con la distribucion de los 10 paise mas poblados del mundo?
+Mermaid Generado
+```mermaid
+pie title Distribución de los 10 Países Más Poblados del Mundo (2024)
+    "India" : 1441
+    "China" : 1410
+    "Estados Unidos" : 337
+    "Indonesia" : 279
+    "Pakistán" : 240
+    "Nigeria" : 223
+    "Brasil" : 216
+    "Bangladesh" : 173
+    "Rusia" : 144
+    "México" : 128
+```
+
