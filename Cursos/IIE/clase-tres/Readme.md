@@ -64,3 +64,13 @@ pie title Distribución de los 10 Países Más Poblados del Mundo (2024)
     "México" : 128
 ```
 
+# Herramienta nueva de IA (Contexto)
+
+Una de las mejores herramientas que vamos a ver"
+> https://notebooklm.google.com/
+
+   
+Me sirve para ejemplificar todo el tema del contexto de los llm
+No olvidarse de generar un podcast!!
+
+
