@@ -14,6 +14,14 @@
 
 ## Videos Artisticos
 
+### PixVerse
+    
+    https://app.pixverse.ai/
+
+### Pollo AI
+
+    https://pollo.ai/
+
 ### Runway ML
 
     https://runwayml.com/
