@@ -9,4 +9,8 @@
 * Info Teorica : https://www.instagram.com/p/C1ntRrRswAu/?img_index=1
 * Recurso para Estudiar Machine Learning : https://www.kaggle.com/
 * Dataset del titanic : https://www.kaggle.com/datasets/brendan45774/test-file
-*  
+* Extesion Google Sheets Para aprender ML : https://simplemlforsheets.com/
+
+## ChatBots
+
+> https://botpress.com/
