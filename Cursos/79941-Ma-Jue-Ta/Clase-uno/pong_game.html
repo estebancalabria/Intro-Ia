@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Courier New', monospace;
+            color: white;
+        }
+        
+        .game-container {
+            text-align: center;
+        }
+        
+        canvas {
+            border: 2px solid #fff;
+            background: #000;
+        }
+        
+        .score {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        
+        .controls {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        .start-screen {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 10;
+        }
+        
+        .start-screen h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.3);
+        }
+        
+        .start-screen button {
+            font-size: 20px;
+            padding: 10px 20px;
+            background: #fff;
+            color: #000;
+            border: none;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .start-screen button:hover {
+            background: #ccc;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div id="startScreen" class="start-screen">
+            <h1>PONG</h1>
+            <p>Jugador Izquierdo: A (Arriba) / Z (Abajo)</p>
+            <p>Jugador Derecho: ↑ (Arriba) / ↓ (Abajo)</p>
+            <button onclick="startGame()">COMENZAR</button>
+        </div>
+        
+        <div class="score">
+            <span>Jugador 1: <span id="score1">0</span></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>Jugador 2: <span id="score2">0</span></span>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        
+        <div class="controls">
+            <p>Jugador 1 (Izquierda): A = Arriba, Z = Abajo</p>
+            <p>Jugador 2 (Derecha): ↑ = Arriba, ↓ = Abajo</p>
+            <p>Presiona ESPACIO para pausar</p>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        const startScreen = document.getElementById('startScreen');
+        const score1Element = document.getElementById('score1');
+        const score2Element = document.getElementById('score2');
+
+        // Variables del juego
+        let gameRunning = false;
+        let gamePaused = false;
+        let animationId;
+
+        // Objetos del juego
+        const ball = {
+            x: canvas.width / 2,
+            y: canvas.height / 2,
+            radius: 10,
+            velocityX: 5,
+            velocityY: 3,
+            speed: 5
+        };
+
+        const paddle1 = {
+            x: 10,
+            y: canvas.height / 2 - 50,
+            width: 10,
+            height: 100,
+            speed: 6
+        };
+
+        const paddle2 = {
+            x: canvas.width - 20,
+            y: canvas.height / 2 - 50,
+            width: 10,
+            height: 100,
+            speed: 6
+        };
+
+        let score1 = 0;
+        let score2 = 0;
+
+        // Control de teclas
+        const keys = {};
+
+        document.addEventListener('keydown', (e) => {
+            keys[e.key.toLowerCase()] = true;
+            
+            if (e.key === ' ') {
+                e.preventDefault();
+                if (gameRunning) {
+                    togglePause();
+                }
+            }
+        });
+
+        document.addEventListener('keyup', (e) => {
+            keys[e.key.toLowerCase()] = false;
+        });
+
+        function startGame() {
+            startScreen.classList.add('hidden');
+            gameRunning = true;
+            gamePaused = false;
+            resetBall();
+            gameLoop();
+        }
+
+        function togglePause() {
+            gamePaused = !gamePaused;
+            if (!gamePaused) {
+                gameLoop();
+            }
+        }
+
+        function resetBall() {
+            ball.x = canvas.width / 2;
+            ball.y = canvas.height / 2;
+            ball.velocityX = (Math.random() > 0.5 ? 1 : -1) * ball.speed;
+            ball.velocityY = (Math.random() - 0.5) * ball.speed;
+        }
+
+        function updatePaddles() {
+            // Paddle 1 (Izquierda) - A y Z
+            if (keys['a'] && paddle1.y > 0) {
+                paddle1.y -= paddle1.speed;
+            }
+            if (keys['z'] && paddle1.y < canvas.height - paddle1.height) {
+                paddle1.y += paddle1.speed;
+            }
+
+            // Paddle 2 (Derecha) - Flechas
+            if (keys['arrowup'] && paddle2.y > 0) {
+                paddle2.y -= paddle2.speed;
+            }
+            if (keys['arrowdown'] && paddle2.y < canvas.height - paddle2.height) {
+                paddle2.y += paddle2.speed;
+            }
+        }
+
+        function updateBall() {
+            ball.x += ball.velocityX;
+            ball.y += ball.velocityY;
+
+            // Colisión con paredes superior e inferior
+            if (ball.y <= ball.radius || ball.y >= canvas.height - ball.radius) {
+                ball.velocityY = -ball.velocityY;
+            }
+
+            // Colisión con paddle 1
+            if (ball.x - ball.radius <= paddle1.x + paddle1.width &&
+                ball.y >= paddle1.y &&
+                ball.y <= paddle1.y + paddle1.height &&
+                ball.velocityX < 0) {
+                
+                ball.velocityX = -ball.velocityX;
+                
+                // Añadir efecto según dónde golpee la pelota
+                let hitPos = (ball.y - paddle1.y) / paddle1.height;
+                ball.velocityY = (hitPos - 0.5) * ball.speed * 1.5;
+            }
+
+            // Colisión con paddle 2
+            if (ball.x + ball.radius >= paddle2.x &&
+                ball.y >= paddle2.y &&
+                ball.y <= paddle2.y + paddle2.height &&
+                ball.velocityX > 0) {
+                
+                ball.velocityX = -ball.velocityX;
+                
+                // Añadir efecto según dónde golpee la pelota
+                let hitPos = (ball.y - paddle2.y) / paddle2.height;
+                ball.velocityY = (hitPos - 0.5) * ball.speed * 1.5;
+            }
+
+            // Puntuación
+            if (ball.x < 0) {
+                score2++;
+                score2Element.textContent = score2;
+                resetBall();
+            }
+            
+            if (ball.x > canvas.width) {
+                score1++;
+                score1Element.textContent = score1;
+                resetBall();
+            }
+        }
+
+        function draw() {
+            // Limpiar canvas
+            ctx.fillStyle = '#000';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Dibujar línea central
+            ctx.setLineDash([5, 15]);
+            ctx.beginPath();
+            ctx.moveTo(canvas.width / 2, 0);
+            ctx.lineTo(canvas.width / 2, canvas.height);
+            ctx.strokeStyle = '#fff';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            ctx.setLineDash([]);
+
+            // Dibujar paddles
+            ctx.fillStyle = '#fff';
+            ctx.fillRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
+            ctx.fillRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height);
+
+            // Dibujar pelota
+            ctx.beginPath();
+            ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Mostrar pausa
+            if (gamePaused) {
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                ctx.font = '48px Courier New';
+                ctx.textAlign = 'center';
+                ctx.fillText('PAUSA', canvas.width / 2, canvas.height / 2);
+                ctx.textAlign = 'left';
+            }
+        }
+
+        function gameLoop() {
+            if (!gameRunning || gamePaused) return;
+
+            updatePaddles();
+            updateBall();
+            draw();
+
+            animationId = requestAnimationFrame(gameLoop);
+        }
+
+        // Dibujar pantalla inicial
+        draw();
+    </script>
+</body>
+</html>
