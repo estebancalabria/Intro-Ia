@@ -19,4 +19,5 @@
 
 # Modelos Open Source
 * Llama
-* DeepSeek
+* DeepSeek : El modelo Chino (https://www.deepseek.com/en)
+      - En Español  " https://deepseek-espanol.chat/deepseek-chat/ 
