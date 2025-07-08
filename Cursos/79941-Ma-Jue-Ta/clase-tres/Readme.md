@@ -1,6 +1,7 @@
 # Clase 3 (2025-07-08)
 
-** REPASAR NOTEBOOKLM **
+**REPASAR NOTEBOOKLM**
+**HACER UN TOP 10 de HERRAMIENTAS**
 
 ## Speech To Text (Texto a Voz)
 * https://tactiq.io/es
