@@ -1,5 +1,7 @@
 # Clase 4 - 2025-07-10
 
+> Pendiente REPASO DE NOTEBOOKLM
+
 # Prompt Engineering
 
 ## Personalizacion de Salida (formato)
@@ -31,8 +33,15 @@ Formatos de Salida que le puedo pedir a la IA
 * Formatos Estadar
      * Tabla
      * Bullets
-       
-# Repaso de NotebookLM
+* Para hacer Diagramas
+     * Mermaid (https://mermaid.live/)
+          * Pie
+          * Bloques
+          * Flow
+          * ....
+* SVG (Standard Vector Graphics)
+         * Diagramas de PIE
+         * Graficos de Barras
 
 # Armando Ranking Top 10 de herramientas
 
