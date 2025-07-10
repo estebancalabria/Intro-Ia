@@ -4,6 +4,8 @@
 
 ## Personalizacion de Salida (formato)
 
+> Decirle a ChatGPT como lo queres (la respuesta)
+
 Formatos de Salida que le puedo pedir a la IA
 * Para desarrollador:
     * JSON
@@ -13,7 +15,23 @@ Formatos de Salida que le puedo pedir a la IA
 * Para interactuar con Excel y hojas de Calculo
     * CSV
 * Para generar un word y definir formato exacto de salida
-
+    * Plantilla Markdown
+            
+```markdown
+# [TITULO DE LA CANCION]
+*[AUTOR]*
+## Miembros de la banda
+* [Miembro 1]
+* [Miembro 2]
+...
+## Detalle
+> Comentario
+---
+```
+* Formatos Estadar
+     * Tabla
+     * Bullets
+       
 # Repaso de NotebookLM
 
 # Armando Ranking Top 10 de herramientas
