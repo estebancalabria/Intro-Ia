@@ -16,6 +16,6 @@
        * ChatGPT  
        * Google AI Studio : https://aistudio.google.com/  
 6. Generar Imagenes Hiper Realistas  
-       *  ImageFX : https://labs.google/fx/tools/image-fx  
+       * ImageFX : https://labs.google/fx/tools/image-fx  
 7. Generar Imagenes y Flyers, Invitaciones (como en Canva)  
-       * Microsoft Desinger : https://designer.microsoft.com  / 
+        * Microsoft Desinger : https://designer.microsoft.com  / 
