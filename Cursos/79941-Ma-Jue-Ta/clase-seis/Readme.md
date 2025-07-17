@@ -14,4 +14,19 @@
 * https://www.udio.com/
 * https://suno.com/
 
+## Generacion de Imagenes
+
+* Generacion de Imagnes consistentes (a partir de una foto)
+     * app.artflow.ai/ref/b9b23e05bd
+
 ## Generacion de Video
+
+### Casos de uso de Generacion de Video
+
+* Generacion de Videos a partir de texto
+      * https://pollo.ai/invitation-landing?invite_code=dIOOD7
+* Generacion de Videos a partir de texto
+      * https://pixverse.ai/
+* Aplicar efectos sobre imagen
+      * https://pika.art/
+   
