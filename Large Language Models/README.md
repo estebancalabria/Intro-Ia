@@ -48,3 +48,8 @@
 - Napkin.ai [Enlace](https://www.napkin.ai/)
 - Editor Mermaid (para ver diagramas generados por GPT) [Enlace](https://mermaid.live/)
   
+## Funcionamiento modelos de lenguaje
+
+El siguiente recurso es invaluable para entender como funcionan los llm.    
+LLM Visualizer
+>https://bbycroft.net/llm
