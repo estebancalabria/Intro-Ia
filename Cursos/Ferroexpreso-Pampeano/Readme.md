@@ -18,7 +18,7 @@ En este curso vamos a ver
 * https://www.heygen.com/
 * Extension Transcribir Videos de Youtube : https://chromewebstore.google.com/detail/unlimited-summary-generat/eelolnalmpdjemddgmpnmobdhnglfpje?pli=1
 * Natural Readers : https://www.naturalreaders.com/
-* https://claude.ai/new  : La competencia directa de ChatGPT
+* https://claude.ai/new  : La competencia directa de ChatGPT         
       * Claude Desktop : https://claude.ai/download para usar MCP
 * https://gemini.google.com/app
 
