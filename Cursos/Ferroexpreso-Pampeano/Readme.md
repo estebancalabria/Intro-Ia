@@ -10,6 +10,8 @@ En este curso vamos a ver
 
 ### Links de lo que vemos
 
+> Recomendacion que hago yo. Generar una cuenta de Google especial para probar las herramientas de IA
+
 * https://copilot.microsoft.com/
 * https://www.deepseek.com/  
 * https://notebooklm.google.com/   << No olvidaar de mencionar!!
@@ -21,6 +23,15 @@ En este curso vamos a ver
 * https://claude.ai/new  : La competencia directa de ChatGPT         
       * Claude Desktop : https://claude.ai/download para usar MCP
 * https://gemini.google.com/app
+* https://www.napkin.ai/   <<  PAra hacer graficos
+* https://gamma.app/  << Para hacer presentacones
+* https://www.perplexity.ai/
+* https://simplemlforsheets.com/
+
+Recomendacion de Pelis y links interesantes:
+* Her : https://www.youtube.com/watch?v=UVMcpZ42BkA
+* Codigo Enigma : https://www.youtube.com/watch?v=qBbT3TwcBao
+* Canal de Youtube de Santiago Bilinki https://www.youtube.com/@bilinkis
 
 ### Deep Research
 
@@ -42,7 +53,9 @@ Copilot es el nombre general de la IA de microsoft
 * Contexto : La informacion que maneja el modelo de lenguaje especifica en una conversacion
 * Agente : Es cuando un LLM tiene la capacidad de tomar decisiones e interactuar con el mundo exterior
 * MCP : Model Context Protocol es para permitir que un LLM interactue con el mundo exterior
-
+          * https://modelcontextprotocol.io/docs/getting-started/intro
+          * https://modelcontextprotocol.io/examples
+* 
 ### Modo de Contratacion
 
 Modo Fremium : Tienen un capa de uso Gratuita con un limite. Y despues te cobran por uso entre los 10 y los 30 dolares mensuales
