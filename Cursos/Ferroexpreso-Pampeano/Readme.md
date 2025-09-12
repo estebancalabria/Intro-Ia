@@ -62,6 +62,21 @@ Modo Fremium : Tienen un capa de uso Gratuita con un limite. Y despues te cobran
 
 ## Clase 1 - 12 de Septiembre del 2025
 
+## Links y Herramientaas
+* Para Chatear con Personajes : https://character.ai/
+* Grammary - Asistente de Redaccion : https://www.grammarly.com/
+* BotPress - Para desarrollar ChatBots : https://botpress.com/
+* Plataforma de DEsarrollo de OpenAI : https://platform.openai.com/
+* There Is an AI for That : https://theresanaiforthat.com/    
+                    * Se puede ver como fue creciendo exponencialmente la cantidad de herramientas de IA
+* Gamma - Presentaciones :  https://gamma.app/  << Para hacer presentacones
+* Transcripcion de Reuniones Online : https://www.read.ai/es
+
 ### Truco Para ChatGPT
 
+Cambiar la personalizacion de ChatGPT ... menu.. personalizar ChatGPT
+Por Ejemplo esta bueno poner
+```
+Algo que esta bueno hacer también es decirle que no tome tus afirmaciones como válidas, que las analice y sea crítico. Así no empieza a razonar en base a conceptos erróneos
+```
 
