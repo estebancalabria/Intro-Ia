@@ -60,4 +60,8 @@ Copilot es el nombre general de la IA de microsoft
 
 Modo Fremium : Tienen un capa de uso Gratuita con un limite. Y despues te cobran por uso entre los 10 y los 30 dolares mensuales
 
-###
+## Clase 1 - 12 de Septiembre del 2025
+
+### Truco Para ChatGPT
+
+
