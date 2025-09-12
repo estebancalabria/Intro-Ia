@@ -78,7 +78,7 @@ Modo Fremium : Tienen un capa de uso Gratuita con un limite. Y despues te cobran
 * Mermaid para hacer graficos : https://mermaid.live/
      * Util para pedirle a chatgpt que genere graficos y mejor con Claudw que tiene una previsualizacion
 * Automatizacion con OA : https://www.instagram.com/p/DIPbzoPOS6v/?img_index=1
-* Herramienta automatizacion : https://zapier.com/l
+* Herramienta automatizacion : https://zapier.com/l, https://www.make.com/ y https://n8n.io/
 * 
 
 Herramientas paara reuniones
