@@ -71,6 +71,20 @@ Modo Fremium : Tienen un capa de uso Gratuita con un limite. Y despues te cobran
                     * Se puede ver como fue creciendo exponencialmente la cantidad de herramientas de IA
 * Gamma - Presentaciones :  https://gamma.app/  << Para hacer presentacones
 * Transcripcion de Reuniones Online : https://www.read.ai/es
+* Dola AI - Bot de wsap con IA que te maneja la agenda : https://wa.me/16502234435
+* Zapia - Otro asistente por wsap : https://zapia.com/?lang=es
+* Luzia - Asistente de Wsap...
+* Agente para navegar por internet : https://harpa.ai/
+* Mermaid para hacer graficos : https://mermaid.live/
+     * Util para pedirle a chatgpt que genere graficos y mejor con Claudw que tiene una previsualizacion
+* Automatizacion con OA : https://www.instagram.com/p/DIPbzoPOS6v/?img_index=1
+* Herramienta automatizacion : https://zapier.com/l
+* 
+
+Herramientas paara reuniones
+ * ReadAI - https://www.read.ai/es
+ * Taqtic - https://tactiq.io/es
+ * Ver Todas : https://www.instagram.com/p/DBzb-kHxqae/?img_index=1
 
 ### Truco Para ChatGPT
 
