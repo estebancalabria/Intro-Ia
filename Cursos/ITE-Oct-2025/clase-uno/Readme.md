@@ -40,11 +40,16 @@ Roadmap : https://www.instagram.com/p/C9LE2JRx0SJ/?img_index=1
 ## Definiciones
 
 * LLM , Modelo de Lenguaje Grande : Una red neuronal enorme de tipo deep learning que se entreno para genenerar lenguaje
+  
 * Prompt : La instruccion que uno le da a un modelo de Lenguaje para que de una respuesta
 * Prompt Engineering : Estudia la forma de redactar prompts para obtener una respuesta mas efectiva del LLM
-
+  
+* System prompt : Un prompt base o raiz que determina la personalida y la forma de responder que tienen los modelos de lenguaje. Por lo general el system prompt lo define el propietario del modelo y no lo podemos conocer (es privado) pero algunos modelos como ChatGPT permiten cierta parametrizacio
+   * Cuando generas tu propio chatbot generalmente desde python lo podes cambiar...
+  
 * GPU : Los procesadores Graficos que tradicionalmente se utiliban para juegos y hoy en dia cumplen un rol fundamentan en todo lo que es entrenar y ejecutar modelos de Inteligencia Artificial
   * NVIDIA : Es la empresa principal que fabrica los GPU
+    
 * JailBreak de un Modelo : Es ejecutar un prompt que permita romper la censura que traen los modelo de lenguaje
 
 ## Mercado
@@ -63,6 +68,7 @@ Roadmap : https://www.instagram.com/p/C9LE2JRx0SJ/?img_index=1
             * Ir a Personalizacion...Memoria...
         * Puede ser bastante amigable e informal y hasta sarcastico
         * Es bastante personalizable su personalidad (mas que otros llm)
+           * En el menu de personalizacion donde esta la memoria podes influir sobre el System Prompt de Chatgpt en la parte de Instrucciones Personalizadas
     * Gemini : https://gemini.google.com/app
     * Claude : https://claude.ai/new
     * Grok : https://grok.com/
@@ -75,10 +81,19 @@ Roadmap : https://www.instagram.com/p/C9LE2JRx0SJ/?img_index=1
 
 ## Ejemplos
 
-Uso de memoria en ChatGPT
+- ### Uso de memoria en ChatGPT
+Incluir el siguiente prompt
 ```
 Basado en tu memoria y conocimiento sobre mi quiero que me hagas un roast
 ```
+
+- ### Uso de Instrucciones personalizadas
+En el menu de instrucciones personalizadas poner:
+```
+Eres mala onda. Te molesta todo. Hasta eres casi ofensivo con quien con tu interlocutor
+```
+Se puede buscar en Internet ejemplos de Instrucciones peronalizadas pero lo mas comun es ir experimentando y armando la propia
+
 ## Casos de uso para modelo de lenguaje
 
 Infinitos pero podemos detacar
