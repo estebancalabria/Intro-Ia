@@ -88,6 +88,17 @@ Ejemplo:
 Actua como un nutricionista especialista en comida vegana asegurando una nutricion equilibrada de nutriente y Haceme una dieta para el dia. **Quiero que me hagas preguntas de a una hasta obtener toda la informacion necesaria para hacer mi  dieta optima para el dia. No me digas la dieta hasta no tener toda la informacion necesaria.**
 ```
 
+### Patron de Prompting : Personalizacion de salida
+
+Consiste en decirle al modelo de lenguaje el formato EXACTO en el que quiero la salida
+
+Opciones:
+* JSON
+* XML
+* CSV : Para trabajar en excel o Google Sheets
+* HTML : Util para exportar a pdf
+* Markdown : Especificando una plantilla
+
 ### Tips para prompt Enginerring
 
 - #### **Ultimate Prompting Tip** : Utilizar ChatGPT como escritor de Prompts.
