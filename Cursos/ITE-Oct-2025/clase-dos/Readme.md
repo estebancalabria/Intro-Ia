@@ -28,6 +28,9 @@
       * Tambien lo tiene Gemini
       * Es util para ahorra tokens cuando trabajo sobre un entregable ya que en vez de generar todo de nuevo va modificando algo existente
       * Una buena tecnica para perder menos el contexto es el canvas
+    * Proyectos : Para agrupar conversaciones relacionadas
+       * Al abrir nuevas conversaciones delntro del proyecto ya comparten el contexto y no hay que explicarles todo de nuevo
+    * Modo Voz : Especialmente desde el celular
   * Gemini
     * Modo Deep Research
       * Activarlo en la parte de herramientas
@@ -77,9 +80,13 @@ Abrir 4 solapas de Chatgpt
 
 * Pedirle a ChatGPT que me haga preguntas
 * Recomiendo cuando aplico este patron pedirle a ChatGPT que me haga las pregutas de a UNA (porque sino me da un cuestionario de muchas preguntas y es incomodo respondelas todas juntas)
+  * **IMPORTANTE: Pedir que me haga las preguntas de a una**
 * Este patron a mi personamente me cambio mucho la efectividad para bien a la hora de sacarle provecho a los modelos de lenguaje
 
+Ejemplo:
+```txt
 Actua como un nutricionista especialista en comida vegana asegurando una nutricion equilibrada de nutriente y Haceme una dieta para el dia. **Quiero que me hagas preguntas de a una hasta obtener toda la informacion necesaria para hacer mi  dieta optima para el dia. No me digas la dieta hasta no tener toda la informacion necesaria.**
+```
 
 ### Tips para prompt Enginerring
 
@@ -192,9 +199,10 @@ Guardar los links de las conversaciones frecuentes o un tema que use recurrement
 Por ejemplo mi conversacion de seguimiento de Salud y Alimentacion.
 (Una buena tecnica para perder menos el contexto es el canvas)
 
-
-## Uso de API
-
 ## Herramientas de IA
 
-##... Sorpresa...
+#### Text to Speech
+
+> https://www.naturalreaders.com/
+Puntaje : 6/10
+
