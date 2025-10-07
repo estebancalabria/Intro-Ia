@@ -40,7 +40,8 @@ Deglosando el prompt
 3. Formato de salida esperado
 
 Respuuesta:
-'''txt
+
+```txt
 Eres un/una **analista experto/a en criptomonedas y mercados financieros**. Realizá **una investigación exhaustiva, actualizada y neutral** sobre criptomonedas: tendencias, alternativas de inversión, riesgos y precauciones. Entregá resultados claros, accionables y citados. Usá un lenguaje profesional pero accesible para un público con conocimientos básicos-intermedios en finanzas. Actualizá la información **hasta el 7 de octubre de 2025**.
 
 Requerimientos de contenido y estructura (ordenada y completa):
@@ -124,6 +125,8 @@ Instrucciones finales:
 Comenzá la investigación y entregá el informe siguiendo exactamente esta estructura.
 
 ```
+---
+
 - #### Uitlizar el optimizador de prompts de OpenAI
 
 > https://platform.openai.com/chat/edit?models=gpt-5&optimize=true
