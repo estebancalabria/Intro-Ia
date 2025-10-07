@@ -17,10 +17,17 @@
 ## Conceptos
 
 * Determinismo : La IA no es deterministica. Ante el mismo prompt puede dar resultados diferentes
+* Token : La unidad minima de division de un prompt (algo parecido a una silaba). Sirve para medir el consumo del modelo.
 
 ## LLM 
 
 * Propietarios
+  * ChatGPT
+    * Busqueda Web (Lo pongo en chatgpt pero lo tienen todos)
+    * Lienzo o Canvas (La respuesta de ChatGPT a los artefacto de Claude)
+      * Tambien lo tiene Gemini
+      * Es util para ahorra tokens cuando trabajo sobre un entregable ya que en vez de generar todo de nuevo va modificando algo existente
+      * Una buena tecnica para perder menos el contexto es el canvas
   * Gemini
     * Modo Deep Research
       * Activarlo en la parte de herramientas
@@ -38,6 +45,13 @@
      * Fue el primero en incorporarlo
      * Luego los otros llm lo fueron copiando
      * Basicamente se incorpora el patro de prompting "Cadena de Razonamiento" sin que el usuario lo tenga que especificar
+   
+- ### Canvas
+
+Veamos el siguiente ejemplo de uso de Canvas o Lienzo en ChatGPT o Gemini
+```txt
+Quiero redactar un correo a mi jefe Sebastian para pedirle un aumento y mas reconocimiento en la empresa. Empecemos escribiendo un borrador y lo vamos puliendo. Generame un primer borrador en un Canvas y las preguntas necesarias aparte para ir puliendolo
+```
 
 ## Prompt Engineering
 
@@ -47,6 +61,25 @@ Son tecnicas que usamos a la hora de escribir prompts efectivos
 * Rol o Persona
 * Personalizacion de Salida
 * Chain of Thoughts o Cadena de Pensamiento : "Explica tu razonamiento paso a paso..."
+
+### Patrones de Prompting : Rol o Persona
+
+Basicamente le especifico al modelo de lenguaje como quiero que comporte
+
+- #### Ejercicio
+Abrir 4 solapas de Chatgpt
+1. Voy a escribir un prompt sin aplicar el patron Persona : *Haceme una dieta para el dia.*
+2. Voy a escribir el prompt aplicando el patron Persona a un Rol especifico : *Actua como un nutricionista especialista en comida vegana asegurando una nutricion equilibrada de nutriente y Haceme una dieta para el dia.*
+3. Voy a escribir el prompt aplicando el patron Persona a una persona real (mas gracioso) : *Actua como Mikel López Iturriaga y Haceme una dieta para el dia.*
+4. Voy a escribir el prompt aplicando el patron Persona y el patrnn Interaccion
+
+### Patrones de Prompting : Interaccion
+
+* Pedirle a ChatGPT que me haga preguntas
+* Recomiendo cuando aplico este patron pedirle a ChatGPT que me haga las pregutas de a UNA (porque sino me da un cuestionario de muchas preguntas y es incomodo respondelas todas juntas)
+* Este patron a mi personamente me cambio mucho la efectividad para bien a la hora de sacarle provecho a los modelos de lenguaje
+
+Actua como un nutricionista especialista en comida vegana asegurando una nutricion equilibrada de nutriente y Haceme una dieta para el dia. **Quiero que me hagas preguntas de a una hasta obtener toda la informacion necesaria para hacer mi  dieta optima para el dia. No me digas la dieta hasta no tener toda la informacion necesaria.**
 
 ### Tips para prompt Enginerring
 
@@ -150,6 +183,15 @@ Comenzá la investigación y entregá el informe siguiendo exactamente esta estr
 - #### Uitlizar el optimizador de prompts de OpenAI
 
 > https://platform.openai.com/chat/edit?models=gpt-5&optimize=true
+
+---
+
+- #### Guardar conversaciones
+
+Guardar los links de las conversaciones frecuentes o un tema que use recurremente para registrar y no perder el contexto. 
+Por ejemplo mi conversacion de seguimiento de Salud y Alimentacion.
+(Una buena tecnica para perder menos el contexto es el canvas)
+
 
 ## Uso de API
 
