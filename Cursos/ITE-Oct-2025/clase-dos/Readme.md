@@ -98,6 +98,19 @@ Opciones:
 * CSV : Para trabajar en excel o Google Sheets
 * HTML : Util para exportar a pdf
 * Markdown : Especificando una plantilla
+   * Los LLM internamente utilizan Markdown para darle el formato a la respuesta
+* Graficos
+  * Mermaid : Para generar graficos
+  * SVG
+  * Dot
+* Python (En un lenguaje de programacion especifico)
+
+- ####  Ejemplo Generacion de PDF
+
+* Tome el informe que generamos con DeepRearch de google y le pedi que lo genere como HTML
+* Ese HTML lo copie en un archivo con extension .html
+* Luego lo abri con el navegador y lo imprimi comoo pdf...
+* Listo para enviarlo por correo de una forma mucho mas profesional!!
 
 ### Tips para prompt Enginerring
 
