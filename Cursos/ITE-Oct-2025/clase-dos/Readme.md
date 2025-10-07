@@ -25,8 +25,28 @@
     * Modo Deep Research
       * Activarlo en la parte de herramientas
       * TEngo una cantidad limitada de Investigaciones por Mes en la version Gratuita
+      * Generamos este : https://g.co/gemini/share/53498390b153
+          * Ver prompt utilizado en la parte de prompt engineering en los tips para prompt engineering mas abajo
+  * Grok (https://grok.com/)  (Con K)
+     * Es el LLM de Elon Musk
+     * Segun su creador y como podemos confirmar es que tiene menor grado de censura de todos
+     * Lo probamos generando una imagen que normalmente con otros LLM seria censudada
+* Open Source
+  * DeepSeek
+    * Modo Razonamiento
+     * Tenemos una historia de como deepseek se planto como jugador serio y open source en los LL<
+     * Fue el primero en incorporarlo
+     * Luego los otros llm lo fueron copiando
+     * Basicamente se incorpora el patro de prompting "Cadena de Razonamiento" sin que el usuario lo tenga que especificar
 
 ## Prompt Engineering
+
+### Patrones de prompting
+
+Son tecnicas que usamos a la hora de escribir prompts efectivos
+* Rol o Persona
+* Personalizacion de Salida
+* Chain of Thoughts o Cadena de Pensamiento : "Explica tu razonamiento paso a paso..."
 
 ### Tips para prompt Enginerring
 
