@@ -116,6 +116,7 @@ plt.show()
 * Todos los modelos de lenguaje tienen dos portales, uno para el desarrollador y otro para el usuario final.
 * Para utilizar cualquier modelo o serivicio de IA como desarollador desde la pagina de desarrolador voy a obtener una api key
 * Asociada a esa api key te debitan la facturacion
+* **ES IMPORTANTE MANTENER LA API KEY EN UN LUGAR SEGURO Y QUE SE FILTRE A INTERNET**
 * El pago para usar la api no siempre es el mismo que por ejemplo cuando contratas el pro
 
 * ChatGPT
@@ -123,6 +124,39 @@ plt.show()
     * Desarrollador : https://platform.openai.com/docs/overview
 * Grok
     * Portal para usuario Final : https://chat.groq.com/
+    * Desarrollador : https://console.groq.com/home
+
+Para usar un modelo de grok por medio de la api key
+1. Ir a a https://console.groq.com/
+2. Sacar una api key
+3. COPIAR Y GUARDAR LA API KEY EN uN LUGAR SEGURO
+4. I a la parte de documentacion https://console.groq.com/docs/
+5. Elegir el codigo en python
+6. Copiar el codigo python en una celda de Colab modificado
+
+```python
+
+from openai import OpenAI
+import os
+
+api_key = input("Ingrese su api Key")
+prompt = input("Ingrese su prompt")
+
+client = OpenAI(
+    api_key=api_key,
+    base_url="https://api.groq.com/openai/v1",
+)
+
+response = client.responses.create(
+    input=prompt ,
+    model="openai/gpt-oss-20b",
+)
+print(response.output_text)
+
+```
+
+Si gustara de utilizar otro modelo de lenguaje distinto voy a mirar los diponibles en
+* https://console.groq.com/docs/models
 
 # Herramientas
 
@@ -138,6 +172,11 @@ Puntaje : 10 / 10
 
 ## NotebookLM
 
+> https://notebooklm.google.com/
+* Podes generar tu chatbot especializado sobre un monton de documentos donde ademas tenes funcionalidad comola generacion de un podcast o un video didactico explicativo sobe esos documentos
+* Ideal para estudiantes y armarse un notebook por materia
+* Ideal en contextos empresariales para armarse un notebook con la documentacion de un proyecto especifico
+
 # Open Source vs Propietario
 
 PAra ejecutar y probar modelos de lenguaje (LLM) open source la mejor web es 
@@ -146,3 +185,13 @@ PAra ejecutar y probar modelos de lenguaje (LLM) open source la mejor web es
 
 Groq es una empresa que no entrena sus propios modelos de IA sino que descarga modelos open source y los brindan para que los usuarios finales los utilicen
 
+- ## De donde se bajan los modelos open source?
+
+> https://huggingface.co/
+
+No pierdas la oportunidad de generarte un usuario y explorar los spaces
+
+> https://huggingface.co/spaces
+Los invito a probar los distintos modelos Open Source a ver si alguno les sirve y llama la atencion
+
+Putnaje : 10 / 10
