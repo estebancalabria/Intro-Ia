@@ -177,6 +177,8 @@ Puntaje : 10 / 10
 * Ideal para estudiantes y armarse un notebook por materia
 * Ideal en contextos empresariales para armarse un notebook con la documentacion de un proyecto especifico
 
+Puntaje : 10 / 10
+
 # Open Source vs Propietario
 
 PAra ejecutar y probar modelos de lenguaje (LLM) open source la mejor web es 
