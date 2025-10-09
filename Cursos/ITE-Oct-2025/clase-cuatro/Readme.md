@@ -122,7 +122,7 @@ plt.show()
     * Usuario Final : https://chatgpt.com/
     * Desarrollador : https://platform.openai.com/docs/overview
 * Grok
-    * Portal para usuario Final : https://groq.com/
+    * Portal para usuario Final : https://chat.groq.com/
 
 # Herramientas
 
