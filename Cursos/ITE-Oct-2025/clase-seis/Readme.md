@@ -66,13 +66,29 @@ De los laboratorios de google tenemos...
 * Modificar imagenes existentes
    * Nano Bannana
        * https://gemini.google.com/app
-   * Mixboard de Google
-       * https://labs.google.com/mixboard/welcome
+   * Mixboard de Google L https://labs.google.com/mixboard/welcome
        * HOY: Solo accesible desde usa entrar con VPN (Por ejemplo opera)
        * **NOVEDAD**
 * Generacion de avatars consistentes
+   * ArtFlow : https://app.artflow.ai/
+   * Apob : https://apob.ai/
+     * Con Menos Censura
 * Upcalling de Imagenes
+   * Leonardo AI : https://leonardo.ai/
+      * Solo Algunos modelos
+   * Upscale Media : https://www.upscale.media/es
 * Con Modelos Open Source
+   * Los puedo probar en la parte de spaces de https://huggingface.co/
+* Reversionar una imagen (no imagen a imagen)
+   * Agarrar un LLM como Claude  y pedir que describa una imagen como prompt (multimodalidad)
+   * Utilizar es prompt para generar otra imagen
+
+## Para redes Sociales
+
+>  ArtFlow : https://app.artflow.ai/
+>  Apob : https://apob.ai/
+
+Puntaje : 
   
 
 ## Modelos de Generacion de Imagenes
