@@ -32,12 +32,22 @@
 * Para Video
 * Para Redes Sociales
 
+# Labs de IA de google
+
+> https://labs.google/
+
+De los laboratorios de google tenemos...
+* NotebookLM
+* ImageFX
+
 # IA Generacionde Imagenes
 
 * A partir de Texto
+   * ChatGTP / Groq / Gemini (Nano Banana)
    * Leonardo AI : https://leonardo.ai/
    * Ideogram : https://ideogram.ai/
    * Microsoft Desinger : https://designer.microsoft.com/
+   * ImageFX : https://labs.google/fx/es/tools/image-fx
 * A partir de Otras Imagenes
    * Leonardo AI : https://leonardo.ai/
    * Ideogram : https://ideogram.ai/
@@ -46,15 +56,24 @@
    * Ideogram : https://ideogram.ai/
        * Especializada en eso
    * Leonardo AI : https://leonardo.ai/
-      * Algunos modelos
+      * Solo Algunos modelos
 * Para disenio grafico
    * Microsoft Desinger : https://designer.microsoft.com/
       * Una alternativa con IA al Canva
 * Hiper Realistas
+   * https://thispersondoesnotexist.com/
+   * ImageFX : https://labs.google/fx/es/tools/image-fx
 * Modificar imagenes existentes
+   * Nano Bannana
+       * https://gemini.google.com/app
+   * Mixboard de Google
+       * https://labs.google.com/mixboard/welcome
+       * HOY: Solo accesible desde usa entrar con VPN (Por ejemplo opera)
+       * **NOVEDAD**
 * Generacion de avatars consistentes
 * Upcalling de Imagenes
 * Con Modelos Open Source
+  
 
 ## Modelos de Generacion de Imagenes
 
