@@ -45,6 +45,14 @@
 * Sability AI : https://stability.ai/stable-audio
 * Brev.ai : https://brev.ai/
 
+## Live Coding Musical
+
+Generador de musica
+> https://strudel.cc/
+
+* Para generar el codigo de Strudel es muy bueno Claude
+* Se pede ir generando la musica en tiempo real por IA
+
 # IA Generativa para Video
 
 # Integracion final
