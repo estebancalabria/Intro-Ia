@@ -55,7 +55,41 @@ Generador de musica
 
 # IA Generativa para Video
 
+* Modelo de Generacion de Video
+ * Veo - Veo 3
+ * Sora
+ * Gen-4
+ * Pollo
+
+* Casos de uso
+ * A partir de texto
+ * A partir de Imagenes
+    * Frame Interpolation : La primera y el ultimo frame y te hace una transicion
+ * Generacion de efectos
+
+- ## Herramientas
+
+* Runway ML : https://app.runwayml.com/
+   * Uno de los pioneros
+* Kling AI : https://www.google.com/  (Version China)
+   * La alternwtiva China
+* Pollo AI : https://pollo.ai/es/invitation-landing?invite_code=dIOOD7
+   * Es bastante rapido y me pemite usar su modelo Pollo o los modelos como Sora 2
+   * Censura el tema de los rostros
+* Flow (Un Experimento de google)
+    * https://labs.google/fx/es/tools/flow
+    * Permite generar videos con Veo 3
+* Pix Verse : https://app.pixverse.ai/
+    * Mejor Relacion precio calidad
+    * No esta censurado con el tea delas caras
+* Pika Labs : https://pika.art/
+    * Fue el primero en incorporar la parte de los efectos
+
+
 # Integracion final
+
+Se integran con un editor de video
+> https://www.capcut.com/
 
 Siganos en el canal de youtube con video que vamos haciendo con estudiantes:
 > https://www.youtube.com/watch?v=vPwCdejOuio
