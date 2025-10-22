@@ -59,6 +59,31 @@ Relacion Automatizacion con Agentes
 * **NOVEDAD : Agent builder : https://platform.openai.com/agent-builder**
 * Para domotica y automizar el hogar (IOT) por eventos : https://nodered.org/
 
-## Make 
+## Laboratorio Make 
+
+* Vamos a abrir tres solapas en el google Chrome
+   * Make
+   * Un documento de google Sheets
+       * Tres Columnas: Evento, Inicio, Fin
+       * Definir la columna Inicio y Fin de tipo Fecha y Hora (Date and Time) (Prestar atencion al formato)
+   * El calendario de Google
+* Aegurarse que el calendario y el google sheets usen la misma cuenta y tomar nota de que cuenta se esta utilizando
+* Ir a make y crear un escenario nuevo
+    * Al Escenario lo voy a llamar "Sheets-Groq-Calendar"
+    * Agregar al escenario el Trigger de la herramienta "Google Sheets" llamado "Watch new Rows"
+    * Conectarme con la cuenta de gooogle que tiene la hoja de calculo que voy a utilizar
+    * Completar los campos eligiendo la hoja en el dialogo que aparece en la herramienta
+    * Probar la herramienta
+        * Agregar una fila nueva al google Sheets
+        * Ejecutar la automatizacion a ver si toma la nueva fila (Run Once abajo
+        * Pretar atencion a los formatos de fecha utilizados
+        * Verificar que al ejecutar dos veces no vuelve a tomar la misma fila
+    * Agregar la accion "Create Event" de "Google Calendar" en + al lado del trigger
+       * Puedo volver a utilizar la conexion a Google que tenia antes
+       * Vincular el nombre el evento, el start date y el end date con variables del paso anterior
+    * Probar integracion
+       * Agregar una fila nueva a nuestra planilla
+       * Ejecutar mi automatizacion
+       * Mirar mi calendario si se agrego el evento
 
 # Chatbots
