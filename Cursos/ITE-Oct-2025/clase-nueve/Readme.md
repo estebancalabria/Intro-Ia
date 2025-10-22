@@ -52,10 +52,13 @@ Relacion Automatizacion con Agentes
 
 ## Herraminentas
 
-* Make : https://www.make.com/en
+* Make : https://www.make.com/en  --> Es la opcion que vamos a ver nosotros
 * N8n : https://n8n.io/   --->  (Open Source, se puede ejecutar localmente, la rompe hoy en dia)
 * Zappier : https://zapier.com/  ---> Fue por mucho tiempo la mas popular de todas
 * ITTTF : https://ifttt.com/ (Sencilla funciona desde el celu)
-* NOVEDAD : 
+* **NOVEDAD : Agent builder : https://platform.openai.com/agent-builder**
+* Para domotica y automizar el hogar (IOT) por eventos : https://nodered.org/
+
+## Make 
 
 # Chatbots
