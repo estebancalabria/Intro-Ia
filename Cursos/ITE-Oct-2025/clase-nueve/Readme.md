@@ -31,7 +31,7 @@
    * ChatGPT + (alguna de estas capacidades
       * Capacidad de Interactuar con el mundo exterior con herrameintas
       * Capacidad de ejecutar Codigo
-      * Capacidad de Consultar una base de datos 
+      * Capacidad de Consultar una base de datos o fuentes de texto
 * Agentes Autonomos
       * Se ejecutan a partir de trigger (respondiendo a un estimulo o segun un schedule)
   
@@ -85,5 +85,44 @@ Relacion Automatizacion con Agentes
        * Agregar una fila nueva a nuestra planilla
        * Ejecutar mi automatizacion
        * Mirar mi calendario si se agrego el evento
+    * Agregarle IA al ejemplo
+       * Vamos a sacar una api key de groq en : console.groq.com
+       * Entre los dos modulos en make agregar un modulo de Groq que sea "Create Chat Completion"
+       * La conexion al modulo de groq va a ser nuestra api key
+       * Elegir el modelo de la lista y el prompt Ej :
+          * Dame un nombre gracioso para el evento del calendario. Responder el nuevo nombre del evento sin acotar nada mas. El nombre original a redefinir es: {{1.`0`}}
+       * Fijarse que prompt hace referencia a una variable del paso anterior
+       * Cambiar el ultimo nodo para que tome la respuesta de Groq
+    * Probar
+
+Puntaje : 11 / 10 (Buenisimo)
 
 # Chatbots
+
+## BotPress
+
+> https://www.botpress.com/
+
+Podemos Generar Gratuitamente nuestro Chatbot con:
+* Un system prompt
+* Una base de conocimiento
+* Una llamada a herramientas externas
+    * Por ejemplo una api para reserva de turnos
+* Ideal para Web
+* Te genera solo la interfaz
+
+Puntaje : 8/10
+
+## Asistentes de OpenAI
+
+> https://platform.openai.com/assistants/
+
+* Para mayor control y chatbots compejos de produccion
+* Tengo que hacer la Interfaz yo
+
+## CharBotBuilder
+
+> https://www.chatbotbuilder.ai/
+
+* Ideal para redes sociales
+* Es muuuy utilizado
