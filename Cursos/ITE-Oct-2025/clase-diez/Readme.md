@@ -78,19 +78,29 @@ Los Servicios de IA de Microsoft tieneun una particularidad
 * Cada servicio a la vez tiene su propio portal
 * Cada servicio lo puedo usar por medio de una Api Keu
 
-* Azure OpenAI
+* Azure OpenAI (https://ai.azure.com/r)
   
 * Modelos de Vision
     * Custom Vision
-    * Computer Vision
+    * Computer Vision (https://portal.vision.cognitive.azure.com/)
+       * Add captions to images
+       * Add dense captions to images
+       * Detect common objects in images
     * Face Api  (En espania seguro que no lo pueden usar)
+       * Detect faces in an image
+       * Portrait processing
     * Document Intellicence (OCR)
     * Content Safety (para imagenes)
       
 * Modelos de Texto
-    * Language Service
-        * Analisis de Sentimientos
-        * Reconocer Entidades
+    * Language Service (https://language.cognitive.azure.com/)
+         * Sentiment analysis
+         * Key phrase extraction
+         * Pre-built question answering
+         * Conversational language understanding
+         * Named entity recognition
+         * Text Summarization     (https://language.cognitive.azure.com/tryout/summarization)
+         * Text analytics for Health
     * Contentt Safety (para texto)
     * Health Insights
       * Trabaja con texto y datos medicos estructrurados  no estructurados
