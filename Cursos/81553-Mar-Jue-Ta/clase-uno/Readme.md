@@ -17,6 +17,7 @@ Vamos a ver distintos modelos de lenguaje, para que sirve cada uno y que destaca
       * Caractersiticas
           * Generar Conversaciones Humaas
       * Features
+        * Adjuntar Archivos
         * Personalizacion
         * Memoria
         * Capacidad de Busqueda Web
@@ -30,8 +31,19 @@ Vamos a ver distintos modelos de lenguaje, para que sirve cada uno y que destaca
         * Artefactos con Previsualizacion
           * Se pueden compartir
         * El primero MultiModal
-  *  Gemini
-          
+        * Adjuntar Archivos
+  *  Gemini (Google)
+     *  https://gemini.google.com/app
+     *  Caracteristicas
+         *  Orientado a integrarse con el motor de busqueda
+         *  Conocimiento factico
+         *  Suelen funcionar mejor en ingles
+     *  Features
+         *  Integracion con los servicios de google (Calendar, Flights Hotels)
+         *  Integracion con el ecosistema Android
+         *  Modo deep research
+
+  
 
 ## Conceptos
 
