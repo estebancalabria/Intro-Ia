@@ -29,6 +29,7 @@ Vamos a ver distintos modelos de lenguaje, para que sirve cada uno y que destaca
     * Features
         * Artefactos con Previsualizacion
           * Se pueden compartir
+        * El primero MultiModal
   *  Gemini
           
 
@@ -37,5 +38,4 @@ Vamos a ver distintos modelos de lenguaje, para que sirve cada uno y que destaca
 * Prompt
 * Token : La division minima de un prompt.
 * Contexto
-
-* 
+* Multimodalidad : Capacidad de los modelos de lenguaje de entender imagenes ademas de texto
