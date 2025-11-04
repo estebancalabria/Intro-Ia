@@ -43,7 +43,11 @@ Vamos a ver distintos modelos de lenguaje, para que sirve cada uno y que destaca
          *  Integracion con el ecosistema Android
          *  Modo deep research
 
-  
+## Curiosidad
+
+Un loco le dio 10 mil dolares a cada modelo para invertir en la bolsa
+> https://nof1.ai/
+
 
 ## Conceptos
 
