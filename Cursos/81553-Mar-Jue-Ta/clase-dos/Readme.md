@@ -60,6 +60,12 @@
 
 # Donde se suben los modelo de lenguaje (y los de Ia en general) Open Source
 
+> https://huggingface.co/
+
+# ESTRENO: Ejecutar Modelo de Lenguaje en tu computadora 
+
+> https://anythingllm.com/
+
 # Conceptos
 
 * Censura
