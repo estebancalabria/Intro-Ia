@@ -22,6 +22,10 @@
     * Presentaciones
     * Redes Sociales
     * Videos Institucionales
+* Herramientas de IA
+* Automatizacion con IA
+* Machine Learning
+* Agentes y Chatbots
 
 # LLM (Large Language Models)
 
