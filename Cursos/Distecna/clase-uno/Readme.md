@@ -35,13 +35,14 @@
     * Modo Deep Research    (Puntaje 9 / 10 )
        * No olvidar chequear lo que dice!
 
-> Haceme una investigacion sobre que productos innovadores se pueden traer a la Argentina con alta capacidad de retorno en Informatico
+> Haceme una investigacion sobre que productos innovadores se pueden traer a la Argentina con alta capacidad de retorno en Informatico    
 
     * Interraccion con Herramientas de Google
       * Integracion con Calendar
       * Integracion con Google Flights y Gogle Hotels
     * Conocimiento Factics (Facts)
     * Canva (Copia de los Artefactos de Claude)
+    * Gems (Versiones Especializadas de Gemini)
   * ChatGPT (Open AI)
       * Generacion de conversaciones Humanas
       * Personaliacion
@@ -68,4 +69,4 @@
  * Tamanio de la ventana de contexto
  * Tokens (la cantidad de palabras)
 * Modelo
-* 
+
