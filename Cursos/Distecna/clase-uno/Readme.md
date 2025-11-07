@@ -41,6 +41,7 @@
       * Integracion con Calendar
       * Integracion con Google Flights y Gogle Hotels
     * Conocimiento Factics (Facts)
+    * Canva (Copia de los Artefactos de Claude)
   * ChatGPT (Open AI)
       * Generacion de conversaciones Humanas
       * Personaliacion
@@ -48,12 +49,12 @@
          * Instrucciones Personalizadas
   * Claude (Anthropic)
       * https://claude.ai/
-      * Artefactos
+      * "Artefactos"
          * https://claude.ai/public/artifacts/5a3a0acd-b0d1-4a33-a2a6-d5b2b63fdf8e
          * https://claude.ai/public/artifacts/32b8f2aa-b8ca-441a-92f6-cd8ea46f921d
       * Altro enfoque etico y en la correctitud
       * Ideal para trabajos tecnicos
-      * Especial para programar
+      * Especial para programar (Sin saber nada de programacion podes hacer una pagina web)
         
 
 # Curiosidades
@@ -64,5 +65,7 @@
 
 * Prompt
  * Contexto
+ * Tamanio de la ventana de contexto
+ * Tokens (la cantidad de palabras)
 * Modelo
 * 
