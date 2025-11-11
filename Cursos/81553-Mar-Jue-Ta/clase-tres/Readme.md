@@ -118,6 +118,84 @@ pie showData
 
 ```
 
+* Generar codigo en Python
+> https://colab.google/
+
+Prompt para ChatGTP
+```
+Generame un codigo en python con matplotlib que sea un grafico de velas del bitcoin esta ultima semana
+```
+
+Me genero este codigo en colab
+```python
+import requests
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from datetime import datetime, timedelta
+
+def fetch_ohlc_coin_gecko(coin_id='bitcoin', vs_currency='usd', days=7):
+    """
+    Obtiene datos OHLC para el coin_id durante ‘days’ días desde CoinGecko.
+    Nota: revisá la documentación de CoinGecko para asegurarte del formato.
+    """
+    url = f'https://api.coingecko.com/api/v3/coins/{coin_id}/ohlc'
+    params = {
+        'vs_currency': vs_currency,
+        'days': days
+    }
+    resp = requests.get(url, params=params)
+    resp.raise_for_status()
+    data = resp.json()
+    # Formato esperado: [[timestamp, open, high, low, close], ...]
+    df = pd.DataFrame(data, columns=['timestamp','open','high','low','close'])
+    # Convertir timestamp (ms) a datetime
+    df['datetime'] = pd.to_datetime(df['timestamp'], unit='ms')
+    df.set_index('datetime', inplace=True)
+    df = df[['open','high','low','close']]
+    return df
+
+def plot_candlestick(df, title='Candlestick Chart – Bitcoin (Last 7 Days)'):
+    """
+    Grafica velas de los datos OHLC del dataframe.
+    """
+    fig, ax = plt.subplots(figsize=(10,6))
+    # Convertir fechas a números para matplotlib
+    df['date_num'] = mdates.date2num(df.index.to_pydatetime())
+    width = 0.6  # ancho de la vela en días (aprox)
+    width2 = width * 0.4
+    
+    for idx, row in df.iterrows():
+        date_num = mdates.date2num(idx)
+        open_, high_, low_, close_ = row['open'], row['high'], row['low'], row['close']
+        
+        # Color: verde si cierre > apertura, rojo si cierre < apertura
+        color = 'green' if close_ >= open_ else 'red'
+        
+        # Línea alta‐baja
+        ax.plot([date_num, date_num], [low_, high_], color='black', linewidth=1)
+        # Rectángulo apertura‐cierre
+        rect = plt.Rectangle((date_num - width/2, min(open_, close_)),
+                             width, abs(close_ - open_),
+                             facecolor=color, edgecolor='black')
+        ax.add_patch(rect)
+    
+    ax.xaxis_date()
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M'))
+    plt.xticks(rotation=45)
+    plt.title(title)
+    plt.ylabel('USD')
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
+
+if __name__ == '__main__':
+    # Obtener datos de la última semana
+    df_ohlc = fetch_ohlc_coin_gecko(coin_id='bitcoin', vs_currency='usd', days=7)
+    plot_candlestick(df_ohlc)
+
+```
+
 
 - ## Tips de Prompt engineerign
 * Ofrecer Recomensas
