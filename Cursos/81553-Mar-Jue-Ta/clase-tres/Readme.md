@@ -68,9 +68,58 @@ Dame la lista de los mejores libros de stpehen king. Su titulo, anio, resumen tr
         * Sirve para generar PDFS
    * CSV (Comma Seppatated Values)
         * Para comunicarse desde y hacia excel
-   * 
+   * Plantilla Markdown
 
-## Tips de Prompt engineerign
+```markdown
+# [Titulo]
+
+**[Fecha de LAnzamiento]**
+
+## Argumento
+
+> [COMPLETAR EL ARGUMENTO DEL LIBRO]
+
+## Personajes
+
+* [Personaje 1]
+* [Personaje 2]
+...
+* [Personaje N]
+
+## Informacion
+* Ubicacion Trama : [UBICACION TRAMA]
+* Cantidad Capitulos : [CANTIDAD PALABRAS]
+* Puntuacion Critica : [Puntuacion de 1 a 5]
+---
+```
+
+* Generacion de Diagramas
+  * Mermaid
+     * https://mermaid.live/
+
+Prompt mermaid en Claude
+```
+Armame un artfacto mermaid que se visualize en un diagrama de flujo el organigrama de Google.  Que tenga a lo sumo 4 nodos por nivel. En lo posible con los nombres de cada uno
+```
+
+Prompt mermaid en ChatGPT
+```
+Armame un diagrama de pie mermaid que muestre las carreras de 5 corredores reconocidos incluyendo Colapinto. Buscar la informacion que haga falta
+```
+Me genero
+```mermaid
+pie showData
+    title Carreras disputadas en F1 (estimado a nov 2025)
+    "Fernando Alonso (422)" : 422
+    "Lewis Hamilton (377)" : 377
+    "Max Verstappen (229)" : 229
+    "Charles Leclerc (168)" : 168
+    "Franco Colapinto (26)" : 26
+
+```
+
+
+- ## Tips de Prompt engineerign
 * Ofrecer Recomensas
 * Responder solamente lo solicitado como para copiar y pegar sin acotar nada mas.
 
