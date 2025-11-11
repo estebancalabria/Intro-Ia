@@ -56,9 +56,27 @@ Actua como un experto nutricionista especialista en las ultimas tendencias de co
 
 - ### Personalizacion de Salida
 
+Formatos de Salida para presetnar informacion
+
+'''
+Dame la lista de los mejores libros de stpehen king. Su titulo, anio, resumen trama corto, lista de personajes, ubicacion,
+'''
+
+* Tecnicos
+   * XML y JSON
+   * HTML
+        * Sirve para generar PDFS
+   * CSV (Comma Seppatated Values)
+        * Para comunicarse desde y hacia excel
+   * 
+
 ## Tips de Prompt engineerign
 * Ofrecer Recomensas
 * Responder solamente lo solicitado como para copiar y pegar sin acotar nada mas.
+
+# Gems
+
+Gemini te permite crear tus propios GEMS y cargarle tanto documentos como informacion personalizada.
 
 # Fine tunning de modelos
 
