@@ -73,3 +73,46 @@
 
 > https://elevenlabs.io/
 
+## Compendio de herramientas de IA 
+
+> https://theresanaiforthat.com/
+
+# Uso de la API
+
+Cada vez hay mas herramietnas de IA.
+Los proveedores de los modelos de ia generalmente tienen dos web
+* Una para el usuario final
+    * https://chatgpt.com/
+    * https://chat.groq.com/
+* Una para el desarrollasor 
+    * https://platform.openai.com/
+    * https://console.groq.com/home
+ 
+
+- ## Pasos para usar la APi con GROQ
+
+1. Ir al portal de desarrollador de Groq https://console.groq.com/home
+2. Generar una Api Key y guardarla en un lugar seguro
+3. Ir colab.google.com y generar un script de python
+
+```python
+
+api_key = input("Ingrese su Api Key")
+prompt =  input("Ingrese su prompt")
+
+from openai import OpenAI
+import os
+client = OpenAI(
+    api_key=api_key,
+    base_url="https://api.groq.com/openai/v1",
+)
+
+response = client.responses.create(
+    input=prompt,
+    model="openai/gpt-oss-20b",
+)
+print(response.output_text)
+
+```
+
+4. Ejecutar
