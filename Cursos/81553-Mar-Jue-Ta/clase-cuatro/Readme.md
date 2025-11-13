@@ -118,6 +118,12 @@ print(response.output_text)
 4. Ejecutar
 
 ## NotebookLM 
+**La HERRAMIENTA DEL MOMENTO**
+> https://notebooklm.google.com/
+
+Puntaje : 10 / 10
+
+Salio de aca: 
 
 > https://notebooklm.google.com/
 
