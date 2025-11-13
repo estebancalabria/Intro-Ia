@@ -116,3 +116,8 @@ print(response.output_text)
 ```
 
 4. Ejecutar
+
+## NotebookLM 
+
+> https://notebooklm.google.com/
+
