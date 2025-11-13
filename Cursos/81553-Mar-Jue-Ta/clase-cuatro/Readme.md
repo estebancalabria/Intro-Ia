@@ -60,8 +60,14 @@
 
 ## Generacion de Diagramas
 
+- ### Napkin
+  
 > https://www.napkin.ai/
+* Puntaje : 10 / 10
 
+- ### XMind (Sugerencia de un alumno
+
+> https://xmind.com/
 
 ## Clonar Voces
 
