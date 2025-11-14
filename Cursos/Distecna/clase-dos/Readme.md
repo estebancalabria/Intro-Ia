@@ -70,11 +70,11 @@ Para Ejecutar un modelo Open Source Localmente:
 
 > https://huggingface.co/
 
-
- 
+Ejemplos de Spaces
+* https://huggingface.co/spaces/not-lain/background-removal
+* https://huggingface.co/spaces/black-forest-labs/FLUX.1-dev
                 
 # Notas
 
 * Los productos de Google de IA tienden a funcionar mejor en ingles, sobre todo los nuevos.
 
-# Prompt Engineering
