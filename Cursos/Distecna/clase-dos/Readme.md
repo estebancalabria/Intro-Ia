@@ -14,6 +14,8 @@
 
 * Modelos de  Lenguaje
   * Propietarios
+      * Copilot
+         * Es en realidad ChatGPT porque Microsoft tiene el 49% de las acciones de OpenAI
       * Gemini
           * Gran tamanio de contexto
       * Grok
@@ -50,7 +52,26 @@
               * https://www.deepseek.com/en
               * Fue el primero en introducir el modo razonamiento
               * Interamente incorporan en la IA un patron de prompting llamado "Chain of Thoughts" (Cadena de pensamiento)
-          * 
+
+# Como saber que modelo del lenguaje es "mejor"
+
+Utilizad para comparar modelo de Lenguaje
+* https://lmarena.ai/
+
+# Ejecutar modelos Open Source Localmete
+
+Para Ejecutar un modelo Open Source Localmente:
+* Ollama
+   * https://lmarena.ai/
+* LMStudio
+   * https://lmstudio.ai/
+
+# Donde Se suben los modelos Open Source
+
+> https://huggingface.co/
+
+
+ 
                 
 # Notas
 
