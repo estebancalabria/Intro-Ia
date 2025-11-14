@@ -37,7 +37,7 @@
 
 > Haceme una investigacion sobre que productos innovadores se pueden traer a la Argentina con alta capacidad de retorno en Informatico           
 
-    
+* Gemini    
     * Interraccion con Herramientas de Google
       * Integracion con Calendar
       * Integracion con Google Flights y Gogle Hotels
