@@ -35,7 +35,7 @@
     * Modo Deep Research    (Puntaje 9 / 10 )
        * No olvidar chequear lo que dice!
 
-> Haceme una investigacion sobre que productos innovadores se pueden traer a la Argentina con alta capacidad de retorno en Informatico    
+> Haceme una investigacion sobre que productos innovadores se pueden traer a la Argentina con alta capacidad de retorno en Informatico           
 
 
     * Interraccion con Herramientas de Google
