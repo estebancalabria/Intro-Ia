@@ -40,5 +40,39 @@ const client = new OpenAI({
 
 * Poner la API key y probar
   
-
 # IA Generativa Multimedia : Generacion de Imagenes
+
+> TIP Importante : Los prompts pa generar imagenes mejor en ingles en cualquier modelo. Generar los prompts con ChatGPT
+> TIP Importante : Las herramientas que mostramos tienen muchas mas funcionalidades que las que vemos en clase, los invito a explorarlas en profundiad
+
+* Casos de Uso generacion de Imagenes
+
+- ## Generar Imagenes localmente (todas las que quiero gratis)
+
+**No se hace con LMSudio**
+
+  * Fooocus
+      * https://github.com/lllyasviel/Fooocus?tab=readme-ov-file
+  * Confy
+      * https://www.comfy.org/
+  * Automatic1111
+      * https://github.com/AUTOMATIC1111/stable-diffusion-webui
+  * Google Colab o python
+
+- ## A partir de texto (prompt)
+       * Gemini (Nano Banana)
+       * ChatGPT
+       * La de Whatsapp
+       * Leonardo AI (https://leonardo.ai/)
+          * Puntaje 9/10 (Si la probamos mejor tal vez un 10)
+  
+```prompt
+Epic battle between Goku and Superman, ultra-detailed, dynamic action scene, intense energy clash, Goku in Super Saiyan form powering up a Kamehameha, Superman charging his heat vision, dramatic lighting, explosive background, cinematic angle, wind and debris flying, muscles detailed, realistic anime-comic hybrid style, hyper-realistic, 8k, ultra-sharp, legendary showdown, highly dramatic, vibrant colors, epic atmosphere
+```
+
+ - ## Imgagenes con Texto (prompt)
+
+* Leonardo AI (https://leonardo.ai/)
+* Ideogram (
+
+  
