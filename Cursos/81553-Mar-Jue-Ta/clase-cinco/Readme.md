@@ -34,6 +34,10 @@ const client = new OpenAI({
 
 > https://claude.ai/public/artifacts/a4c46632-5185-43f2-be6a-18bb2f30b99c
 
+**(Por Politicas el artefato no funciona desde claude lo tuve que bajar y ejecutar localmente)**
+
+> https://github.com/estebancalabria/Intro-Ia/blob/main/Cursos/81553-Mar-Jue-Ta/clase-cinco/groq-chatbot.html
+
 * Poner la API key y probar
   
 
