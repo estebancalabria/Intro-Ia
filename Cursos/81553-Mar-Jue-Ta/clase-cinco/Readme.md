@@ -73,6 +73,11 @@ Epic battle between Goku and Superman, ultra-detailed, dynamic action scene, int
  - ## Imgagenes con Texto (prompt)
 
 * Leonardo AI (https://leonardo.ai/)
-* Ideogram (
+* Ideogram (https://ideogram.ai/)
 
+```prompt
+Mouthwatering gourmet chorizo sandwich (Argentinian choripan), juicy grilled sausage in artisan bread, fresh chimichurri dripping, styled like high-end food photography, cinematic lighting, ultra-realistic, glossy texture, delicious and tempting. Big bold central text: “CHORIPAN GOURMET” — premium food advertisement, elegant typography, modern style, 8k, high detail, professional food ad
+```
+
+- ## 
   
