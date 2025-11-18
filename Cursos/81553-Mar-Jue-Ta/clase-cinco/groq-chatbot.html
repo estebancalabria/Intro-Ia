@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot con Groq</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 800px;
+            height: 90vh;
+            max-height: 700px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .api-key-section {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .api-key-section input {
+            flex: 1;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .api-key-section button {
+            padding: 10px 20px;
+            background: white;
+            color: #667eea;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .api-key-section button:hover {
+            transform: scale(1.05);
+        }
+
+        .api-key-section button:active {
+            transform: scale(0.95);
+        }
+
+        .status {
+            margin-top: 10px;
+            font-size: 13px;
+            padding: 8px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .chat-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f7f7f8;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .message-content {
+            max-width: 70%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            line-height: 1.5;
+        }
+
+        .message.user .message-content {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+
+        .message.assistant .message-content {
+            background: white;
+            color: #333;
+            border-bottom-left-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-section {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e5e5e5;
+            display: flex;
+            gap: 10px;
+        }
+
+        .input-section input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid #e5e5e5;
+            border-radius: 24px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .input-section input:focus {
+            border-color: #667eea;
+        }
+
+        .input-section input:disabled {
+            background: #f5f5f5;
+            cursor: not-allowed;
+        }
+
+        .input-section button {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 24px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .input-section button:hover:not(:disabled) {
+            transform: scale(1.05);
+        }
+
+        .input-section button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .loading {
+            display: flex;
+            gap: 5px;
+            padding: 12px 16px;
+        }
+
+        .loading span {
+            width: 8px;
+            height: 8px;
+            background: #667eea;
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out;
+        }
+
+        .loading span:nth-child(1) { animation-delay: -0.32s; }
+        .loading span:nth-child(2) { animation-delay: -0.16s; }
+
+        @keyframes bounce {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 Chatbot con Groq</h1>
+            <div class="api-key-section">
+                <input 
+                    type="password" 
+                    id="apiKeyInput" 
+                    placeholder="Ingresa tu API Key de Groq"
+                >
+                <button onclick="activateApiKey()">Activar</button>
+            </div>
+            <div class="status" id="status">⚠️ API Key no configurada</div>
+        </div>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="message assistant">
+                <div class="message-content">
+                    ¡Hola! Soy un chatbot potenciado por Groq. Ingresa tu API Key arriba para comenzar a chatear.
+                </div>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <input 
+                type="text" 
+                id="messageInput" 
+                placeholder="Escribe tu mensaje..."
+                disabled
+                onkeypress="if(event.key === 'Enter') sendMessage()"
+            >
+            <button onclick="sendMessage()" id="sendButton" disabled>Enviar</button>
+        </div>
+    </div>
+
+    <script>
+        let apiKey = null;
+        let conversationHistory = [];
+        let isLoading = false;
+
+        function activateApiKey() {
+            const input = document.getElementById('apiKeyInput');
+            const key = input.value.trim();
+            
+            if (!key) {
+                alert('Por favor ingresa una API Key válida');
+                return;
+            }
+
+            apiKey = key;
+            document.getElementById('status').innerHTML = '✅ API Key activada correctamente';
+            document.getElementById('messageInput').disabled = false;
+            document.getElementById('sendButton').disabled = false;
+            
+            input.value = '';
+            input.placeholder = 'API Key configurada';
+            input.disabled = true;
+            
+            document.querySelector('.api-key-section button').disabled = true;
+            document.querySelector('.api-key-section button').style.opacity = '0.5';
+        }
+
+        function addMessage(role, content) {
+            const chatContainer = document.getElementById('chatContainer');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${role}`;
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            contentDiv.textContent = content;
+            
+            messageDiv.appendChild(contentDiv);
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        function addLoadingIndicator() {
+            const chatContainer = document.getElementById('chatContainer');
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'message assistant';
+            loadingDiv.id = 'loadingIndicator';
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content loading';
+            contentDiv.innerHTML = '<span></span><span></span><span></span>';
+            
+            loadingDiv.appendChild(contentDiv);
+            chatContainer.appendChild(loadingDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        function removeLoadingIndicator() {
+            const loading = document.getElementById('loadingIndicator');
+            if (loading) loading.remove();
+        }
+
+        async function sendMessage() {
+            if (!apiKey || isLoading) return;
+
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+
+            input.value = '';
+            isLoading = true;
+            document.getElementById('sendButton').disabled = true;
+            input.disabled = true;
+
+            addMessage('user', message);
+            conversationHistory.push({ role: 'user', content: message });
+
+            addLoadingIndicator();
+
+            try {
+                const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${apiKey}`
+                    },
+                    body: JSON.stringify({
+                        model: 'llama-3.3-70b-versatile',
+                        messages: conversationHistory,
+                        temperature: 0.7,
+                        max_tokens: 1024
+                    })
+                });
+
+                removeLoadingIndicator();
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.error?.message || 'Error al comunicarse con Groq');
+                }
+
+                const data = await response.json();
+                const assistantMessage = data.choices[0].message.content;
+                
+                conversationHistory.push({ role: 'assistant', content: assistantMessage });
+                addMessage('assistant', assistantMessage);
+
+            } catch (error) {
+                removeLoadingIndicator();
+                addMessage('assistant', `❌ Error: ${error.message}`);
+                console.error('Error:', error);
+            } finally {
+                isLoading = false;
+                document.getElementById('sendButton').disabled = false;
+                input.disabled = false;
+                input.focus();
+            }
+        }
+    </script>
+</body>
+</html>
