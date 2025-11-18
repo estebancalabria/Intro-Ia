@@ -74,10 +74,51 @@ Epic battle between Goku and Superman, ultra-detailed, dynamic action scene, int
 
 * Leonardo AI (https://leonardo.ai/)
 * Ideogram (https://ideogram.ai/)
+  * Puntaje 9/10
 
 ```prompt
 Mouthwatering gourmet chorizo sandwich (Argentinian choripan), juicy grilled sausage in artisan bread, fresh chimichurri dripping, styled like high-end food photography, cinematic lighting, ultra-realistic, glossy texture, delicious and tempting. Big bold central text: “CHORIPAN GOURMET” — premium food advertisement, elegant typography, modern style, 8k, high detail, professional food ad
 ```
 
-- ## 
-  
+- ## Modificacion Imagen Existente
+
+  * Nano Banana : https://gemini.google.com/app (Modelo Fast)
+  * Groq : groq.com
+
+Cargar dos imagenes y usar el siguiente prompt
+```prompt
+Place both people in the same image with a modern and elegant background. Make their posture look natural, standing slightly closer to each other and both looking at the camera. Maintain a consistent color tone so they appear on the same layer.
+```
+    
+```prompt
+Quisiera que cambies el escenario total de la foto, por un paisaje de una playa de ensueño, con un mar increible de aguas cristalinas y transparentes, misma postura de la fotografia, el cielo con un azul europeo nitido con luces y sombras que iluminan a la modelo, con un desenfoque de una camara DSRL de 85mm, que tenga armonia el cuerpo, toda la foto que sea con sombras naturales de un dia soleado, El cabello es largo y liso con un peinado natural; maquillaje suave pero llamativo con brillo en la piel. La foto debe estar tomada con una camara DSRL con flash, replicando el estilo característico de esta cámara: iluminación directa y cálida, el sujeto iluminado con flash, colores intensos y un estilo editorial-glamoroso. Alta resolución, realismo fotográfico, conservar los detalles del rostro y facciones sonriendo un poco
+```
+
+Para hacer un GEM que genere imagenes tuyas poner lo siguiente :
+"
+Primero analizarás todas las fotos que tienes almacenadas en conocimientos Luego generarás una imagen de esa persona en la situación que te pide el usuario.
+
+Repite este proceso para TODAS la interacciones que en una misma conversación empiecen por:  "Enzo"
+"
+(Prompt de GEM)
+
+Puntaje : 10 / 10
+ 
+- ## Generacion de Imagenes Hiper Realistas
+
+* ImageFX (de Google)
+    * https://labs.google/fx/
+    * https://labs.google/fx/tools/image-fx
+       
+```
+Hyper-realistic image of a teacher giving a class, standing at a chalkboard with complex diagrams and notes, expressive hand gestures, engaging facial expression, intelligent and inspiring atmosphere, students focused in the background, natural classroom lighting, professional attire, academic environment, ultra-detailed, photorealistic, 8k
+```
+
+- ## Generacion de Disenios (Ademas de imagenes)
+
+* Orientado a ser complemnetario o reemplazo de Canva
+  * https://designer.microsoft.com/
+    * Puntaje 10/10
+
+
+
