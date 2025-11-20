@@ -64,3 +64,8 @@
 
 * Puntaje : 9 / 10
 
+# SPOILER PROXIMA CLASE
+
+- ## Aplicacion para generar audio
+
+* Udio : 
