@@ -28,4 +28,39 @@
 
 - ## Hey Gen
 
-- 
+> https://www.heygen.com/
+
+* Herramienta para la generacion de videos profesionales basados en AVATAR
+* Puntaje : 9 / 10
+
+- ## Herramienta para hacer presentaciones
+
+> https://gamma.app/
+
+* Para hacer presentaciones de power point y paginas web
+* Puntaje : 10 / 10
+
+- ## Artflow
+
+> https://app.artflow.ai/
+
+* Seccion Generador de historias
+
+- ## Narakeet
+
+> https://www.narakeet.com/
+
+* Convierte presentaciones en videos
+
+- ## Pictory
+
+> https://pictory.ai/
+
+* Convierte presentaciones en videos
+
+- ## Pretzi
+
+> https://prezi.com/
+
+* Puntaje : 9 / 10
+
