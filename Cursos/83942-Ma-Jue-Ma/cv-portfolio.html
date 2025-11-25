@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hernán Piantoni - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 0.8s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #667eea;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .experience-item:hover, .education-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 1.4em;
+            margin-bottom: 8px;
+        }
+
+        .date {
+            color: #666;
+            font-style: italic;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .company {
+            color: #555;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #444;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-category {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: scale(1.05);
+        }
+
+        .skill-category h4 {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 8px;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .skill-category li {
+            color: rgba(255, 255, 255, 0.9);
+            padding: 5px 0;
+        }
+
+        .languages {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .language-item {
+            flex: 1;
+            min-width: 200px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .language-item:hover {
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hernán Piantoni</h1>
+            <p class="subtitle">Profesional en Administración | Especialista en Logística y Operaciones</p>
+            <div class="contact-info">
+                <div class="contact-item">📧 hernanpiantoni@gmail.com</div>
+                <div class="contact-item">📱 +54 9 11 3179 1954</div>
+                <div class="contact-item">📍 Buenos Aires, Argentina</div>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2>💼 Experiencia Profesional</h2>
+            
+            <div class="experience-item">
+                <h3>Team Leader - Operaciones B2B</h3>
+                <div class="company">Mercado Libre | Buenos Aires</div>
+                <div class="date">Agosto 2022 - Actualidad</div>
+                <ul>
+                    <li>Liderazgo de equipo enfocado en operaciones B2B y mejora continua</li>
+                    <li>Gestión de procesos logísticos y optimización de recursos</li>
+                    <li>Implementación de estrategias para incrementar la eficiencia operacional</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Analista de Operaciones Sr.</h3>
+                <div class="company">Mercado Libre | Buenos Aires</div>
+                <div class="date">Febrero 2021 - Agosto 2022</div>
+                <ul>
+                    <li>Análisis y optimización de procesos operativos complejos</li>
+                    <li>Desarrollo de indicadores de gestión (KPIs)</li>
+                    <li>Coordinación con múltiples áreas para mejora de servicios</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Analista de Operaciones</h3>
+                <div class="company">Mercado Libre | Buenos Aires</div>
+                <div class="date">Febrero 2019 - Febrero 2021</div>
+                <ul>
+                    <li>Gestión operativa de procesos logísticos</li>
+                    <li>Análisis de datos para toma de decisiones</li>
+                    <li>Colaboración en proyectos de mejora continua</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Analista de Operaciones</h3>
+                <div class="company">Easy Taxi - Cabify | Buenos Aires</div>
+                <div class="date">Julio 2017 - Diciembre 2018</div>
+                <ul>
+                    <li>Soporte operativo a conductores y usuarios</li>
+                    <li>Resolución de incidencias en tiempo real</li>
+                    <li>Análisis de métricas operacionales</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Supervisor de Operaciones</h3>
+                <div class="company">Andreani | Buenos Aires</div>
+                <div class="date">Marzo 2016 - Julio 2017</div>
+                <ul>
+                    <li>Supervisión de equipos de distribución y logística</li>
+                    <li>Control de calidad en servicios de entrega</li>
+                    <li>Gestión de incidencias y mejora de procesos</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Coordinador de Sucursal</h3>
+                <div class="company">OCA | Buenos Aires</div>
+                <div class="date">Febrero 2012 - Marzo 2016</div>
+                <ul>
+                    <li>Gestión integral de sucursal</li>
+                    <li>Coordinación de equipos operativos</li>
+                    <li>Atención al cliente y resolución de conflictos</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Analista de Operaciones</h3>
+                <div class="company">OCA | Buenos Aires</div>
+                <div class="date">Marzo 2008 - Febrero 2012</div>
+                <ul>
+                    <li>Gestión de operaciones logísticas</li>
+                    <li>Control de procesos de distribución</li>
+                    <li>Mejora de eficiencia operativa</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎓 Formación Académica</h2>
+            
+            <div class="education-item">
+                <h3>Licenciatura en Administración</h3>
+                <div class="company">Universidad de Buenos Aires (UBA)</div>
+                <div class="date">En curso</div>
+            </div>
+
+            <div class="education-item">
+                <h3>Contador Público</h3>
+                <div class="company">Universidad de Buenos Aires (UBA)</div>
+                <div class="date">Cursado hasta 3er año</div>
+            </div>
+
+            <div class="education-item">
+                <h3>Bachiller con orientación en Ciencias Exactas</h3>
+                <div class="company">Instituto Secundario | Buenos Aires</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🚀 Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Gestión y Liderazgo</h4>
+                    <ul>
+                        <li>Liderazgo de equipos</li>
+                        <li>Gestión de operaciones</li>
+                        <li>Planificación estratégica</li>
+                        <li>Toma de decisiones</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Operaciones y Logística</h4>
+                    <ul>
+                        <li>Optimización de procesos</li>
+                        <li>Gestión de la cadena de suministro</li>
+                        <li>Control de calidad</li>
+                        <li>Distribución y transporte</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Análisis y Datos</h4>
+                    <ul>
+                        <li>Análisis de KPIs</li>
+                        <li>Gestión de métricas</li>
+                        <li>Reportes y documentación</li>
+                        <li>Mejora continua</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Herramientas</h4>
+                    <ul>
+                        <li>Microsoft Office</li>
+                        <li>Sistemas de gestión</li>
+                        <li>Plataformas logísticas</li>
+                        <li>Software operativo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🌐 Idiomas</h2>
+            <div class="languages">
+                <div class="language-item">
+                    <h3>Español</h3>
+                    <p>Nativo</p>
+                </div>
+                <div class="language-item">
+                    <h3>Inglés</h3>
+                    <p>Nivel Medio</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
