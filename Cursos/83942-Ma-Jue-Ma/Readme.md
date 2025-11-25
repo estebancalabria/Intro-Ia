@@ -1,4 +1,4 @@
-# Clase Uno - 25 de Ocubre
+# Clase Uno - 25 de Noviembre
 
 # Programa del Curso
 > https://www.instagram.com/p/C9LE2JRx0SJ/?img_index=1
