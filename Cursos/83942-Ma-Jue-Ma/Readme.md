@@ -5,7 +5,21 @@
 
 * LLM (Large Language Models)
 * Prompt Engineering
+* Text-to-Speech / Specch-to-Speech
+* Herramientas de Inteligencia Artificial
+    * Como funcionan por dentro
+    * IA en la Oficina
+* IA Generativa Multimedia
+    * Imagenes
+    * Videos
+    * Canciones
+    * Contenido Empresar
+* Machine Learning
+* Automatizaciones 
 
+# Recomendaciones
+
+* Crearse una cuenta de Gmail Nueva para el curso..
 
 # Large Language Models
 
