@@ -15,6 +15,10 @@ Modelos del Lenguanje Propietarios
     * Conocimiento Factico
     * Modo Deep Research
     * Nano-Banana para imagenes!
+
+# Recordatorio
+
+> No se olviden de crear una cuenta de GMAIL alternativa para probar disintas herramientas
       
 # Large Language Models
 
@@ -27,11 +31,22 @@ Modelos del Lenguanje Propietarios
 * Grok (El de Elon Musk)
    * https://grok.com/
      * Informal, gracioso,
-     * Baja Censura
+     * **Baja Censura**
 
 ## Modelos del Lenguanje Open Source
 
 * Porque Son Importantes : https://www.instagram.com/p/DOqu-k8Dvfb/?img_index=1
+
+* Motor de Inferencia
+  * https://chat.groq.com/
+    * Motor de Inferencia
+    * Ejecuta Modelos de Inteligencia Artificial (LLM) de otros
+    * Rapidez de Respuesta gracias a los LPU
+
+* Familia LLama... (Son Mark Zuckemberg)
+   * Se puede usar desde el wsap
+   * 
+* Chinos
 
 # Herramientas de IA
 
