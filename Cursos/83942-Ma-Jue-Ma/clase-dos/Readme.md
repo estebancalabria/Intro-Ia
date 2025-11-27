@@ -45,8 +45,13 @@ Modelos del Lenguanje Propietarios
 
 * Familia LLama... (Son Mark Zuckemberg)
    * Se puede usar desde el wsap
-   * 
 * Chinos
+   * DeepSeek
+     * https://www.deepseek.com/en
+        * Primero en tener Modo Razonamiento : Es una implementacion interna del patron de prompt engineering Chain of Thoughts. Particularmente util para resolver problemas de logica
+           * Prompt Clasico para probar el modo razonamiento"Hay una habitacion con tres personas. Una de ellas es un asesino. Entra una cuarta persona a la habitacion y mata al asesino. Cuantos asesinos vivos hay ahora en la habitacion."
+           * (ChatGPT incoporo luego el modo pensado y Gemini el modelo Thinking)
+
 
 # Herramientas de IA
 
