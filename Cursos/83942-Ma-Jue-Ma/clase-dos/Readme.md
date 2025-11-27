@@ -59,17 +59,17 @@ VER: https://www.instagram.com/p/DKhQrTvuFcw/?img_index=1
         * Es bastante equilibrado en todo
         * Puede resultar un poco mas lento
 
-## Comparando modelos de IA
-
 # Herramientas de IA
 
 ## Text-To-Speech
 
 > https://www.naturalreaders.com/
-* Puntaje : 5 / 10
+  * Puntaje : 5 / 10
 
 > https://coquitts.com/generate
-*
+  * Puntaje:  10 / 10
+  * Muchas Gracias para el aporte
+  * Plataforma open source Alemana ideal para clonar voz de forma sencilla!
 
 # Prompt Engineering
 
@@ -77,3 +77,7 @@ VER: https://www.instagram.com/p/DKhQrTvuFcw/?img_index=1
 
 > https://www.neurorightsfoundation.org/
 > Conferencia de Robots de China : https://www.youtube.com/watch?v=or0iYHjoptE
+
+# Proxima Clase
+1. Web para comparar modelo de lenguaje
+2. Como ejecutar un modelo open source localmente en mi computadora (Siempre y cuando mi pc lo permita)
