@@ -66,8 +66,10 @@ VER: https://www.instagram.com/p/DKhQrTvuFcw/?img_index=1
 ## Text-To-Speech
 
 > https://www.naturalreaders.com/
-
 * Puntaje : 5 / 10
+
+> https://coquitts.com/generate
+*
 
 # Prompt Engineering
 
