@@ -20,7 +20,14 @@ Modelos del Lenguanje Propietarios
 
 ## Modelos del Lenguanje Propietarios
 
-* 
+* Perplexity
+  * https://www.perplexity.ai/
+    * Ideal para hacer trabajos para la facultad
+    * Ideal para investigaciones cientificas
+* Grok (El de Elon Musk)
+   * https://grok.com/
+     * Informal, gracioso,
+     * Baja Censura
 
 ## Modelos del Lenguanje Open Source
 
