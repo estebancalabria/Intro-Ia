@@ -33,6 +33,8 @@ Modelos del Lenguanje Propietarios
      * Informal, gracioso,
      * **Baja Censura**
 
+VER: https://www.instagram.com/p/DKhQrTvuFcw/?img_index=1
+
 ## Modelos del Lenguanje Open Source
 
 * Porque Son Importantes : https://www.instagram.com/p/DOqu-k8Dvfb/?img_index=1
@@ -51,7 +53,13 @@ Modelos del Lenguanje Propietarios
         * Primero en tener Modo Razonamiento : Es una implementacion interna del patron de prompt engineering Chain of Thoughts. Particularmente util para resolver problemas de logica
            * Prompt Clasico para probar el modo razonamiento"Hay una habitacion con tres personas. Una de ellas es un asesino. Entra una cuarta persona a la habitacion y mata al asesino. Cuantos asesinos vivos hay ahora en la habitacion."
            * (ChatGPT incoporo luego el modo pensado y Gemini el modelo Thinking)
+   * Qwen (Ali Baba)
+     * https://chat.qwen.ai/
+        * Nunca llegue al limite del plan gratuito y eso que lo uso un monton
+        * Es bastante equilibrado en todo
+        * Puede resultar un poco mas lento
 
+## Comparando modelos de IA
 
 # Herramientas de IA
 
@@ -66,3 +74,4 @@ Modelos del Lenguanje Propietarios
 # Noticias
 
 > https://www.neurorightsfoundation.org/
+> Conferencia de Robots de China : https://www.youtube.com/watch?v=or0iYHjoptE
