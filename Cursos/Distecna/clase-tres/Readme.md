@@ -1,4 +1,4 @@
-# Clase Tres - 28 de Noviembre del 2025
+# Clase Tres - 28 de Noviembre del 2025 
 
 # Repaso 
 
