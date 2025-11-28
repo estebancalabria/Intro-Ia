@@ -86,5 +86,55 @@ Tips de Contexto
    * Tecnico / Interactuar con Excel o Google sheets
       * CSV (Comma Separated Values) : Dame la lista como un CSV
          * Este es un formato MUY importante porque me permite interactuar desde y hacia excel
-   * 
+   * Markdown
+      * https://es.wikipedia.org/wiki/Markdown
+      * Plantilla MArkdown para especificar EXACTAMENTE como queremos la salida
+```
+---
+
+# [TITULO]
+
+## Detalles
+
+* **Genero** : [GENERO DE LA SERIE]
+* **Año** : [AñO DE LA SERIE]
+* **Plataforma** : [PLATAFORMA PRINCIPAL]
+
+## PORQUE VERLA
+
+> [TRAMA DE LA SERIE]
+
+## ACTORES PRINCIPALES
+
+1. [ACTOR 1]
+2. [ACTOR 2]
+...
+N. [ACTOR N]
+
+---
+```      
+      
+ * Mermaid
+
+```
+Armame un mermaid que muestre un diagrama de pie que muestre el presupuesto de cada una de las series
+```
+
+Salida
+
+```mermaid
+pie
+    title Presupuesto Conceptual de las 10 Series Policiales (Valores Ficticios)
+    "Mindhunter (Netflix)" : 50
+    "True Detective (S1 - HBO)" : 40
+    "Mare of Easttown (HBO)" : 35
+    "Bosch (Prime Video)" : 30
+    "Sherlock (BBC/HBO)" : 25
+    "Luther (BBC/HBO)" : 22
+    "The Wire (HBO)" : 20
+    "The Bridge (Nordic)" : 18
+    "Line of Duty (BBC)" : 15
+    "The Killing (Nordic)" : 12
+````
+  
 
