@@ -36,7 +36,7 @@
 * Vamos a hacer el mismo prompt
    * Directo
 
-  ```
+ ```
  "Dame consejos para dormir mejor"
  ```
 
