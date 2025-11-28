@@ -36,9 +36,9 @@
 * Vamos a hacer el mismo prompt
    * Directo
 
- ```
+```
  "Dame consejos para dormir mejor"
- ```
+```
 
    * Preguntandole a un Rol especifico
 
@@ -68,3 +68,23 @@ Ejemplo (De Soledad)
 ```
 Actua como el mejor especialista en comunicacion organizacional y dame consejos fundamentales de como lograr la mejor comunicacion dentro de la empresa como especialista en rrhh. QUiero que me hagas una pregunta a la vez para conocer la empresa y obtner el mejor plan de comunicacion dentro de la empresa
 ```
+
+Tips de Contexto
+* Nuevo tema, Nueva conversacion
+* Guardar conversaciones frecuentes para no tener que repetir todo el contexto
+
+# Formato : Personalizacion de Salida
+
+* Formatos de Salida
+   * Sin Formato : "Dame una lista de las 10 mejores series policiales"
+   * Tecnicos
+      * json
+      * XML
+      * TOON
+   * Tecnico / Exportar a PDF
+      * HTML : "Dame la lista en html en un formato profesional para luego generar un pdf"
+   * Tecnico / Interactuar con Excel o Google sheets
+      * CSV (Comma Separated Values) : Dame la lista como un CSV
+         * Este es un formato MUY importante porque me permite interactuar desde y hacia excel
+   * 
+
