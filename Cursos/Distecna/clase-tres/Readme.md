@@ -62,6 +62,7 @@ Ejemplo
 ```
 Actua como un especialista en suenio, somnologo medio profesional y buenos habitos y dame tips fundamentados de como lograr una mejor salud del suenio personalizada para mi. Quiero que me hagas preguntas DE A UNA POR VEZ para conocerme y hacerme el mejor plan de suenio adapatado a mi vida. Haceme todas las pregutnas que consideres necesarias para obtener el mejor plan de suenio optimo adaptado a mi persona
 ```
+
 Ejemplo (De Soledad)
 
 ```
