@@ -115,6 +115,8 @@ N. [ACTOR N]
 ```      
       
  * Mermaid
+    * https://mermaid.live/
+    * Ideal para usarlo en Claude
 
 ```
 Armame un mermaid que muestre un diagrama de pie que muestre el presupuesto de cada una de las series
@@ -137,4 +139,61 @@ pie
     "The Killing (Nordic)" : 12
 ````
   
+Otro Ejemplo
 
+```
+Me compre un terreno y quiero hacer una casa. Armame un artefacto con mermaid el Gant de todo el proyecto hasta que este la casa terminada...
+```
+
+```mermaid
+gantt
+    title Proyecto de Construcción de Casa
+    dateFormat YYYY-MM-DD
+    
+    section Planificación y Trámites
+    Proyecto arquitectónico           :p1, 2025-01-01, 30d
+    Estudio de suelos                 :p2, after p1, 15d
+    Planos definitivos                :p3, after p2, 20d
+    Aprobación municipal              :p4, after p3, 45d
+    
+    section Preparación del Terreno
+    Limpieza del terreno              :t1, after p4, 5d
+    Replanteo y nivelación            :t2, after t1, 3d
+    Excavación para cimientos         :t3, after t2, 7d
+    
+    section Estructura
+    Cimientos y bases                 :e1, after t3, 15d
+    Columnas y vigas                  :e2, after e1, 20d
+    Losa de entrepiso (si aplica)     :e3, after e2, 12d
+    Estructura de techo               :e4, after e3, 15d
+    
+    section Albañilería
+    Levantamiento de paredes          :a1, after e4, 25d
+    Techos y cubiertas                :a2, after a1, 10d
+    Contrapisos                       :a3, after a2, 8d
+    
+    section Instalaciones
+    Instalación eléctrica             :i1, after a3, 15d
+    Instalación sanitaria             :i2, after a3, 15d
+    Instalación de gas                :i3, after i1, 8d
+    Instalación de agua               :i4, after i2, 8d
+    
+    section Terminaciones Gruesas
+    Revoques exteriores               :tg1, after i4, 20d
+    Revoques interiores               :tg2, after tg1, 25d
+    Carpeta de pisos                  :tg3, after tg2, 12d
+    Colocación de aberturas           :tg4, after tg3, 10d
+    
+    section Terminaciones Finas
+    Pintura exterior                  :tf1, after tg4, 10d
+    Pintura interior                  :tf2, after tf1, 15d
+    Colocación de pisos               :tf3, after tf2, 15d
+    Colocación de revestimientos      :tf4, after tf3, 12d
+    Mesadas y muebles de cocina       :tf5, after tf4, 8d
+    
+    section Detalles Finales
+    Sanitarios y grifería             :df1, after tf5, 5d
+    Artefactos eléctricos             :df2, after df1, 5d
+    Limpieza final                    :df3, after df2, 3d
+    Inspección y entrega              :df4, after df3, 2d
+```
