@@ -100,7 +100,29 @@ Dame una lista de actividades para hacer en mendoza. Quiero saber nombre, duraci
           * Ese html los puedo imprimir (Ctrl+P) y generar asi un pdf
     * Por Ejemplo : Exportar a Word
        * Markdown
+         * https://es.wikipedia.org/wiki/Markdown
+         * Lo usamos para crear plantillas del formato exacto en el quiero la respuesta
 
+```
+# [Titulo De LA Actividad]
+
+## Detalles
+
+* **Duracion** : [DURACION ACTIVIDAD]
+* **Precio** : [DURACION ACTIVIDAD]
+
+## Descripcion
+
+> [DESCRIPCION DE LA ACTIVIDAD]
+
+---
+```
+
+Ejemplo prompt completo
+
+```
+Dame una lista de actividades para hacer en mendoza. Quiero que respondas respetando la siguiente plantilla markdown "# [Titulo De LA Actividad] ## Detalles * **Duracion** : [DURACION ACTIVIDAD] * **Precio** : [DURACION ACTIVIDAD] ## Descripcion > [DESCRIPCION DE LA ACTIVIDAD] ---"Dame el resultado para copiar y pegar directamente sin acotar nada mas
+```
 
 # Herramientas
 
