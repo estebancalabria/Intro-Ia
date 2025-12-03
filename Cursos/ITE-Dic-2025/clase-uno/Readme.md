@@ -94,6 +94,14 @@
 * La IA Comete errores
 * Si cambio de tema ---> Iniciar una conversacion nueva para que no se confunda el contexto
 
+
+# Herramientas
+
+## Herramienta para mayor impacto visual
+
+> https://www.napkin.ai/
+* Puntaje : 10 / 10
+
 # Glosario
 
 * **Prompt** : La instruccion que uno le da al modelo de lenguaje
@@ -101,7 +109,6 @@
 * **System Prompt** : Las instrucciones generales que definen la personalidad y el objetivo del modelo de lenguaje
 
 * **Multimodal** : Un modelo multimodal es aquel que ademas de entnder texto puede entender imagenes
-
 
 
 # PENDIENTES
