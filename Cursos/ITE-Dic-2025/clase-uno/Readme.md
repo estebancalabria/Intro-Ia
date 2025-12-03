@@ -75,15 +75,30 @@
          * Integracion directa con la Suite de Google (Google Sheets, Gooogle Flights, Calednar etc)
              * Calendar
                  * Por ejemlo: "Me podes generar una tarea en mi calendario de 17:00 a 18:00 el dia de hoy que sea (Tomar un te)"
+              * Google Flights y Google Hotels
+                 * Por ejemplo : "Quiero planificar para enero 15 dias un viaje a Japon desde Valencia. Me gustaria que me busques en google flights y google hotels opciones de vuelos y alojamient"
          * Deeep Research
              * Investiga un tema en cientos de sitios web a la vez
              * 3 por mes capa gratuita
              * Tarda
                 * Por ejemplo : "Quiero una investigacion sobre novedades tributarias en territorios forales para 2025 / 2026 (Vasco y Navarra). Buscame informacion detallada y actualizada y analisis y tendencias"
-         * Generacion de Imagenes con Nano Banana
+                    * https://gemini.google.com/share/910df9f4197a
+         * Generacion de Imagenes con Nano Banana PRO
+               * El mejor generador de imagen
      * Copilot (Microsoft)
         * https://copilot.microsoft.com/
         * Por detras estamos usando ChatGPT con alguna "magia" de Microsoft
+     * Grok (X)
+       * https://grok.com/
+       * El Elon Musk
+       * El mas ironico y gracioso
+       * El que menos grado de censura tiene
+          * EJ: Haceme una imagen de Nicolas Maduro besandose con Donald Trump
+     * Perplexity
+       * https://www.perplexity.ai/
+       * Idoneo para trabajos de investigacion y seleccion de fuentes
+         * Por Ejemplo : "Quiero que me investigues sobre investigaciones realizadas sobre la identidad del pais vasco y sus costumbres"
+            * https://www.perplexity.ai/search/quiero-que-me-investigues-sobr-T.KyYXB8TqaYJeHxQHeoVw#0
   * Open Source
      * Chinos
          * Qwen
@@ -110,6 +125,7 @@
 
 * **Multimodal** : Un modelo multimodal es aquel que ademas de entnder texto puede entender imagenes
 
+* **Censura** : Lo modelos de lenguaje vienen censurados para ciertos temas
 
 # PENDIENTES
 
