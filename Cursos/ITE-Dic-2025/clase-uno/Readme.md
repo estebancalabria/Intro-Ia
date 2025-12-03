@@ -100,9 +100,15 @@
          * Por Ejemplo : "Quiero que me investigues sobre investigaciones realizadas sobre la identidad del pais vasco y sus costumbres"
             * https://www.perplexity.ai/search/quiero-que-me-investigues-sobr-T.KyYXB8TqaYJeHxQHeoVw#0
   * Open Source
+     * Famlia Llama (Meta)
+         * Se puede usar en el wsap con @MetaAI 
      * Chinos
-         * Qwen
          * DeepSeek
+             * https://www.deepseek.com/
+             * Fue un modelo del lenguaje revolucionario Open Source que rivalizo con ChatGPT
+             * Implemento nativamente el patron de prompting "Chain of Thoughts"
+             * Fue el primero con modo pensamiendo
+                * Por Ejemplo : "En una habitacion hay tres personas. Una de ellas es un asesino. Entra una cuarta persona y mata al asesino. Cuantos asesinos vivos hay ahora en la habitacion."
 
 # Notas sobre LLM
 
@@ -130,3 +136,5 @@
 # PENDIENTES
 
 * Probar la generacion de artefactos de Claude
+* Probar algo de Grok
+* Hablar de Qwen 
