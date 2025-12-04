@@ -26,6 +26,9 @@
 * Qwen
    * https://chat.qwen.ai/
     * Tambien permite personalizacion como ChatGPT
+* Grok
+  * https://grok.com/
+  * Tiene Instrucciones Personalizadas
 
 * Capitulo de South Park qye habla sobre esto que ChatGPT es super condenscendiente:
 > https://www.southpark.lat/episodios/8byci4/south-park-aprendizaje-profundo-temporada-26-ep-4
@@ -90,12 +93,36 @@ Dame una lista de bodegas de mendoza para visitar, Nombre, Direccion, TieneResta
         * (Abre dialogo/Ventana Emergente)... Upload... Elegir el archivo..
            * (Abre venta nueva)...Elegir "Replace Current Sheet")
 
+* Mermaid
+  * Idea para usar por Claude
 
+```prompt
+Haceme un diagrama de pie en mermaid que muestre el pbi por pais de america del sur
+```
+
+Salida
+
+```mermaid
+pie title PIB de América del Sur (estimación 2025)
+    "Brasil" : 1920
+    "Argentina" : 640
+    "Colombia" : 330
+    "Chile" : 300
+    "Perú" : 260
+    "Venezuela" : 120
+    "Ecuador" : 120
+    "Bolivia" : 45
+    "Paraguay" : 40
+    "Uruguay" : 35
+    "Guyana" : 20
+    "Surinam" : 10
+```
 
 # Glosario
 
 * **Vibe Coding** : Programar utilizando lenguaje natural
 
+* **System Prompt** : Las instrucciones originales que le dio el fabricante al modelo de lenguaje que controla su personalidad, su estilo, como responde. 
 
 # Seguridad en el uso de IA
 
