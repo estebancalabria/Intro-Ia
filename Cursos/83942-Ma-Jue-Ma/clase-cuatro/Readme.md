@@ -94,6 +94,8 @@ Dame una lista de bodegas de mendoza para visitar, Nombre, Direccion, TieneResta
            * (Abre venta nueva)...Elegir "Replace Current Sheet")
 
 * Mermaid
+  * https://mermaid.live/
+     * Visualizador Oficial
   * Idea para usar por Claude
 
 ```prompt
@@ -116,6 +118,12 @@ pie title PIB de América del Sur (estimación 2025)
     "Uruguay" : 35
     "Guyana" : 20
     "Surinam" : 10
+```
+
+Prompt
+
+```
+Generame un artefacto en mermaid con un flowchat con el organigrama de "blue star group"
 ```
 
 # Glosario
