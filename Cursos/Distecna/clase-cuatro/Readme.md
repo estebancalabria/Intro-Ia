@@ -22,6 +22,17 @@
 
 * Crearse una cuenta de GMAIL alternativa para probar las herramientas que vemos en el curso que despues te mandan correos para novedad
 
+# Large Language Models
+
+* Propietarios
+* Open Source
+   * LLama
+      * La que se puede usar desde el Wsap
+   * Qwen
+   * Deepseeek
+
+* https://chat.groq.com/  << Motor de Inferencia
+
 # Patrones de Prompting
 
 - ## Extension Rol : Patron de Expertos
@@ -78,6 +89,30 @@ Crearme un **stacked bar chart** en **matplotlib** que muestre un estimativo del
 
 * Los modelos de lenguaje generalemten tienen 2 formas de uso distintas.La primera es el portal web que utilizamos todos los dias. La segunta es el potal para desarrollador que permite utilizar el modelo de lenguaje internamente desde una aplicacion. 
 
+- ## Uso de la Api Key
+
+* Ir a https://console.groq.com/home y sacar una api key
+
+```python
+
+api_key = input("Ingrese su Api Key")
+prompt =  input("Ingrese su prompt")
+
+from openai import OpenAI
+import os
+client = OpenAI(
+    api_key=api_key,
+    base_url="https://api.groq.com/openai/v1",
+)
+
+response = client.responses.create(
+    input=prompt,
+    model="openai/gpt-oss-20b",
+)
+print(response.output_text)
+
+```
+
 # Herrarmientas
 
 - ## There is an AI for that
@@ -88,4 +123,14 @@ Crearme un **stacked bar chart** en **matplotlib** que muestre un estimativo del
 - ## Napkin
 
 *  https://www.napkin.ai/
-   *  Puntaje 10/10 ( 28 algunos :) )
+   *  Puntaje : 10/10 ( 28 algunos :) )
+
+- ## Text-to-Speech 
+
+* Natural Readers
+   * https://www.naturalreaders.com/
+      * Puntaje : 10 / 10
+
+
+  
+
