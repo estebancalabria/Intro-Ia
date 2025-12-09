@@ -44,3 +44,8 @@ Una landing para promocionar un negocio de ventas de accesorios de moda llamado 
 
 * Puntaje : 8 / 10
 
+## Manejar La informacion
+
+- ### NotebookLM
+
+> https://notebooklm.google.com/
