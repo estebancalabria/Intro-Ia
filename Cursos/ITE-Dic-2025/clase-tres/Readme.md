@@ -102,12 +102,21 @@ Generame en matplotlib el codigo que muestre un diagrama de lineas con la evoluc
 
 * Puntaje : 10 / 10
 
-
 --- 
 
 # IA Generativa Multi Media : Generar Imagenes
 
+> Tip: Los prompts para generacion de imagenes en general funcionan mejor en ingles y se pueden generar en ChatGPT
+
  - ## Leonardo AI
 
- - 
+* Generando imagenes a partir de Texto...
 
+> https://leonardo.ai/
+
+- ## Ideogram
+
+* Generar imagen con texto
+
+> https://ideogram.ai/
+- 
