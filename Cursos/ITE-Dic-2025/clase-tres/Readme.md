@@ -64,3 +64,50 @@ Dame una lista de 10 libros clasicos que deberia leer antes de morir
 * Personaje N
 ---
 ```
+
+* Mermaid
+  * Lenguaje para generar Diagramas
+     * https://mermaid.live
+  * Claude puede previsualizar Mermaid como artefacto.
+
+* Ejempo diagrama flowchart
+```
+Generame un digrama mermaid de flowchart para mostrar el organigrama del gobierno de Espania
+```
+
+* Ejempo diagrama de PIE
+```
+Haceme un artefacto con un diagrama pie en mermaid del pib de los paises de Euorpa (modo claro)
+```
+
+* Cualquier lenguaje de programacion
+
+```
+Generame en matplotlib el codigo que muestre un diagrama de lineas con la evolucion del PIB de espania en los ulitmos 15 anios.
+```
+
+---
+
+# Herramientas de IA
+
+## Generacion de Presentaciones
+
+> https://gamma.app/signup?r=cjucljp9heegmkv
+
+* Generamos esta presentacion
+
+ > https://gamma.app/docs/Requerimientos-Fiscales-en-los-Paises-Vascos-g2b81q50y577rg0
+
+* Tambien podemos generar Sitios Web
+
+* Puntaje : 10 / 10
+
+
+--- 
+
+# IA Generativa Multi Media : Generar Imagenes
+
+ - ## Leonardo AI
+
+ - 
+
