@@ -49,3 +49,33 @@ Una landing para promocionar un negocio de ventas de accesorios de moda llamado 
 - ### NotebookLM
 
 > https://notebooklm.google.com/
+
+* Video Generado
+ *  https://notebooklm.google.com/notebook/2e38daac-0ad7-453c-8f4f-ef96b9b472d8?artifactId=3965538f-6a97-4100-9c1b-293848156f74
+
+* Puntaje Preliminar : 10 / 10 
+
+# IA Generativa Multimedia
+
+- ## Leonardo AI
+
+* Casos de Uso
+ * Generacion de Imagenes a partir de texto
+ * Generacion de imagenes a partir de otras imagenes
+
+> https://leonardo.ai/
+
+* Puntaje: 10 / 10
+
+- ## Ideogram
+
+* Generacion de Imagenes con Texto
+
+> https://ideogram.ai/
+
+* Puntaje : 8 / 10 (Porque se queda sin creditos muy rapido)
+
+# Tarea para el hogar
+
+**Crearse una cuenta en hugging face**
+> https://huggingface.co/
