@@ -42,4 +42,25 @@ Dame una lista de 10 libros clasicos que deberia leer antes de morir
       * CSV
         * Se puede abrir con el google sheets : sheets.google.com
     * Especificar la salida en una plantilla
-        * 
+        * Ideal utilizar el formato markdown
+
+```
+# [Titulo]
+
+## Detalle
+
+* **Año** : [Año PUBLICACION]
+* **Autor** : [Autor]
+
+## Trama
+
+> [Resumen de la trama]
+
+## Personajes
+
+* Personaje 1
+* Personaje 2
+...
+* Personaje N
+---
+```
