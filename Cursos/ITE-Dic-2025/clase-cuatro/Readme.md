@@ -86,13 +86,14 @@
 
  > https://www.udio.com/home
 
-- ### Suno
-
-
-
 # Experimentos de Google...
 
 * https://labs.google.com/mixboard/welcome
 
 > Estar atentos a los experimentos de Google que siempre salen novedades!
  
+# Proxima Clase...
+
+Vemos Suno...
+
+
