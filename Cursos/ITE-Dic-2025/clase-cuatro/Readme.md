@@ -60,7 +60,19 @@
 
 - ## Generacion de Videos
 
-* Artisticos
+- ### Artisticos
+
+* Pollo.AI
+  * https://pollo.ai/invitation-landing?invite_code=dIOOD7
+  * Soporta
+    * Imagen A Video
+       * Por lo general primero se crea una imagen y luego a partir de ella se hace un video.
+    * Texto A Video
+    * Video a Video
+* Grok
+   * Imagen a Video
+      * https://grok.com/imagine
+
 * Empresariales
 
 - ## Generacion de Canciones
