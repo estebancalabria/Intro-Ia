@@ -21,7 +21,7 @@ necesaria para realizar el menu optimo para mi persona procede con la generacion
 
 * Tip importante : Solicitar que las preguntas me las haga **DE A UNA**
 
-- ##Patron de Prompting : Personalizacion de Salida
+- ## Patron de Prompting : Personalizacion de Salida
 
 * Sin Formato
 
