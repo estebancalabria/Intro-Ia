@@ -34,9 +34,22 @@
 
 > https://notebooklm.google.com/
 
+* Puntaje : 10 / 10
+
 # IA Generativa Multi Media
 
 - ## Generacion de Imagenes
+
+* Hasta ahora vimos:
+   * LeonardoAI
+   * Ideogram
+   * Nano Banana
+      * Nano Banana y Nano Banana Pro hoy en dia estan catalogados como el mejor para generar/modificar imagenes
+      * Destaja (con un buen prompt) de modificar imagenes existentes.
+      * Secreto para que no modifique el rostro decir "respetando los rasgos y caracteristicas faciales "
+      * Secillo para acceder directamente desde la interfaz de Gemini
+  * 
+
 - ## Generacion de Videos
 
 * Artisticos
