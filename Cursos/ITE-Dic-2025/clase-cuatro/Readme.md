@@ -48,7 +48,15 @@
       * Destaja (con un buen prompt) de modificar imagenes existentes.
       * Secreto para que no modifique el rostro decir "respetando los rasgos y caracteristicas faciales "
       * Secillo para acceder directamente desde la interfaz de Gemini
-  * 
+  * Microsoft Designer
+     * Requiere cuenta de microsoft
+     * https://designer.microsoft.com/
+     * Competencia de Canva con mas IA
+     * Puntaje :  10 / 10
+  * Imagenes Hiper Realistas
+     * No disponible en Spain
+     * https://labs.google/fx/tools/image-fx
+
 
 - ## Generacion de Videos
 
@@ -56,3 +64,10 @@
 * Empresariales
 
 - ## Generacion de Canciones
+
+# Experimentos de Google...
+
+* https://labs.google.com/mixboard/welcome
+
+> Estar atentos a los experimentos de Google que siempre salen novedades!
+ 
