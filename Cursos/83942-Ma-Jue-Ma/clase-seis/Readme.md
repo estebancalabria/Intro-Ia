@@ -43,19 +43,25 @@
 
 * Spaces de Hugging Face
   * https://huggingface.co/spaces/black-forest-labs/FLUX.2-dev
-  * https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell
- 
+  * https://huggingface.co/space
+  * s/black-forest-labs/FLUX.1-schnell
+
+- ## Generacion de Videos Institucionales
+
+> https://www.heygen.com/
 
 ## Rannkig de Mejores Herramientas (segun el profe)
 
-* LLM Open Source     => Qwen
-* LLM Propietario     => Gemini 3  (Siempre ver LM Arena) 
-* Para Presentaciones => Gamma
-* Para documentos     => NotebookLM
-* Generar Imagenes    => LeonardoAI / NanoBanana
-* Generar Videos      => Pollo.AI / Grok
-* Generar Voces       => ElevenLAbs (Pago) / Coquitts
-* Programar           => Claude
+* LLM Open Source                  => Qwen
+* LLM Propietario                  => Gemini 3  (Siempre ver LM Arena) 
+* Para Presentaciones              => Gamma
+* Para documentos                  => NotebookLM
+* Generar Imagenes                 => LeonardoAI / NanoBanana
+* Generar Videos Artistico         => Pollo.AI / Grok
+* Generar Videos Institucionales   => HeyGen
+* Generar Voces                    => ElevenLAbs (Pago) / Coquitts
+* Programar                        => Claude
+* Procedar Datos                   => Machine Learning
 
 ## Herramientas de IA
 
@@ -65,6 +71,12 @@
 
 # Hugging Face
 
-
+> https://huggingface.co/
 
 # MAchine Learning
+
+* Instalar el Simple ML For Sheets
+      * https://simplemlforsheets.com/
+* Abrir un documento de Google Sheets en Blanco
+* Ir a Kaggle y loguearse
+      * Bajar el Dataset de Titanic de : https://www.kaggle.com/datasets/brendan45774/test-file
