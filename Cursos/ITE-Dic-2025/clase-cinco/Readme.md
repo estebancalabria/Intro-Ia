@@ -48,3 +48,16 @@
 
 > https://huggingface.co/
 
+# Machine Learning
+
+* Explicacion Teorica : https://www.instagram.com/p/C1ntRrRswAu/?img_index=1
+
+* Crear documento de Google Sheets en Blanco
+* Registrarse e Kaggle
+      * Descargarse el dataset de titanic : https://www.kaggle.com/datasets/brendan45774/test-file/data
+* Importar el dataset en un planilla de google sheets
+* Hacer una copia de los datos originales en otro libro
+* Cambiar las columnas Age y Fare a tipo Number (para que despues funcione todo)
+* Instalar la extesion de google sheets Simple ML For Sheets
+   * https://workspace.google.com/marketplace/app/simple_ml_for_sheets/685936641092
+* Borrar el contenido de la columna survived para los 25 primeros pasajeso
