@@ -34,6 +34,16 @@
 
 * Puntaje : 10/10
 
+- ## Generacion de Imagenes para personajes consistentes : Artflow
+
+> app.artflow.ai/ref/b9b23e05bd
+
+- ## Generacion de Videos Institucionales : HeyGen
+
+> https://heygen.com/
+
+* Puntaje : 10 / 10
+
 # Hugging Face (Puerta al mundo Open Source)
 
 > https://huggingface.co/
