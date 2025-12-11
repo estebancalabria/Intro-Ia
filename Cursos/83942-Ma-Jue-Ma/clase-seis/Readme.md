@@ -46,8 +46,10 @@
   * https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell
  
 
-## Rannkig de Herramientas segun el profe
+## Rannkig de Mejores Herramientas (segun el profe)
 
+* LLM Open Source     => Qwen
+* LLM Propietario     => Gemini 3  (Siempre ver LM Arena) 
 * Para Presentaciones => Gamma
 * Para documentos     => NotebookLM
 * Generar Imagenes    => LeonardoAI / NanoBanana
