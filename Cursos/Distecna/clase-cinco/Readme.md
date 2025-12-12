@@ -66,3 +66,32 @@ Funciona Offline
 https://camotext.ai/
 
 ---
+
+# IA Generativa : Imagenes
+
+* Explicacion de como funcionan los modelos de Generacion de Imagenes :
+   *  https://www.instagram.com/p/DRSGNZFgafh/
+*  Los prompts de los programas de generacio de imagenes/video generalmente andan mejor en ingles
+
+* Modelos:
+ * Nano Banana y Nano Banana Pro
+    * Ideal para modificar imagenes
+    * Se usa desde la interfaz de Gemini...
+
+- ## Leardo.AI
+
+> https://leonardo.ai/
+
+* TExto a Imagen
+```
+```
+
+# Labotatorios de Google
+
+> https://labs.google/
+
+- ## Mixboard
+
+> https://labs.google.com/mixboard/welcome
+
+* Puntaje : 10 / 10
