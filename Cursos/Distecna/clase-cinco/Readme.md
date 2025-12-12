@@ -18,4 +18,4 @@
 
  # Herramientas
 
- - ## NotebookLM  
+ - ## NotebookLM  (LA herramienta de moda del momento)
