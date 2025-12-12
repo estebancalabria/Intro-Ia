@@ -41,7 +41,9 @@
  * Ver resumen de herramientas en : https://www.instagram.com/p/DBzb-kHxqae/?img_index=1
  * Ejemplo : Taqtic : https://tactiq.io/es
 
-- ## Anondocs (Para anonimizar documentos)
+- ## Anonimizacion de Documentos
+
+ ### Anondocs (Para anonimizar documentos)
 
 * https://anondocs.aismarttalk.tech/
 
@@ -57,3 +59,10 @@ Y Da como resultado
 Le vamos a vender un cpu asus al cliente [NAME] con [ID] que vive en [ADDRESS] que tiene en su cuenta bancaria [FINANCIAL] pesos argentinos y en su historia clinica figuta que tiene [MEDICAL] y ademas tiene dos hijos.
 ```
 
+### CamoText
+
+Funciona Offline
+
+https://camotext.ai/
+
+---
