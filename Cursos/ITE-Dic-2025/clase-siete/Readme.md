@@ -72,10 +72,28 @@ GEM Coach: "Comprendo. Sientes que actualmente no te escuchan lo suficiente. ¿Q
 Quiero armar un manual de procedimiento y entrenamiento para un coach profesional. El manual debe contener tambien toda la base teorica que debe conocer un coach profesiona junto con las ultimas tecnicas y avances en esta disciplina. En manual debe resumir los tips y las acciones que debe tener un coach profesional expermientado que se decdico toda la vida a esta disciplina y es reconocido como una eminencia en el coaching.
 ``
 
+> El manual de procedimientos lo vamos a cargar como conocimiento en nuetro GEM
+
+* Ideas de GEMS
+   * Gem especializado en el manual de procedimiento de la organizacion
+
+# LMStudio 
+
+* Permite ejecutar modelos de lenguaje localmente (en mi computadora)
+
+> https://lmstudio.ai/
+
 # ChatBots
 
 > Botpress
 
+* https://botpress.com/
+  
+* Generamos las instrucciones peronalizadas con Gemini
+
+```
+Generame las instrucciones personalizadas para un chatbot de botpress que funcione como reseva e informacion de un hotel bastante lujoso. Debe tomar reservas, informar sobre las habitaciones disponibles, informar horarios de checkin, chechout, informacion del hotel. ETC. Podes sentirte libre de completar la informacion faltante ya que estas instrucciones personalizadas son un ejemplo.
+```
 
 # Ranking de Herramientas
 
@@ -84,4 +102,8 @@ Quiero armar un manual de procedimiento y entrenamiento para un coach profesiona
 * Notebook
 * Napkin
 * HeyGen
-* 
+* LeonardoAI
+* Pollo.Ai
+* Nano Banna
+* Make / n8n
+* Lovart
