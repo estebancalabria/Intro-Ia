@@ -55,6 +55,8 @@
           * Ejemplo : "Me podes programar un artefacto que sea el juego pong en html y javascript. El jugador de la derecha se mueve con las teclas de cursor y el de la izquierda con la a y la z. Lleva el puntaje. La barra espaciadora pausa el juego y permite tambien reiniciar. Incoporar efectos de particulas y efectos visuales para que sea una version moderna y epica. "
                 * https://claude.ai/public/artifacts/d4f4f84a-8ac0-4e41-aada-3a473eced7b3
     * Tiene "Artefactos"
+    * Fue el primero Multi Modal
+          * Ejemplo : "Me podes explicar la imagen y extraer el texto de la misma"
 * Copilot
    * No es un modelo de lenguaje nuevo sino que por detras usa ChatGPT
    * Microsoft posee el 49% de las acciones de OpenAI
@@ -90,4 +92,4 @@
 # Glosario
 
 * Prompt : Instruccion que uno le da al modelo de lenguaje
-* 
+* Multi Modalidad : Capacidad de interpretar imagenes ademas de texto  
