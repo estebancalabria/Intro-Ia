@@ -25,7 +25,7 @@
     * Resumen
     * Tracuccion
 * Promero creo el servicio en Azure
-* https://language.cognitive.azure.com/home
+* Luego lo utilizo en su portal especializado : https://language.cognitive.azure.com/home
 
 - ## Speech Service
 
@@ -34,5 +34,19 @@
     * Traducir la voz
     * Avatar hablando (No lo termino)
 * Promero creo el servicio en Azure
-* https://speech.microsoft.com/
- 
+* Luego lo utilizo en su portal especializado : https://speech.microsoft.com/
+
+ - ## Machine Learning
+
+* Esto lo podemos hacer en nuestra computadora sin Azure
+  * La pregunta es entonces poque usar Azure si lo puedo hacer en mi computador
+  * Cuando trabajamos en entornos empresariales las computadoras personales no tienen la suficiente capacidad de procesamiento para trabajar con tantos datos en un tiempo prudencial
+* Permite entrenar modelos de ML en Python y de forma No-Code
+* Promero creo el servicio en Azure
+* Luego lo utilizo en su portal especializado :  https://ml.azure.com/
+
+- ## Document Intelligence
+
+* Extraer texto desde Documentos
+* Promero creo el servicio en Azure
+* Luego lo utilizo en su portal especializado :  https://contentunderstanding.ai.azure.com/
