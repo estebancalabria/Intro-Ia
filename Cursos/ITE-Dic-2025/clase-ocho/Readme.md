@@ -37,8 +37,8 @@
 > 
 
 * 75% de las preguntas estan orientadas al uso de Etico de la IA
- * https://www.microsoft.com/en-us/ai/principles-and-approach
- * https://www.instagram.com/p/DOqu-k8Dvfb/?img_index=1
- * 
+  * https://www.microsoft.com/en-us/ai/principles-and-approach
+  * https://www.instagram.com/p/DOqu-k8Dvfb/?img_index=1
+  
 
 
