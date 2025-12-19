@@ -35,12 +35,13 @@
     * Ideal para investigaciones cientificas
     * El mejor en el tema de citar fuentes de donde saca la informacion
         * Ejemplos "Quiero hacer una investigacion actualizada sobre la calvicien en estados unidos, su evolucion, si aumenta con el tiempo, disminuye, los factores ambientales." (Elegir solo fuentes academicas)
-        * 
+    
     
 
 # Novedades
 
-- Tesis de Leo ente repo : Cursos/81560-Mar-Vie-Ma/clase-dos/montesano 2014.pdf
+* Tesis de Leo ente repo : Cursos/81560-Mar-Vie-Ma/clase-dos/montesano 2014.pdf
+* Sobre la deuda cognitiva : https://www.researchgate.net/publication/392560878_Your_Brain_on_ChatGPT_Accumulation_of_Cognitive_Debt_when_Using_an_AI_Assistant_for_Essay_Writing_Task
  
  # Glosario
 
@@ -48,4 +49,4 @@
 * Tokens : Una palabra, silaba que es la unidad de medida / prediccion del modelo de lenguaje
     * https://platform.openai.com/tokenizer
     * Descubriminto : No es lo mismo todo en MAYUSUCula que todo en todo en minuscula. La primera consume mas tokens
-    * 
+* Deuda Cognitiva: hablamos de eso... 
