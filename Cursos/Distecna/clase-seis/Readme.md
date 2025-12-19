@@ -72,6 +72,17 @@ Generame un script para la herramienta hey gen para presentar el plan comercial 
 
 * Puntuacion : 8 / 10
 
+- ## Pollo.ai
+
+* Te permite generar video en los modelos mas populares
+   * Veo 3
+   * Sora 2
+   * El modelo nativo de ellos Pollo
+
+> https://pollo.ai/home
+
+* Puntaje : 8 / 10
+
 # Herramientas de Productivdad
 
 - ## Gamma
