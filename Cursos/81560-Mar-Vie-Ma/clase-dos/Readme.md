@@ -35,7 +35,21 @@
     * Ideal para investigaciones cientificas
     * El mejor en el tema de citar fuentes de donde saca la informacion
         * Ejemplos "Quiero hacer una investigacion actualizada sobre la calvicien en estados unidos, su evolucion, si aumenta con el tiempo, disminuye, los factores ambientales." (Elegir solo fuentes academicas)
-    
+* Copilot
+   * https://copilot.microsoft.com/
+   * Microsoft no tiene su propio LLM
+   * Es una version custimazada de ChatGPT pero muy etica
+   * Ideal para que lo usen los ninios, lo mas eticos, censurado y policamente correcto
+
+### Riesgos de modelos propietarios
+
+* Dependencia de la conectividad
+* Privacidad de los datos
+   * No ingresar nunca informacion sensible en los modelos de lenguaje
+   *https://www.instagram.com/p/DOqu-k8Dvfb/?img_index=1
+* Si las empresas se ponen de acuerdo y te cobran 10000 millones de dolares por usar sus modelos no podes haer nada 
+
+- ## Modelos Open Source
     
 
 # Novedades
