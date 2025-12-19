@@ -35,6 +35,7 @@
     * Ideal para investigaciones cientificas
     * El mejor en el tema de citar fuentes de donde saca la informacion
         * Ejemplos "Quiero hacer una investigacion actualizada sobre la calvicien en estados unidos, su evolucion, si aumenta con el tiempo, disminuye, los factores ambientales." (Elegir solo fuentes academicas)
+        * 
     
 
 # Novedades
