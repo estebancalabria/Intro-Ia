@@ -40,7 +40,7 @@
 
 # Novedades
 
-- Tesis de Leo : 
+- Tesis de Leo ente repo : Cursos/81560-Mar-Vie-Ma/clase-dos/montesano 2014.pdf
  
  # Glosario
 
