@@ -45,6 +45,20 @@ Haceme un analisis sobre el consumo en redes sociales de adolescentes en buenos 
 
 > https://lmstudio.ai/
 
+* Permite bajar modelos de lenguaje Open Source a mi computadora para ejecutarlo localmente offline
+* Esta bueno tener una buena GPU (Placa de Video)
+* Los LLM open source se bajan de Hugging Face
+
+- ## Repositorio de Modelos Open Source
+
+* El github de los modelos de modelos de IA Open Source
+* Hay modelos de lenguaje y todo tipo de modelos, generacion de imagenes, etc...
+* Crear una cuenta
+* En https://huggingface.co/spaces se pueden probar los modelos que van subiendo
+         * Ejemplo : https://huggingface.co/spaces/microsoft/TRELLIS.2
+  
+> https://huggingface.co/
+
 # Prompt Engineering
 
 
