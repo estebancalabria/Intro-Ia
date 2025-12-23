@@ -39,6 +39,11 @@
 ```
 Haceme un analisis sobre el consumo en redes sociales de adolescentes en buenos aires en Zona Oeste
 ```
+* Hay leaderboard con todo lo que vota la gente
+
+- ## Ejecutar modelo Localmente (offline)
+
+> https://lmstudio.ai/
 
 # Prompt Engineering
 
