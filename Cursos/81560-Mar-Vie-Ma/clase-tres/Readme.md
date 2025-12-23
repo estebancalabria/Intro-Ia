@@ -65,10 +65,16 @@ Haceme un analisis sobre el consumo en redes sociales de adolescentes en buenos 
 
 - ## Tips Prompt Egineering
 
+* Darle a ChatGPT toda la informacion de contexto que se me ocurra. Esta bueno utilizar el modo voz.
+* Doble Promting : Usar el mismo ChatGPT como Prompt Engineering
+* Pedirle que te haga las preguntas DE A UNA.
+* Pedirle. "Dame la respuesta para copiar y pegar sin acotar nada"
+      * Dame un mail para pedir un aumento inventando todo. Dame solamente la respuesta para copiar y pegar sin acotar nada.
+
 - ## Patron Persona
 
 * 3 Solapas de Chrome
-      *  "Proponeme una receta de un trago para una fiesta familiar en navidad"
+      * "Proponeme una receta de un trago para una fiesta familiar en navidad"
       * "Quiero que actues como bartender experto con varias estrellas michelin con mucha experiencia en armado de tragos y expecialista en el tema. .Proponeme una receta de un trago para una fiesta familiar en navidad"
       * Actua como Joaquin Levinton .Proponeme una receta de un trago para una fiesta familiar en navidad
 * Panel de Expertos
@@ -77,8 +83,28 @@ Haceme un analisis sobre el consumo en redes sociales de adolescentes en buenos 
       * https://github.com/f/awesome-chatgpt-prompts
       * https://github.com/estebancalabria/Intro-Ia/tree/main/Prompt%20Engineering/Patrones%20de%20Prompting/Persona
 
-- ## PAtron Interaccion
+- ## Patron Interaccion
 
+* Consiste en pedirle a la IA que te haga preguntas para obtener toda la informacion de contexto necesaria.
+* Parron para manejar el contexto
+   * Armarme la dieta del dia
+   * Armamr la dieta del dia como un experto en nutricion (Rol/Persona)
+   * Quiero que me armes el menu para la cena navideña. Haceme preguntas DE A UNA para obtener toda la informacion necesaria para armarme la cena optima. No escatimes en preguntas. Recien cuando tengas toda la informacion necesaria procede a armarme el menu.  (Patron interaccion)
+
+- ## Patron de Personalizacion de Salida
+
+* Busca respuestas del LLM mas deterministas especificando en forma precisa como quiero la salida
+* Primero le pedimos al LLM una lista de algo y luego se la vamos pidiendo en distintos formatos
+   * Dame una lista de series estreno en 2026 que me tengo que reservar para ver. Quiero el titulo, actores principales, origen, genero, plataforma
+* Formatos 
+   * Tecnicos
+      * JSON
+         * Dame la lista en json
+      * XML
+         * Dame la lista en XML
+   * Ideal Exportar a PDF
+      * HTML
+         * Dame la lista en html con un disenio moderno y elegante para luego exportarlo a pdf
 
 # Glosario
 
