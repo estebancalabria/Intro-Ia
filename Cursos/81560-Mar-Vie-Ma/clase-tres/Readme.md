@@ -61,6 +61,20 @@ Haceme un analisis sobre el consumo en redes sociales de adolescentes en buenos 
 
 # Prompt Engineering
 
+* Teoria : https://www.instagram.com/p/C5MDsQiR5cG/?img_index=1
+
+- ## Tips Prompt Egineering
+
+- ## Patron Persona
+
+* 3 Solapas de Chrome
+   *  "Proponeme una receta de un trago para una fiesta familiar en navidad"
+   * "Quiero que actues como bartender experto con varias estrellas michelin con mucha experiencia en armado de tragos y expecialista en el tema. .Proponeme una receta de un trago para una fiesta familiar en navidad"
+   * Actua como Joaquin Levinton .Proponeme una receta de un trago para una fiesta familiar en navidad
+
+
+- ## PAtron Interaccion
+
 
 # Glosario
 
