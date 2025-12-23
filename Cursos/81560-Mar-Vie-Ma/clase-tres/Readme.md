@@ -68,10 +68,14 @@ Haceme un analisis sobre el consumo en redes sociales de adolescentes en buenos 
 - ## Patron Persona
 
 * 3 Solapas de Chrome
-   *  "Proponeme una receta de un trago para una fiesta familiar en navidad"
-   * "Quiero que actues como bartender experto con varias estrellas michelin con mucha experiencia en armado de tragos y expecialista en el tema. .Proponeme una receta de un trago para una fiesta familiar en navidad"
-   * Actua como Joaquin Levinton .Proponeme una receta de un trago para una fiesta familiar en navidad
-
+      *  "Proponeme una receta de un trago para una fiesta familiar en navidad"
+      * "Quiero que actues como bartender experto con varias estrellas michelin con mucha experiencia en armado de tragos y expecialista en el tema. .Proponeme una receta de un trago para una fiesta familiar en navidad"
+      * Actua como Joaquin Levinton .Proponeme una receta de un trago para una fiesta familiar en navidad
+* Panel de Expertos
+      * Quiero analizar el consumo de los adolescentes en redes sociales de los ardolescentes de Zona Oeste de Gran Buenos Aires. Me gustarias que busques y que armes un panel de expertos con distintos roles y que cada experto de su vision y opinion del tema. Quiero al menos 10 expertos en materias distintas.
+* Repositorio de Prompts
+      * https://github.com/f/awesome-chatgpt-prompts
+      * https://github.com/estebancalabria/Intro-Ia/tree/main/Prompt%20Engineering/Patrones%20de%20Prompting/Persona
 
 - ## PAtron Interaccion
 
