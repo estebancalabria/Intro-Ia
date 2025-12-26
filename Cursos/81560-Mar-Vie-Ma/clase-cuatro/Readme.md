@@ -171,6 +171,31 @@ plt.show()
 
 * Lo previsualizo en Colab
 
-# Notebook LM (La herramienta del momento)
+# Herramientas de Productividad
+
+- ## Notebook LM (La herramienta del momento)
+
+* Le cargo algunos documentos y me arma un espacio de trabajo para interactuar con los mismos
+* Examenes
+* Infografias
+* Resumenes de Audio
+* Resumenes de Video
+* Presentaciones tipo ppt
 
 > https://notebooklm.google.com/
+
+* Puntaje : 10 / 10
+
+- ## Convertir Video/Audio/Reunion -> Texto : Taqtiv
+
+* Hay Varias Herramientas : https://www.instagram.com/p/DBzb-kHxqae/?img_index=1
+* https://tactiq.io/es
+
+* Puntaje : 10 / 10
+
+- ## Convetir Youtube -> Texto : Generador de Transcripciones sin Limite para YouTube
+
+* https://chromewebstore.google.com/detail/unlimited-summary-generat/eelolnalmpdjemddgmpnmobdhnglfpje
+* Puntaje :  10 / 10
+
+  
