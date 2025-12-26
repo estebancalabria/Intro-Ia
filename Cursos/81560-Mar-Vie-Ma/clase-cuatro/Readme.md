@@ -170,3 +170,7 @@ plt.show()
 ```
 
 * Lo previsualizo en Colab
+
+# Notebook LM (La herramienta del momento)
+
+> https://notebooklm.google.com/
