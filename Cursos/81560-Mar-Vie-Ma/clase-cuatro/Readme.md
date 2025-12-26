@@ -41,7 +41,66 @@ Dame la lista en formato csv
 * Creo un documento de google sheets en : https://sheets.google.com/
   * File...Import...Upload...Replace Current Sheet
 
-- ## Personalizacion de Salida : Markdown 
+- ## Personalizacion de Salida : Plantillas con Markdown 
+
+* Permite definir una plantilla con el formato exacto en el quiero la salida
+* Aumenta determinismo de la IA
+* Markdown : https://es.wikipedia.org/wiki/Markdown
+* Ejemplo de plantilla mardkdown
+* Te ahorra horas de formateo a mano
+
+```
+# [Titulo Serie]
+
+## Informacion
+
+* **Plataforma** : [PLATAFORMA DONDE SE EMITE]
+* **Fecha** : [FECHA DE RELEASE]
+* **Genero** : [GENERO DE LA SERIE]
+* **Temporadas** : [CANTIDAD TEMPORADAS]
+
+## Actores
+
+* Actor 1
+* Actor 2
+* ...
+* Actor N
+
+## Argumento
+
+> [ARGUMENTO SERIE]
+
+---
+```
+* El prompt completo
+```
+Devolveme las series utilizando esta plantilla "
+# [Titulo Serie]
+
+## Informacion
+
+* **Plataforma** : [PLATAFORMA DONDE SE EMITE]
+* **Fecha** : [FECHA DE RELEASE]
+* **Genero** : [GENERO DE LA SERIE]
+* **Temporadas** : [CANTIDAD TEMPORADAS]
+
+## Actores
+
+* Actor 1
+* Actor 2
+* ...
+* Actor N
+
+## Argumento
+
+> [ARGUMENTO SERIE]
+
+---" devolveme la lista para copiar y pegar sin acotar nada mas
+```
+* Se puede poner en un google docs aca : https://docs.google.com/
+
+# Personalizaciond de Salida : Mermaid
+
+* 
 
 
-#
