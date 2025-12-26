@@ -125,4 +125,48 @@ pie title Series más populares de la historia (distribución estimada)
 
 * Lo probamos en Claude con sus artefactor
 
+- ## Personalizacion de Salida : Codigo Fuente
 
+* https://colab.google/
+* https://matplotlib.org/
+* https://matplotlib.org/stable/gallery/index
+
+```
+Me podes generar un codigo en python que use matplotlib para mostar un "stacked bar chard" que muestre el pbi de la argentina discbiminado por mayores y menores de 30 los ultimos 5 anios
+```
+
+* Esto me genero este codigo
+
+```python
+import matplotlib.pyplot as plt
+
+# Años
+years = ['2020', '2021', '2022', '2023', '2024']
+
+# PBI estimado (valores ficticios, en miles de millones de USD)
+pbi_under_30 = [150, 160, 170, 175, 180]
+pbi_over_30 = [350, 370, 390, 405, 420]
+
+# Crear el gráfico
+plt.figure(figsize=(10, 6))
+
+plt.bar(years, pbi_under_30, label='Menores de 30')
+plt.bar(years, pbi_over_30, bottom=pbi_under_30, label='Mayores de 30')
+
+# Etiquetas y título
+plt.title('PBI de Argentina por grupo etario (estimado)')
+plt.xlabel('Año')
+plt.ylabel('PBI (miles de millones USD)')
+plt.legend()
+
+# Mostrar valores en las barras (opcional)
+for i in range(len(years)):
+    total = pbi_under_30[i] + pbi_over_30[i]
+    plt.text(i, total + 5, str(total), ha='center')
+
+plt.tight_layout()
+plt.show()
+
+```
+
+* Lo previsualizo en Colab
