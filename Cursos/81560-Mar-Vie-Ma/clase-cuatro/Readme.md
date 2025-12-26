@@ -99,7 +99,28 @@ Devolveme las series utilizando esta plantilla "
 ```
 * Se puede poner en un google docs aca : https://docs.google.com/
 
-# Personalizaciond de Salida : Mermaid
+# Personalizaciond de Salida : Mer
+maid
+
+*  https://mermaid.live/
+*  Ideal para utilizar con Claude
+
+* En ChatGPT
+```
+Generame un diagrama de pie en mermaid con las 6 series de mas populares de toda la historia distribuidas por popularidad
+```
+* Me genera esto
+```mermaid
+pie title Series más populares de la historia (distribución estimada)
+    "Game of Thrones" : 22
+    "Breaking Bad" : 18
+    "Friends" : 17
+    "The Simpsons" : 16
+    "Stranger Things" : 14
+    "The Sopranos" : 13
+
+```
+
 
 * 
 
