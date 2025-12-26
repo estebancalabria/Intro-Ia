@@ -109,7 +109,9 @@ maid
 ```
 Generame un diagrama de pie en mermaid con las 6 series de mas populares de toda la historia distribuidas por popularidad
 ```
+
 * Me genera esto
+
 ```mermaid
 pie title Series más populares de la historia (distribución estimada)
     "Game of Thrones" : 22
@@ -121,7 +123,6 @@ pie title Series más populares de la historia (distribución estimada)
 
 ```
 
-
-* 
+* Lo probamos en Claude con sus artefactor
 
 
