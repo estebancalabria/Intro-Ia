@@ -1,6 +1,6 @@
 # Clase Tres - 23 de Diciembre de 2025
 
-# Repase
+# Repaso
 
 * Large Language Models
     * Modelos Propietarios
