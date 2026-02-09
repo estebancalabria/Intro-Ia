@@ -1,6 +1,6 @@
 # Clase Dos - 9 de Febrero 2025
 
-# Large Language Models
+# Large Language Models (LLM)
 
 * Propietarios
   * Gemini
@@ -32,6 +32,29 @@
      * Se usa en el ambito cientifico y de investigacion
      * Permite discriminar fuentes y utilizar fuentes cientificas
      * ""Mejores rutinas para el gym para personas mayores de 45 años fundamentado con fuentes academicas""
+* Open Source
+   * Americanos
+     * Familia Llama (Meta/Facebook)
+       * En wsap esta como contacto de whatapp o lo podes invocr en una conversacion con @meta
+       * Los que se usan en los rayban meta : https://www.youtube.com/watch?v=E1LW_MteTho
+     * Gemma (Los Open Source de google)
+      * Antes se podian probar en esta pagina : https://aistudio.google.com/
+   * Chinos
+     * DeepSeek
+        * https://www.deepseek.com/en/
+        * https://chat.deepseek.com/
+        * Fue el primero en introducir el "Modo Pensamiento" Que se usa para cuando necesito razonamiento logico, ej  problemas de matematica
+          * Por detras utiliza una tecniica de prompt engineering que se llama "Cadena de pensamiento"
+          * "Hay tres personas en una habitacion. Uno de ellos es un asesino. Entra una cuarta persona y mata al asesino. Cuantos asesinos vivos quedan ahora en la habitacion?"
+     * Qwen
+       * https://chat.qwen.ai/
+       * Hecho por Alibaba
+       * Es la copia de ChatGPT pero Open Source
+          * Tiene Memoria
+          * Instrucciones peronalizadas
+        * Por defecto no es tan condescendiente y amigable como ChatGPT
+        * Lo podes usar un monton sin limite (no le encontre el limite de uso)
+       * 
 
 #  Modulo 3 : Herramientas
 
@@ -44,11 +67,20 @@
   
 * Puntaje :  8 / 10
 
+# Modulo 4 : IA Generativa
+
+Vimos Grok
+
 # Glosario
 
 * MultiModal : Ademas de entender Texto, puede entender imagenes, documentos
 * No Determinismo de La IA : Ante un mismo prompt la ia no da dos veces la misma respuesta.
 * Vibe Coding : Programar con lenguaje natural
+
+# Consultas
+
+* Como paso de un llm el conocimiento que tiene de mi para otro LLM
+  * "Basado en tu memoria quiero que me geners un documento que me permita exportar la misma a otro LLM."
 
 # Recordar
 
