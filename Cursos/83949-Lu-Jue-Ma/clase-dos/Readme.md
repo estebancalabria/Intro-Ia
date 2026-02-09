@@ -32,6 +32,11 @@
      * Se usa en el ambito cientifico y de investigacion
      * Permite discriminar fuentes y utilizar fuentes cientificas
      * ""Mejores rutinas para el gym para personas mayores de 45 años fundamentado con fuentes academicas""
+   * Copilot
+     * Microsoft (pero por detras usa OpenAI)
+     * Usa chatGPT por detras
+     * Integrado en el navegador Edge
+     * O bien desde... https://copilot.microsoft.com/
 * Open Source
    * Americanos
      * Familia Llama (Meta/Facebook)
@@ -54,8 +59,7 @@
           * Instrucciones peronalizadas
         * Por defecto no es tan condescendiente y amigable como ChatGPT
         * Lo podes usar un monton sin limite (no le encontre el limite de uso)
-       * 
-
+         
 #  Modulo 3 : Herramientas
 
 ## Text-To-Speech
@@ -85,3 +89,9 @@ Vimos Grok
 # Recordar
 
 * Ver alguna herramienta que detecte si una imagen es ia
+
+# Tarea
+
+Para terminar de hablar del mundo open source
+* Crearse una cuenta en hugging face
+* https://huggingface.co/
