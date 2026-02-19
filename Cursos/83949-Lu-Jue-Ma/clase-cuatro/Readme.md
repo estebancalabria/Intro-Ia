@@ -52,9 +52,12 @@ Haceme una lista de alimentos saludables. Nombre, origen, calorias, nutrientes, 
 * Markdown
   * https://es.wikipedia.org/wiki/Markdown
   * Vamos a hacer una plantilla markdown para la lista de alimentos
+* CSV : Comma Separated Values
+   * Para exportar un texto a excel o a google Sheets
 * Diagramas
    * Mermaid
       * Se lleva muy bien con Claude
+         * "Generame un artefacto que muestre en un diagrama de pie mermaid el top 5 de productos que exporta canada a USA."
       * Haceme un diagrama mermaid de pie con la poblacion de los paises de LATAM
 
 ## Markdown para formato de Salida
@@ -95,7 +98,8 @@ Prompt
 Me podes generar lista de acuerdo a la siguiente plantilla markdown "
 # [ALIMENTO]
 
-## Caracteristicas
+##
+Caracteristicas
 
 * Origen : [Origen del Alimento]
 * Descripcion : [Descripcion del alimento]
@@ -152,3 +156,12 @@ pie title Población aproximada de países de LATAM (en millones)
     "Panamá (4M)" : 4
     "Uruguay (3M)" : 3
 ```
+
+# Herramienta : Napkin
+
+* Permite a partir de un texto enriquecerlo con diagramas generados con IA
+
+> https://www.napkin.ai/
+
+* Puntaje : 10/10
+
