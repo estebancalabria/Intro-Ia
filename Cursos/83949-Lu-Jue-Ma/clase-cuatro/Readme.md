@@ -25,6 +25,9 @@
 
 ## Comparar modelos de Lenguaje
 
+* LmArena
+   * https://arena.ai/
+
 # Prompt Engieering
 
 ## Interaccion (Contexto)
@@ -46,4 +49,73 @@ Haceme una lista de alimentos saludables. Nombre, origen, calorias, nutrientes, 
   * XML : eXtensive Markup Language
   * HTML
       * Sirve para exportar a pdf : "Quiero generar la lista como html en un formato moderno y elegante como para exportar a pdf"
-  * 
+  * Markdown
+     * https://es.wikipedia.org/wiki/Markdown
+     * Vamos a hacer una plantilla markdown para la lista de alimentos
+
+## Markdown para formato de Salida
+   
+```
+# [ALIMENTO]
+
+## Caracteristicas
+
+* Origen : [Origen del Alimento]
+* Descripcion : [Descripcion del alimento]
+* Calorias : [Calorias del lalimenots]
+
+
+## Nutrienes
+
+* [Nutriente 1]
+* [Nutriente 2]
+...
+* [Nutriente N]
+
+## Beneficios
+
+* [Beneficio 1]
+* [Beneficio 2]
+...
+* [Beneficio N]
+
+## Cita
+
+> [Cita sobre el alimento de alguien famoso]
+
+```
+
+Prompt
+
+```
+Me podes generar lista de acuerdo a la siguiente plantilla markdown "
+# [ALIMENTO]
+
+## Caracteristicas
+
+* Origen : [Origen del Alimento]
+* Descripcion : [Descripcion del alimento]
+* Calorias : [Calorias del lalimenots]
+
+
+## Nutrienes
+
+* [Nutriente 1]
+* [Nutriente 2]
+...
+* [Nutriente N]
+
+## Beneficios
+
+* [Beneficio 1]
+* [Beneficio 2]
+...
+* [Beneficio N]
+
+## Cita
+
+> [Cita sobre el alimento de alguien famoso] "
+
+Solamente la lista sin acotar nada mas.
+
+```
