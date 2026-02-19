@@ -47,11 +47,15 @@ Haceme una lista de alimentos saludables. Nombre, origen, calorias, nutrientes, 
 * Tecnicos
   * JSON : Formato tecnico para desarrolladores u otros programas.
   * XML : eXtensive Markup Language
-  * HTML
-      * Sirve para exportar a pdf : "Quiero generar la lista como html en un formato moderno y elegante como para exportar a pdf"
-  * Markdown
-     * https://es.wikipedia.org/wiki/Markdown
-     * Vamos a hacer una plantilla markdown para la lista de alimentos
+* HTML
+   * Sirve para exportar a pdf : "Quiero generar la lista como html en un formato moderno y elegante como para exportar a pdf"
+* Markdown
+  * https://es.wikipedia.org/wiki/Markdown
+  * Vamos a hacer una plantilla markdown para la lista de alimentos
+* Diagramas
+   * Mermaid
+      * Se lleva muy bien con Claude
+      * Haceme un diagrama mermaid de pie con la poblacion de los paises de LATAM
 
 ## Markdown para formato de Salida
    
@@ -118,4 +122,33 @@ Me podes generar lista de acuerdo a la siguiente plantilla markdown "
 
 Solamente la lista sin acotar nada mas.
 
+```
+
+## Mermaid (para la generacion de diagramas)
+
+> https://mermaid.live/
+
+* Con ChatGPT Generamos a partir de este prompt : "Haceme un diagrama mermaid de pie con la poblacion de los paises de LATAM"
+
+```mermaid
+pie title Población aproximada de países de LATAM (en millones)
+    "Brasil (203M)" : 203
+    "México (129M)" : 129
+    "Colombia (52M)" : 52
+    "Argentina (46M)" : 46
+    "Perú (34M)" : 34
+    "Venezuela (28M)" : 28
+    "Chile (20M)" : 20
+    "Guatemala (18M)" : 18
+    "Ecuador (18M)" : 18
+    "Bolivia (12M)" : 12
+    "Cuba (11M)" : 11
+    "Rep. Dominicana (11M)" : 11
+    "Honduras (10M)" : 10
+    "Paraguay (7M)" : 7
+    "El Salvador (6M)" : 6
+    "Nicaragua (6M)" : 6
+    "Costa Rica (5M)" : 5
+    "Panamá (4M)" : 4
+    "Uruguay (3M)" : 3
 ```
