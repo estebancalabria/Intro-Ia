@@ -20,6 +20,7 @@
 * Tips
   * Utilizar a ChatGPT como prompt Engineering para que me ayude a redactar los prompts
   * Terminar el prompt con la frase :"Dame el resultado para compiar y pegar sin acotar nada mas"
+  * Para generacion de imagenes terminar con la frase : "Mantener los rasgos y expresiones faciales sin mofificar el rostro""
    
 # Herramientas : Gamma.APP
 
@@ -89,11 +90,29 @@ Quiero una landing para una autoescuela para promocionar los servicios de la ins
 
 * Puntaje : 10 / 10
 
+# Presnetacione Multimedia : HeyGen
+
+https://www.heygen.com/
+
 # IA Multimedia
 
 # Generacion de Imagenes
 
 * Uno de los mejores generadores de imagenes es Gemini (https://gemini.google.com/)
+  * Sirve para modificar imagenes existentes
 
 ```
-Generame una imagen para este texto : "Pilar Ambiental Protección de ecosistemas, conservación de recursos naturales y reducción de emisiones para preservar la tierra."```
+Generame una imagen para este texto : "Pilar Ambiental Protección de ecosistemas, conservación de recursos naturales y reducción de emisiones para preservar la tierra."
+```
+
+Otro Prompt para modificar una imagen existente
+
+```
+Generame a la persona con una camisa hawaiana. Mantener los rasgos y expresiones faciales sin mofificar el rostro
+```
+* Aca el secreto esta en decir " Mantener los rasgos y expresiones faciales sin mofificar el rostro"
+
+# Para la proxima
+
+* Herramienta para clonar voces .... 
+* Herramienta para practivar ingles
