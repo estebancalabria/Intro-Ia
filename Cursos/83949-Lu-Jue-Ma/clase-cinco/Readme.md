@@ -114,5 +114,6 @@ Generame a la persona con una camisa hawaiana. Mantener los rasgos y expresiones
 
 # Para la proxima
 
-* Herramienta para clonar voces .... 
+* Herramienta para clonar voces ....
+   * https://coquitts.com/generate
 * Herramienta para practivar ingles
