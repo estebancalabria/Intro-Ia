@@ -45,8 +45,18 @@ Funciona en Discord
 ## OpenAI art
 
     https://openart.ai/
+
+# Novedades (2026)
+
+## HeyDream
+
+    https://heydream.im/
+
+## GetImg
+
+    https://getimg.ai/
     
-## PromeAI
+
 # Para Generar Reners
 
     https://www.promeai.pro/
