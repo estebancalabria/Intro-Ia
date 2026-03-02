@@ -63,7 +63,14 @@
 * Pixverse
    * https://share.pix.video/referral/JAEN6NA7
  
- # 
+ # Generacion de Efectos (Divertida)
 
+* Pikalabs
+  * https://pika.art/
 
-# Otras sorpresas...
+# Menciones de Honor (Que estan en tendencia...)
+
+*  https://higgsfield.ai/
+*  https://www.seedreamvideo.com/ (Oficial del modelo Seed Dream)
+*  https://wan.video/ (China)
+
