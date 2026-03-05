@@ -243,11 +243,3 @@ Pensá cómo podrías **automatizar todo el flujo**:
 * Lista → JSON/XML/CSV → Markdown → HTML → PDF → Mermaid
 * Herramientas posibles: Python, Zapier, APIs de LLM
 * Otros formatos: HTML dinámico, SQL, YAML
-
-**Aquí aprenderás a:**
-
-* Imaginar flujos de trabajo reales con IA.
-* Conectar la generación de datos con la entrega de documentos y visualizaciones.
-* Prepararte para tareas que se hacen en **empresas reales del mercado tecnológico**.
-
-¿Querés que haga esa versión también?
