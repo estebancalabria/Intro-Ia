@@ -1,4 +1,4 @@
-# 🧪 LABORATORIO 2 — Evaluando Modelos Open Source de IA
+# 🧪 LABORATORIO — Evaluando Modelos Open Source de IA
 
 ## 🎯 Introducción
 
