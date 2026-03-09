@@ -36,4 +36,13 @@
 
 > https://notebooklm.google.com/
 
-## Google Gems
+* Creamos un notebook nuevo
+* Bajar los archivos .md de este repo
+* Cargarlos como fuetnes ("Sources") del notebook
+* Puntaje : 10 / 10
+* A partir de lo que vimos en clase generamos el siguiente Notebook:
+> https://notebooklm.google.com/notebook/22528d28-7a4f-4496-829c-c13d3755aaed
+
+## Google Labs
+
+> https://labs.google/
