@@ -41,14 +41,34 @@
 * Propietarios
   * ChatGPT
     * https://chatgpt.com/
+    * Emular conversacion humana
+    * Memoria
+       * Ir a configuracion..personalizacion...memoria...adminostar (Ver lo que chatGPT recuerda de mi)
+    * Personalizacion
+       * Sabe bien quien sos
+       * Se acuerda lo que le dijiste y detalles claves
+       * Ejemplos
+          * "En base al conocimiento que tengas sobre mi haceme un roast."
+          * "En base al conocimiento que tengas sobre mi haceme una imagen."
   * Gemini
     * https://gemini.google.com/
+    * Se especializa en conocimiento factico (facts/hechos)
+    * Tiene mejores referencias para lo que responde (citas)
+    * Integracion con el ecosistema de google
+       * Google docs, Google Sheets
+       * Google Flights, Google Hotels
   * Copilot
 * Open Source
   * DeepSeek
+  * Familia Llama (Meta)
 
 # Glosario
 
 * Prompt : Instruccion que uno le da la IA
+* System Prompt : Una instruccion inicial (oculta) que define el comportamient (de alguna manera la personalidad) del LLM
 * Token : Division minima del prompt (generalmente una palabra). Generalmente el modelo de costos de los LLM se estructura alreedor de los tokens
     * https://platform.openai.com/tokenizer
+
+# Clase que viene
+
+* Continuar con Gemini
