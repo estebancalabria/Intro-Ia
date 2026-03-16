@@ -4,7 +4,7 @@
 
 * Itinerario del Curso
 * Glosario
-* Modelos de Lenguaje (LLM
+* Modelos de Lenguaje (LLM)
   * Forrtalezas y objetivos principipales
   * ChatGPT (OpenAI)
     * Se centre en el imitar la conversacion
@@ -50,6 +50,23 @@
     * Academico que se utiliza para hacer investigaciones cientificas
     * Mejor manejo tiene de las fuentes a utilizar
     * "Analizame tendendias  y estado del arte en materia de turimo en Argentina para el 2026."
+      
+* Modelos Open Source
+   * Es posible Descargarse el modelo de lenguaje a una computadora y utilizarlo localmente
+     * https://lmstudio.ai/
+   * Chinos
+     * DeepSeek
+        * Hizo caer las acciones de Nvidia en su momento : https://www.infobae.com/america/agencias/2025/01/27/perdida-de-nvidia-de-us465000-millones-por-deepseek-es-la-mayor-en-la-historia-del-mercado/
+        * Fue el primero en introducir el modo razonamiento ideal para problemas logicos
+        * Hay 3 personas en una habitacion. Uno de ellos es un asesino. Entra una cuarta persona y mata al asesino. Cuantos asesinos vivos hay ahora en la habitacion
+      * Qwern (alibaba)
+         * Por Momento es el preferido del profe
+         * Es una copia de chatgpt (sin tanta amabilidad forzada) pero con muchos mas limites de uso
+         * Muchos estudiantes despues de utilizarlo lo adoptaron como modelo de Lenguaje favorito
+    * Americanos
+      * Famila Meta
+        * Facebook tiene sus modelos de IA de familia Meta liberados
+        * Si en wsap unsas @meta
 
 # Herramientas (Modulo 3 del Alumni)
 
@@ -64,8 +81,11 @@
 
 * Grok es muy bueno para hacer videos e imagenes con poca censura  
 
-# Prompt Engineering
+# Para la proxima....
+
+* PAra la clase que viene les voy a contar como ejecutar un modelo de lenguaje open source con el LMStudio y donde se guardan los modelos de lenguaje Open Source en internet para poder accerder a ellos. Tambien vamos a ver en un momento determinado como estan posicionados los distintos modelo (cual es mejor o peor en un momento dado)
 
 # Glosario
 
 * Multimodal : Ademas de generar texto tienen la posibilidad de procesar imagenes, y archivos pdf.
+
