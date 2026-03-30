@@ -22,7 +22,9 @@
     * Es bueno para el analisis de datos
     * Hacer Reportes
     * Hacer aplicaciones con dashboards visuales
-    * Hacer un codigo con un programa/pagina web que te resuelva el problea
+    * Hacer un codigo con un programa/pagina web que te resuelva el problema
+* Perplexity
+    * Bueno para fuentes cientificas
 
 
 # Prompt Engineering
@@ -110,14 +112,20 @@ pie title Popularidad de Destinos Corporativos (Estimado)
     "Cusco / Machu Picchu" : 7
     "Ciudad del Cabo" : 7
 ```
-         
-    
+
+# Herramienta : Napkin
+
+* https://www.napkin.ai/
+ * Esta herramienta me permite tomar un texto y embeberlo con Diagramas profesionales
+
+* Antes hicimos este informe con el modo investigacion de Gemini
+  * https://gemini.google.com/share/29f942817591
+    * (Que despues leimos con Natural Readers)
 
 
+* Puntaje : 9 / 10 (Casi perfecta)
 
-
-
-# CAsos de uso a realizar
+# Casos de uso a realizar
 
 * A partir de un excel generar un ppt
 
