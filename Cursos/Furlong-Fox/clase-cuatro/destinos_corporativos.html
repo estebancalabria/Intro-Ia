@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destinos Corporativos — Selección de Viaje</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0f0f0f;
+    --ink-soft: #4a4a4a;
+    --ink-muted: #888;
+    --paper: #faf9f6;
+    --paper-warm: #f2efe8;
+    --paper-card: #ffffff;
+    --gold: #b8963e;
+    --gold-light: #e8d9b0;
+    --gold-pale: #f7f2e5;
+    --teal: #2a5c5e;
+    --teal-light: #e0eeee;
+    --red-soft: #c0392b;
+    --red-pale: #fdf0ee;
+    --green-soft: #2e7d52;
+    --green-pale: #edf6f1;
+    --amber-soft: #b45309;
+    --amber-pale: #fef3e2;
+    --border: #e0ddd5;
+    --radius: 2px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* HEADER */
+  header {
+    background: var(--ink);
+    color: #fff;
+    padding: 56px 60px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 320px; height: 100%;
+    background: linear-gradient(135deg, transparent 40%, rgba(184,150,62,0.12) 100%);
+    pointer-events: none;
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold) 0%, transparent 60%);
+  }
+  .header-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 18px;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: #fff;
+    margin-bottom: 16px;
+    max-width: 560px;
+  }
+  .header-sub {
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    max-width: 480px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+  .header-meta {
+    margin-top: 36px;
+    display: flex;
+    gap: 36px;
+    align-items: center;
+  }
+  .header-stat { display: flex; flex-direction: column; }
+  .header-stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .header-stat-label {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-top: 4px;
+  }
+  .header-divider {
+    width: 1px; height: 36px;
+    background: rgba(255,255,255,0.12);
+  }
+
+  /* TOOLBAR */
+  .toolbar {
+    background: var(--paper-card);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 60px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+  .toolbar-label {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-right: 4px;
+  }
+  .filter-btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 40px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: all 0.18s;
+    letter-spacing: 0.01em;
+  }
+  .filter-btn:hover { border-color: var(--gold); color: var(--ink); }
+  .filter-btn.active {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: #fff;
+  }
+  .toolbar-sep { width: 1px; height: 20px; background: var(--border); margin: 0 4px; }
+  .search-wrap { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+  .search-wrap input {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    padding: 7px 14px;
+    border: 1px solid var(--border);
+    border-radius: 40px;
+    background: var(--paper);
+    color: var(--ink);
+    outline: none;
+    width: 200px;
+    transition: border-color 0.18s;
+  }
+  .search-wrap input:focus { border-color: var(--gold); }
+  .search-wrap input::placeholder { color: var(--ink-muted); }
+  .count-badge {
+    font-size: 11px;
+    background: var(--gold-pale);
+    color: var(--amber-soft);
+    padding: 4px 10px;
+    border-radius: 40px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  /* MAIN */
+  main { padding: 40px 60px 80px; }
+
+  /* REGION SEPARATOR */
+  .region-label {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin: 40px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .region-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+    display: none;
+  }
+
+  /* CARDS GRID */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+  }
+
+  /* CARD */
+  .card {
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.22s, transform 0.22s, border-color 0.22s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.09);
+    transform: translateY(-2px);
+    border-color: var(--gold-light);
+  }
+  .card.selected {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 2px var(--gold-light), 0 8px 32px rgba(0,0,0,0.08);
+  }
+  .card.selected .card-check { opacity: 1; transform: scale(1); }
+  .card.hidden { display: none; }
+
+  .card-check {
+    position: absolute;
+    top: 12px; right: 12px;
+    width: 22px; height: 22px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0;
+    transform: scale(0.6);
+    transition: all 0.18s;
+    z-index: 2;
+  }
+  .card-check svg { width: 11px; height: 11px; stroke: #fff; }
+
+  .card-accent {
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 100%);
+  }
+
+  .card-body { padding: 20px 20px 16px; flex: 1; }
+
+  .card-dest {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.2;
+    margin-bottom: 2px;
+  }
+  .card-pais {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 14px;
+  }
+
+  .card-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+
+  .pill {
+    font-size: 10.5px;
+    font-weight: 500;
+    padding: 3px 9px;
+    border-radius: 40px;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+  }
+  .pill-bajo    { background: var(--green-pale); color: var(--green-soft); }
+  .pill-medio   { background: var(--amber-pale); color: var(--amber-soft); }
+  .pill-elevado { background: #fff0e8; color: #b84d0e; }
+  .pill-exclusivo { background: #f5eef8; color: #7b2d8b; }
+  .pill-alta  { background: var(--teal-light); color: var(--teal); }
+  .pill-media { background: var(--amber-pale); color: var(--amber-soft); }
+  .pill-baja  { background: var(--red-pale); color: var(--red-soft); }
+  .pill-visa-no { background: var(--green-pale); color: var(--green-soft); }
+  .pill-visa-si { background: var(--red-pale); color: var(--red-soft); }
+  .pill-visa-dep { background: var(--amber-pale); color: var(--amber-soft); }
+
+  .card-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 12px;
+    margin-bottom: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--paper-warm);
+  }
+  .info-item { display: flex; flex-direction: column; gap: 2px; }
+  .info-label {
+    font-size: 9.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .info-val {
+    font-size: 12px;
+    color: var(--ink-soft);
+    font-weight: 400;
+    line-height: 1.35;
+  }
+
+  .card-aero {
+    padding: 10px 20px;
+    background: var(--paper);
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--ink-muted);
+    line-height: 1.5;
+  }
+  .card-aero strong {
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    display: block;
+    margin-bottom: 2px;
+    font-weight: 500;
+  }
+
+  .card-salud {
+    padding: 10px 20px;
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .card-salud .ico { flex-shrink: 0; margin-top: 1px; opacity: 0.45; }
+  .card-salud strong {
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    display: block;
+    margin-bottom: 2px;
+    font-weight: 500;
+  }
+
+  /* SELECTION BAR */
+  .sel-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: var(--ink);
+    color: #fff;
+    padding: 16px 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transform: translateY(100%);
+    transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
+    z-index: 200;
+    box-shadow: 0 -4px 24px rgba(0,0,0,0.18);
+  }
+  .sel-bar.visible { transform: translateY(0); }
+  .sel-bar-info { flex: 1; }
+  .sel-bar-count {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .sel-bar-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.45);
+    margin-top: 2px;
+    letter-spacing: 0.06em;
+  }
+  .sel-bar-names {
+    font-size: 12px;
+    color: rgba(255,255,255,0.65);
+    margin-top: 4px;
+  }
+  .sel-bar-actions { display: flex; gap: 10px; }
+  .btn-primary {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    background: var(--gold);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.18s;
+  }
+  .btn-primary:hover { background: #a07c30; }
+  .btn-ghost {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 18px;
+    background: transparent;
+    color: rgba(255,255,255,0.55);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.18s;
+  }
+  .btn-ghost:hover { color: #fff; border-color: rgba(255,255,255,0.35); }
+
+  /* FOOTER */
+  footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.35);
+    padding: 32px 60px;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 0;
+  }
+  footer strong { color: rgba(255,255,255,0.6); }
+
+  /* EMPTY STATE */
+  .empty-state {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--ink-muted);
+  }
+  .empty-state p { font-size: 15px; margin-top: 8px; }
+
+  /* PRINT */
+  @media print {
+    .toolbar, .sel-bar, footer { display: none; }
+    main { padding: 20px; }
+    header { padding: 30px; }
+    .card:hover { transform: none; box-shadow: none; }
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    header { padding: 36px 24px 32px; }
+    header h1 { font-size: 28px; }
+    .toolbar { padding: 14px 24px; }
+    main { padding: 24px 24px 100px; }
+    footer { padding: 24px; }
+    .sel-bar { padding: 14px 24px; }
+    .grid { grid-template-columns: 1fr; }
+    .header-meta { gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-eyebrow">Propuesta de viaje corporativo · 2025–2026</div>
+  <h1>Selección de Destinos Internacionales</h1>
+  <p class="header-sub">Presentamos una curación de 30 destinos para grupos corporativos, con salida desde Buenos Aires. Seleccione las opciones de su interés para iniciar la cotización.</p>
+  <div class="header-meta">
+    <div class="header-stat">
+      <span class="header-stat-num">30</span>
+      <span class="header-stat-label">Destinos disponibles</span>
+    </div>
+    <div class="header-divider"></div>
+    <div class="header-stat">
+      <span class="header-stat-num">6</span>
+      <span class="header-stat-label">Regiones del mundo</span>
+    </div>
+    <div class="header-divider"></div>
+    <div class="header-stat">
+      <span class="header-stat-num">EZE</span>
+      <span class="header-stat-label">Aeropuerto de origen</span>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <span class="toolbar-label">Filtrar</span>
+  <button class="filter-btn active" data-filter="all">Todos</button>
+  <div class="toolbar-sep"></div>
+  <button class="filter-btn" data-filter="Bajo">Costo bajo</button>
+  <button class="filter-btn" data-filter="Medio">Costo medio</button>
+  <button class="filter-btn" data-filter="Elevado">Elevado</button>
+  <button class="filter-btn" data-filter="Exclusivo">Exclusivo</button>
+  <div class="toolbar-sep"></div>
+  <button class="filter-btn" data-filter="novisa">Sin visa</button>
+  <button class="filter-btn" data-filter="visa">Requiere visa</button>
+  <div class="search-wrap">
+    <input type="text" id="searchInput" placeholder="Buscar destino…">
+    <span class="count-badge" id="countBadge">30 destinos</span>
+  </div>
+</div>
+
+<main>
+  <div class="grid" id="grid"></div>
+</main>
+
+<div class="sel-bar" id="selBar">
+  <div class="sel-bar-info">
+    <div class="sel-bar-count" id="selCount">0</div>
+    <div class="sel-bar-label">destino(s) seleccionado(s)</div>
+    <div class="sel-bar-names" id="selNames"></div>
+  </div>
+  <div class="sel-bar-actions">
+    <button class="btn-ghost" onclick="clearSelection()">Limpiar</button>
+    <button class="btn-primary" onclick="printSelection()">Imprimir / Guardar PDF</button>
+  </div>
+</div>
+
+<footer>
+  <div>Propuesta preparada para <strong>su empresa</strong> · Salida desde Buenos Aires (EZE/AEP) · Costos orientativos sujetos a disponibilidad</div>
+  <div>Información de visas y salud según pasaporte argentino vigente</div>
+</footer>
+
+<script>
+const destinos = [
+  { dest:"Montevideo", pais:"Uruguay", region:"Sudamérica", epoca:"Oct – Abr", costo:"Bajo", infra:"Media", vuelo:"45 min", aerolineas:"Aerolíneas Argentinas (AEP) · Buquebus ferry (2h 30m)", visa:"No", notaVisa:"DNI argentino suficiente.", salud:"Ninguno." },
+  { dest:"Asunción", pais:"Paraguay", region:"Sudamérica", epoca:"Abr–Jun / Ago–Oct", costo:"Bajo", infra:"Media", vuelo:"1h 45m", aerolineas:"Aerolíneas Argentinas (EZE) · LATAM · Paranair", visa:"No", notaVisa:"DNI argentino suficiente.", salud:"Ninguno." },
+  { dest:"Santiago", pais:"Chile", region:"Sudamérica", epoca:"Oct – Abr", costo:"Bajo", infra:"Alta", vuelo:"2h", aerolineas:"LATAM (EZE/AEP) · Sky Airline · JetSMART · Aerolíneas Argentinas", visa:"No", notaVisa:"DNI argentino suficiente.", salud:"Ninguno." },
+  { dest:"Lima", pais:"Perú", region:"Sudamérica", epoca:"May – Nov", costo:"Bajo", infra:"Alta", vuelo:"4h", aerolineas:"LATAM (EZE) · Aerolíneas Argentinas · Sky Airline", visa:"No", notaVisa:"Pasaporte requerido.", salud:"Precaución con altitud en ciudades de sierra." },
+  { dest:"Bogotá", pais:"Colombia", region:"Sudamérica", epoca:"Dic–Mar / Jun–Ago", costo:"Bajo", infra:"Alta", vuelo:"5h 30m", aerolineas:"Aerolíneas Argentinas (EZE) · LATAM · Avianca", visa:"No", notaVisa:"Pasaporte requerido.", salud:"Fiebre amarilla recomendada si se viaja al interior." },
+  { dest:"Cartagena", pais:"Colombia", region:"Sudamérica", epoca:"Dic – Abr", costo:"Medio", infra:"Media", vuelo:"6h (vía BOG)", aerolineas:"Aerolíneas Argentinas + Avianca · LATAM + Avianca", visa:"No", notaVisa:"Pasaporte requerido.", salud:"Fiebre amarilla recomendada." },
+  { dest:"La Paz / Santa Cruz", pais:"Bolivia", region:"Sudamérica", epoca:"May – Oct", costo:"Bajo", infra:"Media", vuelo:"3h", aerolineas:"Aerolíneas Argentinas (EZE) · BoA · LATAM", visa:"No", notaVisa:"DNI argentino suficiente.", salud:"Mal de altura en La Paz (3.600 m). Fiebre amarilla obligatoria en zonas tropicales." },
+  { dest:"São Paulo", pais:"Brasil", region:"Sudamérica", epoca:"Abr–Jun / Ago–Oct", costo:"Medio", infra:"Alta", vuelo:"3h", aerolineas:"Aerolíneas Argentinas (EZE) · LATAM · Gol · Azul", visa:"No", notaVisa:"DNI argentino suficiente.", salud:"Fiebre amarilla OBLIGATORIA. Certificado exigido en frontera." },
+  { dest:"Río de Janeiro", pais:"Brasil", region:"Sudamérica", epoca:"May – Sep", costo:"Medio", infra:"Alta", vuelo:"3h 30m", aerolineas:"Aerolíneas Argentinas (EZE) · LATAM · Gol", visa:"No", notaVisa:"DNI argentino suficiente.", salud:"Fiebre amarilla OBLIGATORIA. Certificado exigido en frontera." },
+  { dest:"Ciudad de Panamá", pais:"Panamá", region:"Centroamérica", epoca:"Ene – Abr", costo:"Medio", infra:"Alta", vuelo:"7h", aerolineas:"Copa Airlines (EZE) · Aerolíneas Argentinas · LATAM", visa:"No", notaVisa:"Pasaporte requerido.", salud:"Fiebre amarilla si viene de zona endémica. Hepatitis A recomendada." },
+  { dest:"Punta Cana", pais:"Rep. Dominicana", region:"Centroamérica", epoca:"Nov – May", costo:"Medio", infra:"Alta", vuelo:"7h", aerolineas:"Aerolíneas Argentinas (EZE) · LATAM · JetBlue (con escala)", visa:"No", notaVisa:"Pasaporte requerido.", salud:"Ninguno especial. Protección contra mosquitos (dengue)." },
+  { dest:"Miami", pais:"EE.UU.", region:"Norteamérica", epoca:"Oct – May", costo:"Medio", infra:"Alta", vuelo:"10h", aerolineas:"Aerolíneas Argentinas (EZE) · American Airlines · United · LATAM", visa:"No", notaVisa:"Visa Waiver Program. ESTA no requerida con pasaporte argentino.", salud:"Ninguno." },
+  { dest:"Nueva York", pais:"EE.UU.", region:"Norteamérica", epoca:"Sep–Nov / Mar–May", costo:"Elevado", infra:"Alta", vuelo:"12h", aerolineas:"Aerolíneas Argentinas (EZE) · American Airlines · Delta · United", visa:"No", notaVisa:"Pasaporte argentino exento de visa (Visa Waiver).", salud:"Ninguno." },
+  { dest:"Cancún", pais:"México", region:"Norteamérica", epoca:"Nov – Abr", costo:"Medio", infra:"Alta", vuelo:"9h", aerolineas:"Aerolíneas Argentinas (EZE) · LATAM · Aeroméxico", visa:"No", notaVisa:"DNI NO aceptado. Pasaporte obligatorio.", salud:"Ninguno especial." },
+  { dest:"Ciudad de México", pais:"México", region:"Norteamérica", epoca:"Mar–May / Sep–Nov", costo:"Medio", infra:"Alta", vuelo:"8h 30m", aerolineas:"Aerolíneas Argentinas (EZE) · LATAM · Aeroméxico", visa:"No", notaVisa:"Pasaporte argentino exento de visa.", salud:"Ninguno especial." },
+  { dest:"Madrid", pais:"España", region:"Europa", epoca:"Abr–Jun / Sep–Oct", costo:"Elevado", infra:"Alta", vuelo:"12h (directo)", aerolineas:"Aerolíneas Argentinas (EZE, directo) · Iberia · Air Europa · LATAM", visa:"No", notaVisa:"Acuerdo bilateral Argentina–España. Sin visa.", salud:"Ninguno." },
+  { dest:"Barcelona", pais:"España", region:"Europa", epoca:"May–Jun / Sep", costo:"Elevado", infra:"Alta", vuelo:"12h (vía MAD)", aerolineas:"Iberia · Vueling · Aerolíneas Argentinas (vía MAD) · LATAM", visa:"No", notaVisa:"Schengen: Argentina exenta de visa.", salud:"Ninguno." },
+  { dest:"Lisboa", pais:"Portugal", region:"Europa", epoca:"Abr–Jun / Sep–Oct", costo:"Elevado", infra:"Alta", vuelo:"11h 30m", aerolineas:"TAP (EZE, directo) · Aerolíneas Argentinas + Iberia · LATAM + TAP", visa:"No", notaVisa:"Schengen: Argentina exenta de visa.", salud:"Ninguno." },
+  { dest:"Roma", pais:"Italia", region:"Europa", epoca:"Abr–Jun / Sep–Oct", costo:"Elevado", infra:"Alta", vuelo:"13h (vía MAD o directo)", aerolineas:"ITA Airways (EZE, directo) · Aerolíneas Argentinas + Iberia · LATAM", visa:"No", notaVisa:"Schengen: Argentina exenta de visa.", salud:"Ninguno." },
+  { dest:"París", pais:"Francia", region:"Europa", epoca:"Abr–Jun / Sep–Oct", costo:"Exclusivo", infra:"Alta", vuelo:"13h (directo o vía MAD)", aerolineas:"Air France (EZE, directo) · Aerolíneas Argentinas + Air France · LATAM", visa:"No", notaVisa:"Schengen: Argentina exenta de visa.", salud:"Ninguno." },
+  { dest:"Amsterdam", pais:"Países Bajos", region:"Europa", epoca:"May – Sep", costo:"Elevado", infra:"Alta", vuelo:"13h 30m (vía MAD o LIS)", aerolineas:"KLM (EZE, directo) · Aerolíneas Argentinas + KLM · Iberia", visa:"No", notaVisa:"Schengen: Argentina exenta de visa.", salud:"Ninguno." },
+  { dest:"Frankfurt", pais:"Alemania", region:"Europa", epoca:"May – Sep", costo:"Elevado", infra:"Alta", vuelo:"13h (vía MAD o directo)", aerolineas:"Lufthansa (EZE, directo) · Aerolíneas Argentinas + Lufthansa · Iberia", visa:"No", notaVisa:"Schengen: Argentina exenta de visa.", salud:"Ninguno." },
+  { dest:"Londres", pais:"Reino Unido", region:"Europa", epoca:"May – Sep", costo:"Exclusivo", infra:"Alta", vuelo:"14h (directo o vía MAD)", aerolineas:"British Airways (EZE, directo) · Aerolíneas Argentinas + BA · Iberia", visa:"No", notaVisa:"ETA obligatoria desde 2024. Trámite online, USD 10, aprobación casi inmediata.", salud:"Ninguno." },
+  { dest:"Dubái", pais:"Emiratos Árabes", region:"Medio Oriente", epoca:"Oct – Abr", costo:"Elevado", infra:"Alta", vuelo:"17h (vía GRU o MAD)", aerolineas:"Emirates (EZE vía GRU) · Aerolíneas Argentinas + Emirates", visa:"No", notaVisa:"Visa on Arrival gratuita: 30 días.", salud:"Sin vacunas obligatorias." },
+  { dest:"Bangkok", pais:"Tailandia", region:"Asia", epoca:"Nov – Feb", costo:"Medio", infra:"Alta", vuelo:"22h (vía DXB o DOH)", aerolineas:"Emirates + Thai Airways (EZE→DXB→BKK) · Qatar Airways + Thai · LATAM + Emirates", visa:"No", notaVisa:"Visa on Arrival en aeropuerto (USD 35). También eVisa online.", salud:"Hepatitis A/B y Tifoidea recomendadas." },
+  { dest:"Singapur", pais:"Singapur", region:"Asia", epoca:"Feb – Abr", costo:"Exclusivo", infra:"Alta", vuelo:"24h (vía DXB o SYD)", aerolineas:"Emirates + Singapore Airlines · Singapore Airlines + cxn · Qatar + Singapore Airlines", visa:"No", notaVisa:"Argentinos exentos de visa hasta 30 días.", salud:"Hepatitis A/B recomendada. Normativas sanitarias estrictas." },
+  { dest:"Tokio", pais:"Japón", region:"Asia", epoca:"Mar–May / Sep–Nov", costo:"Exclusivo", infra:"Alta", vuelo:"23h (vía LAX o ICN)", aerolineas:"Japan Airlines + American Airlines · ANA + United · Korean Air", visa:"No", notaVisa:"Argentinos exentos de visa hasta 90 días.", salud:"Sin vacunas obligatorias." },
+  { dest:"Johannesburgo", pais:"Sudáfrica", region:"África", epoca:"May – Sep", costo:"Elevado", infra:"Alta", vuelo:"16h (vía ADD o DXB)", aerolineas:"Ethiopian Airlines (EZE→ADD→JNB) · Emirates + South African · Qatar + South African", visa:"Sí", notaVisa:"Visa requerida. Tramitar en embajada con ~30 días hábiles.", salud:"Fiebre amarilla OBLIGATORIA si viene de zona endémica. Malaria: profilaxis en zonas rurales." },
+  { dest:"Nairobi", pais:"Kenia", region:"África", epoca:"Jul – Oct", costo:"Elevado", infra:"Media", vuelo:"18h (vía ADD)", aerolineas:"Ethiopian Airlines (EZE→ADD→NBO) · Emirates + Kenya Airways", visa:"Sí", notaVisa:"eVisa online (USD 50). Tramitar antes de viajar.", salud:"Fiebre amarilla OBLIGATORIA. Malaria: profilaxis. Hepatitis A y Tifoidea." },
+  { dest:"Sydney", pais:"Australia", region:"Oceanía", epoca:"Sep–Nov / Mar–May", costo:"Exclusivo", infra:"Alta", vuelo:"17h (vía DXB o LAX)", aerolineas:"Emirates + Qantas (vía DXB) · LATAM + Qantas (vía LAX) · Qatar + Qantas", visa:"Sí", notaVisa:"eVisitor (subclase 651): gratuito, online, casi instantáneo. Obligatorio antes de embarcar.", salud:"Sin vacunas obligatorias." }
+];
+
+const regions = ["Sudamérica","Centroamérica","Norteamérica","Europa","Medio Oriente","Asia","África","Oceanía"];
+let selected = new Set();
+let activeFilter = 'all';
+
+function costoPill(c){
+  const m = {Bajo:'bajo',Medio:'medio',Elevado:'elevado',Exclusivo:'exclusivo'};
+  return `<span class="pill pill-${m[c]}">${c}</span>`;
+}
+function infraPill(i){
+  const m = {Alta:'alta',Media:'media',Baja:'baja'};
+  return `<span class="pill pill-${m[i]}">Hotel ${i}</span>`;
+}
+function visaPill(v){
+  if(v==='No') return `<span class="pill pill-visa-no">Sin visa</span>`;
+  if(v==='Sí') return `<span class="pill pill-visa-si">Visa requerida</span>`;
+  return `<span class="pill pill-visa-dep">Visa: consultar</span>`;
+}
+
+function renderGrid(items){
+  const grid = document.getElementById('grid');
+  grid.innerHTML = '';
+  const grouped = {};
+  regions.forEach(r => grouped[r] = []);
+  items.forEach(d => { if(grouped[d.region]) grouped[d.region].push(d); });
+
+  let total = 0;
+  regions.forEach(region => {
+    const group = grouped[region];
+    if(!group.length) return;
+    total += group.length;
+    const label = document.createElement('div');
+    label.className = 'region-label';
+    label.style.gridColumn = '1/-1';
+    label.textContent = region;
+    grid.appendChild(label);
+
+    group.forEach(d => {
+      const card = document.createElement('div');
+      card.className = 'card' + (selected.has(d.dest) ? ' selected' : '');
+      card.dataset.dest = d.dest;
+      card.innerHTML = `
+        <div class="card-check">
+          <svg viewBox="0 0 12 12" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="2,6 5,9 10,3"/>
+          </svg>
+        </div>
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-dest">${d.dest}</div>
+          <div class="card-pais">${d.pais} &nbsp;·&nbsp; ${d.region}</div>
+          <div class="card-row">${costoPill(d.costo)} ${infraPill(d.infra)} ${visaPill(d.visa)}</div>
+          <div class="card-info-grid">
+            <div class="info-item">
+              <span class="info-label">Mejor época</span>
+              <span class="info-val">${d.epoca}</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Vuelo desde EZE</span>
+              <span class="info-val">${d.vuelo}</span>
+            </div>
+            <div class="info-item" style="grid-column:1/-1">
+              <span class="info-label">Nota de visa</span>
+              <span class="info-val">${d.notaVisa}</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-aero"><strong>Aerolíneas</strong>${d.aerolineas}</div>
+        <div class="card-salud">
+          <svg class="ico" width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M8 1v14M1 8h14" stroke-linecap="round"/>
+          </svg>
+          <div><strong>Salud</strong>${d.salud}</div>
+        </div>`;
+      card.addEventListener('click', () => toggleCard(card, d.dest));
+      grid.appendChild(card);
+    });
+  });
+
+  if(!total){
+    grid.innerHTML = `<div class="empty-state"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><p>No se encontraron destinos con esos criterios.</p></div>`;
+  }
+  document.getElementById('countBadge').textContent = total + ' destino' + (total!==1?'s':'');
+}
+
+function toggleCard(card, dest){
+  if(selected.has(dest)){ selected.delete(dest); card.classList.remove('selected'); }
+  else { selected.add(dest); card.classList.add('selected'); }
+  updateSelBar();
+}
+
+function updateSelBar(){
+  const bar = document.getElementById('selBar');
+  const n = selected.size;
+  document.getElementById('selCount').textContent = n;
+  document.getElementById('selNames').textContent = n ? [...selected].join(' · ') : '';
+  if(n > 0) bar.classList.add('visible');
+  else bar.classList.remove('visible');
+}
+
+function clearSelection(){
+  selected.clear();
+  document.querySelectorAll('.card.selected').forEach(c => c.classList.remove('selected'));
+  updateSelBar();
+}
+
+function printSelection(){ window.print(); }
+
+function applyFilters(){
+  const search = document.getElementById('searchInput').value.toLowerCase();
+  let filtered = destinos.filter(d => {
+    const matchSearch = !search || d.dest.toLowerCase().includes(search) || d.pais.toLowerCase().includes(search) || d.region.toLowerCase().includes(search);
+    let matchFilter = true;
+    if(activeFilter === 'novisa') matchFilter = d.visa === 'No';
+    else if(activeFilter === 'visa') matchFilter = d.visa === 'Sí';
+    else if(['Bajo','Medio','Elevado','Exclusivo'].includes(activeFilter)) matchFilter = d.costo === activeFilter;
+    return matchSearch && matchFilter;
+  });
+  renderGrid(filtered);
+  // Re-mark selected cards
+  document.querySelectorAll('.card').forEach(c => {
+    if(selected.has(c.dataset.dest)) c.classList.add('selected');
+  });
+}
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilter = btn.dataset.filter;
+    applyFilters();
+  });
+});
+document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+renderGrid(destinos);
+</script>
+</body>
+</html>
