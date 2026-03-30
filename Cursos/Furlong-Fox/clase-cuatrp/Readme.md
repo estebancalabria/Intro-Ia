@@ -54,9 +54,37 @@ Dame una lista destinos turisticos para organizar viajes corportativos. Dame el 
        * Esto en ChatGPT es bastante nuevo
    * Formatos para pasar a Texto
        * Muchas veces al copiar lo que genera el LLM a Word, gane mucho tiempo en generacion de contenido pero le tengo que dedicar tiempo a ajustarlo al formato que quiero (titulo, negritas, etc...)
-       * 
+       * Markdown
+         * https://es.wikipedia.org/wiki/Markdown
+       * Con Markdown Armo una plantilla
+         * Para el prompt le paso a ChatGPT la plantilla exacta como quiero la informacion
  
+```
+# [Destino]
 
+## Datos Generales
+
+* Pais : **[Pais del Destino]**
+* Epoca ideal : [Epoca Ideal del destino]
+* Costo : [Costo del destino]
+
+## Requerimientos
+
+1. el costo : (Bajo, medio, elevado, exclusivo), 
+2. la infraestructura hotelera :  (alta/media/baja), 
+3. Companias aereas que lleguen
+     * Compania 1
+     * Compania 2
+     *. ..
+4. Necesita Visa : 
+5. Requerimientos de Salud : (Vacunas, etc)
+ 
+## Detalle
+
+> [Una cita que explique porque este destino es ideal]
+
+---
+```
    
          
     
