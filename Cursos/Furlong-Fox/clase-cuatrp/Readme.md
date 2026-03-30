@@ -35,8 +35,10 @@
 Dame una lista destinos turisticos para organizar viajes corportativos. Dame el destino, el pais, la epoca del año para viajar, el costo (Bajo, medio, elevado, exclusivo), la infraestructura hotelera (alta/media/baja), Companias aereas que lleguen, Necesita Visa, Requerimientos de Salud (Vacunas, etc) .
 ```
 
-* Formatos de Salida
-   * Formatos Tecnicos
+## Formatos de Salida
+
+### Formatos Tecnicos
+
      * JSON / XML
         * Generalmente son formatos que usan los devs o aplicaciones que te piden la informacion en JSON para importar
     * Formatos de Presentacion
@@ -44,7 +46,9 @@ Dame una lista destinos turisticos para organizar viajes corportativos. Dame el 
             * Util para exportarlo a PDF
                * "Me podes generar esta lista en un html que se sea profesional y corporativo para mandar a un cliente con las opciones para ellos elijan"
                * Cuando lo exporto a pdf no salen bien los colores y ademas las tablas me quedan cortadas por la mitad. podes corregirlo
-  * Formatos para hojas de calculo
+
+### Formatos para hojas de calculo
+    
       * CSV
          * Si tenes excel instalado lo abre directamente
          * Sino lo abro con google sheets
@@ -52,7 +56,9 @@ Dame una lista destinos turisticos para organizar viajes corportativos. Dame el 
        * Ahora se lo puedo pedir como Excel 
        * Se lo puedo pedir como ppt
        * Esto en ChatGPT es bastante nuevo
-   * Formatos para pasar a Texto
+
+### Formatos para pasar a Texto
+
        * Muchas veces al copiar lo que genera el LLM a Word, gane mucho tiempo en generacion de contenido pero le tengo que dedicar tiempo a ajustarlo al formato que quiero (titulo, negritas, etc...)
        * Markdown
          * https://es.wikipedia.org/wiki/Markdown
@@ -85,7 +91,25 @@ Dame una lista destinos turisticos para organizar viajes corportativos. Dame el 
 
 ---
 ```
-   
+
+### Generacion de Diagramas y Graficos (Mermaid)
+
+* Mermaid
+  * https://mermaid.live/
+  * "Con los destinos que vimos generame un diagrama memaid de pie que muestre el indice de turismo/popularidad de cada uno de los destinos" 
+
+```mermaid
+pie title Popularidad de Destinos Corporativos (Estimado)
+    "Buenos Aires" : 10
+    "Rio de Janeiro" : 12
+    "Santiago" : 8
+    "Miami" : 15
+    "Cancun" : 18
+    "Barcelona" : 14
+    "Dubai" : 9
+    "Cusco / Machu Picchu" : 7
+    "Ciudad del Cabo" : 7
+```
          
     
 
