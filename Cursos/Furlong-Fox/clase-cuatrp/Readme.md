@@ -33,7 +33,7 @@
 
 ```
 Dame una lista destinos turisticos para organizar viajes corportativos. Dame el destino, el pais, la epoca del año para viajar, el costo (Bajo, medio, elevado, exclusivo), la infraestructura hotelera (alta/media/baja), Companias aereas que lleguen, Necesita Visa, Requerimientos de Salud (Vacunas, etc) .
-``
+```
 
 * Formatos de Salida
    * Formatos Tecnicos
