@@ -39,31 +39,31 @@ Dame una lista destinos turisticos para organizar viajes corportativos. Dame el 
 
 ### Formatos Tecnicos
 
-     * JSON / XML
-        * Generalmente son formatos que usan los devs o aplicaciones que te piden la informacion en JSON para importar
-    * Formatos de Presentacion
-        * HTML
-            * Util para exportarlo a PDF
-               * "Me podes generar esta lista en un html que se sea profesional y corporativo para mandar a un cliente con las opciones para ellos elijan"
-               * Cuando lo exporto a pdf no salen bien los colores y ademas las tablas me quedan cortadas por la mitad. podes corregirlo
+* JSON / XML
+   * Generalmente son formatos que usan los devs o aplicaciones que te piden la informacion en JSON para importar
+* Formatos de Presentacion
+   * HTML
+       * Util para exportarlo a PDF
+          * "Me podes generar esta lista en un html que se sea profesional y corporativo para mandar a un cliente con las opciones para ellos elijan"
+          * Cuando lo exporto a pdf no salen bien los colores y ademas las tablas me quedan cortadas por la mitad. podes corregirlo
 
 ### Formatos para hojas de calculo
     
-      * CSV
-         * Si tenes excel instalado lo abre directamente
-         * Sino lo abro con google sheets
-    * Interaccion con formatos Estandar
-       * Ahora se lo puedo pedir como Excel 
-       * Se lo puedo pedir como ppt
-       * Esto en ChatGPT es bastante nuevo
+* CSV
+   * Si tenes excel instalado lo abre directamente
+   * Sino lo abro con google sheets
+* Interaccion con formatos Estandar
+  * Ahora se lo puedo pedir como Excel 
+  * Se lo puedo pedir como ppt
+  * Esto en ChatGPT es bastante nuevo
 
 ### Formatos para pasar a Texto
 
-       * Muchas veces al copiar lo que genera el LLM a Word, gane mucho tiempo en generacion de contenido pero le tengo que dedicar tiempo a ajustarlo al formato que quiero (titulo, negritas, etc...)
-       * Markdown
-         * https://es.wikipedia.org/wiki/Markdown
-       * Con Markdown Armo una plantilla
-         * Para el prompt le paso a ChatGPT la plantilla exacta como quiero la informacion
+* Muchas veces al copiar lo que genera el LLM a Word, gane mucho tiempo en generacion de contenido pero le tengo que dedicar tiempo a ajustarlo al formato que quiero (titulo, negritas, etc...)
+* Markdown
+  * https://es.wikipedia.org/wiki/Markdown
+* Con Markdown Armo una plantilla
+  * Para el prompt le paso a ChatGPT la plantilla exacta como quiero la informacion
  
 ```
 # [Destino]
