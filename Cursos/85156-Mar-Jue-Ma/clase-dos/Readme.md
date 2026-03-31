@@ -1,4 +1,4 @@
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/f379b4b5-f2d5-46ae-80a4-679a067488f2" /># Clase Dos - 31 de Marzo del 2026
+# Clase Dos - 31 de Marzo del 2026
 
 # Repaso
 
@@ -105,6 +105,8 @@ Quisiera una investigacion con fuentes academicas sobre la "Dama blanca"
             * https://huggingface.co/spaces/black-forest-labs/FLUX.1-dev
         * Con la imagen generada puedo usar el modelo WAN para crear un video
             * https://huggingface.co/spaces/r3gm/wan2-2-fp8da-aoti-preview
+
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/f379b4b5-f2d5-46ae-80a4-679a067488f2" />
 
 ### Moodelos Open Source
 
