@@ -64,6 +64,33 @@
         * Texto Separados por comas
         * Es un formato que Excel entiende de forma nativa (Aunque nosotros vamos a trabajar con Google Sheets)
         * Si trabajo con Gemini es mucho mas facil generar la planilla y necesito este formato le pido directamente una tabla
+     * Markdown
+        * Un lenguaje de marcado simplificado para darle formato al texto en manera sencilla
+        * Buscamos hacer con este lenguaje una plantilla para definir exactamente como quiero la salida de la IA para que sea mas deterministica
+        * Vamos a definir en lenguaje markddown una plantilla para definir exactamente como quiero la informacion
+
+```txt
+Razas de Caninos
+---
+# [Nombre]
+
+## Caracteristicas
+
+* Peso : **[Peso del Perro]**
+* Tamaño : [Tamaño del perro]
+* Color : [Color del Perro]
+* Esperanza de Vida : *[Esperanza de vida]*
+
+## Personalidad
+
+> [Descripcion de la personalidad del perro]
+
+## Perros Famosos
+
+1. [Ejemplo de perro Famoso]
+2. [Si hay completer mas ejemplos]
+---
+```
 
 # Citas de Alumnos
 
@@ -73,3 +100,4 @@
 # Glosario
 
 * AGI : La Inteligencia Artificial General (AGI) es un tipo de IA hipotética capaz de entender, aprender y aplicar conocimientos en múltiples dominios de manera flexible, igualando o superando las capacidades cognitivas humanas. A diferencia de la IA estrecha actual, la AGI busca resolver cualquier tarea intelectual, razonar, planificar y crear autónomamente. 
+* La ia no es Deterministica : Mismo prompt no da siempre el mismo resultado
