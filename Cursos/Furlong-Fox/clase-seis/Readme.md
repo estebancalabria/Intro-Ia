@@ -123,6 +123,7 @@ Furlong Fox… seguimos viajando… juntos.
     * Los modelos Open Source los podemos ver en : https://huggingface.co/spaces
 * Hay una herramienta donde podemos elegir el modelo y me deja 4 a 30 imagenes por dia
     * https://leonardo.ai/
+     * Tambien permite generar videos
 
 > [!NOTE]
 > Esta herramienta Leonardo yo la muestro para generar imagenes pero si la exploran tiene un monton mas de cosas
@@ -150,14 +151,59 @@ The overall style is cinematic, realistic, and inspirational, with soft golden-h
   2. Evaluas la imagen (Generalmente no es lo que quiero, le falta algo, hay que corregirla)
   3. Vas a Gemini en la web principal o Flow y la modificas
   4. Iterar hasta que la imagen me sirve
+  5. (Opcional) A partir de la imagen puedo generar un vide
 
 > [!NOTE]
 > Hoy (10/4/2026) si usas Nannon Bannana desde Geminini tine limites pero desde Flow (https://labs.google/flow/) lo podes usar de forma ilimitada
 
 ### Generacion de Imagenes con Texto
 
-### Generacion de Disenio Grafico
+* Hoy en dia varios modelos generan imagenes con texto texto embebido
+* Pero el primero y el que mejor funciona para mi es:
+   * https://ideogram.ai/
+   * Generado por un ex empleado de Google que fundo su propia empresa
+   * Se usa mucho en lo que es publicidad
+
+> [!NOTE]
+> SI pagara una herramienta elegiria Ideogram
+
+
+```
+A cinematic and inspirational corporate travel celebration scene for a company called Furlong Fox, set at the end of 2025. A diverse team of travel professionals stands together in a modern airport terminal at golden hour, with airplanes taking off in the background and soft sunlight flooding the scene. The atmosphere is warm, emotional, and celebratory, reflecting a successful year of organizing many trips and achieving business excellence.
+
+The image should convey teamwork, success, global connectivity, and a sense of journey. Subtle visual elements include world maps, glowing travel routes, suitcases, boarding passes, and digital travel itineraries floating softly in the environment.
+
+Two key symbolic figures are present: one person radiating positive energy and friendliness representing leadership and good vibes, and another focused professional analyzing logistics on a tablet representing technical expertise and precision.
+
+Ultra realistic cinematic style, high detail, soft depth of field, golden hour lighting, professional corporate storytelling aesthetic, 4K resolution, slightly dreamlike and inspiring tone.
+
+Typography integration requirements (very important):
+At the top of the image, beautifully integrated into the scene as part of the design, elegant modern typography reads:
+"Furlong-Fox"
+
+At the bottom of the image, also fully integrated into the visual style and lighting of the scene, elegant matching typography reads:
+"Disfrutá el camino"
+
+The text must feel like part of the environment (not pasted on), matching the lighting, perspective, and cinematic style of the scene. Premium corporate branding look, clean, modern, and emotionally uplifting.
+```
+
+* Genero esta imagen
+
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/928d835d-1ed0-41d0-a58a-87f87d843f52" />
 
 ## Generacion de Video
 
+* Una vez que tenga generada la imagen a partir de la misma puedo hacer un video
+ * Tradicionalmente usaba Grok (el de X) pero ahora no puedo hacerlo en forma gratuita
+ * Puedo usar un reemplazo como Qwen
+ * Ademas hay un monton de herramienta para generar videos que vamos
 
+* Generamos este video
+ * https://chat.qwen.ai/s/54d0ca35-4267-430e-9d76-7a892e820a6e?fev=0.2.37
+
+--- 
+
+# Proxima
+
+* Diseño Grafico
+* Generacion de Videos
