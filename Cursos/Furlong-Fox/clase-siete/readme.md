@@ -90,10 +90,13 @@ Somos de la empresa de viaje corporativo Furlong-Fox quiero que me hagas todo el
 ### Generacion de Efectos
 
 * Pika art
-      *https://pika.art/
+  * https://pika.art/
+   * El primero en la parte de Generacion de efectos
+     
 
 ### Herramientas para elegir modelos
 
 * Pollo.Ai
      * https://pollo.ai/invitation-landing?invite_code=dIOOD7
+* De elegir alguna Herramienta para comprar credios Pollo es bastante recomendable hoy
   
