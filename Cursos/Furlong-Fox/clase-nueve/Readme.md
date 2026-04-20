@@ -55,3 +55,6 @@
 
 # Agente
 
+* Para generar un agente podemos usar
+ * https://notebooklm.google.com/
+
