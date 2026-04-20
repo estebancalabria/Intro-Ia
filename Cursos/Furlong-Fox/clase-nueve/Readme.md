@@ -56,5 +56,12 @@
 # Agente
 
 * Para generar un agente podemos usar
- * https://notebooklm.google.com/
+  * https://notebooklm.google.com/
+
+* Tomamos los Readme.md de la clase
+* Armamos un notebook con ellos
+* Les hicimos preguntas especificas
+* Generamos mapa de mente, infografias, preguntas, audios, videos
+
+> Puntaje : 10/10
 
