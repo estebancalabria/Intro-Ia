@@ -48,9 +48,10 @@
       * Nombre...
   * Instalar extension de google Workspace Simple ML for Sheets
     * https://simplemlforsheets.com/
-  * 
-    
-
+  * Borrar 20 de la columnua survived
+  * Corregir para que todas las columnas sean de tipo texto
+  * Usar la herrmienta para predecir y comparar con los valores reales
+  
 
 # Agente
 
