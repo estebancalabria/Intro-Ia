@@ -37,7 +37,12 @@
 Armarme un diagrama mermaid de pi de el PBI de los paises de LATAM
 ```
 
+---
+
 # Herramientas
+
+
+---
 
 # IA Creativa
 
