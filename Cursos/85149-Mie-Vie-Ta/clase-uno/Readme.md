@@ -148,3 +148,19 @@ Argentina en su trama, entre lucha y verdad.
 
 ```
 
+# Historia
+
+* Las primeras versiones de ChatGPT trajeron historias como estas:
+ * HISTORIA REAL QUE PASO EN USA
+ * Un abogado realizo toda su alegado con ChatGPT
+ * El alegato era EXCELENTE sus colegas lo leyeron y se sorprendieron
+ * El alegato citaba mucha jurisprudencia
+ * Ahora cuando los jueces se pusieron a verificar la jurisprudencia ningun caso existina
+ * CHATGPT SE INVENTO TODO
+ * El abogado tuvo que admitir que uso ChatGPT, que NO VERIFICO las fuentes
+ * Supongo que le sacaron la matricula
+
+# Glosario
+
+* Alucinacion : Cuando el modelo Inventa o reponde algo mal o no relacionado
+* Grounding : Contastar la respuesta de la IA contra fuentes verificables
