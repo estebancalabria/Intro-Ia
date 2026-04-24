@@ -28,6 +28,7 @@
   
 * Ese modo voz esta optimizado para que parezca que habla una persona, pero la calidad de respuesta es MALISIMA
 
+
 ---
 
 ### Gemini
@@ -73,6 +74,24 @@ Quiero una investigacion sobre los viaje a la Luna
 * Este prompt me genero esta investigacion
   * https://gemini.google.com/share/9bee314be50c
 * Se puede exportar a google docs directamente
+---
+
+### ChatGPT y Gemini
+
+* Ambos incorporan el concepto de Canvas.
+* Un canvas esta inspirado en los artefactos de Claude
+* Te permite generar un espacio de trabajo sobre un documento que es editable
+* En vez de generar todo el contenido nuevamente con las correcciones vas cambiando el mismo documento
+   * Problema : Le pedis que cambie algo, te lo cambia y ademas te cambia otra cosa que no le pediste
+   * Solucion : Usar un canvas para poder cambiar solamente algo especifico sin tocar el resto
+* Al regenerar un documento entero una y otra vez se gasta muchos tokens y rapidamente llegamos al limite de uso de la capa gratuita
+   * En cambio, usando canvas como solo cambia una seccion gastamos menos tokens y nos dura mas
+* Puedo seleccioar un parrafo, boton derecho y hay un menu desplegable que dice "Preguntar a ChatGPT"
+
+```
+Quiero mandarle un mail a mi jefe para pedirle un aumento. Dame una version inicial y geneame un canvas para trabajar sobre el. 
+```
+* Me genera un canvas....
 
 ---
 
@@ -116,6 +135,10 @@ Tengo que hacer un edificio en Madrid y quiero evaluar que materiales me convien
 ```
 Programame un unico artefacto con el juego PONG. El jugador de la izquierda se mueve con la a y la z. El de la derecha con las teclas de cursor. La barra espacidoa se usa para iniciar y pausar el juego. Una vez pausado el juego se puede reiniciar.  Quiero que tenga unos graficos modernos, con efectos de particulas, y que sea super profesional. Sorprendeme.
 ```
+
+> [!NOTA]
+> Miren lo que hizo Martin! Felicitaciones!
+> https://achikigod.github.io/tenis-de-mesa/
 
 
 # Actualidad
