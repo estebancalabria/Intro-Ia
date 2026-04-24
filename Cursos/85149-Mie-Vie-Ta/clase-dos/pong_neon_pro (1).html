@@ -1,0 +1,260 @@
+
+<canvas id="c" style="display:block;width:100%;background:#000;border-radius:8px;cursor:none;"></canvas>
+<div id="msg" style="text-align:center;font-family:monospace;font-size:13px;color:#555;margin-top:6px;letter-spacing:1px;">ESPACIO para iniciar · A/Z izquierda · ↑↓ derecha</div>
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+const W = 680, H = 420;
+canvas.width = W; canvas.height = H;
+
+const STATE = { IDLE:0, PLAYING:1, PAUSED:2 };
+let state = STATE.IDLE;
+
+const PAD = { w:10, h:70, speed:5 };
+const BALL_R = 7;
+
+let p1 = { x:18, y:H/2-PAD.h/2, score:0, color:'#00f0ff' };
+let p2 = { x:W-18-PAD.w, y:H/2-PAD.h/2, score:0, color:'#ff2d78' };
+let ball = { x:W/2, y:H/2, vx:4, vy:3 };
+let particles = [];
+let trails = [];
+let keys = {};
+let frame = 0;
+let scoreFlash = { p1:0, p2:0 };
+
+function resetBall(dir=1) {
+  ball.x = W/2; ball.y = H/2;
+  const angle = (Math.random()*0.6-0.3);
+  ball.vx = dir * (4 + Math.random());
+  ball.vy = (Math.random()*4-2);
+  trails = [];
+}
+
+function spawnParticles(x, y, color, n=18) {
+  for(let i=0;i<n;i++) {
+    const angle = Math.random()*Math.PI*2;
+    const speed = 1.5 + Math.random()*4;
+    particles.push({
+      x, y,
+      vx: Math.cos(angle)*speed,
+      vy: Math.sin(angle)*speed,
+      life: 1,
+      decay: 0.025+Math.random()*0.03,
+      r: 1.5+Math.random()*3,
+      color
+    });
+  }
+}
+
+function drawGlow(x, y, r, color, alpha=0.15) {
+  const g = ctx.createRadialGradient(x,y,0,x,y,r);
+  g.addColorStop(0, color.replace(')',`,${alpha})`).replace('rgb','rgba').replace('#',`rgba(`));
+  g.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle = g;
+  ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+}
+
+function hexToRgb(hex) {
+  const r=parseInt(hex.slice(1,3),16), g=parseInt(hex.slice(3,5),16), b=parseInt(hex.slice(5,7),16);
+  return `${r},${g},${b}`;
+}
+
+function drawPad(p) {
+  const rgb = hexToRgb(p.color);
+  const grd = ctx.createLinearGradient(p.x,p.y,p.x+PAD.w,p.y+PAD.h);
+  grd.addColorStop(0, `rgba(${rgb},0.9)`);
+  grd.addColorStop(1, `rgba(${rgb},0.5)`);
+  ctx.fillStyle = grd;
+  ctx.shadowBlur = 18; ctx.shadowColor = p.color;
+  ctx.beginPath(); ctx.roundRect(p.x, p.y, PAD.w, PAD.h, 4); ctx.fill();
+  ctx.shadowBlur = 0;
+  ctx.strokeStyle = `rgba(${rgb},0.4)`;
+  ctx.lineWidth = 1;
+  ctx.stroke();
+}
+
+function drawBall() {
+  for(let i=trails.length-1;i>=0;i--) {
+    const t = trails[i];
+    const a = (i/trails.length)*0.3;
+    ctx.beginPath(); ctx.arc(t.x,t.y,BALL_R*(0.4+i/trails.length*0.6),0,Math.PI*2);
+    ctx.fillStyle = `rgba(255,255,255,${a})`;
+    ctx.fill();
+  }
+  ctx.shadowBlur = 25; ctx.shadowColor = '#fff';
+  ctx.fillStyle = '#ffffff';
+  ctx.beginPath(); ctx.arc(ball.x, ball.y, BALL_R, 0, Math.PI*2); ctx.fill();
+  ctx.shadowBlur = 0;
+  const g = ctx.createRadialGradient(ball.x,ball.y,0,ball.x,ball.y,30);
+  g.addColorStop(0,'rgba(255,255,255,0.12)');
+  g.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=g; ctx.beginPath(); ctx.arc(ball.x,ball.y,30,0,Math.PI*2); ctx.fill();
+}
+
+function drawNet() {
+  ctx.setLineDash([8,10]);
+  ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+  ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(W/2,0); ctx.lineTo(W/2,H); ctx.stroke();
+  ctx.setLineDash([]);
+}
+
+function drawScore() {
+  ctx.font = 'bold 52px monospace';
+  ctx.textAlign = 'center';
+  const f1 = Math.max(0, scoreFlash.p1);
+  const f2 = Math.max(0, scoreFlash.p2);
+  ctx.fillStyle = f1>0 ? `rgba(0,240,255,${0.5+f1*0.5})` : 'rgba(0,240,255,0.35)';
+  if(f1>0){ctx.shadowBlur=30;ctx.shadowColor='#00f0ff';}
+  ctx.fillText(p1.score, W/4, 65);
+  ctx.shadowBlur=0;
+  ctx.fillStyle = f2>0 ? `rgba(255,45,120,${0.5+f2*0.5})` : 'rgba(255,45,120,0.35)';
+  if(f2>0){ctx.shadowBlur=30;ctx.shadowColor='#ff2d78';}
+  ctx.fillText(p2.score, 3*W/4, 65);
+  ctx.shadowBlur=0;
+  ctx.textAlign = 'left';
+}
+
+function drawParticles() {
+  for(let p of particles) {
+    ctx.globalAlpha = p.life;
+    ctx.fillStyle = p.color;
+    ctx.beginPath(); ctx.arc(p.x, p.y, p.r*p.life, 0, Math.PI*2); ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+}
+
+function drawScanlines() {
+  for(let y=0;y<H;y+=4) {
+    ctx.fillStyle='rgba(0,0,0,0.04)';
+    ctx.fillRect(0,y,W,1);
+  }
+}
+
+function drawCornerGlow() {
+  const gl = ctx.createRadialGradient(0,H/2,0,0,H/2,120);
+  gl.addColorStop(0,'rgba(0,240,255,0.04)'); gl.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=gl; ctx.fillRect(0,0,W,H);
+  const gr = ctx.createRadialGradient(W,H/2,0,W,H/2,120);
+  gr.addColorStop(0,'rgba(255,45,120,0.04)'); gr.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=gr; ctx.fillRect(0,0,W,H);
+}
+
+function drawOverlay() {
+  if(state===STATE.IDLE) {
+    ctx.fillStyle='rgba(0,0,0,0.6)';
+    ctx.fillRect(0,0,W,H);
+    ctx.font='bold 36px monospace';
+    ctx.textAlign='center';
+    ctx.fillStyle='#fff';
+    ctx.shadowBlur=20; ctx.shadowColor='#00f0ff';
+    ctx.fillText('PONG', W/2, H/2-30);
+    ctx.shadowBlur=0;
+    ctx.font='13px monospace';
+    ctx.fillStyle='rgba(255,255,255,0.5)';
+    const t = Math.sin(frame*0.06)*0.4+0.6;
+    ctx.globalAlpha=t;
+    ctx.fillText('PRESIONÁ ESPACIO PARA INICIAR', W/2, H/2+20);
+    ctx.globalAlpha=1;
+    ctx.textAlign='left';
+  }
+  if(state===STATE.PAUSED) {
+    ctx.fillStyle='rgba(0,0,0,0.55)';
+    ctx.fillRect(0,0,W,H);
+    ctx.font='bold 32px monospace';
+    ctx.textAlign='center';
+    ctx.fillStyle='#fff';
+    ctx.shadowBlur=15; ctx.shadowColor='#ff2d78';
+    ctx.fillText('PAUSADO', W/2, H/2-25);
+    ctx.shadowBlur=0;
+    ctx.font='13px monospace';
+    ctx.fillStyle='rgba(255,255,255,0.5)';
+    ctx.fillText('ESPACIO para continuar', W/2, H/2+10);
+    ctx.fillText('R para reiniciar', W/2, H/2+30);
+    ctx.textAlign='left';
+  }
+}
+
+function update() {
+  if(state!==STATE.PLAYING) return;
+  frame++;
+  if(scoreFlash.p1>0) scoreFlash.p1-=0.05;
+  if(scoreFlash.p2>0) scoreFlash.p2-=0.05;
+
+  if(keys['a']||keys['A']) p1.y = Math.max(0, p1.y - PAD.speed);
+  if(keys['z']||keys['Z']) p1.y = Math.min(H-PAD.h, p1.y + PAD.speed);
+  if(keys['ArrowUp']) p2.y = Math.max(0, p2.y - PAD.speed);
+  if(keys['ArrowDown']) p2.y = Math.min(H-PAD.h, p2.y + PAD.speed);
+
+  trails.push({x:ball.x, y:ball.y});
+  if(trails.length>12) trails.shift();
+
+  ball.x += ball.vx;
+  ball.y += ball.vy;
+
+  if(ball.y-BALL_R<=0){ball.y=BALL_R;ball.vy*=-1;spawnParticles(ball.x,0,'rgba(255,255,255,0.8)',6);}
+  if(ball.y+BALL_R>=H){ball.y=H-BALL_R;ball.vy*=-1;spawnParticles(ball.x,H,'rgba(255,255,255,0.8)',6);}
+
+  if(ball.x-BALL_R<=p1.x+PAD.w && ball.x+BALL_R>=p1.x && ball.y>=p1.y && ball.y<=p1.y+PAD.h && ball.vx<0) {
+    ball.vx = Math.abs(ball.vx)*1.05;
+    const rel = (ball.y-(p1.y+PAD.h/2))/(PAD.h/2);
+    ball.vy = rel*5;
+    ball.x = p1.x+PAD.w+BALL_R;
+    spawnParticles(ball.x, ball.y, '#00f0ff', 20);
+  }
+  if(ball.x+BALL_R>=p2.x && ball.x-BALL_R<=p2.x+PAD.w && ball.y>=p2.y && ball.y<=p2.y+PAD.h && ball.vx>0) {
+    ball.vx = -Math.abs(ball.vx)*1.05;
+    const rel = (ball.y-(p2.y+PAD.h/2))/(PAD.h/2);
+    ball.vy = rel*5;
+    ball.x = p2.x-BALL_R;
+    spawnParticles(ball.x, ball.y, '#ff2d78', 20);
+  }
+
+  if(ball.x<0){p2.score++;scoreFlash.p2=1;spawnParticles(0,ball.y,'#ff2d78',30);resetBall(1);}
+  if(ball.x>W){p1.score++;scoreFlash.p1=1;spawnParticles(W,ball.y,'#00f0ff',30);resetBall(-1);}
+
+  for(let p of particles){p.x+=p.vx;p.y+=p.vy;p.vx*=0.94;p.vy*=0.94;p.life-=p.decay;}
+  particles = particles.filter(p=>p.life>0);
+
+  const maxSpd = 12;
+  ball.vx = Math.min(Math.max(ball.vx,-maxSpd),maxSpd);
+  ball.vy = Math.min(Math.max(ball.vy,-maxSpd),maxSpd);
+}
+
+function draw() {
+  ctx.clearRect(0,0,W,H);
+  ctx.fillStyle='#06060e';
+  ctx.fillRect(0,0,W,H);
+  drawCornerGlow();
+  drawScanlines();
+  drawNet();
+  drawScore();
+  drawParticles();
+  drawPad(p1); drawPad(p2);
+  if(state!==STATE.IDLE) drawBall();
+  drawOverlay();
+  if(state===STATE.IDLE) frame++;
+}
+
+function loop(){update();draw();requestAnimationFrame(loop);}
+
+document.addEventListener('keydown', e=>{
+  keys[e.key]=true;
+  if(e.key===' '){
+    e.preventDefault();
+    if(state===STATE.IDLE){state=STATE.PLAYING;resetBall(1);}
+    else if(state===STATE.PLAYING) state=STATE.PAUSED;
+    else if(state===STATE.PAUSED) state=STATE.PLAYING;
+  }
+  if((e.key==='r'||e.key==='R') && state===STATE.PAUSED){
+    p1.score=0;p2.score=0;
+    p1.y=H/2-PAD.h/2; p2.y=H/2-PAD.h/2;
+    particles=[]; trails=[];
+    state=STATE.IDLE; frame=0;
+  }
+  if(['ArrowUp','ArrowDown',' '].includes(e.key)) e.preventDefault();
+});
+document.addEventListener('keyup', e=>{ keys[e.key]=false; });
+
+loop();
+</script>
