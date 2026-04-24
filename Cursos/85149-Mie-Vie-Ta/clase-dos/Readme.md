@@ -180,5 +180,8 @@ Programame un unico artefacto con el juego PONG. El jugador de la izquierda se m
       * Para clonar voces
         
 
+# Para la proxima clase
 
+* Vamos a seguir viendo LLM Propietarios... y tambien Open Source
+* De Claude (y en general de todos) me falto mencioar el concepto de la multimodalidad
   
