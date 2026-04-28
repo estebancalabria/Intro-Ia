@@ -181,12 +181,268 @@ nombre,altura_m,ubicacion,costo_aproximado_usd,uso,arquitecto,construccion,descr
 
 > La respuesta del LLM la puedo copiar en word y veo como respeta el formato
 
+### Mermaid
+
+* Lenguaje estandar para generar diagramas a partir de texto
+* Los llm (como Claude, ChatGPT) tiene previsulizacion sobre este lenguaje
+
+> https://mermaid.live/
+
+#### Propuesta clase pasada
+
+* Estaba pensando en las facturas de 12 meses en PDF, que te de el gráfico de consumo.
+* Vamos a pedirle datos fiticios a ChatGPT
+
+```
+Quiero que me generes facturas inventadas de los ultimos 12 meses para un proyecto de construccion con distintas categorias de gastos. Es un proyecto grande donde estan involucradas varias personas y que se emiten facturas mes a mes. Generame las facturas fiticias pero que sean verosimiles y realistas para un proyecto de construccion en Madrid.
+```
+
+* Me genero estas facturas (lo tuve que convencer)
+
+```
+Ok, así sí es un caso claramente educativo 👍
+Te armo 12 “facturas” con una **moneda ficticia** y valores deliberadamente irreales, pero manteniendo estructura profesional.
+
+---
+
+# 🧾 Facturación simulada de obra (12 meses)
+
+> Proyecto: Complejo Habitacional “Nova Terra”
+> Ubicación: Madrid
+> Moneda: **ZED (Ƶ)** *(moneda ficticia)*
+> ⚠️ **DOCUMENTO DE SIMULACIÓN – SIN VALIDEZ LEGAL**
+
+---
+
+## 🧾 Factura Nº ZED-001
+
+* Fecha: 15/01/2025
+* Proveedor: Constructora Orbital SL
+
+**Detalle:**
+
+* Movimiento de suelo: Ƶ 98.450
+* Alquiler excavadora cuántica: Ƶ 12.300
+* Estudio geotérmico avanzado: Ƶ 7.900
+
+**Subtotal:** Ƶ 118.650
+**IVA (21%):** Ƶ 24.916,5
+**Total:** Ƶ 143.566,5
+
+---
+
+## 🧾 Factura Nº ZED-002
+
+* Fecha: 14/02/2025
+* Proveedor: Hormigones del Futuro SA
+
+**Detalle:**
+
+* Hormigón reforzado: Ƶ 210.000
+* Estructura de titanio ligero: Ƶ 145.000
+* Mano de obra especializada: Ƶ 89.000
+
+**Subtotal:** Ƶ 444.000
+**IVA:** Ƶ 93.240
+**Total:** Ƶ 537.240
+
+---
+
+## 🧾 Factura Nº ZED-003
+
+* Fecha: 18/03/2025
+* Proveedor: Ingeniería Atlas
+
+**Detalle:**
+
+* Diseño estructural avanzado: Ƶ 75.000
+* Simulación sísmica: Ƶ 32.000
+* Supervisión técnica: Ƶ 28.000
+
+**Subtotal:** Ƶ 135.000
+**IVA:** Ƶ 28.350
+**Total:** Ƶ 163.350
+
+---
+
+## 🧾 Factura Nº ZED-004
+
+* Fecha: 16/04/2025
+* Proveedor: Materiales Europa
+
+**Detalle:**
+
+* Ladrillos inteligentes: Ƶ 88.000
+* Mortero autonivelante: Ƶ 21.500
+* Mano de obra: Ƶ 54.000
+
+**Subtotal:** Ƶ 163.500
+**IVA:** Ƶ 34.335
+**Total:** Ƶ 197.835
+
+---
+
+## 🧾 Factura Nº ZED-005
+
+* Fecha: 15/05/2025
+* Proveedor: Techos Globales SL
+
+**Detalle:**
+
+* Cubierta termo-reactiva: Ƶ 120.000
+* Impermeabilización avanzada: Ƶ 44.000
+* Instalación: Ƶ 38.000
+
+**Subtotal:** Ƶ 202.000
+**IVA:** Ƶ 42.420
+**Total:** Ƶ 244.420
+
+---
+
+## 🧾 Factura Nº ZED-006
+
+* Fecha: 17/06/2025
+* Proveedor: ElectroNova
+
+**Detalle:**
+
+* Cableado inteligente: Ƶ 67.000
+* Panel central IA: Ƶ 89.000
+* Instalación: Ƶ 41.000
+
+**Subtotal:** Ƶ 197.000
+**IVA:** Ƶ 41.370
+**Total:** Ƶ 238.370
+
+---
+
+## 🧾 Factura Nº ZED-007
+
+* Fecha: 15/07/2025
+* Proveedor: AquaSystems
+
+**Detalle:**
+
+* Tuberías autorreguladas: Ƶ 54.000
+* Sistema de reciclaje de agua: Ƶ 73.000
+* Instalación: Ƶ 39.000
+
+**Subtotal:** Ƶ 166.000
+**IVA:** Ƶ 34.860
+**Total:** Ƶ 200.860
+
+---
+
+## 🧾 Factura Nº ZED-008
+
+* Fecha: 14/08/2025
+* Proveedor: Revestimientos Premium
+
+**Detalle:**
+
+* Revestimiento nano-cerámico: Ƶ 61.000
+* Pintura inteligente: Ƶ 45.000
+* Mano de obra: Ƶ 36.000
+
+**Subtotal:** Ƶ 142.000
+**IVA:** Ƶ 29.820
+**Total:** Ƶ 171.820
+
+---
+
+## 🧾 Factura Nº ZED-009
+
+* Fecha: 16/09/2025
+* Proveedor: Pisos Infinity
+
+**Detalle:**
+
+* Piso auto-limpiante: Ƶ 98.000
+* Adhesivos industriales: Ƶ 18.000
+* Instalación: Ƶ 42.000
+
+**Subtotal:** Ƶ 158.000
+**IVA:** Ƶ 33.180
+**Total:** Ƶ 191.180
+
+---
+
+## 🧾 Factura Nº ZED-010
+
+* Fecha: 15/10/2025
+* Proveedor: Carpintería Nova
+
+**Detalle:**
+
+* Puertas acústicas premium: Ƶ 72.000
+* Ventanas inteligentes: Ƶ 110.000
+* Instalación: Ƶ 39.000
+
+**Subtotal:** Ƶ 221.000
+**IVA:** Ƶ 46.410
+**Total:** Ƶ 267.410
+
+---
+
+## 🧾 Factura Nº ZED-011
+
+* Fecha: 14/11/2025
+* Proveedor: Iluminación Lux
+
+**Detalle:**
+
+* Sistema lumínico adaptativo: Ƶ 64.000
+* Sensores inteligentes: Ƶ 38.000
+* Instalación: Ƶ 29.000
+
+**Subtotal:** Ƶ 131.000
+**IVA:** Ƶ 27.510
+**Total:** Ƶ 158.510
+
+---
+
+## 🧾 Factura Nº ZED-012
+
+* Fecha: 12/12/2025
+* Proveedor: Urbanismo Verde
+
+**Detalle:**
+
+* Jardinería bio-sintética: Ƶ 57.000
+* Cerramiento perimetral: Ƶ 84.000
+* Mano de obra: Ƶ 36.000
+
+**Subtotal:** Ƶ 177.000
+**IVA:** Ƶ 37.170
+**Total:** Ƶ 214.170
+```
+
+* Armar un diagrama PIE mermaid discrimanndo los gastos por categoria
+
+```mermaid
+pie title Distribución de gastos por categoría (Ƶ)
+    "Mano de obra / instalación" : 545100
+    "Estructura y materiales base" : 464500
+    "Instalaciones (eléctrica + sanitaria)" : 323000
+    "Revestimientos y acabados" : 322000
+    "Carpintería" : 182000
+    "Cubierta" : 164000
+    "Estudios/Ingeniería" : 142900
+    "Exteriores" : 141000
+    "Iluminación" : 102000
+    "Movimiento de suelo" : 98450
+    "Maquinaria" : 12300
+```
+
 # Consultas
 
 * Para generar presentaciones
   * Vamos a ver luego la mejor herramienta para generar presentacion
   * Tambien podemos generar presetnaciones con qwen que casualmente tiene una herramienta especifica para ello
     * https://chat.qwen.ai/s/1e7e0eab-5720-444e-affe-ba44316157f6?fev=0.2.45
+   
+* Para la clase de generacion de imagenes vamos a hacer un poster personalizado
+   * https://fotos.perfil.com/2022/10/11/trim/1280/720/better-call-saul-1433864.jpeg
 
 # Glosario
 
