@@ -26,6 +26,11 @@
       
 # Prompt Engineeting
 
+## Tips
+
+* Muchas veces le digo a la IA "Devolveme directamtente [...] para copiar y pegar sin acotar nada...
+ * Me ahorro la intro de que va a hacer y la sugerencia de como seguir
+
 ## Patron de Promting
 
 ### Rol / Persona
@@ -141,6 +146,40 @@ nombre,altura_m,ubicacion,costo_aproximado_usd,uso,arquitecto,construccion,descr
 #### Markdwon
 
 * Es el lenguaje interno que usa ChatGPT para darle formato al texto
+* Markdown es un lenguaje simple para darle formato al texto
+  * https://es.wikipedia.org/wiki/Markdown
+* Usos
+  * Probema : Genero texto con ChatGPT y despues lo que gane de tiempo lo tengo que invertir en cambiar el formato
+  * Me permite definir una plantilla como quiero exactamente la indormacion
+    * Reduce el no determinismo (le digo a la IA exactamente como quiero la informacion)
+    * Al copiar y pegar en word me mantiene el formato
+
+* Plantilla para el caso de los edificios
+
+```
+# [Nombre de Edificio]
+
+> [un parrafo que lo describa]
+
+# Detalles
+
+* Construccion : **[cuando se consturyo]**
+* Altura : **[Altura del edificio]** 
+* Lugar : **[Lugar del edificio]**
+* Costo aproximado : *[Costo]*
+
+## Uso
+
+> [El uso que se le da]
+
+## Arquitecto
+
+> [El arquitecto o estudio responsable]
+
+---
+```
+
+> La respuesta del LLM la puedo copiar en word y veo como respeta el formato
 
 # Consultas
 
