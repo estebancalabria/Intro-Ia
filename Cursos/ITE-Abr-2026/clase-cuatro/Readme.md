@@ -443,7 +443,23 @@ xychart-beta
     y-axis "Gastos (Ƶ)" 0 --> 600000
     line [143566.5,537240,163350,197835,244420,238370,200860,171820,191180,267410,158510,214170]
 ```
+---
 
+# Modulo 3 : Herramientas
+
+* Herrmienta para tomar un texto y hacerlo mas visual emriqueciendolo justamente con diagramas
+
+> https://www.napkin.ai/
+
+* A partir del informe de investigacion de Gemini
+   * https://gemini.google.com/share/fb44d17cd991
+* Generamos este napkin
+   * https://app.napkin.ai/page/CgoiCHByb2Qtb25lEiwKBFBhZ2UaJDQwOTljNmI0LTY1ZmUtNDRhZS1hMWE4LTEzYzc5ZmFhZThkOA?s=1
+
+> [!NOTE]
+> Puntaje : 9 / 10
+
+---
 
 # Consultas
 
