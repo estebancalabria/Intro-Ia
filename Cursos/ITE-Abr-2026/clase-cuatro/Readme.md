@@ -434,6 +434,17 @@ pie title Distribución de gastos por categoría (Ƶ)
     "Maquinaria" : 12300
 ```
 
+* Gastos discriminados por mes
+
+```mermaid
+xychart-beta
+    title "Evolución mensual de gastos (Ƶ)"
+    x-axis ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"]
+    y-axis "Gastos (Ƶ)" 0 --> 600000
+    line [143566.5,537240,163350,197835,244420,238370,200860,171820,191180,267410,158510,214170]
+```
+
+
 # Consultas
 
 * Para generar presentaciones
