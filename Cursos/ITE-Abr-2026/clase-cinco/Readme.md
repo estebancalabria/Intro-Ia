@@ -103,3 +103,37 @@ ZED-012,2025-12-12,Urbanismo Verde,Mano de obra,Mano de obra,36000,177000,37170,
 ```
 Generame otro libro donde se vea un grafico pivoteable para poder analizar los gastos por mes y por categoria
 ```
+
+# Herramientas
+
+# Generacion de Presentaciones
+
+* Habiamos visto la generacion de presetaciones dentro de Qwen como herramienta especializada
+* Mejor herrmienta hoy
+   * Gamma
+     * https://gamma.app/signup?r=cjucljp9heegmkv
+   *  No solo genera presentaciones sino tambien es un editor tipo power point
+ 
+* Prompt usadp
+```
+Crea una presentación profesional, moderna y visualmente atractiva para un proyecto ficticio educativo de desarrollo inmobiliario en Madrid, orientado a atraer inversores.
+
+Contexto del proyecto: Se trata de un desarrollo inmobiliario innovador en Madrid llamado "Residencial Horizonte Madrid", un complejo de viviendas premium sustentables con enfoque en tecnología, eficiencia energética y alta rentabilidad. El proyecto está estratégicamente ubicado en una zona de alto crecimiento urbano, con excelente conectividad, cercanía a centros comerciales, educativos y transporte público.
+
+Objetivo de la presentación: Convencer a potenciales inversores de financiar el proyecto, destacando rentabilidad, seguridad, innovación y oportunidad de mercado.
+
+
+
+Claim atractivo (ej: “Invertí en el futuro de Madrid”)
+
+Llamado a la acción
+
+“Sumate como inversor”
+
+Beneficios exclusivos por inversión temprana
+```
+
+* Generamos esta prsentacion:
+  * https://gamma.app/docs/Invierte-en-el-futuro-de-Madrid-aumjexnqe9mh691
+* Y esta landing
+  * https://residencial-horizonte-ma-12qt21b.gamma.site/
