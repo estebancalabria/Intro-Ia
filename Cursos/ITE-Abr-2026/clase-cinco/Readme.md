@@ -106,7 +106,7 @@ Generame otro libro donde se vea un grafico pivoteable para poder analizar los g
 
 # Herramientas
 
-# Generacion de Presentaciones
+## Generacion de Presentaciones
 
 * Habiamos visto la generacion de presetaciones dentro de Qwen como herramienta especializada
 * Mejor herrmienta hoy
@@ -137,3 +137,43 @@ Beneficios exclusivos por inversión temprana
   * https://gamma.app/docs/Invierte-en-el-futuro-de-Madrid-aumjexnqe9mh691
 * Y esta landing
   * https://residencial-horizonte-ma-12qt21b.gamma.site/
+
+> [!NOTE]
+> PUNTAJE 9/10
+
+## Alternativa generacion de Presetnaciones
+
+* Estilo de presetnaciones diferenvtes
+
+> https://prezi.com/
+
+## Generacion de Videos Instutucionales
+
+* Videos basados en Avatar
+* 3 videos de 1 minuto por semana
+* HeyGen
+   * https://heygen.com/
+* Ejemplos de Videos
+   * https://app.heygen.com/videos/llegada-a-la-luna-4fe57c7ee05c4340be90f26fa94d7f24
+   * https://app.heygen.com/videos/cambio-climatico-1c6c4d3398ce4de0b06d707d99d87e30
+   * https://app.heygen.com/videos/triangulo-wanda-china-mauro-ee42af3d820f462fa29e02d7536ba538
+
+
+* Creamos el script con ChatGPT
+
+```
+¿Y si te dijera que hoy tenés la oportunidad de invertir en uno de los mercados más sólidos de Europa… sin moverte de donde estás?
+
+Te presento Residencial Horizonte Madrid: un desarrollo inmobiliario pensado para el futuro. Viviendas premium, tecnología inteligente, sustentabilidad real… en una de las ciudades con mayor crecimiento y demanda de toda Europa.
+
+Esto no es solo un proyecto. Es una oportunidad concreta de generar rentabilidad en dólares, con respaldo, con visión y con timing perfecto.
+
+Estamos abriendo una etapa inicial con beneficios exclusivos para inversores que entran temprano. Y ahí es donde vos podés marcar la diferencia.
+
+Si estás buscando diversificar, proteger tu capital y hacerlo crecer… este es el momento.
+
+Sumate hoy a Residencial Horizonte Madrid. Porque las mejores inversiones… se toman antes que el resto las vea.
+```
+
+> [!NOTE]
+> Puntaje : 9/10
