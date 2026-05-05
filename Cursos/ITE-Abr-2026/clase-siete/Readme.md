@@ -147,3 +147,12 @@ Production: analog warmth, slightly vintage tone, live band feeling, no heavy el
 
 
 # Agente
+
+* Vamos a descargar los readme.md que hicimos durante el curso
+  * https://github.com/estebancalabria/Intro-Ia/blob/main/Cursos/ITE-Abr-2026/clase-uno/Readme.md
+  * https://github.com/estebancalabria/Intro-Ia/blob/main/Cursos/ITE-Abr-2026/clase-dos/Readme.md
+  * https://github.com/estebancalabria/Intro-Ia/blob/main/Cursos/ITE-Abr-2026/clase-tres/Readme.md
+  * https://github.com/estebancalabria/Intro-Ia/blob/main/Cursos/ITE-Abr-2026/clase-cuatro/Readme.md
+  * https://github.com/estebancalabria/Intro-Ia/blob/main/Cursos/ITE-Abr-2026/clase-cinco/Readme.md
+  * https://github.com/estebancalabria/Intro-Ia/blob/main/Cursos/ITE-Abr-2026/clase-siete/Readme.md
+  * https://github.com/estebancalabria/Intro-Ia/blob/main/Cursos/ITE-Abr-2026/clase-siete/Readme.md
