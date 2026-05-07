@@ -70,19 +70,34 @@
 
 * Aquí tenés la lista con bullets y sub-bullets:
 
- - Foundry
- - AI Hubs
- - Azure OpenAI
- - AI Search
- - Bot services
- - Computer vision
- - Custom vision
- - Content safety
- - Document intelligence
- - Face API
- - Health Insights
- - Machine Learning
- - Immersive reader
- - Language service
- - Speech service
- - **Translator**
+- Foundry
+- Azure OpenAI
+  - Te da acceso a muchos LLM inclusive los de OpenAI a un menor costo
+- AI Search
+  - Indexar documentacion semantica
+    - (Ej busco sobre animales y me devuelve manuales de perros)
+    - Busco una falla en un calefon en lenguaje muy coloquial y me defuelve manuales tecnicos de gas
+- Bot services
+    - DEsarrollar un bot de atencion al cliente (integrando por ejemplo con una base de conocimiento con AI Search)
+- Computer vision
+    - Detectar en un video cuando apatecen personas sin necesidad de tener a alguien mirando todo el tiempo la camara 
+- Custom vision
+   - Entrenar a modelos que detecten productos defectuosos en una linea de produccion
+- Content safety
+   - Me ayuda a moderar contenido online sin tener que hacerlo manualmente (insultos, cosas de lugar, etc)
+- Document intelligence
+   - Me permite digitalizar automaticamente todo lo que se maneja en papel (sacarle una foto a un remito) y pasarlo a texto en un formato estandar
+- Face API
+  - Se puede utilizar para tomar presentismo o registro automatico en una empresa (quien sale y entra del edificio)
+- Health Insights
+  - Para centros de salud
+- Machine Learning
+  - Lo que hicimos en SimpleML for sheets pero cuando trabajo con millones y millones de datos
+- Immersive reader
+  - PAra usabilidad
+- Language service
+  - Para analisis automatico de texto en forma economica como por ejemplo reconocer comentarios negativos en google
+- Speech service
+  - PAra convertir de texto a voz y vos a texto
+- **Translator**
+  - Para trabajar en diferentes idiomas
