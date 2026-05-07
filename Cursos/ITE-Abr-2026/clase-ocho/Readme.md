@@ -71,6 +71,7 @@
 * Aquí tenés la lista con bullets y sub-bullets:
 
 - Foundry
+  - 
 - Azure OpenAI
   - Te da acceso a muchos LLM inclusive los de OpenAI a un menor costo
 - AI Search
@@ -101,3 +102,14 @@
   - PAra convertir de texto a voz y vos a texto
 - **Translator**
   - Para trabajar en diferentes idiomas
+
+* El uso de estos servicios esta dividiso en dos
+  * Portal de Azure : portal.azure.com
+     * Crear recursos
+     * Definir capacidad de procesameinto necesearia
+     * Permisos y seguridad
+     * Lo maneja mas IT
+  * Cada servicio tiene su portal especializado
+     * Expermientar con los modelos
+     * Ver que se puede hacer
+     * Usuario Final, el que va a desarrollar la app, expermientar con los modelos
