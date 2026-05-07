@@ -113,3 +113,25 @@
      * Expermientar con los modelos
      * Ver que se puede hacer
      * Usuario Final, el que va a desarrollar la app, expermientar con los modelos
+
+
+# AI Foundry : Agentes
+
+* Quiero hacer un agente que este en mi pagina web y responda dudas sobre proyectos de construccion
+* Crear una sucripcion en Azure
+   * Entro al portal, registro subscripcion con mi numero de tarjeta
+* En el portal voy a crear un recurso de AI foundry (Administrativo)
+   * Creando un proyecto
+* Voy a la web Especializada (ai.azure.com) y empiezo a programar mi agente
+* Elegis el modelo suyacente para tu agente
+    * Si es mas tecnico ===> Claude
+    * Si es mas de atencion al publico ===> ChatGPT
+       * Si quiero un modelo mas barato ===> ChatGPT mini
+* Despliego el modelo dentro del proyecto
+* Lo configuro
+   * Crearle el system prompt (Instrucciones personalizadas)
+   * Agrego fuentes de conocimientos (Como hicimos con notebookLM) <<< AI Search
+   * Ajusto los hiper parametros
+* Lo voy probando hasta que sea lo que busco
+* Una vez que estoy satisfecho
+  * Le doy al programador permiso para desarrollame el bot en la pagina web de mi empresa para que los usuarios final lo utilicen
