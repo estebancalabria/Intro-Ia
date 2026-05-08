@@ -48,4 +48,22 @@
   * https://lmstudio.ai/
      * Aplicacion de escritorio facil de usar
 * Ambas descargan los modelos de HF
-  * 
+
+
+## Evaluacion de Modelos de IA
+
+* Comparar modelos de IA
+ * https://arena.ai/
+
+* Hoy : Competencia de chistes
+
+```
+Contame un chiste
+```
+
+* En el Leatherboard
+
+
+# Glosario
+
+* FOMO : Fear of Missing Out
