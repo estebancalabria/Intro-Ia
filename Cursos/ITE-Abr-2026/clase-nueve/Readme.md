@@ -32,6 +32,10 @@
     * Agente ===> ai.azure.com
     * Machine Learning ====> https://ml.azure.com/
     * Otros servicios
+      * Computer Vision ===> https://portal.vision.cognitive.azure.com/
+      * Custo vision ====>  https://www.customvision.ai/
+      * Language Service ====> https://language.cognitive.azure.com/
+      * ...
 
 ## Servicio de Machine Learning
 
@@ -163,3 +167,26 @@ print(round(precio_estimado[0], 2))
 ```
 
 ## Servicios Especializados
+
+### Computer Vision
+
+* https://portal.vision.cognitive.azure.com/
+* Casos de Uso
+  * Detectar Caras en una imagen
+  * Verificar si es la persona del DNI
+  * ...
+
+ ## Language Service
+
+* https://language.cognitive.azure.com/
+* Casos de uso
+   * Analisis de Sentimiento
+   * Resumir Texto
+   * Extraer informacion Sensible
+   * Extraer entidades conocidas
+
+ ## Custom Vision
+
+ * https://www.customvision.ai/
+ * Casos de uso
+  * Entrenar un modelo de IA para que reconozca categoria de imagenes y las clasifique
