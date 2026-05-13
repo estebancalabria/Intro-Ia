@@ -84,4 +84,51 @@ Luego:
 
 ---
 
-## 
+## Tecnica de prompting : Formato de Salida
+
+* Perdirle a la IA una lista de "algo"
+
+```
+Quiero una lista de terrenos en Cordoba (afueras, Villa Allende, Villa General Belgrano, ect) para comprar. Quiero el precio, metros cuadrados, altura sobre el nivel del mar, servicios, si hay mosquitos. escala de 1 a 5 perspectiva de crecimiento.
+```
+
+> [!NOTA]
+> Me genero un mapa y no lo conocia
+
+* Formatos de Salida
+
+### Tecnicos: JSON, XML
+
+* Se usan para cuestiones tecnicas, muy especifica, para programacion
+     
+### PseudoTecnicos:  HTML
+
+```
+Me generas un html elegante y moderno con los 5 terrenos mas convenientes para enviar a una junta de directorio para evaluar cual comprar
+```
+
+* Ademas de generar paginas web
+* Sirve como base para generar pdfs
+* Tiene previsualizacion dentro de ChatGPT
+
+> [!NOTE]
+> ChatGPT permite crear pdfs directamete. El problema es que tengo poco control sobre el formato y como se ve
+> Utilizar HTML generalmente lo uso cuando quiero mas control sobre los aspectos de como se ve el documento
+
+
+### CSV (Comma Separated Values)
+
+* Lenguaje para interactuar con planillas de calculo
+
+```
+Dame la lista como un CSV
+```
+
+* La puedo importar en una planilla de calculos
+* Se usa mucho para exprotar bases de datos, data science
+
+
+* Si lo quiero descargar
+```
+Me lo podes dar como archivo para descargar
+```
