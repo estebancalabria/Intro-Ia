@@ -133,5 +133,83 @@ Dame la lista como un CSV
 Me lo podes dar como archivo para descargar
 ```
 
-## Markdown
+### Markdown
 
+* Lenguaje para darle formato al texo con pocas reglas
+  * https://es.wikipedia.org/wiki/Markdown
+ 
+* Problemas
+  * Al copiar la respuesta de ChatGPT al word me paso mucho tiempo actualizando el formato
+  * Poder definir una plantilla exacta de como quiero la respuesta para reducir el no determinismo de la IA
+ 
+```
+# [ZONA]
+
+## [BARRIO]
+
+### Carateristicas
+
+* Precio aprox : [PRECIO]
+* Metros Cuadrados : [METROS CUADRADOS]
+* Altura s.n.m aprox : [ALTURAS]
+* Mosquitos : [puntaje de 1 a 5]
+
+### Servicios
+
+1. [SERVICIO 1]
+2. [SERVICIO 1]
+...
+
+### Analisis
+
+> [Frase sobre persrpectivas de crecimientos, oportunidades, advertencias y cuestiones a tener en cuenta
+
+---
+```
+
+### Mermaid
+
+* Formato de salida que usamos para hacer diagramas
+
+> https://mermaid.live/
+
+```
+Me podes armar un mermaid de tipo flowchart con el arbol genealogico de Mirta legrand. Desde sus abuelos a sus nietos.
+```
+
+* Me armo este diagrama
+```mermaid
+flowchart TD
+
+%% MIRTHA Y PAREJA
+M1[Mirtha Legrand]
+H1[Daniel Tinayre]
+
+M1 --- H1
+
+%% HIJOS
+C1[Marcela Tinayre]
+
+M1 --> C1
+H1 --> C1
+
+%% NIETOS
+G1[Juana Viale]
+G2[Ignacio Viale del Carril]
+
+C1 --> G1
+C1 --> G2
+
+%% BISNIETOS (de Juana Viale)
+B1[Vivienne Viale]
+B2[Vittorio Viale]
+B3[Silvestre Viale]
+B4[Almendral Viale]
+B5[Ambar Viale]
+
+G1 --> B1
+G1 --> B2
+G1 --> B3
+G1 --> B4
+G1 --> B5
+```
