@@ -31,17 +31,69 @@
     * Predicciones
     * Deteccion de anomalias
   * Adopcion IA a nivel organizacional
+
+---
       
 # Conociendonos
 
 * Muller es una empresa que se dedica a las cobranzas
+
+---
 
 # IA en la organizacion
 
 * Deteccion de Casos de Uso de Alto impacto
     * Transcribir y analizar llamadas automaticamente
     * Posibilidad: Procesamiento de Bases de Datos
+---
 
+# Large Language Models
+
+## Propietarios
+
+### ChatGTP
+
+* URL
+  * https://chatgpt.com/
+* Empresa
+  * OpenAI
+* Caracteristicas
+  * Emular conversacion humana.
+
+#### MEMORIA
+
+*  Memoria: Recordar con quien Habla
+  * Ejemplo Prompt : "Quiero que hagas un informe profesional sobre mi destacando fortalezas, debilidades. Informe tipo el FBI"
+  * Sabian que sabia tanto de ustedes? Que sabe ChatGPT de ustedes?
+    * Si voy a Usuario (Abajo a la izquiera)... Personalizacion... Memoria... Gestionar Memoria  <<< Puedo ver lo que recordo de mi
+
+#### Insstrucciones Personalizadas
+
+* Si voy a Usuario (Abajo a la izquiera)... Personalizacion... Instrucciones Personalizadas
+  * "Quiero que me respondas en rima. Siempre responde rimando en un poema. No se aceptan prosas. Siempre proemas que rimen."
+
+---
+
+### Claude
+
+* URL
+ * https://claude.ai/
+* Empresaa
+ * Anrhopic
+
+#### Memoria
+
+* Al igual que ChatGPT, Claude incoporo el uso de la memoria
+* Puedo exportar la memoria de ChatGPT u pasarla a Claude
+  * (Abajo izquierda tu usuario)... Configuracion... Capacidades...Memoria... (Boton Iniciar Importacion)...
+    * Copiar el prompt en ChatGPT u otro LLM
+    * Lo que re devuelve ChatGPT se lo pasas a Claude y pones (Boton Agregar a la memoria)
+
+---
+### Gemini
+
+---
 # Glosario
 
 * FOMO (Fear of Missing out)
+* System  Prompt : Un propt oculto e inicial que el proveedor del modelo de lenguaje le da para definir su personalidad y  objetico
