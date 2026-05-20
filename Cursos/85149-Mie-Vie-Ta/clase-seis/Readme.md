@@ -20,6 +20,7 @@
               * El que usar internamente la Ia para darle formato a la salida
               * Para tener una plantilla de como quiero exactamente la salida
           * Mermaid : Para hacer diagramas
+---
 
 # Prompt Engineering : Codigo
 
@@ -34,6 +35,7 @@ Generame un "bar chart with labels" con matplotlib donde se compare el pib de ar
 
 <img width="667" height="413" alt="image" src="https://github.com/user-attachments/assets/898dfe1d-5921-4fd8-b21b-7c67552a9fce" />
 
+---
 
 # Herramientas
 
@@ -43,5 +45,34 @@ Generame un "bar chart with labels" con matplotlib donde se compare el pib de ar
 
 ## Herramientas para Presentaciones
 
+* Herramienta
+  * Gamma
+* Url
+  * https://gamma.app/signup?r=cjucljp9heegmkv
+* Caracteristinca
+  * Permite generar con IA
+    * Presentaciones
+    * Paginas Web
+    * Posteos Redes
+    * Graficos
+
+* Vamos a generar una presetnacion:
+```
+Quiero una presentacion para una empresa que venda remeras. Quiero promocionar mi trabajo de poder estampar tu propio logo en las remeras, que vendo ademas de para clientes finales tengo disenios modernos y actuales, tambien armo remeras para equipos (laborales, futbol, etc) y uso materiales de primera y resultados mucho mejor que cualquier competencia.
+```
+
+* Creo esta presentacion
+
+https://gamma.app/docs/Tu-Identidad-en-una-Remera-Calidad-y-Diseno-sin-Limites-e27frbmvjgtu5tp
+
+* Vamos a generar una landing con un prompt similar
+
+```
+Quiero una landing para una empresa que venda remeras. Quiero promocionar mi trabajo de poder estampar tu propio logo en las remeras, que vendo ademas de para clientes finales tengo disenios modernos y actuales, tambien armo remeras para equipos (laborales, futbol, etc) y uso materiales de primera y resultados mucho mejor que cualquier competencia. Mi empresa se llama "Remeras Argentinas" y estamos en el rubro hace mas de 20 anios con mas de 100 mil remeras vendias y clientes satisfechos
+```
+
+> Puntaje
+> 10 / 10
+ 
 ## Herramientas para videos institucionales
 
