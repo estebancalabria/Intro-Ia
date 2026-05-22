@@ -17,6 +17,11 @@
 
 * Para ahorrar tokens
   * https://github.com/JuliusBrussee/caveman
+ 
+### Recomendaciones
+
+* Central de IAS
+  * https://passportai.app/
 
 # IA Genetativa
 
@@ -79,6 +84,7 @@ High-quality cinematic image of a clothing printing company where t-shirts are b
         * Loguearse con cuenta de microsoft
     * https://www.lovart.ai/
         * Para todo el diseño de marca
+        * Altamente Recomendada!!!
 
 ## Generacion de Videos
 
@@ -87,10 +93,34 @@ High-quality cinematic image of a clothing printing company where t-shirts are b
     * Generacion de videos a partir de texto
     * Motion control (Video a video con imitacion de movimientos)
 
+* Proceso para generar videos (largo)
+  * Generarmos un script (escenas) con ChatGPT
+    * Cada escena 5-10 segundos
+  * Para cada escena generamos un prompt de la image inicial
+  * Con la imagen inicial generamos un video de 5 para cada escena
+  * Compaginamos las escenas con un editor de video tipo capcut
+     * https://www.capcut.com/
+  * Con un programa genreado de audio con IA generamos la musica
+
+* Ejemplo de video que generamos con alumnos
+   * https://www.youtube.com/watch?v=vPwCdejOuio
+
 ### Generacion de Video a partir de Imagenes
 
 * Para generar videos a partir de imagenes facilmente
     * https://chat.qwen.ai/
     * (Antes usaba grok para este caso de uso pero ahora es pago)
 
+## Generacion de videos a partir de texto
+
+* Herramienta Pollo.AI
+  * https://pollo.ai/invitation-landing?invite_code=dIOOD7
+
+```
+Cinematic epic video of the Argentina national football team preparing for the World Cup, dramatic stadium atmosphere at night, players walking through a tunnel with intense focus and determination, fans waving Argentina flags and singing passionately, close-up shots of emotional faces, slow motion moments, rain and sparks in the air, powerful team spirit, legendary football energy, cinematic camera movements, ultra realistic details, blue and white colors dominating the scene, confetti exploding in the stadium, goalkeeper making impossible saves, captain raising his fist to the crowd, emotional crowd reactions, aerial shots of a massive stadium illuminated under the night sky, dynamic action sequences, victorious atmosphere, intense lighting, realistic sweat and movement, inspirational and emotional tone, world-class sports cinematography, hyper detailed, dramatic, masterpiece quality, 4k cinematic sports trailer style.
+```
+    
+
 ## Generacion de Audios
+
+> Seguimos la proxima
