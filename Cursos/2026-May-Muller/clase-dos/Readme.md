@@ -23,6 +23,28 @@
 
 ### Claude
 
+#### Modelos de Claude
+
+* 3 Modelos Base
+  * Haiku
+    * Mas barato/economico
+    * Consume menos tokens
+    * Casos de Uso
+     * Cuando queremos resumir un documento grande
+     * Hacer busquedas en la web
+  * Sonnet
+   * Modelo mas equilibrado. Para el 90% de los casos
+   * Caso de uso
+    * Analisis de la informacion
+  * Opus
+   * Mas avenzado
+   * Consume mas tokens
+   * Modo pensado o modo deep think
+   * Razonamiento logico, resolucion de probleas
+   * Casos de uso
+     * Analisis de Datos
+     * Tomas de decisiones
+
 #### Proyectos
 
 * Enunciado
