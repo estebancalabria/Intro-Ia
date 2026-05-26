@@ -349,6 +349,23 @@ No incluir texto fuera del informe.
   
 ---
 
+## Modelos Open Source
+
+### Deep Seek
+
+* Fue el primero en crear el modo Pensamiento profundo
+ * Es la incorporacion mas accesible del prompt "Chain of thouhgt / Cadena de pensamiento"
+ * Lo hizo en un contexto donde se limito las exportaciones de chips a uso
+   * https://www.reuters.com/world/china/chinas-deepseek-trained-ai-model-nvidias-best-chip-despite-us-ban-official-says-2026-02-24/
+  
+* Usamos este prompt clasico:
+
+```
+Hay tres personas en una habitacion. Uno de ellos es un asesino. Entra un cuarto y mata al asesino. Cuantos asesinos vivos hay ahora en la habitacion.
+```
+
+---
+
 # Prompt Engineering
 
 ## Tips
