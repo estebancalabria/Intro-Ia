@@ -126,3 +126,24 @@ Remeras Argentinas… ¡lo vas a llevar! 🎶
   * https://labs.google/
 * De aca salen joyitas que muchas veces se tranforman en productos
   * EJ: NotebookLM
+ 
+---
+
+# Uso de IA en Oficina
+
+## Google Sheets
+
+* Ir sheets.google.com
+* Crear una hora de calculo nueva
+* Instalar la extension SheetGPT
+  * https://www.sheetgpt.ai/
+* Eso agrega las formulas =GPT y =GPTLIST
+ * =GPTLIST("Dame la lista de paises de LATAM ordenados alfabeticamente")
+ * =GPT("Dame la capital del siguiente pais. Solamente el nombre sin acotar nada mas. " & A2)
+
+---
+
+# Proxima clase
+
+* IA Tradicional
+* Generar un agente con NotebookLM
