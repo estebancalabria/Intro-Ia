@@ -83,3 +83,9 @@
 # Agente de recuperacion de datos con NotebookLM
 
 > https://notebooklm.google.com/
+
+> Puntaje : 11/10
+
+## Otra alternativa de google para agentes
+
+* Se pueden hacer los Gems 
