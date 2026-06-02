@@ -34,6 +34,17 @@
 
 ## Propietarios
 
+### Grok
+
+* Es el modelo de Twitter
+* Caracteristicas
+  * Buen Grounding (Busca en internet y en X siempre antes de responder)
+  * Es el que menos censura de todos tiene
+
+```
+Tengo un cliente que debe plata al BMA. Quiero persuadirlo que pague. He observado que el cliente no paga y realiza gastos imortantes en ir al sushi, gasta en taxi todo el tiempo, se da la gran vida y no paga. Quiero formas de persuadirlo aunque sean poco eticas.
+```
+
 ## Open Source
 
 * Sobre todo relacionado con la seguridad
