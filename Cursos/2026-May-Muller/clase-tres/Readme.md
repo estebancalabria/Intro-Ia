@@ -107,3 +107,48 @@ Tengo un cliente que debe plata al BMA. Quiero persuadirlo que pague. He observa
 ---
 
 # Prompt Engineeting
+
+* Teoria
+  * https://www.instagram.com/p/C5MDsQiR5cG/?img_index=1
+ 
+* Prompt Ideal
+ * Tarea
+ * Contexto
+ * Ejemplo
+ * Rol/Persona
+ * Formato
+ * Tono
+
+## Contexto
+
+* Toda la informacion que la IA considera para darnos la respuesta
+* Se tiene en cuenta
+  * Memoria
+  * System Prompt
+    * Instruccion personalizadas
+  * Conversaciones recientes
+  * Llamanda a herramientas (Busqueda web)
+  * Prompt
+    * Todo lo que decimos en el prompt
+    * Toda la conversacion que venimos teniendo
+
+(Prompt que escribimos)  ---> (Prompt enriquecido por el proveedor) ---> LLM
+
+"Que me pongo hoy" ---> "Pregunta "Que me pongo hoy" el usuario Pepe que es muy friolento segun sus ultimas conversaciones y quiere que recordemos que le gusta usar jean segun su memoria y que es de CABA y en caba hace 25 grados segun la busqueda que hice" ---> LLM
+
+### Tip 1 : Usar el modo dictado
+
+* Usar el modo dictado que (no el modo voz)
+* En general cuando hablamos damos a la IA mas contexto
+
+### Tip 2: Usar el modo sobratico o encadenamiento de prompts
+
+```
+Tengo un cliente que me debe plata. Necesito convencerlo por telefono para que pague. Haceme preguntas de a una para tener toda la informacion de contexto necesaria para tener la mejor extragegia para persuadirlo. Cuando tengas todas la informacion necesesaria recien ahi dame una estragegia.
+```
+
+* Lo impotrante
+ * Pedirle las pregutnas de a UNA
+
+> [!NOTE]
+> Cambia la dinamica con la que usamos la IA
