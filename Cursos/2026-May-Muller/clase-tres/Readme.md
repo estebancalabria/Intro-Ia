@@ -90,6 +90,13 @@ Tengo un cliente que debe plata al BMA. Quiero persuadirlo que pague. He observa
   * Linea de Comandos
     * https://ollama.com/
 
+### Para probar modelos Open Source Online
+
+* URLS
+ * https://groq.com/
+ * https://chat.groq.com/ 
+* Motor para probar Modelos OS
+
 --- 
 
 # Herramientas
