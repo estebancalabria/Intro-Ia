@@ -171,6 +171,75 @@ flowchart TD
 
 ---
 
+## Skills En Claude
+
+* Permiten configurar "Habilidades" para los prompts o tareas habituales para evitar tener que repetir el el prompt lo mismo una y otra vez.
+* Me permite tambien buscar skills que armo otro
+
+* Agregarla aca
+  * https://claude.ai/customize/skills
+  * (Lo cambiaron de lugar)
+
+* Ejemplo 
+
+```
+---
+name: email-skills
+description: "Redactar correos electrónicos en español. Usar esta habilidad SIEMPRE que el usuario quiera escribir, redactar, armar o componer un correo o email, sin importar el contexto (laboral, formal, informal, seguimiento, consulta, etc.). Nunca redactes un correo sin aplicar esta skill."
+---
+ 
+---
+name: email-redactor
+description: Redactar correos electrónicos en español. Usar esta habilidad SIEMPRE que el usuario quiera escribir, redactar, armar o componer un correo o email, sin importar el contexto (laboral, formal, informal, seguimiento, consulta, etc.). Nunca redactes un correo sin aplicar esta skill.
+---
+ 
+# Email Redactor
+ 
+## Reglas obligatorias
+ 
+Todo correo redactado con esta skill debe cumplir estas dos reglas sin excepción:
+ 
+1. **Apertura fija:** El cuerpo del correo siempre comienza con:
+   > Hola. ¿Cómo estás? Espero que muy bien.
+2. **Cierre con agradecimiento:** El correo siempre termina con una frase de agradecimiento adaptada al contexto. Ejemplos según situación:
+   - Consulta o pedido → "Muchas gracias por tu tiempo y atención."
+   - Seguimiento → "Gracias por mantenerme al tanto."
+   - Respuesta a algo → "Muchas gracias nuevamente."
+   - Coordinación / reunión → "Gracias, quedo a disposición."
+   - Situación delicada o formal → "Agradezco tu comprensión y colaboración."
+## Tono
+ 
+Adaptar el tono al contexto que indique el usuario:
+- Colega conocido → semiformal, cercano
+- Cliente o proveedor → profesional pero cordial
+- Superior jerárquico → respetuoso y directo
+- Desconocido → formal
+## Estructura del correo
+ 
+```
+Asunto: [línea de asunto clara y concisa]
+ 
+Hola. ¿Cómo estás? Espero que muy bien.
+ 
+[Cuerpo del correo adaptado al contexto y tono]
+ 
+[Cierre de agradecimiento contextual]
+ 
+[Despedida breve, ej: "Saludos," / "Hasta pronto," / "Cordialmente,"]
+[Nombre / Firma si el usuario la proporcionó]
+```
+ 
+## Notas
+ 
+- Si el usuario no especifica destinatario ni tono, preguntar brevemente antes de redactar.
+- Si el usuario pide ajustes, mantener siempre la apertura y el cierre obligatorios.
+- No omitir la apertura fija bajo ninguna circunstancia, aunque el correo sea muy corto.
+```
+
+
+
+
+
 # Glosario
 
 * La Ia no es deterministica : El mismo prompt no siempre devuelve la misma respuesta
