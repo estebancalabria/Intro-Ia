@@ -130,6 +130,45 @@ pie title Distribución de Gastos Mensuales por Producto (USD)
     "Azúcar" : 10
 ```
 
+* Armame un diagrama mermaid de flowchart donde se vea el organigrama de la empresa de conbranzas Muller
+
+```mermaid
+flowchart TD
+
+    DG["Dirección General"]
+
+    DG --> GE["Gerencia de Estrategia y Operaciones"]
+    DG --> GA["Gerencia Administrativa y RRHH"]
+    DG --> GT["Gerencia de Tecnología y Sistemas"]
+    DG --> GC["Gerencia Comercial y Atención al Cliente"]
+
+    GE --> MT["Recupero de Mora Temprana"]
+    GE --> MTA["Recupero de Mora Tardía"]
+    GE --> GJ["Gestión Judicial"]
+    GE --> QA["Calidad y Reportes"]
+
+    MT --> OT1["Operadores de Cobranzas"]
+    MTA --> OT2["Operadores Senior"]
+    GJ --> AB["Abogados y Procuradores"]
+
+    GT --> CRM["Plataforma CRM"]
+    GT --> BI["Business Intelligence"]
+    GT --> COM["Comunicaciones Masivas"]
+
+    COM --> SMS["SMS"]
+    COM --> WA["WhatsApp"]
+    COM --> IVR["IVR"]
+    COM --> BOT["ChatBot / VoiceBot"]
+    COM --> MAIL["Mailing"]
+
+    GA --> RRHH["Recursos Humanos"]
+    GA --> ADM["Administración"]
+    GA --> FIN["Finanzas"]
+
+    GC --> VENT["Desarrollo de Negocios"]
+    GC --> ACC["Account Managers"]
+```
+
 ---
 
 # Glosario
