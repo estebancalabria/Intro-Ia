@@ -44,6 +44,10 @@
 
 # Prompt Engineering
 
+## TIP
+
+* Agregar al prompt : Devolverme solamente el coneido para copipar y pegar sin acotar nada mas
+
 ## Rol
 
 * Solapa 1 : Prompt Solo Tarea
@@ -80,8 +84,51 @@
 * Formato para Interactuar con Excel
     * CSV (Comma Separated Values)
     * "Dame la lista como un csv"
-*    
 
+### Especificacion de Plantillas de salida con Markdown
+
+* Markdonw es el lenguaje que genera la IA por defecto para darle forma al texto
+  * https://es.wikipedia.org/wiki/Markdown
+
+* Generar ua plantilla en mardwon como quiero la respuesta
+* Dame una lista de compras mensual para una oficina. Producto, cantidad, departamento,  precio, motivo. Los datos pueden ser aproximados. dame la lista de 10 elementos."
+* 
+```
+# [Producto]
+
+## Motivo
+> [MOTIVO]
+
+## Valores
+* **Cantidad** : [CANTIDAD DEL PRODUCTO]
+* **Precio** : [Precio DEL PRODUCTO]
+* **Total** : [Precio x Cantidad]
+
+## Depatamento
+*[Departamento que lo solicito]*
+---
+```
+
+> [!NOTE]
+> Esto sirve para que al copiar la respuesta del llm a word se conservern titulos, negrita y ahorrarme todo el tiempo que antes de gastaba en darle formato a la respuesta de la IA cuando la copiaba a word
+
+##  Diagramas con Mermaid
+
+* "Generame un diagrama de PIE en mermaid para ver la distribucion de gastos de los productos"
+
+```mermaid
+pie title Distribución de Gastos Mensuales por Producto (USD)
+    "Cartuchos de tinta" : 140
+    "Resmas de papel A4" : 120
+    "Café molido" : 96
+    "Agua mineral (Bidón 20L)" : 96
+    "Cuadernos" : 60
+    "Toallas de papel" : 48
+    "Marcadores para pizarra" : 30
+    "Jabón líquido para manos" : 30
+    "Pilas AA" : 24
+    "Azúcar" : 10
+```
 
 ---
 
