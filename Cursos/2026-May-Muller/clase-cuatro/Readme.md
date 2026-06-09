@@ -77,7 +77,9 @@
      * Luego "Me generas el html para desgargar"
      * Click en achivo para descargar el html
      * Ctrl+P lo podes imprimir como pdf
- 
+* Formato para Interactuar con Excel
+  * CSV (Comma Separated Values)
+  * "Dame la lista como un csv"
    
 
 
