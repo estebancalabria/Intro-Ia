@@ -225,3 +225,30 @@ plt.tight_layout()
 plt.show()
 ```
 
+# Herrmientas
+
+## Para presentaciones en PowerPoint : Gamma
+
+* URL
+  * https://gamma.app/signup?r=cjucljp9heegmkv
+* Caracteristica
+ * 
+ 
+* Prompt para la presentacion
+
+```
+Quiero una presentacion sobre la morosidad en argentina como incremento en 2026 y las razones
+```
+
+* Prompt para la landing
+
+```
+Quiero una landing para una persona Juan Perez para intimarlo a pagar una deuda que tiene con el Banco Macro. Que explique los beneficios y la verguenza social de no pagar
+``
+
+* Puntaje
+  * 9 / 10
+
+## Video Instucionales : Hey Gen
+
+> Para la proxima...
