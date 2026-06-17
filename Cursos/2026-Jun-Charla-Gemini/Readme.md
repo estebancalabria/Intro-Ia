@@ -69,6 +69,8 @@
 * IA Tradicional vs IA Generativa : Mientras que la primeta trabaja con datos esctructurado para hacer predicciones la segunda genera algo nuevo
 * Prompt : La instruccion que le damos a la IA
 * Token : Una palabra o parte de la misma en un prompt
+* Conteto : La Informacion que usa la IA (Toda la conversacion + herramientas) para generar una respuesta
+* Alucinacion : Cuando la IA manda Fruta.
 * Large Language Model (LLM) : Redes neuronales especializadas entrenadas con un conjuto enorme de datos para predecir el proximo token
 * Grounding : Constrastar, verificar, matchear la respuesta de la Integencia Artificial contra fuentes verificables
 * Multimodalidad : La capacidad que tienen los modelos de lenguaje de trabajar no solo con texto sino con Imagenes, pdfs... etc
