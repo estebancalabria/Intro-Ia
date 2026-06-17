@@ -75,3 +75,22 @@
 * Grounding : Constrastar, verificar, matchear la respuesta de la Integencia Artificial contra fuentes verificables
 * Multimodalidad : La capacidad que tienen los modelos de lenguaje de trabajar no solo con texto sino con Imagenes, pdfs... etc
 * Agente : LLM + Herramientas (busqueda Web, Interaccion con otros sistemas) + Fuente de Informacion (RAG) + Instrucciones Personalizadas + Objetivo concreto
+* Anomiizacion: Eliminar la inforacion sensible/privada de un prompt o adjunto
+
+---
+
+# Uso etico de la IA
+
+> [!NOTE]
+> https://www.bbc.com/mundo/articles/cddnjd34p7no
+
+* La informacion que queda registrada en los LLM se puede usar
+    * Para motivos desconocido
+    * Para entrenar los propios modelos
+* Hay legislacion sobre la privacidad de los datos
+    * Sin un cliente se entera que pusiste datos personales en cualquier llm y quedo conversacion registrada puede hacer acciones legales
+    * GPDR
+    * Ley N° 25.326 de Protección de Datos Personales
+* Hay muchas empresas que trabajan en areas criticas que usan modelo open source locales
+    * https://lmstudio.ai/
+
