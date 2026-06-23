@@ -51,3 +51,36 @@ Te espero. No lo dejes pasar.
 
 # Analisis de datos
 
+## Setup
+
+* Abrir un documento en blanco de Google Sheets
+* Instalar la extension Simple ML For Sheets
+  * https://simplemlforsheets.com/
+
+## Crear el dataset Original
+
+* Columnas
+  * Nombre
+  * Edad
+  * Monto
+  * Adeudado
+  * Ingreso
+  * Mensual
+  * Tiene
+  * Trabajo
+  * Alquila
+  * Vicioso
+  * Otras Deudas
+  * Pago
+
+* Label : Pago 
+* Features : El resto - Nombre
+* Ignoada : Nombre
+
+## Recurso para aprender Machine Learning
+
+* URL
+ * https://www.kaggle.com/
+
+* Lugar de referencia para aprender Ciencia de Datos con Python
+
