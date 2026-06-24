@@ -34,11 +34,53 @@
 * Ai-900
   * Azure
   * Servicios para desarrollar tus propias soluciones de IA
-
-
+    
 ---
  
 # Large language Models (LLM)
 
+## Distintos LLM
 
+* Propietarios
+  * ChatGPT
+  * Copilot (Licencia)
+    * Domestico : https://copilot.microsoft.com/
+    * Corporativo : https://www.office.com/ (Requiere licencia)
+  * Gemini
+
+## ChatGPT
+
+* URL
+  * https://chatgpt.com/
+* Empresa
+  * OpenAI
+* Caracteristicas
+  * Emular conversaciones humanas
+
+## Caractisticas : Memoria
+
+* A ChatGPT
+```
+Con la informacion que tenes de mi, haceme un roast, una gastada.
+```
+
+* A Copilt  (Como tiene guardrails si le pido el roast no me lo hace porque es mas para uso corporativo)
+
+```
+Haceme un resumen de lo que sepas de mi tipo perfil del FBI
+```
+
+* Usuario---> Personalizaion ---> Memoria
+ * Podes ver lo que ChatGPT recuerda de uno
+ * Pedirle que olvide lo que no queres que recuerde
+ * Y en un chat podes pedirle explicitamente que recuerde algo
+
+> [!NOTE]
+> Copilot tambien tiene el tema de la memoria (tambien gemini)
+
+## Caractisticas : Instrucctiones Personalizadas
+
+---
+
+# Glosario
 
