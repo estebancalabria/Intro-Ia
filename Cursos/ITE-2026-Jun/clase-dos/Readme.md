@@ -48,6 +48,9 @@
     * El grounding, la busqueda web
     * Integracion con el ecosistema de google
   * Copilot
+* Open Source
+  * DeepSeek
+    * https://chat.deepseek.com/
 
 > [!NOTE]
 > Noticia sobre el enfoque resposable de la IA de Anthropic (Claude) y la disputa que tuve con el gobierno de Estados Unidos al respecto
@@ -159,6 +162,41 @@ Quiero una investigacion sobre el mercado de venta de alimentos para mascotas en
 ---
 ## Open Source
 
+* Importantes por el tema de la privacidad de los datos
+* Se espera que a futuro muchas organizacione por un tema legal esten obligados a trabajar con modelos Open Source
+
+### DeepSeek
+
+* Introdujo el modo pensado o pensamiento
+* Aplica internmente tecnicas de prompt engineering (Chain of thoughts) para que el modelo explique su razonamiento
+
+#### Modo Razonamiento
+
+* La utilizamos cuando queremos resolver alguna cuestion no basada en informacion sino en razonamiento o logica
+
+```
+Tengo que llevar el auto al lavadero que queda a una cuadra. ME conviene ir en auto caminando?
+```
+
+* ME respondio:
+  * https://chat.deepseek.com/share/x2o6jma1jp828objyw
+
+---
+
+### Qwen (de AliBaba)
+
+>[!NOTE]
+> Uno de los modelos preferidos del profe
+
+* Copia de ChatGPT pero sin los limites de uso que tiene ChatGPT y la amabilidad forzada
+  * Personalizacion
+  * Memoria
+  * Limite de tokes mucho mayir que chatGPT
+* Es una buena opcion para generar video de forma gratuita rapidamente
+
+> [!NOTE]
+> Es el principal modelo Open Source que consideraria si necesito instalar localmente en una organizacion y quiero tener una experiencia de usuario parecida a ChatGPT
+
 ---
 
 # Glosario
@@ -170,3 +208,9 @@ Quiero una investigacion sobre el mercado de venta de alimentos para mascotas en
 ## Guardrails (Guardarailes)
 
 * Restricciones que le pone el propietairio que da acceso al LLM para que las peticiones (prompts) esten alineadas con las politicas de seguridad establecidas.
+
+---
+
+# Proxima Clase
+
+- Explicar como instalar un LLM localmente
