@@ -143,6 +143,7 @@ Creame una tabla donde muestre en Spain la cantidad de mascotas por habitante po
 > [!NOTE]
 > Estamos viendo gemini pero otros modelos como ChatGPT tienen algo parecido. En este ultimo se llama "Investigacion Avanzada"
 
+* El modo investigacion esta basado en informacion extraida de la web
 
 ```
 Quiero una investigacion sobre el mercado de venta de alimentos para mascotas en Spain
@@ -150,7 +151,9 @@ Quiero una investigacion sobre el mercado de venta de alimentos para mascotas en
 
 * Este modo de investigacion puede consultar 100+ web dependiendo el tema de investigacion elegido
 * Investigacion de Gemini
+  * https://share.gemini.google/seYCx6dCid3v
 * Investigacion de ChatGPT (Altenativa)
+  * https://github.com/estebancalabria/Intro-Ia/blob/main/Cursos/ITE-2026-Jun/clase-dos/Investigacion%20ChatGPT.pdf
 
   
 ---
