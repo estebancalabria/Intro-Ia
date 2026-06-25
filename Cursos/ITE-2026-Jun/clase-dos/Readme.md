@@ -2,9 +2,6 @@
 
 # Repaso
 
-
-
-
 * Roadmap del curso
 * Fundamentos de los LLMS
   * Prompt
@@ -50,6 +47,7 @@
   * Gemini (Google)
     * El grounding, la busqueda web
     * Integracion con el ecosistema de google
+  * Copilot
 
 > [!NOTE]
 > Noticia sobre el enfoque resposable de la IA de Anthropic (Claude) y la disputa que tuve con el gobierno de Estados Unidos al respecto
@@ -103,6 +101,59 @@ Programame en un solo artefacto el juego pong en html y javascript. Que el jugad
   * Los artefactos de Claude se pueden compartir 
   * https://claude.ai/public/artifacts/d3e95fa6-fb4d-4312-a2d2-c169a8fbc1a9
 
+## Gemini
+
+* URL
+  * 
+* Caracteristicas
+  * Respuestas orientadas al conocimiento factico (hechos)
+  * Modo Investigacion
+    * 3 gratis por mes
+    * Busca en 100+ de paginas web un tema especifico y genera un documento / resumen
+  * Integracion con el ecosistema de googe
+
+### Integracion con el Ecosistema de Google
+
+#### Calendar
+
+```
+Agregarme un evento de una hora para hoy a las 17:00 que sea "Preparar clase del Az-400"
+```
+
+* Primero me pide confirmacion y despues le doy ok y verifico que efectivamente el evento aparece en mi calendario
+
+#### Google Flights y Google Hotels
+
+```
+Quiero viajar al mundial a ver el proximo partido de Argentina. Estoy en Buenos Aires. Quiero que me busques en google flights opciones de vuelo y en google h otels opciones de Alojamiento.
+```
+
+* Me devolvio esta conversacion:
+  * https://share.gemini.google/tKET4WsrqRgf
+
+#### Google Drive (Sheets, docs)
+
+```
+Creame una tabla donde muestre en Spain la cantidad de mascotas por habitante por regiion y todos los datos que te parezcan relevantes para alquien que tenga un negocio de venta de alimentos para mascotas
+```
+---
+
+###  Modo Investigacion
+
+> [!NOTE]
+> Estamos viendo gemini pero otros modelos como ChatGPT tienen algo parecido. En este ultimo se llama "Investigacion Avanzada"
+
+
+```
+Quiero una investigacion sobre el mercado de venta de alimentos para mascotas en Spain
+```
+
+* Este modo de investigacion puede consultar 100+ web dependiendo el tema de investigacion elegido
+* Investigacion de Gemini
+* Investigacion de ChatGPT (Altenativa)
+
+  
+---
 ## Open Source
 
 ---
