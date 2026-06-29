@@ -39,6 +39,16 @@ Generame un canvas editable con una letra de una cancion para apoyar a la selecc
 
 ## Propietarios
 
+### Gemini
+\
+* Ventana de contexto apliada
+
+```
+Cual es tamanio de tu ventana de contexto
+```
+
+* Gemini tiene una venta de contexto de 1 millón de tokens y genera salidas de 8,192 tokens.
+
 ### Grok
 
 * Grounding de X
@@ -117,9 +127,51 @@ Generame un canvas editable con una letra de una cancion para apoyar a la selecc
 ---
 
 # Prompt Engineering
- 
+
+* Teoria
+  * https://www.instagram.com/p/C5MDsQiR5cG/?img_index=1
+* Prompt
+  * Tarea
+  * Contexto
+  * Ejemplo
+  * Persona/Rol
+  * Formato
+  * Tono
+
+## Contexto
+
+* Todo lo que la IA considera para darnos una respuesta
+  * Prompt
+  * Toda la conversacion
+  * Conversaciones pasadas
+  * Memoria
+  * System Prompt
+    * Instrucciones Personalizadas
+  * Herramientas
+    * Busqueda Web
+  * RAG (Base de datos de documento)
+* Ventana de contexto
+ * La cantidad de tokens que el modelo puede producir considerando la entrada y la salida
+
+* (prompt) -->  (prompt + memoria + conversacion + system prompt + busquedas web)     -> (LLM)
+* "quien descubrio america" -> "El usuario Esteban Calabria pregunta quien descubrio america tener que responder de forma amable.... -> LLM
+
+### Tecnicas de prompting : Interaccion
+
+* AKA
+ * Encadenamiento de prompts
+ * Prompt Chainning
+ * 
+
+## Tips de Prompt Engineering
+
+* Usar el modo voz puede ser una muy buena estrategia para darle mas contexto a la IA cuando le escibo un prompt
+
+---
 
 # Glosario
+
+* System Prompt : Una instruccion oculta que le da el proppietario del modelo de lenguaje que determina su personalidad y manera de comportarse
 
 * Grounding : Anclar la respuesta de la IA en fuentes verificables
 
