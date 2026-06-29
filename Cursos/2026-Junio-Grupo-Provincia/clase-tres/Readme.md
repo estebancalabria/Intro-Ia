@@ -109,6 +109,23 @@ Cual es el sentido de la vida?
   * Capacidad de converrtir e texto a voz
 * Puntaje
   * 8 / 10
+ 
+---
+
+## Generacion de Diagramas
+
+### Napkin
+
+* Url :
+  * https://www.napkin.ai/
+* Caracteristicas
+   * Permite enriquecer texto con diagramas
+* Puntaje
+ * 9/10
+
+---
+
+# Proxima clase....Prompt Engineering
 
 ---
 # Glosario
