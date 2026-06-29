@@ -48,6 +48,7 @@ Generame un canvas editable con una letra de una cancion para apoyar a la selecc
 
 > [!NOTE]
 > Estos modelos son necesarios en contexto donde la privacidad de los datos.
+> VER El GDPR (Reglamento General de Protección de Datos)
 
 ### Mistral
 
@@ -61,7 +62,29 @@ Generame un canvas editable con una letra de una cancion para apoyar a la selecc
 
 * URL
   * https://arena.ai/
+* Caracteristicas
+  * Me permite poner a prueba un prompt con dos modelos y elegir el mejor
+  * En base a lo que vota la gente se arma un rankin de modelos segun la tarea
+ 
+## Ejecutar un modelo Open Source Localmente
 
+* Las dos herramientas mas populares:
+  * Ollama
+   * https://ollama.com/
+  * LMStudio
+   * https://lmstudio.ai/
+   * Dificultad
+    * (BAJA)
+
+## Repositorio Public de Modelos Open Source
+
+* Url
+  * https://huggingface.co/
+* Caracteristicas
+  * Es un repositorio publico donde se suben modelos de IA Open source (no solo de texto, sino de todo tipo)
+  * Hay que crearse un usuario
+  * Lo importante que tiene es lo de spaces
+    * https://huggingface.co/spaces
 
 ---
 
