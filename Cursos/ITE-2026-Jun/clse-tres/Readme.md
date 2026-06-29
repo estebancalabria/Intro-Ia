@@ -77,6 +77,23 @@ Generame un canvas editable con una letra de una cancion para apoyar a la selecc
   * Conversion de texto a voz
 * Puntaje
   * 7 / 10
+
+---
+
+## Generacion de Diagramas
+
+### Napkin
+
+* URL
+  * https://www.napkin.ai/
+* Caracteristica
+  * Genera Diagramas a partir de Texto
+* Puntaje
+ * 8/10
+
+---
+
+# Prompt Engineering
  
 
 # Glosario
