@@ -161,11 +161,41 @@ Cual es tamanio de tu ventana de contexto
 * AKA
  * Encadenamiento de prompts
  * Prompt Chainning
- * 
+ * Metodo socratico
+
+* Sin tecnica
+
+```
+Armame un plan de comidas para el dia de hoy?
+```
+
+* Aplicando la tecnica de interaccion
+
+```
+Armame un plan de comidas para el dia de hoy. Quiero que me hagas todas las preguntas necesesarias de a una para determinar el plan de comida optio que mas me guste y se acerque a mis objetivos. Haceme todas las preguntas que necesites de a una hasta que tengas toda la informacion necesaia para armarme el pla de comidas. Importante que no te apures y te asegures de preguntarme todo lo necesario antes de sugerirme un plan.
+```
 
 ## Tips de Prompt Engineering
 
 * Usar el modo voz puede ser una muy buena estrategia para darle mas contexto a la IA cuando le escibo un prompt
+* Pedirle a la IA que cuando me haga preguntas me las haga de a una
+
+## ROL
+
+### Tecnica de prompting
+
+* Solapa 1
+  * Prompt sin especificar Rol
+  * "Me duele la panza? que hago?"
+* Solapa 2
+  * Prompt especificando Rol
+  * "Actua como si fueras un doctor gastroentrologo expertos en dolencias de estomago y dime como evaluar y que hacer antes un dolor de panza"
+* Solapa 3
+  * Prompt especificando a una personjae especifico conocido
+  * "Actua como si fueras Julio Iglesias (el cantante) y dime que hacer si me duele la panza"
+* Solapa 4
+  * Invocar un panel de espertos
+  * "Quiero que armes un panel de expecialistas y cada uno me de su vision de como actuar cuando a una persona le de duele la panza. Que cada especialista me responda en unas pocas oraciones."
 
 ---
 
