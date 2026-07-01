@@ -30,6 +30,7 @@
     * Rol
 
 ---
+---
 
 # Noticias
 
@@ -43,6 +44,7 @@
 > Lo que hicieron la pagina simplemente tomaron un modelo OS y construyeron una web alrededeor y te cobran por usarlo
 > Hay muchas oportunidades comerciales alrededor de los modelos de IA OS
 
+---
 ---
 
 # Herramientas de IA
@@ -148,16 +150,31 @@ print(response.output_text)
 
 ```
 
+* Ejecutar el codigo
 
 ---
+---
 
-# Larget Laguage Models
-
-
+# Large Laguage Models
 
 ## Propietarios
 
 ### Perplexity
+
+* El modelo ideal para trabajos academicos por el grounding
+* URL
+  * https://www.perplexity.ai/
+* Caracteristicas
+  * Su modelo propietario se llama sonar pero puede usar GTP, Gemini o Claude
+  * Lo relevante de perplexity es su enfoque academico hacia el grounding
+
+* Lo probe con este prompt activando en el + solamente las fuentes academicas
+```
+Quiero que me investigues atualizaciones yestado del arte en materia de quimcos relacionados con pinturas. Ver ultimas investigaciones, novedades y referencias
+```
+
+* Cada parrafo tiene una cita academica con el grounding
+---
 
 ## Open Source
 
@@ -174,3 +191,51 @@ print(response.output_text)
 # Prompt Engenieering
 
 # Formato + Tono
+
+* Pedimos una lista de algo sin formato
+ * Dame una lista de las 10 series mas populares de los utimos tiempos. Quiiero el nombre, cantidad de temporadas, fecha de lanzamiento, monto estimado recaudado, putnaje en imdb promedio, creador, actor principal (uno), argumento en una oracion
+
+## Formatos tecnicos
+
+* Casos de uso
+  * Esto se usan mucho cuando usamos api key
+  * Formatos usados por desarrollados
+  * Para documentacion tecnica
+* Ejemplos
+  * JSON
+     * Dame la lista en json
+  * XML
+     * Dame la lista en cml
+ 
+## Fomato PseudoTecnico (HTML)
+
+* Caso de uso
+  * Generacion de pdf con formato
+* Problema
+ * Si le pido a ChatGPT que genere un pdf lo hace pero con un formato que deja mucho que desear
+   * No es muy profesional como para mandarlo a un cliente, jefe, etc en cuanto a su presentacion
+* Solucion
+  * Pedirle a ChatGPT que me presente la informacion como una unica pagina html profesional que luego descargo, abro con el navegador e imprimo como pdf
+
+```
+Generame la lista de series en una unica pagina html que se vea profesional, elegante  con toda la informacion de cada serie que vimos y sea adecuada para presentar profesionalmente a un jefe, cliente, etc. Que sea un disenio moderno. 
+```
+
+## Formato tipo Tabla (CSV)
+
+* Casos de USo
+  * Para generar archivos que se puedan importar en una planilla de calculo como Excel o Google Sheets
+* Formato
+  * CSV (comma separated Values)
+* Prompt
+ * "Dame la lista como un CSV"
+
+> [!NOTE]
+> Ese archivo CSV se puede abrir direcgamente con Excel o se puede importar en Google Sheet
+
+## Personalizacion de Salida con Markdown
+
+* Caso de uso
+  * Reducir el no determinismo de la IA especificando una plantilla exacta de como quiero la respuesta
+* formato
+  * Markdown
