@@ -237,5 +237,36 @@ Generame la lista de series en una unica pagina html que se vea profesional, ele
 
 * Caso de uso
   * Reducir el no determinismo de la IA especificando una plantilla exacta de como quiero la respuesta
-* formato
+* Problema
+  * Darle el formato exacto que quiero a la respuesta mediante una plantilla
+  * Al copiar la salida de un LLM a word no tener que estar cambiandole el formato
+* Formato
   * Markdown
+
+* Plantilla con placeholder (lugar en blanco entre [] para que el modelo complete)
+```
+# [Titulo de la Serie]
+
+## Caracteristicas
+
+* Creador : [CREADR DE LA SERIE]
+* Temporadas : [CANTIDAD DE TEMPORADAS]
+* Recaudacion : [MONTO RECAUDADO ESTIMADO]
+* Puntaje : [PROMEDIO PUNTAJE IMDB]
+
+## Actores
+
+* **[ACTOR PROTAGONISTA PRINCIPAL]**
+* [ACTOR 2]
+...
+* [ACTOR N]
+
+## Argumento
+
+> [ARGUMENTO DE LA SERIE]
+
+---
+```
+
+> [!NOTE]
+> Si esto lo copio y pego en word me mantiene el formato
