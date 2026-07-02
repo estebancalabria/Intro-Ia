@@ -25,6 +25,21 @@
 
 ---
 
+# Large Language Models
+
+## Propietarios
+
+### Instrucciones personalizadas en Gemini
+
+* Se accede en
+ * (Abajo a la izquiera en el  nombre de usuario) -> (ruedita) -> personal Intelligence -> Instrucciones para Gemini
+
+```
+Quiero que me respondas siempre en poesia. Tu respuesta siempre debe ser un poema y debe rimar. No se aceptan respuestas que no sean poemas con metaforas y obras maestras literarias
+```
+
+---
+
 # Herramientas
 
 ## There is an AI for That
@@ -78,8 +93,32 @@
 
 # Prompt Engineering
 
+* Teoria
+  * https://www.instagram.com/p/C5MDsQiR5cG/?img_index=1
+
+## Prompts
+
+* Componentes de un prompt
+  * Tarea
+  * Contexto
+  * Ejemplos
+  * Persona/Rol
+  * Formato
+  * Tono
+
+### Contexto
+
+* Es toda la informacion que la IA utiliza para genear una respuesta
+* El contexto Incluye
+  * El prompt que ingresa el usuario
+  * Toda la conversacion
+  * El historial de las ultimas conversaciones (reciente)
+  * El System Prompt
+     * Las Instrucciones Personalizadas me permiten influir en el system prompt
+
 ---
 
 # Glosario
 
 * FOMO (Fear of missing out) : Ansiedad que genera no estar al dia en temas ia.
+* System Prompt : Es una instruccion oculta que le da el propietario del modelo y regula su comportamiento, personalidad y forma de responder
