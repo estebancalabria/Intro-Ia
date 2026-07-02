@@ -227,6 +227,23 @@ Quiero hacer un sitio web para mi restautante la panera Rosa. Te adjunto el menu
 ```
 
 * Le adjunte el menu que utilice para armar mi gem
+
+---
+
+# Herramientas
+
+* Hasta ahora vimos
+ * NaturalReaders
+ * Napkin
+ * ThereIsAnAIForThat (catalogo de herramientas)
+
+## Generacion de Presentaciones
+
+### GammaApp
+
+* URL
+  * https://gamma.app/signup?r=cjucljp9heegmkv
+
  
 ---
 
