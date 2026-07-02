@@ -38,6 +38,10 @@
 Quiero que me respondas siempre en poesia. Tu respuesta siempre debe ser un poema y debe rimar. No se aceptan respuestas que no sean poemas con metaforas y obras maestras literarias
 ```
 
+### Memoria
+
+* Los llm recuendan detalles del usuario y lo guardan como memoria
+
 ---
 
 # Herramientas
@@ -115,6 +119,25 @@ Quiero que me respondas siempre en poesia. Tu respuesta siempre debe ser un poem
   * El historial de las ultimas conversaciones (reciente)
   * El System Prompt
      * Las Instrucciones Personalizadas me permiten influir en el system prompt
+  * Memoria
+  * Llamada a herramientas (Tool Calling)
+    * Busqueda web
+  
+
+(prompt) --> (le agrega el system prompt) -> (instrucciones personalizadas) -> (le info sobre el historial de conversaciones) -> (le agrega datos de la memoria) -> (hace una busqeuda web) ---> ... ---> (llm)
+
+* Uno escribe
+  * "Decime como Va argentina en el mundial"
+* Al llm le llega
+  * "El usuario Esteban Calabria que es ingeniero en sistemas que le gustan las respuestas como poema pero a la vez tengo que se amable en la respuesta porque asi me pide Google que ademas la semana pasasa vio el partido del mundiioal y ademas en la web encontre que argentina juega el viernes con Cabo Verde..."   
+
+### Tips para darle mejor contexto a la IA
+
+> [!NOTE]
+> Utilizar el modo voz o dicta muchas veces me permite darle a la ia en un prompt mucho mas detalle del que le daria normalmente solo escribiendo
+
+> [!NOTE]
+> Escribir prompts "largos" con mucha informacion relevante y accesoria a la tarea generalmente genera respuestas mucho mas efectivas y la ia suele utiliar doa la informacio que pasamos
 
 ---
 
@@ -122,3 +145,8 @@ Quiero que me respondas siempre en poesia. Tu respuesta siempre debe ser un poem
 
 * FOMO (Fear of missing out) : Ansiedad que genera no estar al dia en temas ia.
 * System Prompt : Es una instruccion oculta que le da el propietario del modelo y regula su comportamiento, personalidad y forma de responder
+
+--- 
+
+# Proxima Clase : Seguimos con prompt engineering 
+> No olvidar el tip de usar a la misma ia como experto en prompt engineering
