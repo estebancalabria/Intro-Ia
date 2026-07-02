@@ -56,3 +56,34 @@ pie title Distribución Estimada del Consumo de Papel Tisú en España
     "Castilla y León" : 4.7
     "Resto de España" : 23.8
 ```
+
+* Voy a probar con la previsualizacion en ChatGPT (o Claude)
+
+```
+Dame un diagrama de flowchart en mermaid que muestre el organigrama de espania en 3 niveles y maximo 3 cuadrados por nivel. Que sea aproximado.
+```
+
+* Me genero este diagrama
+
+```mermaid
+flowchart TD
+
+%% Nivel 1
+A[España]
+
+%% Nivel 2
+A --> B[Monarquía]
+A --> C[Gobierno]
+A --> D[Parlamento]
+
+%% Nivel 3
+B --> B1[Rey Felipe VI]
+
+C --> C1[Presidente del Gobierno]
+C --> C2[Consejo de Ministros]
+C --> C3[Vicepresidencias]
+
+D --> D1[Cortes Generales]
+D --> D2[Congreso de los Diputados]
+D --> D3[Senado]
+```
