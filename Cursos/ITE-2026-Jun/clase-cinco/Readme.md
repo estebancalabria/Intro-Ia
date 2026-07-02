@@ -239,11 +239,28 @@ Quiero hacer un sitio web para mi restautante la panera Rosa. Te adjunto el menu
 
 ## Generacion de Presentaciones
 
-### GammaApp
+### Gamma App
 
 * URL
   * https://gamma.app/signup?r=cjucljp9heegmkv
+* Caracterosticas
+ * Permite Generar y Editar manualmente o con IA
+   * Presentciones
+   * Paginas Web
+   * Publicaciones Para redes
+   * Documentos
+   * Graficos
+ * Permite seleccionar el tema visual
+ * Permite exportar como
+   * pdf
+   * ppt
+  * O sino presentarla diractamente
 
+> [!NOTE]
+> Si van a compartir la herramienta no se olviden de usar el link de recomendar a un amigo para que les de creditos
+
+* Puntaje
+  * 9/10
  
 ---
 
