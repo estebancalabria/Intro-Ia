@@ -166,6 +166,13 @@ plt.savefig("salarios_espania.png", dpi=150)
   * Basados en Chatbots o Interfaces conversacionales
   * Pseudo-Autnomos
  
+* Agentes Especiales
+ * Agentes de codificaciones
+   * Cloude Code
+   * Codex
+   * Github copilot
+   * Replit
+ 
  ## Construir nuestro primer Agente Conversacional con Google Gem
 
  * URL
@@ -198,9 +205,36 @@ Tu única misión es asistir al usuario respondiendo preguntas exclusivamente so
 ```
 
 * Como fuente de conocimiento le pusismos el menu de la Panera Rosa
-  
+
+> [!NOTE]
+> Tambien vimos la interfaz para crear un agente en Office y es bastante similar
+
+## Agentes de Codificacion
+
+
+> [!NOTE]
+> La tecnica mediante la cuano desarrolamos utilizando lenguaje natural y agentes se llama "Vibe Coding"
+
+### Replit
+
+* Url
+  * https://replit.com/
+
+* Le puse este prompt
+
+```
+Quiero hacer un sitio web para mi restautante la panera Rosa. Te adjunto el menu. El el sitio web veo informacion destacada de lo que se puede consumir en el retaurante y la posibilidad de reserar mesas
+```
+
+* Le adjunte el menu que utilice para armar mi gem
+ 
 ---
 
 # Glosario
 
 * System Prompt  : Instruccion oculta que le da el fabricante del modelo
+
+
+--- 
+
+# Proxima clase : Agentes pseudo-automaticos (sin interfaz conversacional)
