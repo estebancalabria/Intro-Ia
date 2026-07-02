@@ -87,3 +87,51 @@ D --> D1[Cortes Generales]
 D --> D2[Congreso de los Diputados]
 D --> D3[Senado]
 ```
+
+### Generacion de Codigo para graficos
+
+* Las IA (como chatGPT) muchas veces incluyen un entorno controlado donde ejecutan el codigo generado
+ * La ejecucion de codigo muchas veces requiere tener creditos en los ultimo modelos
+
+* Librerias de python utiles
+  * MatPlotLib
+
+* Utilice este prompt
+
+```
+Podes generar un grafico en matplotlib de stacked bar chart que muestre el ingreso de promedio de sueldos en Espania segun rango etario diferenciado en una misma barra entre hombres y mujeres?
+```
+
+* Primero genero este codigo en python
+
+```python
+import matplotlib.pyplot as plt
+
+edades = ["<25", "25-34", "35-44", "45-54", "55-64", "65+"]
+# Promedio simple de los subtramos quinquenales (INE, EES 2022)
+mujeres = [11332.5, 20852.2, 23986.0, 26223.3, 27072.8, 25437.3]
+hombres = [14386.9, 23564.1, 29391.6, 32280.4, 32658.2, 35612.0]
+
+fig, ax = plt.subplots(figsize=(9,6))
+ax.bar(edades, mujeres, label="Mujeres", color="#d17bb0")
+ax.bar(edades, hombres, bottom=mujeres, label="Hombres", color="#4c72b0")
+
+ax.set_title("Salario medio anual en España por rango etario y sexo (2022)")
+ax.set_ylabel("Euros brutos anuales")
+ax.set_xlabel("Rango etario")
+ax.legend()
+ax.grid(axis="y", alpha=0.3)
+
+for i, (m, h) in enumerate(zip(mujeres, hombres)):
+    ax.text(i, m/2, f"{m:,.0f}", ha="center", va="center", color="white", fontsize=8)
+    ax.text(i, m+h/2, f"{h:,.0f}", ha="center", va="center", color="white", fontsize=8)
+
+plt.tight_layout()
+plt.savefig("salarios_espania.png", dpi=150)
+```
+  
+* Me genero Claude este grafico
+<img width="1350" height="900" alt="image" src="https://github.com/user-attachments/assets/8bf3f261-57c0-4dd8-8665-9a04b8360c0d" />
+
+> [!NOTA]
+> El resultado de la IA en casos el anterior hay que evaluarlos, contrastarlos, tomarlos com pinzas
