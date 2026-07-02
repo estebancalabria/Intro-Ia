@@ -261,6 +261,12 @@ Quiero hacer un sitio web para mi restautante la panera Rosa. Te adjunto el menu
 
 * Puntaje
   * 9/10
+  * 
+ <img width="1376" height="768" alt="image" src="https://github.com/user-attachments/assets/3f7987a9-caa1-4e16-b3fb-727b4c1cd02a" />
+
+ <img width="768" height="1376" alt="image" src="https://github.com/user-attachments/assets/fcfc6e39-cb3f-492d-94f8-20e18e3775ce" />
+
+
  
 ---
 
@@ -272,3 +278,5 @@ Quiero hacer un sitio web para mi restautante la panera Rosa. Te adjunto el menu
 --- 
 
 # Proxima clase : Agentes pseudo-automaticos (sin interfaz conversacional)
+
+
