@@ -175,8 +175,13 @@ A monumental, cinematic football poster capturing the ultimate clash between **S
 #### Herramienta para elegir modelo
 
 * URL
- * https://pollo.ai/invitation-landing?invite_code=dIOOD7
-* 
+  * https://pollo.ai/invitation-landing?invite_code=dIOOD7
+* Caracteristicas
+  * Una de las mas utilizadas por los que  generan de contenido para redes 
+
+* Otra herramienta
+
+* URL
 
 ---
 
