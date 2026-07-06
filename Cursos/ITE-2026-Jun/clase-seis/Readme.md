@@ -134,7 +134,7 @@ A breathtaking, cinematic football showdown between Spain and Portugal moments b
 * URL
   * https://pixai.art/
 
-<img width="768" height="1280" alt="image" src="https://github.com/user-attachments/assets/bfb1c187-e98f-4d05-8f2c-d59272e713c6" />
+<img width="768" height="1280" alt="image" src="https://github.com/user-attachments/assets/bfb1c187-e98f-4d05-8f2c-d59272e713c6" /> 
 
 #### Generacion de imagenes con Texto
 
