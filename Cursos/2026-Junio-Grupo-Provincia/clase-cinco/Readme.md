@@ -175,3 +175,7 @@ Dame una lista de top 10 de  series sitcom. Quiero el nombre, el /los directorio
 
 ---
 
+# Proxima Clase
+
+* Generacion de Diagramas/Graficos
+* Generacion y ejecucion de codigo 
