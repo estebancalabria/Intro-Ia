@@ -159,6 +159,7 @@ A monumental, cinematic football poster capturing the ultimate clash between **S
  * Propietarios
    * Veo 3 (Google(
    * Sora (OpenAI)
+   * Pollo
  * Open Source
 
 * Comparativa
@@ -170,5 +171,13 @@ A monumental, cinematic football poster capturing the ultimate clash between **S
 
 * Previamnete el mejor era Grok (pero ahora es pago)
   * https://grok.com/
+
+#### Herramienta para elegir modelo
+
+* URL
+ * https://pollo.ai/invitation-landing?invite_code=dIOOD7
+* 
+
+---
 
 ## Musica
