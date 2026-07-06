@@ -23,6 +23,12 @@
 
 ---
 
+# Carousel resumen de lo que vinimos viendo
+
+* https://www.instagram.com/p/DaV3CEPFXkF/?img_index=1
+
+---
+
 # Prompt Engineering
 
 ## Tecnicas de Prompting
@@ -122,12 +128,50 @@ Dame una lista de top 10 de  series sitcom. Quiero el nombre, el /los directorio
 > [!NOTE]
 > La IA es no deterministica. Mismo prompt no genera misma salida siempre
 
+
 * Problema
   * Nunca les paso de generar un documento de word copiando la salida de la IA y despues tener que estar bastante tiempo actualizandole el formato y ajustando la salida como la deseo
   * No determiniso de la salida
 * Solucion
   * Definir una plantilla especificando a la IA el formato exacto de la salida que deseo.
   * Ideal utilizar el formato Markdown que es el que utiliza internamente la IA para dalre formato a la salida que vemos en el chat
-  * 
- 
+   * https://es.wikipedia.org/wiki/Markdown
+
+##### Markdown
+
+* El lenguaje estandar que la IA utiliza para generar la respuestas con formato
+* Plantilla de la salida en Markdown
+ * Lo que va entre corchetes [] se llama placeholders y es lo que IA quiero que complete
+ * Me generas la lista de las series utilziando esta plantilla markdown ...
+
+```
+# [Nombre Serie]
+
+## Caracteristicas
+
+* Lanzamiento : [Fecha de Lanzamiento]
+* Cantidad Capitlos : [Cantidad capitulos]
+* Temporadas : [Cantidad de temporada]
+* Puntuacion : [Puntuacion IMDB]
+
+## Director
+
+* [Director/es]
+
+## Actores
+
+* Actor 1
+* Actor 2
+...
+* Actor n
+
+## Argumento
+
+> [Descripcion del Argumento]
+
+----
+
+```
+
+---
 
