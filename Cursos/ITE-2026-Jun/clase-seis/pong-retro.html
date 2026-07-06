@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>PONG // RETROWAVE</title>
+<style>
+  :root {
+    --neon-pink: #ff2e97;
+    --neon-cyan: #00fff9;
+    --neon-purple: #b967ff;
+    --bg-deep: #0a0014;
+    --grid-line: rgba(255, 46, 151, 0.25);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    height: 100%;
+    background: var(--bg-deep);
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #stage {
+    position: relative;
+    width: 900px;
+    max-width: 96vw;
+  }
+  .frame {
+    position: relative;
+    border: 2px solid var(--neon-cyan);
+    box-shadow:
+      0 0 10px var(--neon-cyan),
+      0 0 30px rgba(0,255,249,0.4),
+      inset 0 0 30px rgba(255,46,151,0.15);
+    background: linear-gradient(180deg, #1a0033 0%, #0a0014 60%, #000000 100%);
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  #hud {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    pointer-events: none;
+    z-index: 3;
+  }
+  .score {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+  .score.left { color: var(--neon-cyan); text-shadow: 0 0 8px var(--neon-cyan), 0 0 20px var(--neon-cyan); }
+  .score.right { color: var(--neon-pink); text-shadow: 0 0 8px var(--neon-pink), 0 0 20px var(--neon-pink); }
+
+  #title {
+    text-align: center;
+    color: var(--neon-purple);
+    text-shadow: 0 0 6px var(--neon-purple), 0 0 18px var(--neon-purple);
+    letter-spacing: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.85;
+  }
+  #msg {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 10px var(--neon-cyan);
+    font-size: 22px;
+    letter-spacing: 3px;
+    z-index: 4;
+    pointer-events: none;
+  }
+  #footer {
+    text-align: center;
+    color: #6a4a8a;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    opacity: 0.7;
+  }
+
+  /* scanlines overlay */
+  .scanlines {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.03) 0px,
+      rgba(255,255,255,0.03) 1px,
+      transparent 2px,
+      transparent 3px
+    );
+    z-index: 5;
+    mix-blend-mode: overlay;
+  }
+  .vignette {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 5;
+    box-shadow: inset 0 0 120px 40px rgba(0,0,0,0.8);
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="title">◢ PONG RETROWAVE ◣</div>
+  <div class="frame">
+    <div id="hud">
+      <div class="score left" id="scoreLeft">0</div>
+      <div class="score right" id="scoreRight">0</div>
+    </div>
+    <div id="msg">PRESIONÁ ESPACIO PARA JUGAR</div>
+    <canvas id="game" width="900" height="560"></canvas>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+  </div>
+  <div id="footer">W/S — JUGADOR 1 &nbsp;·&nbsp; ↑/↓ — JUGADOR 2 &nbsp;·&nbsp; ESPACIO — PAUSA/SAQUE</div>
+</div>
+
+<script>
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+const W = canvas.width, H = canvas.height;
+
+const scoreLeftEl = document.getElementById('scoreLeft');
+const scoreRightEl = document.getElementById('scoreRight');
+const msgEl = document.getElementById('msg');
+
+const COLORS = {
+  cyan: '#00fff9',
+  pink: '#ff2e97',
+  purple: '#b967ff',
+  sunYellow: '#ffcc33',
+  sunOrange: '#ff6a00'
+};
+
+// ---------- Estado del juego ----------
+const state = {
+  running: false,
+  leftScore: 0,
+  rightScore: 0,
+  paddleW: 14,
+  paddleH: 90,
+  paddleSpeed: 6.5,
+  ballR: 8,
+};
+
+const left = { x: 24, y: H/2 - state.paddleH/2, up: false, down: false };
+const right = { x: W - 24 - state.paddleW, y: H/2 - state.paddleH/2, up: false, down: false };
+
+let ball = resetBall(1);
+
+function resetBall(dir) {
+  const speed = 5.5;
+  const angle = (Math.random() * 0.6 - 0.3); // leve variación vertical
+  return {
+    x: W/2, y: H/2,
+    vx: dir * speed * Math.cos(angle),
+    vy: speed * Math.sin(angle) + (Math.random() < 0.5 ? -1 : 1) * 0.5,
+    trail: []
+  };
+}
+
+// ---------- Partículas ----------
+let particles = [];
+
+function spawnParticles(x, y, color, count = 14, spread = 4) {
+  for (let i = 0; i < count; i++) {
+    const angle = Math.random() * Math.PI * 2;
+    const speed = Math.random() * spread + 1;
+    particles.push({
+      x, y,
+      vx: Math.cos(angle) * speed,
+      vy: Math.sin(angle) * speed,
+      life: 1,
+      decay: 0.02 + Math.random() * 0.03,
+      size: Math.random() * 3 + 1.5,
+      color
+    });
+  }
+}
+
+function updateParticles() {
+  for (let i = particles.length - 1; i >= 0; i--) {
+    const p = particles[i];
+    p.x += p.vx;
+    p.y += p.vy;
+    p.vx *= 0.96;
+    p.vy *= 0.96;
+    p.life -= p.decay;
+    if (p.life <= 0) particles.splice(i, 1);
+  }
+}
+
+function drawParticles() {
+  for (const p of particles) {
+    ctx.save();
+    ctx.globalAlpha = Math.max(p.life, 0);
+    ctx.fillStyle = p.color;
+    ctx.shadowColor = p.color;
+    ctx.shadowBlur = 8;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+  }
+}
+
+// ---------- Fondo retro: sol + grilla con perspectiva ----------
+let gridOffset = 0;
+
+function drawBackground() {
+  // sol
+  const sunX = W/2, sunY = H*0.32, sunR = 90;
+  const grad = ctx.createLinearGradient(0, sunY - sunR, 0, sunY + sunR);
+  grad.addColorStop(0, COLORS.sunYellow);
+  grad.addColorStop(1, COLORS.sunOrange);
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(sunX, sunY, sunR, 0, Math.PI * 2);
+  ctx.clip();
+  ctx.fillStyle = grad;
+  ctx.fillRect(sunX - sunR, sunY - sunR, sunR*2, sunR*2);
+  // franjas del sol
+  ctx.fillStyle = 'rgba(10,0,20,0.55)';
+  for (let i = 0; i < 6; i++) {
+    const stripeY = sunY + sunR*0.15 + i * 14;
+    ctx.fillRect(sunX - sunR, stripeY, sunR*2, 6);
+  }
+  ctx.restore();
+  ctx.shadowColor = COLORS.sunOrange;
+  ctx.shadowBlur = 30;
+  ctx.beginPath();
+  ctx.arc(sunX, sunY, sunR, 0, Math.PI*2);
+  ctx.strokeStyle = 'rgba(255,150,50,0.4)';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  ctx.shadowBlur = 0;
+
+  // horizonte
+  const horizonY = H * 0.55;
+  ctx.strokeStyle = COLORS.pink;
+  ctx.lineWidth = 2;
+  ctx.shadowColor = COLORS.pink;
+  ctx.shadowBlur = 12;
+  ctx.beginPath();
+  ctx.moveTo(0, horizonY);
+  ctx.lineTo(W, horizonY);
+  ctx.stroke();
+  ctx.shadowBlur = 0;
+
+  // grilla de perspectiva (piso)
+  ctx.strokeStyle = 'rgba(0,255,249,0.35)';
+  ctx.lineWidth = 1;
+  const vanishX = W/2;
+  const numLines = 14;
+  for (let i = -numLines; i <= numLines; i++) {
+    const xBottom = vanishX + i * 60;
+    ctx.beginPath();
+    ctx.moveTo(vanishX, horizonY);
+    ctx.lineTo(xBottom, H);
+    ctx.stroke();
+  }
+  const numRows = 10;
+  for (let j = 0; j < numRows; j++) {
+    const t = (j / numRows + gridOffset) % 1;
+    const y = horizonY + t * (H - horizonY);
+    const scale = t;
+    ctx.globalAlpha = 0.6 * (1 - t) + 0.15;
+    ctx.beginPath();
+    ctx.moveTo(vanishX - (W/2 + numLines*60) * scale, y);
+    ctx.lineTo(vanishX + (W/2 + numLines*60) * scale, y);
+    ctx.stroke();
+  }
+  ctx.globalAlpha = 1;
+
+  // línea central de cancha (arriba del piso, zona de juego)
+  ctx.strokeStyle = 'rgba(185,103,255,0.5)';
+  ctx.lineWidth = 3;
+  ctx.setLineDash([10, 14]);
+  ctx.beginPath();
+  ctx.moveTo(W/2, 0);
+  ctx.lineTo(W/2, H);
+  ctx.stroke();
+  ctx.setLineDash([]);
+}
+
+// ---------- Dibujo de elementos ----------
+function drawPaddle(p, color) {
+  ctx.save();
+  ctx.shadowColor = color;
+  ctx.shadowBlur = 18;
+  ctx.fillStyle = color;
+  ctx.fillRect(p.x, p.y, state.paddleW, state.paddleH);
+  ctx.restore();
+}
+
+function drawBall() {
+  // estela
+  for (let i = 0; i < ball.trail.length; i++) {
+    const t = ball.trail[i];
+    const alpha = (i / ball.trail.length) * 0.5;
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    ctx.fillStyle = COLORS.cyan;
+    ctx.beginPath();
+    ctx.arc(t.x, t.y, state.ballR * 0.7, 0, Math.PI*2);
+    ctx.fill();
+    ctx.restore();
+  }
+  ctx.save();
+  ctx.shadowColor = '#ffffff';
+  ctx.shadowBlur = 20;
+  ctx.fillStyle = '#ffffff';
+  ctx.beginPath();
+  ctx.arc(ball.x, ball.y, state.ballR, 0, Math.PI*2);
+  ctx.fill();
+  ctx.restore();
+}
+
+// ---------- Lógica ----------
+function updatePaddles() {
+  if (left.up) left.y -= state.paddleSpeed;
+  if (left.down) left.y += state.paddleSpeed;
+  if (right.up) right.y -= state.paddleSpeed;
+  if (right.down) right.y += state.paddleSpeed;
+  left.y = Math.max(0, Math.min(H - state.paddleH, left.y));
+  right.y = Math.max(0, Math.min(H - state.paddleH, right.y));
+}
+
+function updateBall() {
+  ball.trail.push({x: ball.x, y: ball.y});
+  if (ball.trail.length > 10) ball.trail.shift();
+
+  ball.x += ball.vx;
+  ball.y += ball.vy;
+
+  // rebote arriba/abajo
+  if (ball.y - state.ballR < 0) {
+    ball.y = state.ballR;
+    ball.vy *= -1;
+    spawnParticles(ball.x, 0, COLORS.cyan, 8, 3);
+  }
+  if (ball.y + state.ballR > H) {
+    ball.y = H - state.ballR;
+    ball.vy *= -1;
+    spawnParticles(ball.x, H, COLORS.cyan, 8, 3);
+  }
+
+  // colisión paddle izquierda
+  if (ball.x - state.ballR < left.x + state.paddleW &&
+      ball.x - state.ballR > left.x - 20 &&
+      ball.y > left.y && ball.y < left.y + state.paddleH &&
+      ball.vx < 0) {
+    bounceOffPaddle(left, 1);
+  }
+
+  // colisión paddle derecha
+  if (ball.x + state.ballR > right.x &&
+      ball.x + state.ballR < right.x + state.paddleW + 20 &&
+      ball.y > right.y && ball.y < right.y + state.paddleH &&
+      ball.vx > 0) {
+    bounceOffPaddle(right, -1);
+  }
+
+  // gol
+  if (ball.x < -30) {
+    state.rightScore++;
+    goal('right');
+  } else if (ball.x > W + 30) {
+    state.leftScore++;
+    goal('left');
+  }
+}
+
+function bounceOffPaddle(paddle, dir) {
+  const relativeIntersect = (ball.y - (paddle.y + state.paddleH/2)) / (state.paddleH/2);
+  const bounceAngle = relativeIntersect * (Math.PI/3); // hasta 60°
+  const speed = Math.min(Math.hypot(ball.vx, ball.vy) * 1.06, 14);
+  ball.vx = dir * speed * Math.cos(bounceAngle);
+  ball.vy = speed * Math.sin(bounceAngle);
+  ball.x = dir === 1 ? paddle.x + state.paddleW + state.ballR : paddle.x - state.ballR;
+  const color = dir === 1 ? COLORS.cyan : COLORS.pink;
+  spawnParticles(ball.x, ball.y, color, 20, 5);
+}
+
+function goal(side) {
+  spawnParticles(ball.x, ball.y, side === 'left' ? COLORS.cyan : COLORS.pink, 40, 7);
+  scoreLeftEl.textContent = state.leftScore;
+  scoreRightEl.textContent = state.rightScore;
+  state.running = false;
+  ball = resetBall(side === 'left' ? -1 : 1);
+  msgEl.textContent = 'PRESIONÁ ESPACIO PARA CONTINUAR';
+  msgEl.style.display = 'block';
+}
+
+// ---------- Loop ----------
+function loop() {
+  gridOffset += 0.004;
+  ctx.clearRect(0, 0, W, H);
+  drawBackground();
+
+  if (state.running) {
+    updatePaddles();
+    updateBall();
+  }
+
+  updateParticles();
+  drawParticles();
+  drawPaddle(left, COLORS.cyan);
+  drawPaddle(right, COLORS.pink);
+  drawBall();
+
+  requestAnimationFrame(loop);
+}
+
+// ---------- Controles ----------
+window.addEventListener('keydown', (e) => {
+  switch(e.code) {
+    case 'KeyW': left.up = true; break;
+    case 'KeyS': left.down = true; break;
+    case 'ArrowUp': right.up = true; e.preventDefault(); break;
+    case 'ArrowDown': right.down = true; e.preventDefault(); break;
+    case 'Space':
+      e.preventDefault();
+      state.running = !state.running;
+      msgEl.style.display = state.running ? 'none' : 'block';
+      if (state.running) msgEl.textContent = '';
+      break;
+  }
+});
+
+window.addEventListener('keyup', (e) => {
+  switch(e.code) {
+    case 'KeyW': left.up = false; break;
+    case 'KeyS': left.down = false; break;
+    case 'ArrowUp': right.up = false; break;
+    case 'ArrowDown': right.down = false; break;
+  }
+});
+
+loop();
+</script>
+</body>
+</html>
