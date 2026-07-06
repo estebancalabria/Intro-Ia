@@ -99,7 +99,7 @@ LC Paper. Calidad que se siente. Confianza que perdura.
     * Wan
 
 * Comparativa
- * 
+ * https://arena.ai/leaderboard/text-to-image
 
 * Tips
  * Los prompts para generar imagenes siempre son mejores en ingles. Usar chatgpt para generar el prompt
@@ -152,5 +152,23 @@ A monumental, cinematic football poster capturing the ultimate clash between **S
 ---
 
 ## Videos
+
+### Fundamentos
+
+* Modelos
+ * Propietarios
+   * Veo 3 (Google(
+   * Sora (OpenAI)
+ * Open Source
+
+* Comparativa
+  * https://arena.ai/leaderboard/text-to-video
+
+### Casos de Uso
+
+#### Generacion Rapida de Videos
+
+* Previamnete el mejor era Grok (pero ahora es pago)
+  * https://grok.com/
 
 ## Musica
