@@ -200,7 +200,7 @@ Daddy style... pero mejorado.
 ```
 
 * Prompt
-* 
+ 
 ```
 [Reggaeton moderno con dembow fuerte, perreo intenso, energía de fiesta callejera, beat pesado con 808s potentes, sintetizadores brillantes y melodías pegajosas, voz masculina callejera y confiada con flow boricua, coros explosivos y ad-libs, vibración de club y radio de verano, super bailable y adictivo]
 Título: Perrea Sin Parar
@@ -217,3 +217,75 @@ Instrucciones adicionales: Canción altamente comercial, hook adictivo, energía
 ---
 
 # Automatizaciones con IA
+
+* Ver Teoria
+ * https://www.instagram.com/p/DIPbzoPOS6v/?img_index=1
+
+* Herramientas conocidas:
+  * Open source
+     * N8N (https://n8n.io/)
+  * Propietarias
+     * Make (https://www.make.com/)
+     * PowerAutomate (https://make.powerautomate.com/)
+   
+
+## Automatizacion con Make
+
+* Loguearnos en make (https://www.make.com/)
+
+* Ver los templates (plantillad o ejemplos)
+
+* Enunciado
+```
+Crear una entrada en un google sheets y con ia crear una entrada en el google calendar
+```
+
+* Setup
+  * Crear un documento de google sheets
+    * Cambiar el nombre al documento para identificarlo facilmente "Sandbox Make"
+    * Columnas
+      * Evento
+      * Inicio
+        * Format -> Number -> DateTime
+      * Fin
+        * Format -> Number -> DateTime
+  * Abrir el google calendar
+* Creacion de Escenario
+  * Ir a make -> Scenarios -> + Create Scenario
+  * Definir el Trigger
+    * Google Sheets -> "Watch new Rows"
+      * Conectarte con la cuenta de Google donde esta el documento
+      * En spreadsheet id elegir el documento
+      * Elegir la hoja del documento
+      * Darle ok --> Luego All para que procese todo el documento
+   * Probar el trigger
+       * Creamos una fila nueva
+       * Evento de Prueba |	7/8/2026 15:00:00 |	7/8/2026 16:00:00
+       * Ejecutar el sceneario
+   * Crear conexion con Google Calendar
+      * Crear un modulo  nuevo con el + al lado de trigger
+      * Google Calendar -> "Create an Event"
+      * Elijo la conexion
+      * Elijo el canendario
+      * Vinculo el EventName con la variable del nodo anterior
+      * Lo mismo para Start Date y End Date
+      * Save
+   * Probar el escenario
+       * Creamos una fila nueva
+       * Evento de Prueba |	7/8/2026 16:00:00 |	7/8/2026 17:00:00
+       * Ejecutar el sceneario
+   * Agregar un nodo con IA
+      * Lo agregamos en el medio
+      * Usamos la nueva funcionalida de IA de make 'Simple Text Prompt"
+
+```
+Dame una version graciosa de "{{2.`0`}}" para cargar en mi google calendar. Quiero solamente una frase que sea el nombre del evento del calendario que sea graciosa.
+```
+      * Cambiar el ultimo nodo para que utilice la salida de la IA
+   * Probar el escenario
+       * Creamos una fila nueva
+       * Ir Al dentista|	7/8/2026 16:00:00 |	7/8/2026 17:00:00
+       * Ejecutar el sceneario
+
+---
+   
