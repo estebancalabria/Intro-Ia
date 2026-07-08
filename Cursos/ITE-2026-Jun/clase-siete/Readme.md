@@ -281,11 +281,31 @@ Crear una entrada en un google sheets y con ia crear una entrada en el google ca
 ```
 Dame una version graciosa de "{{2.`0`}}" para cargar en mi google calendar. Quiero solamente una frase que sea el nombre del evento del calendario que sea graciosa.
 ```
+
+
       * Cambiar el ultimo nodo para que utilice la salida de la IA
    * Probar el escenario
        * Creamos una fila nueva
        * Ir Al dentista|	7/8/2026 16:00:00 |	7/8/2026 17:00:00
        * Ejecutar el sceneario
 
+* Puntaje
+ * 9/10
+
 ---
-   
+
+## Explorar N8n
+
+* URL
+  * https://n8n.io/
+
+* Usamos este prompt para construir el workflow   
+```
+Quiero que al generar una fila en un documento de google sheets que tiene nombre, inicio, fin se genere un evento en mi google calendar
+```
+
+* Estuvimos experimentando con el editor de IA de N8n.
+* Tambien bajamos el json con claude para hacer algunas modificaciones
+* Generamos este escenario
+
+<img width="584" height="235" alt="image" src="https://github.com/user-attachments/assets/9a51abf3-729c-442c-a13e-c468944e769c" />
