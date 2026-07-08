@@ -309,3 +309,10 @@ Quiero que al generar una fila en un documento de google sheets que tiene nombre
 * Generamos este escenario
 
 <img width="584" height="235" alt="image" src="https://github.com/user-attachments/assets/9a51abf3-729c-442c-a13e-c468944e769c" />
+
+### Instalar n8n localmente
+
+Method 1: 
+```
+Using Node.js and npmInstall Node.js LTS version on your system.Open your terminal or command prompt and verify node installation with node -v and npm -v.Run npm install n8n -g to install n8n globally.Start the application by typing n8n or n8n start.Open your browser and go to http://localhost:5678 to set up your owner account.
+````
