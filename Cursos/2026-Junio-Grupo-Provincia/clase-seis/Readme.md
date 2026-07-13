@@ -18,5 +18,19 @@
 
 # Herramientas
 
-# NotebookLM
+## Agentes conversacionales VS LLM
+
+* LLM
+  * Solo genera texto
+* Agente
+  * Puede consultar fuentes de informacion (grounding)
+  * Podes utilizar herramientas
+    * Busqueda Web
+  * Orquestador
+  * LLM
+ 
+
+## NotebookLM
   
+* Url
+ * 
