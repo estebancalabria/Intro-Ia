@@ -119,3 +119,11 @@
   * Es un agente que tiene la posibilidad de generar una base de conocimiento
   * Tiene herramientas para generar documentacion audiovisual sobre esa base e conocimiento
 * Base de Conocimiento
+  * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-May-Muller/clase-uno/Readme.md
+  * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-May-Muller/clase-dos/Readme.md
+  * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-May-Muller/clase-tres/Readme.md
+  * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-May-Muller/clase-cuatro/Readme.md
+  * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-May-Muller/clase-cinco/Readme.md
+  * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-May-Muller/clase-seis/Readme.md
+  * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-May-Muller/clase-siete/Readme.md
+  * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-May-Muller/clase-ocho/Readme.md
