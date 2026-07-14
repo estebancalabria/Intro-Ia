@@ -127,3 +127,5 @@
   * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-May-Muller/clase-seis/Readme.md
   * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-May-Muller/clase-siete/Readme.md
   * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-May-Muller/clase-ocho/Readme.md
+* Puntaje
+ * 10/10
