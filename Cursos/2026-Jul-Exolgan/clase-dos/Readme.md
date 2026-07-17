@@ -13,6 +13,7 @@
     * Grok
     * Copilot
       * Modelo que usa su organizacion
+    * Perplexity
   * Open Source
     * Famillia Llama
     * Mistral
@@ -127,8 +128,32 @@ Quiero una aplicacion en html vainilla con previsualizacion que sea un dashboard
 
 #### Google Calendar
 
+* Abro Gemini
+* Abro Calendar
+
 ```
-``
+Me podes generar un evento en mi calendario que sea "Descasar" de 13 a 14
+``'
+
+* Confirmo y veo como se genera el evento en mi calendario
+
+#### Google Flights y Google Hotels
+
+```
+Quiero ir a ver a la final de Argentina del mundial. Estoy en Buenos Aires. Quiero que uses google flights y google hotels para buscarme opciones de vuelos y alojamientos.
+```
+
+----
+
+### Copilot
+
+* Copilot tiene integracion como Gemini pero con todo el ecosistema de 365
+ 
+##### Calendario de Outlook
+
+* URL
+ * https://outlook.cloud.microsoft/calendar/
+
 
 ---
 
@@ -170,9 +195,19 @@ Quiero una investigacion sobre el dragado del canal del rio de la plata y sus ca
 <img width="152" height="304" alt="image" src="https://github.com/user-attachments/assets/dba7265b-f60e-4321-8f81-a9d41381aa27" />
 
 
+#### Perplexity
+
+* Utilizado para investigaciones academicas
 
 ---
+Quiero ir a ver a la final de Argentina del mundial. Estoy en Buenos Aires. Quiero que uses google flights y google hotels para buscarme opciones de vuelos y alojamientos.
 ---
+
+* Es el modelo que se usa en las universidades
+* Cita fuentes como:
+  * https://www.tandfonline.com/doi/pdf/10.1080/23863781.2022.2116367?needAccess=true
+  * https://polipapers.upv.es/index.php/raet/article/view/25770
+
 
 # Herrmientas
 
