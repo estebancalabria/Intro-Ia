@@ -133,7 +133,7 @@ Quiero una aplicacion en html vainilla con previsualizacion que sea un dashboard
 
 ```
 Me podes generar un evento en mi calendario que sea "Descasar" de 13 a 14
-``'
+```
 
 * Confirmo y veo como se genera el evento en mi calendario
 
