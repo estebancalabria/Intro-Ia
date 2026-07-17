@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pong</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #05060a;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  #wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  #hud {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    color: #eaf6ff;
+    margin-bottom: 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }
+  #score {
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    gap: 60px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+  }
+  #score .p1 { color: #ff5ec4; }
+  #score .p2 { color: #4dd8ff; }
+  canvas {
+    background: radial-gradient(circle at center, #0d1120 0%, #05060a 100%);
+    border-radius: 12px;
+    box-shadow: 0 0 40px rgba(77, 216, 255, 0.15), 0 0 80px rgba(255, 94, 196, 0.08), inset 0 0 60px rgba(0,0,0,0.6);
+  }
+  #msg {
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    text-shadow: 0 0 20px #4dd8ff;
+    display: none;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="score"><span class="p1">0</span><span class="p2">0</span></div>
+  <div id="hud">
+    <span>Izquierda: A / Z</span>
+    <span>Primero a 7 gana</span>
+    <span>Derecha: ↑ / ↓</span>
+  </div>
+  <canvas id="game" width="800" height="500"></canvas>
+  <div id="msg"></div>
+</div>
+
+<script>
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+const W = canvas.width, H = canvas.height;
+
+const PADDLE_W = 14, PADDLE_H = 90;
+const WIN_SCORE = 7;
+
+const left = { x: 20, y: H/2 - PADDLE_H/2, vy: 0, speed: 7, color: '#ff5ec4' };
+const right = { x: W - 20 - PADDLE_W, y: H/2 - PADDLE_H/2, vy: 0, speed: 7, color: '#4dd8ff' };
+
+let ball = resetBall(1);
+let scoreL = 0, scoreR = 0;
+let particles = [];
+let trail = [];
+let shake = 0;
+let gameOver = false;
+let hue = 190;
+
+const keys = {};
+window.addEventListener('keydown', e => { keys[e.key.toLowerCase()] = true; });
+window.addEventListener('keyup', e => { keys[e.key.toLowerCase()] = false; });
+
+function resetBall(dir) {
+  const angle = (Math.random() * 0.6 - 0.3);
+  const speed = 6.5;
+  return {
+    x: W/2, y: H/2,
+    vx: Math.cos(angle) * speed * dir,
+    vy: Math.sin(angle) * speed,
+    r: 8,
+    speed: speed
+  };
+}
+
+function addParticles(x, y, color, count) {
+  for (let i = 0; i < count; i++) {
+    particles.push({
+      x, y,
+      vx: (Math.random() - 0.5) * 8,
+      vy: (Math.random() - 0.5) * 8,
+      life: 30 + Math.random() * 20,
+      maxLife: 50,
+      color
+    });
+  }
+}
+
+function update() {
+  if (gameOver) return;
+
+  // Paddle movement
+  left.vy = 0;
+  if (keys['a']) left.vy = -left.speed;
+  if (keys['z']) left.vy = left.speed;
+  left.y += left.vy;
+  left.y = Math.max(0, Math.min(H - PADDLE_H, left.y));
+
+  right.vy = 0;
+  if (keys['arrowup']) right.vy = -right.speed;
+  if (keys['arrowdown']) right.vy = right.speed;
+  right.y += right.vy;
+  right.y = Math.max(0, Math.min(H - PADDLE_H, right.y));
+
+  // Ball movement
+  trail.push({ x: ball.x, y: ball.y });
+  if (trail.length > 12) trail.shift();
+
+  ball.x += ball.vx;
+  ball.y += ball.vy;
+
+  // Top/bottom walls
+  if (ball.y - ball.r < 0) {
+    ball.y = ball.r;
+    ball.vy *= -1;
+    addParticles(ball.x, ball.y, '#ffffff', 8);
+  }
+  if (ball.y + ball.r > H) {
+    ball.y = H - ball.r;
+    ball.vy *= -1;
+    addParticles(ball.x, ball.y, '#ffffff', 8);
+  }
+
+  // Left paddle collision
+  if (ball.x - ball.r < left.x + PADDLE_W &&
+      ball.x - ball.r > left.x - 10 &&
+      ball.y > left.y && ball.y < left.y + PADDLE_H && ball.vx < 0) {
+    const rel = (ball.y - (left.y + PADDLE_H/2)) / (PADDLE_H/2);
+    const speed = Math.min(ball.speed * 1.06, 16);
+    const angle = rel * (Math.PI/3);
+    ball.vx = Math.cos(angle) * speed;
+    ball.vy = Math.sin(angle) * speed;
+    ball.speed = speed;
+    ball.x = left.x + PADDLE_W + ball.r;
+    addParticles(ball.x, ball.y, left.color, 14);
+    shake = 8;
+  }
+
+  // Right paddle collision
+  if (ball.x + ball.r > right.x &&
+      ball.x + ball.r < right.x + 10 + PADDLE_W &&
+      ball.y > right.y && ball.y < right.y + PADDLE_H && ball.vx > 0) {
+    const rel = (ball.y - (right.y + PADDLE_H/2)) / (PADDLE_H/2);
+    const speed = Math.min(ball.speed * 1.06, 16);
+    const angle = rel * (Math.PI/3);
+    ball.vx = -Math.cos(angle) * speed;
+    ball.vy = Math.sin(angle) * speed;
+    ball.speed = speed;
+    ball.x = right.x - ball.r;
+    addParticles(ball.x, ball.y, right.color, 14);
+    shake = 8;
+  }
+
+  // Scoring
+  if (ball.x < -30) {
+    scoreR++;
+    addParticles(20, ball.y, right.color, 30);
+    shake = 15;
+    checkWinOrReset(-1);
+  } else if (ball.x > W + 30) {
+    scoreL++;
+    addParticles(W - 20, ball.y, left.color, 30);
+    shake = 15;
+    checkWinOrReset(1);
+  }
+
+  // Particles
+  particles.forEach(p => {
+    p.x += p.vx;
+    p.y += p.vy;
+    p.vx *= 0.96;
+    p.vy *= 0.96;
+    p.life--;
+  });
+  particles = particles.filter(p => p.life > 0);
+
+  if (shake > 0) shake *= 0.85;
+  hue = (hue + 0.3) % 360;
+
+  updateScoreDOM();
+}
+
+function checkWinOrReset(dir) {
+  if (scoreL >= WIN_SCORE || scoreR >= WIN_SCORE) {
+    gameOver = true;
+    const winner = scoreL >= WIN_SCORE ? 'IZQUIERDA' : 'DERECHA';
+    const msg = document.getElementById('msg');
+    msg.style.display = 'block';
+    msg.innerHTML = `🏆 Gana ${winner} 🏆<br><span style="font-size:16px;opacity:0.7">Presioná ESPACIO para reiniciar</span>`;
+  } else {
+    ball = resetBall(dir);
+  }
+}
+
+window.addEventListener('keydown', e => {
+  if (e.key === ' ' && gameOver) {
+    scoreL = 0; scoreR = 0;
+    gameOver = false;
+    document.getElementById('msg').style.display = 'none';
+    ball = resetBall(1);
+    updateScoreDOM();
+  }
+});
+
+function updateScoreDOM() {
+  const el = document.getElementById('score');
+  el.children[0].textContent = scoreL;
+  el.children[1].textContent = scoreR;
+}
+
+function drawGlowRect(x, y, w, h, color) {
+  ctx.save();
+  ctx.shadowColor = color;
+  ctx.shadowBlur = 20;
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.roundRect(x, y, w, h, 6);
+  ctx.fill();
+  ctx.restore();
+}
+
+function draw() {
+  ctx.save();
+  const sx = (Math.random() - 0.5) * shake;
+  const sy = (Math.random() - 0.5) * shake;
+  ctx.translate(sx, sy);
+
+  ctx.clearRect(-20, -20, W + 40, H + 40);
+
+  // Background subtle glow center
+  ctx.fillStyle = 'rgba(5,6,10,1)';
+  ctx.fillRect(-20, -20, W + 40, H + 40);
+
+  // Center line
+  ctx.save();
+  ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+  ctx.setLineDash([10, 14]);
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.moveTo(W/2, 0);
+  ctx.lineTo(W/2, H);
+  ctx.stroke();
+  ctx.restore();
+
+  // Center circle
+  ctx.save();
+  ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.arc(W/2, H/2, 70, 0, Math.PI*2);
+  ctx.stroke();
+  ctx.restore();
+
+  // Ball trail
+  trail.forEach((t, i) => {
+    const alpha = (i / trail.length) * 0.4;
+    const size = (i / trail.length) * ball.r;
+    ctx.beginPath();
+    ctx.fillStyle = `hsla(${hue}, 100%, 70%, ${alpha})`;
+    ctx.arc(t.x, t.y, size, 0, Math.PI*2);
+    ctx.fill();
+  });
+
+  // Paddles
+  drawGlowRect(left.x, left.y, PADDLE_W, PADDLE_H, left.color);
+  drawGlowRect(right.x, right.y, PADDLE_W, PADDLE_H, right.color);
+
+  // Ball
+  ctx.save();
+  ctx.shadowColor = `hsl(${hue}, 100%, 70%)`;
+  ctx.shadowBlur = 25;
+  ctx.fillStyle = `hsl(${hue}, 100%, 75%)`;
+  ctx.beginPath();
+  ctx.arc(ball.x, ball.y, ball.r, 0, Math.PI*2);
+  ctx.fill();
+  ctx.restore();
+
+  // Particles
+  particles.forEach(p => {
+    const alpha = p.life / p.maxLife;
+    ctx.beginPath();
+    ctx.fillStyle = p.color;
+    ctx.globalAlpha = Math.max(alpha, 0);
+    ctx.arc(p.x, p.y, 3, 0, Math.PI*2);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  });
+
+  ctx.restore();
+}
+
+function loop() {
+  update();
+  draw();
+  requestAnimationFrame(loop);
+}
+
+loop();
+</script>
+</body>
+</html>
