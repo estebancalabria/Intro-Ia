@@ -171,3 +171,32 @@ print(resultado.text)
   * Microsoft
     * Azure Foundry 
   
+---
+
+## Manejo de Datos Sensibles y Empresas
+
+* Manuales de procedimiento que demuestren que la empresa sabe que es un dato sensible y que lo trata con responsabilidad
+  * Procedimiento de DLP (Data Loss Prevention) : Como minmimiza la empresa que los datos se escapen y que no se usen para otra cosa que se espera de ellos
+* Identificado y estandarizado los lugares donde almacena la infromacion
+  * Catalogo de datos
+* Clasificados que documentos tienen datos sensibles y cuales no
+* Tiene que tener identificados para que de usa cada fuente de datos
+* Indentificar los owners y resposables de cada datos
+  * Identificar los canales de comnunicacion y permisos de quien tiene acceso a cada dato
+* Plan de capacitacion
+
+### Herramientas para gestion de datos a nivel corpotativo
+
+* Microsoft Purview
+  * https://purview.microsoft.com/
+* Dataplex
+* AWS Glue Data Catalog
+* Colibra
+  * https://www.collibra.com/
+
+---
+
+# Notiicias
+
+* https://www.eluniversal.com.mx/mundo/anthropic-debera-pagar-mil-500-mdd-por-libros-pirateados-para-claude-la-mayor-recuperacion-por-derechos-de-autor-de-la-historia/
+  
