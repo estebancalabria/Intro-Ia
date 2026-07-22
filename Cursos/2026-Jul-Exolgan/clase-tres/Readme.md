@@ -58,6 +58,10 @@
 * Europeos
   * Mistral
 
+* Caracteristicas
+   * Estos modelos se pueden descargar y utilizar localmente en un hardware lo suficientemente bueno
+   * Son muy importantes cuando hablamos de privacidad de datos
+
 ### DeepSeek
 
 * URL
@@ -82,6 +86,8 @@ En una habitacion hay tres personas. Uno de ellos es un asesino. Entra una cuart
   * Modelo entrenado por la gente de AliExpress
   * Es el modelo OS mas parecido en funcionalidades a ChatGPT
   * Fue el preferido del profe por mucho tiempo
+  * Bueno para generar videos rapidamente
+  * Muy dificil llegar al limite de uso en la version gratuita
 
 * Probanos la multi modalidad
   
@@ -90,10 +96,71 @@ En una habitacion hay tres personas. Uno de ellos es un asesino. Entra una cuart
   * Si yo adjunto en cualquier LLM un excel grande, el llm no lo va a leer todo
   * Capacidad de generar codigo en python y ejecutarlo para calculos complejos
   * Adjuntarle un archivo y pedirle que sobre el archivo haga algun calculo
+  * No esta solo en Qwen, pero en los modelos propietarios suele ser pago o muy limitado
+  * En copilot se puede hacer en el agente Analista
+
+* Sobre este archivo https://github.com/estebancalabria/Intro-Ia/blob/main/Cursos/2026-Jul-Exolgan/clase-tres/Planitlla%20Larga.xlsx hice :
 
 ```
 Dado el archivo adjunto usar el interprete de codigo para calcular la sumatoria, el promedio, la media y la mediana de los valores en la segunda columna
 ```
+
+* El interprete de codigo genero este codigo (sin necesidad de saber programar
+
+```
+import pandas as pd
+import numpy as np
+
+# Load the excel file
+df = pd.read_excel('Planitlla Larga.xlsx')
+
+# Assuming the second column is named 'Valor' based on the provided text
+# Let's check the columns
+print("Columns:", df.columns.tolist())
+
+# Get the second column
+second_column = df.iloc[:, 1]
+
+# Calculate statistics
+sumatoria = second_column.sum()
+promedio = second_column.mean()
+media = second_column.mean()  # Promedio and Media are the same in this context
+mediana = second_column.median()
+
+print(f"Sumatoria: {sumatoria}")
+print(f"Promedio: {promedio}")
+print(f"Media: {media}")
+print(f"Mediana: {mediana}")
+ # Result 
+Columns: ['Numero Lectura', 'Valor']
+Sumatoria: 2938783.5994871836
+Promedio: 4724.732475059781
+Media: 4724.732475059781
+Mediana: 4551.353621929005
+
+```
+
+---
+
+## Comparativa entre modelos
+
+* URL
+ * https://arena.ai/
+* Caracteristicas
+ * Permite comparar dos modelos anonimos, luego de elegir la mejor respuesta, te muestra cuales son los modelos
+ * Recopila la votacion de las personas y arma un ranking
+
+## Repositorio de Modelos Open Source
+
+* Url
+  * https://huggingface.co/
+* Instrucciones
+  * Crear un usuario y mandarse la clave por correo, no perderla (no admite login de google)
+* Caracteristicas
+  * Aqui se suben los modelos de IA Open Source
+  * Tiene una seccion que se llama "Spaces" donde se puede probar de forma limitada los modelos sin necesidad de descargarlo
+    * https://huggingface.co/spaces/black-forest-labs/FLUX.2-dev
+
 
 ---
 
@@ -103,3 +170,8 @@ Dado el archivo adjunto usar el interprete de codigo para calcular la sumatoria,
 * Grounding : Anclar la respuesta del modelo en fuentes verificable
 * Multimodalidad : Capacidad que tiene los modelos de lenguaje para no solo trabajar con texto, sino tambien con imagenes y archivos
 * OCR : (Optical Character Recognition) : La capacidad que da la IA de reconocer y entender el texto en una imagen
+* FOMO (Fear of missing out) : Como la IA cambia todo el tiempo existe un miedo a que aparezca una tecnologia nueva que no la llegue a conocer
+* Prompt : Instrucion que le doy a un LLM para que genere una respuesta
+* Token : La unidad minima con la que la ia procesa un texto
+  * https://platform.openai.com/tokenizer
+  * Se usa para medir la longitud de la respuesta de la IA
