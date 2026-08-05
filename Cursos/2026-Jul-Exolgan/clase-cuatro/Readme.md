@@ -31,7 +31,8 @@
       * Familia LLama / Meta
       * Qwen
         * https://chat.qwen.ai/
-  
+* Herrmientas
+ * Napkin 
 
 # Large Languange Models
 
@@ -44,31 +45,6 @@
   * Modo investigacion
     * Recorre +100 sitios web (dependiendo el tema) para investigar y hacer un informe
     * 3 investigaciones por mes
-
-## Open Source
-
-### Ejecucion modelo Localmente
-
-
-
-### Groq (con q)
-
-* URL
-  * https://chat.groq.com/
-* Caracteristicas
-  * Es un proveedor de modelos de lenguaje Open Source
-
-# Prompt Engineering
-
-## Tips 
-
-* Utilizar un LLM (chatGPT) para que me ayude a redactar mejores prompts
-
-```
-Actua como experto en prompt engineering y generame un prompt para el modo investigacion de gemini mejorando este prompt "Pertenezco a la empresa Exolgan de manejo de contenedores y quieora hacer un estudio de mercado de la competencia viendo pros y contras de cada uno." devolver el prompt para copiar y pegar sin acotar nada mas
-```
-
-* Genero este promptazo
 
 ```
 Actúa como un consultor senior en estrategia, inteligencia competitiva e investigación de mercados especializado en puertos, terminales portuarias y operadores de contenedores.
@@ -286,4 +262,127 @@ Formato de entrega:
 - Bibliografía y referencias completas.
 ```
 
+* Informe generado
+ * https://share.gemini.google/X8NfxWpDqNSN
+
+## Open Source
+
+### Ejecucion modelo Localmente
+
+> [!NOTE]
+> Ejecutar un modelo de lenguaje localmente requiere varios gigas de disco (para bajar el modelo a la pc) y un buen hardware preferentemente con una muy buena placa de video (GPU) 
+
+* Opciones
+ * LMStudio
+   * https://lmstudio.ai/
+   * Aplicacion de escritorio que se puede instalar en la computadora
+ * Ollama
+   * https://ollama.com/
+   * Mas dificil de usar y es solo en modo consola
+
+
+### Groq (con q)
+
+* URL
+  * https://chat.groq.com/
+* Caracteristicas
+  * Es un proveedor de modelos de lenguaje Open Source
+
+---
+
+# Herramientas de IA
+
+## Text-To-Speech (Texto a Voz)
+
+### Natural Readers
+
+* URl
+  * https://www.naturalreaders.com/
+* Caracteristicas
+  * Convierte un texto a voz y lo lee en voz alta
+* Puntaje
+  * 10 / 10
+
+---
+
+# Prompt Engineering
+
+## Tips 
+
+* Utilizar un LLM (chatGPT) para que me ayude a redactar mejores prompts
+
+```
+Actua como experto en prompt engineering y generame un prompt para el modo investigacion de gemini mejorando este prompt "Pertenezco a la empresa Exolgan de manejo de contenedores y quieora hacer un estudio de mercado de la competencia viendo pros y contras de cada uno." devolver el prompt para copiar y pegar sin acotar nada mas
+```
+
+* Genero un promptazo
+
 * Decirle en el prompt "...para copiar y pegar sin acotar nada mas"
+
+* Hablando sobre contexto... para que la IA me de respuestas y cuente con mas informacion es importante darle todo los datos que me parezcan relevantes, para ello esta bueno utilizar el modo dictado que traen los llm para darle mas contexto.
+
+## Prompt
+
+* Componentes del prompt
+  * Tarea
+  * Contexto
+  * Ejemplo
+  * Persona/Rol
+  * Formato
+  * Tono
+
+---
+
+### Contexto
+
+* Que piensa que pasa
+   * (prompt)  -> (LLM)
+* Lo que en realidad ocurre
+   * (prompt)
+     * -> Se le agrega el historial de la conversacion
+     * -> Se le agrega informacion de las ultimas conversacines
+     * -> Se le agrega informacion sobre la memoria
+     * -> Se le agregan las instrucciones personalizadas y el system prompt
+     * -> Se hacen busquedas web y llamadas a herraientas
+       * -> LLM
+   * Ejemplo
+    * "Que cena preparo"
+      * -> "El usuario Juan Perez que vive en Argentian y habal sobre comida gourmet (....) pregunta que cena prepara
+
+#### Tecnica de prompting para contexto : Prompt Chainning o Interaccion
+
+* Consiste en pedirle a la IA que me haga preguntas (preferentemente de a una) para generar una conversacion que tenga todo el contexto necesario para darme una respuesta mas efectiva
+
+* Sin la tecnica
+  * "Armame el plan de comida del dia de hoy"
+  * Me dio : https://chatgpt.com/share/6a734963-6988-83e9-a59e-97d7e78059ee
+* Con la tecnica
+  * "Armame el plan de comida del dia de hoy. Haceme 10 preguntas de a una de respuesta rapida para tener la informacion necesaria para armarme el plan de comida optimo para mi persona. Cuando tengas toda la informacion recien ahi haceme el plan"
+  * Me dio : https://chatgpt.com/share/6a734974-7b94-83e9-a137-cc49f431c0bd
+ 
+---
+
+### Persona / Rol
+
+* Consiste en decirle a la IA que rol queremos que asuma para darme una respuesta
+
+* Vamos a abrir 4 solapas de ChatGPT
+ * Sin la tecnica
+   * "Dame 10 consejos de salud"
+      * https://chatgpt.com/share/6a734e77-c91c-83e9-8a69-567f4806fa65
+ * Definir un rol
+   * "Actua como un nutricionista experto en ayurvedia y medicina natural y dame 10 consejos de salud"
+      * https://chatgpt.com/share/6a734e86-d930-83e9-a29e-24a979ab2d18
+ * Definir una persona concreta del mundo real
+   * Eres el doctor Favaloro. Quiero que me des 10 consdejo de salud
+      * https://chatgpt.com/share/6a734e91-070c-83e9-9785-fdad288cacf4
+ * Citar a un panel de experto
+   * Quiero que armes un pandel de expertos donde cada uno me de 10 consejos de salud desde su perspectiva
+   * Este ultimo resulta sumamente util para poder ver un problema desde distintos angulos
+      * https://chatgpt.com/share/6a734ea2-d7a0-83e9-810d-f09d37648b98
+    
+---
+
+# Proxima Clase
+
+> Formato y tono en  prompt engieering
