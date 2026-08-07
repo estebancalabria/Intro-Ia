@@ -237,3 +237,9 @@ Me podes generar con matplotlib un Stacked bar chart que muetre en la misma bar
 # Glosario
 
 * No Determinismo : El mismo prompt no produce siempre la misma respuesta
+
+--- 
+
+# Proxima Clases
+
+* Vimos text-to-speech y quisiera ver speech-to-text
