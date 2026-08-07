@@ -194,7 +194,44 @@ pie title Top 5 Terminales por Capacidad de Almacenamiento (TEU)
     "APM Terminals Callao (Peru)" : 45000
     "Terminal Cuenca del Plata (Uruguay)" : 40000 
 ```
-   
+
+#### FlowChart (Bloques)
+
+* Le pido
+```
+Generame un mermaid de flowchar que muestre el organigrama de la empresa Exolgan en funcion de los datos publicos que puedas encontrar en la web. Armalo con los datos que encuentres
+```
+
+* Me genero
+
+```
+flowchart TD
+    ITL["ITL - International Trade Logistics<br/>(Holding)"] --> CEO["Roberto Negro<br/>CEO Exolgan"]
+    CEO --> GT["Duncan Glass<br/>Gerente de la Terminal"]
+    CEO --> GCS["Juan Manuel Ferraro Conesa<br/>Gerente Corporativo de Seguridad"]
+    GT --> SG["Esteban Pisani Salas<br/>Sub Gerente Servicios a Contenedores y Reefer"]
+    GCS --> OPIP1["Ricardo Blanco<br/>OPIP PG VGM"]
+    GCS --> OPIP2["Gabriel Urbanek<br/>OPIP"]
+```
+
+#### Graficos con MatPlotLib (python)
+
+* URL
+  * https://matplotlib.org/
+  * https://matplotlib.org/stable/gallery/index
+* Las IA como chatgpt, claude y qwen tienen interprete de codigo en python y soportan esta libreria
+
+* Por ejemplo le pido un stacked bar chart
+
+```
+Me podes generar con matplotlib un Stacked bar chart que muetre en la misma barra la capacidad de almacenamiento y los movimientos
+```
+
+* Lo probe con Claude y me genero
+
+<img width="606" height="377" alt="image" src="https://github.com/user-attachments/assets/426e6fe5-8fb0-4d8b-b60a-2513c1ece2b1" />
+
+  
 ---
 
 # Glosario
