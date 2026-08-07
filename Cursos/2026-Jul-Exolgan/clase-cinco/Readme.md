@@ -37,6 +37,16 @@
 
 # Prompt Engineering
 
+## Tips de Prompt engineering
+
+* La ia generalmente le pedis algo y agrega una intro y una pregunta de follow up
+ * Ejemplo:
+    * (intro) "Voy a hacer tal cosa en...."
+    * (contendo)
+    * (follow-up) Queres que ademas haga tal o cual cosa?
+ * Si yo quiero solamente el contenido sin la intro ni el follow up se lo pido
+   * "Dame el contenido como para copiar y  pegar sin acotar nada mas" 
+
 ## Formatos de Salida
 
 * Como le puedo pedir a la IA que responda
@@ -77,7 +87,114 @@
 ### Markdown
 
 * Es el formato en el que esta escrito este documento
-    
+* Guia de Wikipedia
+  * https://es.wikipedia.org/wiki/Markdown
+* Es el formato en que la IA genera las respuestas
+  * La IA entiende perfecto markdown
+  * Si copio la respuesta de la IA de chatgpt y lo pego en el notepad veo que lo que realmente genero la IA es markdown
+* Usos
+  * Para definir una plantilla exacta de como quiero la respuesta
+     * Bajar el no determinismo de la ia
+   * Sirve para al copiarlo en word mantener los titulos, negritas, etc
+      * Problema: No les paso nunca de generar algo con IA, copiarlo en word, y el tiempo que me ahorre generando la info ahora lo tengo que invertir en ajustar el formato de la respuesta
+     
+* Ejemplod e plantilla
+
+```
+# [NOMBRE TERMINAL]
+
+## Datos Generales
+
+* Pais : [PAIS DE LA TERMINAL]
+* Provincia : [PROVINCIA DE LA TERMINAL]
+* Direccion : [DIRECCION DE LA TERMINAL]
+* Inaguracion : [FECHA INAGURACION]
+* Operador : [OPERADOR TERMINAL]
+
+# Estadisticas
+
+* Movimientos diarios estimados: [MOVIMIENTO DIARIO]
+* Capacidad anual: [CAPACIDAD ANUAL]
+* Capacidad almacenamiento: [CAPACIDAD ALMACENAMIENTO]
+* Cantidad Empleados: [CANTIDAD EMPLEADOS]
+
+# Biografia
+
+> [DESCRIPCION DOS ORACIONES SOBRE LA TERMINAL]
+
+--- << Separador
+
+```
+
+* Prompt
+
+```
+Dame la lista segun esta plantilla markdown "
+
+# [NOMBRE TERMINAL]
+
+## Datos Generales
+
+- Pais : [PAIS DE LA TERMINAL]
+- Provincia : [PROVINCIA DE LA TERMINAL]
+- Direccion : [DIRECCION DE LA TERMINAL]
+- Inaguracion : [FECHA INAGURACION]
+- Operador : [OPERADOR TERMINAL]
+
+# Estadisticas
+
+- Movimientos diarios estimados: [MOVIMIENTO DIARIO]
+- Capacidad anual: [CAPACIDAD ANUAL]
+- Capacidad almacenamiento: [CAPACIDAD ALMACENAMIENTO]
+- Cantidad Empleados: [CANTIDAD EMPLEADOS]
+
+# Biografia
+
+> [DESCRIPCION DOS ORACIONES SOBRE LA TERMINAL]
+
+\--- << Separador" investiga en internet los datos que falten
+```
+
+* En mi caso tuve que ponerle luego
+
+```
+Devolvelo interpretado. Sin acotar nada mas
+```
+
+> [!NOTE]
+> Lo copio en word y veo como respeto todo el formato, no tengo que modificar los titulos, etc
+
+---
+
+### Mermaid
+
+* Un formato para generar diagramas
+* URL
+  * https://mermaid.live/
+* Las IA suelen incluir previsualizacion de los diagramas mermaid
+* Ejemplos de diagramas
+ * Pie
+ * Flowchart
+
+#### Pie
+
+* Siguiendo la conversacion de la lista de terminales
+
+```
+Me podes generar un diagrama de pie mermaid donde se visualize el la capacidad de las 5 terminales con mas capacidad.
+```
+
+* Me genera
+
+```mermaid
+pie title Top 5 Terminales por Capacidad de Almacenamiento (TEU)
+    "TEC II (Manzanillo, Mexico)" : 70000
+    "Contecar (Cartagena, Colombia)" : 60000
+    "DP World Callao (Peru)" : 50000
+    "APM Terminals Callao (Peru)" : 45000
+    "Terminal Cuenca del Plata (Uruguay)" : 40000 
+```
+   
 ---
 
 # Glosario
