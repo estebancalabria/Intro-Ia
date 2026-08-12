@@ -1,4 +1,4 @@
-<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/e49b376b-f854-4c27-a188-13214bddf510" /># Clase Seis - 12 de Agosto del 2026
+# Clase Seis - 12 de Agosto del 2026
 
 # Repaso 
 
