@@ -477,3 +477,65 @@ El objetivo es que un ejecutivo pueda comprender en aproximadamente 15 minutos:
 
 * Puntaje
   * 10/10
+
+## Generacion de Videos
+
+### Videos Instucionales con HeyGen
+
+* Url
+ * https://heygen.com/
+* Caracteristicas
+ * Generar un script (lo que queremos que la persona diga)
+ * Elegimos un avatar
+ * Generamos el video
+
+* Script
+
+```
+Exolgan es mucho más que una terminal portuaria.
+
+Somos un actor estratégico del comercio exterior argentino, conectando nuestro país con el mundo y haciendo posible que miles de toneladas de productos lleguen cada día a nuevos mercados.
+
+Nuestra operación combina infraestructura, tecnología y experiencia para brindar soluciones eficientes, seguras y confiables.
+
+Detrás de cada contenedor hay una historia, un negocio y una oportunidad. Por eso, trabajamos para que cada operación sea más ágil, optimizando tiempos y acompañando las necesidades de nuestros clientes.
+
+En Exolgan conectamos personas, empresas y mercados.
+
+Porque cuando el comercio se mueve, nosotros también.
+
+**Exolgan. Conectamos negocios. Movemos el futuro.**
+
+```
+
+* Puntaje:
+ * 10 / 10
+
+## Generacion de video con Pollo.ai
+
+* URL
+ * https://pollo.ai/
+
+* Prompt
+
+```
+Una escena cinematográfica de un minuto que comienza al amanecer en una terminal portuaria. El sol aparece sobre el horizonte mientras enormes buques portacontenedores ingresan lentamente al puerto. Las grúas se mueven con precisión y los contenedores comienzan a desplazarse.
+
+La cámara recorre la terminal mostrando la magnitud de la operación: camiones entrando y saliendo, contenedores apilados y trabajadores coordinando cada movimiento.
+
+Luego, la cámara se acerca a una persona que observa la operación desde la terminal. Mira directamente hacia cámara y comienza a hablar:
+
+“Exolgan es mucho más que una terminal portuaria.
+
+Somos parte de una cadena que conecta a la Argentina con el mundo. Cada día, hacemos posible que productos, empresas y oportunidades atraviesen fronteras.
+
+Combinamos infraestructura, tecnología y experiencia para que cada operación sea más eficiente, segura y confiable.
+
+Porque detrás de cada contenedor hay un negocio, una historia y un futuro que necesita seguir avanzando.
+
+En Exolgan conectamos personas, empresas y mercados.
+
+Porque cuando el comercio se mueve, nosotros también.
+
+Exolgan. Conectamos negocios. Movemos el futuro.”
+```
