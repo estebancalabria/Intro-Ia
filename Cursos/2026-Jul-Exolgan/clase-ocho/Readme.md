@@ -77,7 +77,7 @@
 
 * Prompt para ChatGPT
 ```
-Quiero que investigues online a la empresa Exolgan y generes una cancion sobre ella que sea marketinera, pegadiza, un hit
+Quiero que investigues online a la empresa Exolgan y generes una cancion sobre ella que sea marketinera, pegadiza, un hit. Use less than 213 words for best results
 ```
 
 * Letra generada
@@ -281,11 +281,48 @@ Structure: Guitar intro → Verse → Pre-Chorus → Huge Chorus → Verse → P
 
 * URL
   * https://www.udio.com/home
+* Pasos
+ * Ir a Create
+ * Completar con el prompt de ChatGPT
+ * Completar con la letra de ChatGPT
+ * Elegir opciones Avanzadas
+   * Que la letra tenga 2:10 de duracion
+   * Que respeste al maximo el prompt y la letra
+
+* Creaciones
+ * https://www.udio.com/songs/dqw4FjCG4vbMDNsbH1VFBF?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+ * https://www.udio.com/songs/ne7dkLMY3tWHp7TDyvVcnR?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
 
 ### Suno
+
+* URL
+ * https://suno.com/
+
+* Pasos
+ * Ir a Create
+ * Completar la descripcion
+ * +Lyrics
+ * La letra
+
+* Creamos estas canciones:
+ * Miriam : https://suno.com/s/WXLtHMUGcqP8EpkU
+ * Matias : https://suno.com/s/x0rsuXdmYCbNOSzZ
+ * Profesor : https://suno.com/s/Quy4ViPvNI08YQtI
+ * Profesor : https://suno.com/s/mBj5jsPiDSEUNLMv
+
+> [!NOTE]
+> Claramente la version de Suno mucho mejor que la version de UDIO
 
 ---
 
 # Regalo del profe
 
 * https://passportai.app/
+
+---
+
+# Glosario
+
+* IA No es deterministica :
+  * Ante el mismo prompt ningun modelo (se de imagen, de texto, de video) genera el mismo resultado. Puede ser que haga algo parecido.
+  * La temperatura controla el determinismo
