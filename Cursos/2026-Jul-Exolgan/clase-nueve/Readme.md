@@ -96,5 +96,30 @@
 
 * Vamos a crear un agente con
   * https://notebook.google.com/
+ 
+* Vamos a armar un agente / notebook con estos documentos
+* https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-Jul-Exolgan/clase-uno/Readme.md
+* https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-Jul-Exolgan/clase-dos/Readme.md
+* https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-Jul-Exolgan/clase-tres/Readme.md
+* https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-Jul-Exolgan/clase-cuatro/Readme.md
+* https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-Jul-Exolgan/clase-cinco/Readme.md
+* https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-Jul-Exolgan/clase-seis/Readme.md
+* https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-Jul-Exolgan/clase-siete/Readme.md
+* https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-Jul-Exolgan/clase-ocho/Readme.md
+* https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-Jul-Exolgan/clase-nueve/Readme.md
+
+* Una vez armado el notebbok podemos hacer preguntas como
+
+```
+Que herramientas de generacion de vieos vimos?
+```
+
+* Apretar todos los botones de la barra derecha
+
+ 
+ ### Infografia resumen del curso
+
+ <img width="2752" height="1536" alt="image" src="https://github.com/user-attachments/assets/686da738-6c24-4155-b00c-c43a7474b7ba" />
+
 
 ---
