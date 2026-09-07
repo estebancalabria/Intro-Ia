@@ -1,0 +1,13 @@
+Contexto y Rol: Sos un Consultor de Estrategia Competitiva Financiera. Necesito realizar una investigación de mercado externa centrada en el sector asegurador argentino.
+
+Consigna: Investigá en la web la oferta actual de digitalización de seguros en Argentina, comparando el ramo Automotor vs. Seguros para PyMEs/Comercio Integral.
+
+Estructura de la Búsqueda:
+
+Identificá qué aseguradoras líderes del ranking de la Superintendencia de Seguros de la Nación (SSN) cuentan con portales de cotización digital directa o herramientas digitales exclusivas para su red de PAS.
+
+Analizá si la irrupción de las Insurtechs en Argentina ha afectado al segmento PyME o si su penetración sigue acotada al segmento B2C (Auto y Hogar).
+
+Compará las ventajas de velocidad de emisión digital frente al valor del asesoramiento técnico del Productor de Seguros en riesgos patrimoniales complejos.
+
+Entregable: Un informe comparativo con citas web verificables, destacando vacíos de oferta en el mercado local que representen una oportunidad estratégica.
