@@ -1,0 +1,8 @@
+Id_Encuestado,Edad_Rango,Ramo,Canal_Contratacion,Calificacion_Velocidad_Emision,Motivo_Insatisfaccion
+101,18-35,Auto,PAS Presencial,2/5,"Proceso lento, pidieron muchos papeles"
+102,36-50,Auto,PAS Presencial,4/5,"Ninguno, excelente atención del PAS"
+103,18-35,Hogar,Web Formulario,1/5,"Nunca me contactaron para cerrar la póliza"
+104,51+,Auto,PAS Presencial,5/5,"Muy satisfecho con la contención"
+105,18-35,Auto,Buscó en Web / Contrató fuera,1/5,"Migró a InstaCobertura por rapidez de cotización"
+106,36-50,Hogar,PAS Presencial,3/5,"Demora en la cotización"
+107,18-35,Auto,PAS Presencial,2/5,"Prefiero cotizar y emitir por App"
