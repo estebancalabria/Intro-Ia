@@ -1,0 +1,15 @@
+Rol: Actuá como un Analista Senior de Inteligencia de Mercado especializado en el sector Asegurador Argentino.
+
+Contexto: Estamos analizando la amenaza de la digitalización de cotizaciones en Seguros Generales (Auto, Hogar y PyME). En nuestro análisis interno detectamos un vacío de información respecto al segmento PyME.
+
+Tarea: Realizá una investigación profunda y exhaustiva en la web sobre la penetración de las Insurtechs y canales digitales en el segmento de Seguros para PyMEs y Comercios en Argentina.
+
+Puntos clave a investigar:
+
+¿Existen insurtechs o aseguradoras tradicionales en Argentina ofreciendo cotización y emisión 100% digital para pólizas PyME/Comerciales?
+
+¿Cuáles son las barreras principales para la digitalización de este ramo (complejidad de riesgo, inspecciones, montos)?
+
+¿Qué datos cuantitativos o tendencias de mercado existen para el período actual respecto a este segmento en el país?
+
+Restricciones de formato: Presentá la información estructurada con un Resumen Ejecutivo, Datos Clave con sus respectivas fuentes/citas públicas, y una Sección de Conclusiones y Recomendaciones Estratégicas para una aseguradora tradicional.
