@@ -51,8 +51,9 @@
 * Cuenta de GMail
     * Recomendacion. Sacarse una cuenta de GMail para probar las herramientas del curso asi no reciben correo no deseado de todas las herrameintas que probamos
 
-
-
+* Seguir el Profe en Instagram
+   * https://www.instagram.com/mct.esteban.calabria/
+   * https://www.linkedin.com/in/esteban-calabria-7a44401a/
 
 
 # Metodologia
@@ -73,6 +74,9 @@
   * Open Source
       * Muy importante en la privacidad de los datos
       * Los puedo descargar a mi computadora y ejecutarlos localmente en un a pc con una grafica lo suficientemete potente
+
+* Costo de entrenamiento de un llm
+   * https://www.instagram.com/p/DKhQrTvuFcw/?img_index=1
 
 ## Modelos de Lenguaje
 
@@ -97,6 +101,33 @@
 * LA IA generativa es un modelo predictivo al que le damos una frase y me predice el proximo token (palabra)
 * La IA Genera token a token
 
+* En realidad es mas complejo, no se le pasa solo el prompt
+
+(Prompt) + (Memoria) + (System Prompt) + (Instrucciones Personalizadas) + (Llamadas a Herramientas / Busqueda Web) + ...
+
+---
+
+# Caracteristicas LLM
+
+## Memoria
+
+```
+En base al conocimiento que tenes de mi, haceme un roast (una gastada)
+```
+
+* La memoria siempre se puede editar en las opciones de personalizacion
+
+## Instrucciones personalizadas
+
+* Al igual que se puede administrar la memoria, la IA me permite instrucciones personalizadas
+
+```
+Quiero que me respondas en poema. Todo lo que respondes tiene que estar en versito. Todo con rima. Que tu respuesta sea una poesia, llena de metraforas. Una obra de arte literaria
+```
+
+* Algunas instrucciones personalizadas son:
+   * https://github.com/estebancalabria/Intro-Ia/tree/main/Large%20Language%20Models/instrucciones-personalizadas
+
 # Glosario
 
 * Alucinacion : Cuando la IA da una respuesta en apariencia correcta pero que no lo es
@@ -108,3 +139,21 @@
     * Como unidad de cobro
 * Tokenizacion : Dividir un texto en tokens
 * No determinismo : El mismo prompt no siempre da las mismas respuestaws
+* Prompt : Instrucciones que le damos a la IA para que genere una respuesta
+* System Prompt:
+   * Un prompt oculto que le da el fabricante del modelo de lenguaje para definir el tono y la personalidad del mismo
+   * Es el responsable que ChatGPT sea tan halagador
+* Grounding
+   * La ia puede responder solamente basada en su conocimiento y su entrenamient el riesgo de generar una alucinacion es mayor
+   * Generar la respuesta de la IA basandose en fuentes verificables
+   * En concreto cada parrafo que responde la IA se considera que tien grounding cuando aparece un recuadro gris que dice de donde salio la informacion
+   * Muchas veces el gorundig no es algo que esta en la web sino archivos que nosotros les damos a la IA como referencia para que a partir de ellos me arme una repsuesta
+
+<img width="614" height="191" alt="image" src="https://github.com/user-attachments/assets/d62933c7-ee66-44c9-a2a2-d6faa46a9e20" />
+
+> [!NOTE]
+> "Si ves que la respuesta de la IA te chirria, hay que pedirle siempre que te aclare y busque fuentes en base a cual justifica la respuesta
+
+# Proxima Clase
+
+* Ver todos los LLM que hay y para que sirve cada uno
