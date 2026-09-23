@@ -109,17 +109,6 @@
 
 ---
 
-## Como se el esta actual de los LLM
-
-
----
-
-## Como instalo un modelo Open Source en Mi computadora
-
-* Cuando necesito la maxima privacidad
-
----
-
 # Modulo 3 : Prompt Engineering
 
 > [!NOTE]
@@ -376,3 +365,9 @@ Toda la información debe estar referida a la situación **actual a fecha de la 
     * Protecciones de los modelos que agrega el fabricante para temas sensibles e ilegales
 * Jailbreak
     * Usar tecnicas de prompting para burlar los guardarieles de los LLM 
+
+# Proxima Clase
+
+* Como se el esta actual de los LLM
+* Como instalo un modelo Open Source en Mi computadora
+  * Cuando necesito la maxima privacidad
