@@ -371,3 +371,4 @@ Toda la información debe estar referida a la situación **actual a fecha de la 
 * Como se el esta actual de los LLM
 * Como instalo un modelo Open Source en Mi computadora
   * Cuando necesito la maxima privacidad
+* LA investigacion de Gemini!!
