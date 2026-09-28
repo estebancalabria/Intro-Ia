@@ -137,6 +137,7 @@ Esteban
   * Comma sepparated Values
   * Lo abre excel directamente
   * Es ideal tambien para pasarle daros a la IA para que los interprete
+* Codigo Fuente
 
 ---
 
@@ -221,3 +222,165 @@ pie title Principales idiomas que afirman "hablar bien" en España (INE, 2021)
     "Francés" : 3.7
     "Euskera" : 2.5
 ```
+
+* Flowchart
+ * "Dame un ejemplo de flowchart mermaid donde se vea el organigrama del estao de España"
+
+```mermaid
+flowchart TD
+    %% Jefatura del Estado
+    Rey["👑 **JEFATURA DEL ESTADO**<br>El Rey (Felipe VI)<br>*(Símbolo de unidad y permanencia)*"]
+
+    %% Poder Ejecutivo
+    subgraph PE ["**PODER EJECUTIVO**"]
+        Gobierno["**Gobierno de España**"]
+        Presi["Presidente del Gobierno"]
+        Vice["Vicepresidentes"]
+        Min["Ministros / Ministerios"]
+        
+        Gobierno --> Presi
+        Gobierno --> Vice
+        Gobierno --> Min
+    end
+
+    %% Poder Legislativo
+    subgraph PL ["**PODER LEGISLATIVO**"]
+        Cortes["**Cortes Generales**"]
+        Congreso["**Congreso de los Diputados**<br>*(350 Diputados)*"]
+        Senado["**Senado**<br>*(Representación territorial)*"]
+        
+        Cortes --> Congreso
+        Cortes --> Senado
+    end
+
+    %% Poder Judicial
+    subgraph PJ ["**PODER JUDICIAL**"]
+        CGPJ["**Consejo General del Poder Judicial (CGPJ)**<br>*(Órgano de gobierno de jueces)*"]
+        TS["**Tribunal Supremo**<br>*(Órgano jurisdiccional superior)*"]
+        Jueces["Juzgados y Tribunales"]
+        
+        CGPJ --- TS
+        TS --> Jueces
+    end
+
+    %% Órganos Constitucionales y de Control
+    subgraph OC ["**ÓRGANOS CONSTITUCIONALES Y DE CONTROL**"]
+        TC["**Tribunal Constitucional**<br>*(Intérprete supremo de la Constitución)*"]
+        Defensor["**Defensor del Pueblo**"]
+        TCuenta["**Tribunal de Cuentas**"]
+        CEstado["**Consejo de Estado**"]
+    end
+
+    %% Organización Territorial
+    subgraph OT ["**ORGANIZACIÓN TERRITORIAL DEL ESTADO**"]
+        CCAA["**17 Comunidades Autónomas<br>y 2 Ciudades Autónomas**"]
+        Prov["**Provincias**<br>*(Diputaciones)*"]
+        Muni["**Municipios**<br>*(Ayuntamientos)*"]
+        
+        CCAA --> Prov --> Muni
+    end
+
+    %% Relaciones principales
+    Rey ---|Ratifica y sanciona leyes| PL
+    Rey ---|Propone Presidente| Presi
+    Congreso -->|Investidura y Control| Presi
+    PE ---|Administración central| OT
+    TC ---|Control de constitucionalidad| PL
+    TC ---|Control de constitucionalidad| PE
+
+    %% Estilos
+    style Rey fill:#f9f6e7,stroke:#d4af37,stroke-width:2px
+    style PE fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
+    style PL fill:#e8f5e9,stroke:#388e3c,stroke-width:1px
+    style PJ fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
+    style OC fill:#fff3e0,stroke:#f57c00,stroke-width:1px
+    style OT fill:#fbe9e7,stroke:#d84315,stroke-width:1px
+```
+
+### SVG
+
+* Lenguaje basado en xml
+* Scalable Vector Graphics
+* Se usa cuando quiero generar un diagrama que mermaid no tiene (como por ejemplo el de barras) y poder personalizarl
+
+```
+Dame un SVG donde se vea en un grafico de barras el ingreso promedio por grupos 
+```
+
+* Me devuelve
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="550" viewBox="0 0 900 550">
+  <style>
+    .title { font: bold 26px Arial; fill: #222; }
+    .label { font: 16px Arial; fill: #333; }
+    .value { font: bold 15px Arial; fill: #222; }
+    .axis { stroke: #555; stroke-width: 2; }
+    .grid { stroke: #ddd; stroke-width: 1; }
+    .bar { fill: #4e79a7; }
+  </style>
+
+  <!-- Título -->
+  <text x="450" y="45" text-anchor="middle" class="title">
+    Ingreso promedio por grupo
+  </text>
+
+  <!-- Líneas de referencia -->
+  <line x1="130" y1="100" x2="830" y2="100" class="grid"/>
+  <line x1="130" y1="180" x2="830" y2="180" class="grid"/>
+  <line x1="130" y1="260" x2="830" y2="260" class="grid"/>
+  <line x1="130" y1="340" x2="830" y2="340" class="grid"/>
+  <line x1="130" y1="420" x2="830" y2="420" class="grid"/>
+
+  <!-- Ejes -->
+  <line x1="130" y1="100" x2="130" y2="420" class="axis"/>
+  <line x1="130" y1="420" x2="830" y2="420" class="axis"/>
+
+  <!-- Escala -->
+  <text x="115" y="425" text-anchor="end" class="label">$0</text>
+  <text x="115" y="345" text-anchor="end" class="label">$1.000</text>
+  <text x="115" y="265" text-anchor="end" class="label">$2.000</text>
+  <text x="115" y="185" text-anchor="end" class="label">$3.000</text>
+  <text x="115" y="105" text-anchor="end" class="label">$4.000</text>
+
+  <!-- Barras -->
+  <rect x="180" y="340" width="90" height="80" class="bar"/>
+  <rect x="320" y="300" width="90" height="120" class="bar"/>
+  <rect x="460" y="220" width="90" height="200" class="bar"/>
+  <rect x="600" y="160" width="90" height="260" class="bar"/>
+  <rect x="740" y="200" width="70" height="220" class="bar"/>
+
+  <!-- Valores -->
+  <text x="225" y="330" text-anchor="middle" class="value">$1.000</text>
+  <text x="365" y="290" text-anchor="middle" class="value">$1.500</text>
+  <text x="505" y="210" text-anchor="middle" class="value">$2.500</text>
+  <text x="645" y="150" text-anchor="middle" class="value">$3.250</text>
+  <text x="775" y="190" text-anchor="middle" class="value">$2.750</text>
+
+  <!-- Categorías -->
+  <text x="225" y="450" text-anchor="middle" class="label">18–24</text>
+  <text x="365" y="450" text-anchor="middle" class="label">25–34</text>
+  <text x="505" y="450" text-anchor="middle" class="label">35–44</text>
+  <text x="645" y="450" text-anchor="middle" class="label">45–54</text>
+  <text x="775" y="450" text-anchor="middle" class="label">55+</text>
+
+  <text x="450" y="500" text-anchor="middle" class="label">
+    Grupo de edad
+  </text>
+</svg>
+```
+
+### MatPlotLib
+
+* Es la libreria estandar de Python para hacer gracos utilizada en todo lo que tiene que ver con Analisis de Datos
+* Para usarla no hace falta saber programar, sino pedirle a la IA que la utilice
+* Podemos ver la previsualizacion del grafio si el LLM tiene habilitado el interprete de codgio
+  * https://matplotlib.org/
+  * https://matplotlib.org/stable/gallery/index
+
+* PAra verificar si tiene el interprete de codigo habilitado
+```
+Tenes habilitado el interprete de codigo?
+```
+
+* 
