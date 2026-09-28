@@ -133,6 +133,10 @@ Esteban
 
 * JSON
 * XML
+* CSV
+  * Comma sepparated Values
+  * Lo abre excel directamente
+  * Es ideal tambien para pasarle daros a la IA para que los interprete
 
 ---
 
@@ -161,4 +165,31 @@ Bueno, en ese caso genreame la lista como un html, listo para imprimir en pdf pe
 ## Personalizacion basada en plantilla
 
 * Voy a utilizar el lenguaje markdown para definir una plantilla exacta de como quiero la salida
-* 
+  * Markdown es el lenguaje que usa internamente los LLM para generar una respuesta y que al mostrarse en el navegador tenga formato
+  * https://es.wikipedia.org/wiki/Markdown
+ 
+* Vamos a utilizar makdown para generar una plantilla de como queremos exactamente la salida
+
+```
+# [TITULO PELICULA]
+
+## Datos Generales
+
+* Lanzamiento : [ANIO_PELICULA]
+* Genero : [GENERO_PELCULA]
+* Director : [DIRECTOR]
+* Puntaje IMDB : [PUNTAJE MOSTRADO CON EMOJI DE ESTRELLAS]
+
+## ACTORES
+
+* [ACTOR 1] -> [PERSONAJE AL QUE INTERPRETA]
+* [ACTOR 2] -> [PERSONAJE AL QUE INTERPRETA]
+...
+
+## ARGUMENTO
+
+> [SINOPSIS DEL ARGUMENTO]
+
+---  (Separador)
+
+```
