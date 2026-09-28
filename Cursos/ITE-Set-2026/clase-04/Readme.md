@@ -383,4 +383,15 @@ Dame un SVG donde se vea en un grafico de barras el ingreso promedio por grupos
 Tenes habilitado el interprete de codigo?
 ```
 
+* A partir de este prompt
+
+```
+Generame un grafico Stacked bar chart con matplotlib usando el interprete de codigo donde se vea la poblacion de los ultimos 10 censos de España dobde en cada barra se vea discriminado que porcentaje son hombres y que porcentaje mujeres
+```
+
+* Genero este grafico
+
+<img width="435" height="251" alt="image" src="https://github.com/user-attachments/assets/c4a78615-205f-49e2-a783-819cb763834e" />
+
+
 * 
