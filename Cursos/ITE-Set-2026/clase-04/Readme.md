@@ -193,3 +193,31 @@ Bueno, en ese caso genreame la lista como un html, listo para imprimir en pdf pe
 ---  (Separador)
 
 ```
+
+ ---
+ BREAK
+ HASTA y 10
+ -----
+
+ ## Formatos de Generacion de Diagramas
+
+ ### Mermaid
+
+* URL
+ * https://mermaid.live/
+* Es un lenguaje estandar que pemite generar diagramas a partir de texto
+* La IA utiliza muy bien este lenguaje y en general provee una previsualizacion
+
+* PIE
+  * Ejemplo : "Dame un diagrama mermaid de PIE que muestre los principales idiomas hablados en España según el porcentaje de población que los habla bien, utilizando datos del INE."
+
+```mermaid
+pie title Principales idiomas que afirman "hablar bien" en España (INE, 2021)
+    "Español / Castellano" : 96.0
+    "Inglés" : 14.7
+    "Catalán" : 14.2
+    "Valenciano" : 5.6
+    "Gallego" : 5.2
+    "Francés" : 3.7
+    "Euskera" : 2.5
+```
