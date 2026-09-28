@@ -79,7 +79,12 @@
 * Opciones para generar diagramas desde ChatGPT
   * Mermaid (https://mermaid.live/)
     * Lenguaje estandar para generar diagramas a partir de texto
-  * SVG
+    * Trae una serie de graficos predeterminado
+    * Sus opciones de personalizacion son limitadas
+  * SVG (Scalable Vector Grapics)
+    * Es un lenguaje estandar basado en xml para hacer graficos
+    * Los modelos al principio no eran tan buenos generando SVG pero cada vez se vuelven mas capaces
+    * Cuando el grafico que busco no esta en Mermaid y necesito algo mas personalizado o editable, utilizo SVG
   * MatPlotLib
 
 ## Mermaind
@@ -101,6 +106,28 @@ pie showData
     "Capital humano" : 48
     "Equipamiento e infraestructura" : 46
     "Dinero y capital de trabajo" : 41
+```
+
+### SVG
+
+* Ejemplo carita sonriendo
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Cara -->
+  <circle cx="100" cy="100" r="90" fill="#FFD93D" stroke="#333" stroke-width="4"/>
+
+  <!-- Ojos rojos -->
+  <circle cx="70" cy="80" r="10" fill="#FF0000"/>
+  <circle cx="130" cy="80" r="10" fill="#FF0000"/>
+
+  <!-- Sonrisa -->
+  <path d="M60 120 Q100 160 140 120"
+        fill="none"
+        stroke="#333"
+        stroke-width="6"
+        stroke-linecap="round"/>
+</svg>
 ```
 
 ## Integracion de Herrmienta
