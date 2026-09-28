@@ -86,6 +86,10 @@
     * Los modelos al principio no eran tan buenos generando SVG pero cada vez se vuelven mas capaces
     * Cuando el grafico que busco no esta en Mermaid y necesito algo mas personalizado o editable, utilizo SVG
   * MatPlotLib
+    * Matplotlib es una libreria para generar graficos en python
+    * Se puede utilizar en la IA (copilot, Chatgpt) cuando usamos agentes capaces de generar y ejecutar codigo
+      * Interprete de codigo
+    * Agentes como el analista en copilot pueden interpretar y ejecutar codigo sin necesidad de saber programar
 
 ## Mermaind
 
@@ -129,6 +133,37 @@ pie showData
         stroke-linecap="round"/>
 </svg>
 ```
+
+## MatPlotLib
+
+```
+Quiero que utilices matplotlib para graficar esto "Indicador​
+Dato​
+Implicancia estratégica​
+Tejido PyME de 1 a 9 empleados​
+67%​
+Predominio de microempresas donde el dueño decide las compras.​
+Brecha de aseguramiento (sin seguros)​
+18%​
+Mercado desatendido expuesto a vulnerabilidades críticas.​
+Valoran el seguro como inversión clave​
+84%​
+Sólida conciencia sobre la necesidad de resguardo financiero.​
+Importancia otorgada a la cobertura​
+82%​
+48% muy importante y 34% bastante: demanda dispuesta a contratar.​
+Percepción positiva de la oferta actual​
+49%​
+Brecha del 51% de insatisfacción con la flexibilidad del producto.​
+Financiamiento con recursos propios​
+59%​
+24% usa crédito bancario: la liquidez y la rapidez de pago mandan.​" en un grafico que sea claro y resuma todo lo que dice en ese texto
+```
+
+* Me genera esto
+
+<img width="476" height="263" alt="image" src="https://github.com/user-attachments/assets/95799958-1d30-452a-973a-0a08d3ffbb7f" />
+  
 
 ## Integracion de Herrmienta
 
