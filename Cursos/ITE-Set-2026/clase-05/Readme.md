@@ -210,4 +210,10 @@ Incluye una nota discreta en la portada o al pie de las diapositivas que indique
 
 ```
 
+> [!NOTE]
+> Puntaje : 9 / 10
+
+* Vamos a probar tambien generar una landing
+ * Prompt : "Haceme una pagina web que sea una landing para una aseguradora"
+
 ---
