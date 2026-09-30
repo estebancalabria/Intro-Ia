@@ -215,5 +215,11 @@ Incluye una nota discreta en la portada o al pie de las diapositivas que indique
 
 * Vamos a probar tambien generar una landing
  * Prompt : "Haceme una pagina web que sea una landing para una aseguradora"
+   * https://tranquilidad-segura-xvzcnol.gamma.site/
 
 ---
+# Break 
+# HAsta y 10
+# Despues vemos otra herrmienta
+---
+
