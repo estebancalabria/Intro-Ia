@@ -1,0 +1,22 @@
+# Ejemplo Grabacion
+
+  Meeting started: 30/9/2026, 15:54:36
+  Duration: 0 minutes
+  Participants: Speaker 1, Speaker 2
+
+  [View original transcript](https://app.tactiq.io/api/2/u/m/r/qMg7W8RSDJJGY4D6q99C?o=txt)
+
+    
+
+  
+
+  
+
+  ## Transcript
+
+  00:00 Speaker 1: Hola, este es un ejemplo
+00:01 Speaker 2: de audio que
+00:04 Speaker 1: voy a transcribir con la herramienta Tactiq ❤️. Voy a hacer un ejemplo pequeño de unos 30 segundos más o menos para ver cómo funciona la grabación. Esta herramienta funciona con archivos WAV, con archivo MP3 y con el formato de WhatsApp que se llama OGG.
+00:23 Speaker 2: Pruébenlo.
+00:24 Speaker 1: Cada vez que tengan una reunión con el cliente la pueden grabar. Y luego la pueden transcribir utilizando esta herramienta.
+  
