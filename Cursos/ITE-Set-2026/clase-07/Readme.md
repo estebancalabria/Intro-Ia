@@ -163,4 +163,30 @@
 # Break hasta y 20
 ---
 
-# IA Tradicional
+# IA en Excel / Google Sheets
+
+## En excel 
+
+* La ia viene integrada para la version paga con copilot en excel
+## En Google Sheets
+
+* Si no tengo la version de copilot paga puedo tener algo similar en google sheets
+* Vamos a abrir un documento de google sheets
+* Vamos a instalarle la extension SheetGPT
+ * https://www.sheetgpt.ai/
+   
+* En el menu extensiones debe aparecer SheetGPT
+
+<img width="540" height="337" alt="image" src="https://github.com/user-attachments/assets/434c5164-fc50-49e8-b25d-e5698ae0be45" />
+
+* Tenemos las siguientes funciones
+ * =GPTLIST("Dame la lista de los paies de LATAM ordenada alfabeticamente")
+
+* Siempre que la IA responde, me conviene pegar el resultado como valores para que no lo recalculemos todo el tiempo consumiento tokens innecesarios
+
+# Proima clase
+
+* Machine Learning (IA Tradicional)
+ * Como utilizar la IA para analizar datos
+* Agentes
+ * NotebookLM (Cuadernos)
