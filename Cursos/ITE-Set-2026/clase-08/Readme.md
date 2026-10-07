@@ -137,4 +137,18 @@ Break hasta y 30
   * Ideal para estudiantes y manejar proyectos con informacion relacionada en empresas!
 * Enunciado
   * Vamos a armar un notebooklm con toda la informacion/aputes que fuimos tomando en el curso
-    
+
+* Agregar los links como fuetnes del notebook
+```
+https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Set-2026/clase-01/readme.md
+https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Set-2026/clase-02/Readme.md
+https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Set-2026/clase-03/Readme.md
+https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Set-2026/clase-04/Readme.md
+https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Set-2026/clase-05/Readme.md
+https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Set-2026/clase-06/Readme.md
+https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Set-2026/clase-07/Readme.md
+https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Set-2026/clase-08/Readme.md
+```
+
+
+  
