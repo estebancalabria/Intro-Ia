@@ -122,6 +122,29 @@
     * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-Junio-Grupo-Provincia/clase-uno/Readme.md
     * ..clase-dos.. y asi
 
+> [!NOTE]
+> A partir de los links el cuaderno me informo que no puede acceder a internet. Vamos a crear el contenido en word
+
 ---
 
 ## Copilot en Office
+
+### Copilot En word
+
+* Le puse este prompt:
+ * Generame un word de acuerdo al contenido de esta url "https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/2026-Junio-Grupo-Provincia/clase-uno/Readme.md" respera el contenido de la url
+
+> [!NOTE]
+> No puede acceder aqui tampoco al link, asi que tuve que copiar y pegar el contenido a mano
+
+### Copiot en Powerpoint
+
+* Con el word anterior hice este prompt:
+ * Haz una presentación sobre Grupo Provincia - Clase 1 - Introducción a la Inteligencia Artificial
+
+---
+
+# Proxima Clase
+
+* Copilot Para excel
+* Agentes de Copilto Analista / Investigador / Galeria de Agentes
