@@ -90,9 +90,29 @@
 
 <img width="501" height="137" alt="image" src="https://github.com/user-attachments/assets/74575865-1532-4e59-b020-a7beea754bfb" />
 
+* Duplicar e libro para tener una copia de los datos originales
+
+## Separar los datos de prueba y entrenamiento
+
+* PAra hacerl en excel borro el contenido de la columna surivides de la fila 2 - 30 -> Datos de Prueba
+* El resto de los datos (De la 31 al final) -> Datos de entrenamiento
+
+## Entrenar y probar un modelo
+
+* Extensiones... Simple ML For Sheets ... Start... Predict missing values
+
+<img width="254" height="353" alt="image" src="https://github.com/user-attachments/assets/1743f3cf-713e-4936-9e45-9d8ce0d9d2ad" />
+
+## Explicar el modelo
+
+* Ir a explain model
+ * Vemos que la variable mas importante es sex
 
 
 ---
+Break hasta y 30
+---
+
 
 # Agentes
 
