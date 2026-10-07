@@ -116,11 +116,25 @@ Break hasta y 30
 
 # Agentes
 
+* LLM
+  * Solo genera texto en base a su entrenamiento
+* Agente
+ * LLM + Esteroides
+ * LLM + Capacidad de consultar fuentes de conocimiento + Capacidad de usar herramientas
+ * Capacidad de accion mediante sus herramientas
+    * Un ejemplo de herrmienta es la busqueda web
+ * Capacidad de Consutar documentacion especificas
+ * System prompt (instrucciones personalizadas) epecializadas para la tarea para lo que fue concebido
+   * En general LLM -> Uso General, Agente -> Objetivo especifico
+
 ## Gemini Notebook (Notebook LM)
 
----
-
-# Intro para el AZ-900
-
-## Construir herramientas de IA
-  
+* URL
+  * https://notebook.google.com/
+* Caracteristica
+  * Reunir una fuente de informacion para poder tener un chatbot expecializado en esa fuente de informacion
+  * Poder generar material audiovisual a partir de esa informacion
+  * Ideal para estudiantes y manejar proyectos con informacion relacionada en empresas!
+* Enunciado
+  * Vamos a armar un notebooklm con toda la informacion/aputes que fuimos tomando en el curso
+    
