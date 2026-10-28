@@ -240,3 +240,15 @@ Esto es HeyGen. Y esto es apenas una muestra de lo que podemos hacer con IA.
   * Dense una vuelta cada tanto por los laboratorios de google a explroar lo que se viene
 * De ahi nacio
   * https://notebook.google.com/
+* Caracteristica
+ * Es un expacio de trabajo donde le cargas contenido relacionado
+  * Por ejemplo si estudias una materia en la facultad, le cargas los apuntes de esa materia
+ * Permite haer resumenes, mapas conceptuales, videos, audios tipo postcast
+ * Usa solamente el contenido que le cargas
+
+---
+
+# Glosario
+
+* Grounding
+ * Anclar las repuesta de la IA en fuentes verificables y confiables par reducir errores y alucinaciones
