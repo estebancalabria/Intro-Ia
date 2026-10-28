@@ -246,6 +246,26 @@ Esto es HeyGen. Y esto es apenas una muestra de lo que podemos hacer con IA.
  * Permite haer resumenes, mapas conceptuales, videos, audios tipo postcast
  * Usa solamente el contenido que le cargas
 
+* Inforgrafia
+
+<img width="2752" height="1536" alt="image" src="https://github.com/user-attachments/assets/495fb1e5-eaa3-4a10-8ec0-8d86e1bc4e2e" />
+
+* Podcast
+ * https://notebook.google.com/notebook/d90f2913-8843-4f76-aa25-930abf885510/artifact/d56e7e51-16ad-490f-b9de-a7d0063a59ee?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_
+
+* Puntaje
+   * 8/10
+ * Justicacion
+  * Ahora que es un producto de Google, es mas limitado
+  * Limitaciones en cuanto a los formatos
+  * El modelo gemini a veces es muy "IA", menos humano, mas serio
+
+# Proxima clase
+
+* Nos toca hablar de Machine Learning y Ciencia de Datos
+* Los videos y audios de NotebookLM
+  
+  
 ---
 
 # Glosario
