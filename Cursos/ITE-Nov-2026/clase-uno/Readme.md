@@ -144,6 +144,51 @@ Quiero que me respondas en poema. Todos lo que respondes tiene que estar en vers
 * Tradicionalmente los modelos e Lenguaje (LLM) tenian informacion hasta una fecha determinada, ahora se le agrego la capacidad (agentica) de poder consultar la WEB
 
 ---
+# Break
+Hasta y 25
+---
+
+# Buen uso de la IA
+
+* El miedo mas grande de los empleadores son las alucinaciones
+   * https://litigio.com.ar/2025/08/27/un-abogado-cito-jurisprudencia-inventada-por-chatgpt-y-el-tribunal-advirtio-al-colegio-de-rosario/
+
+# Mercado de LA IA
+
+* ChaTGpt -> OpenAI
+* Claude  -> Anthropic
+* Gemini -> Google
+* Grok -> X.com
+   * Generacion de Video
+   * Muy buen Grounding
+
+# Agentes
+
+* Traidicionamete un LLM se entrenaba y
+   * (prompt) -> (respuesta)
+   * No habia contacto con el exterior
+   * No tenia informacion Actualizada
+   * Solo podia responder en base a su conocimiento
+ 
+* Agente
+   * Es un llm con esteroides (se le agregan varias cositas)
+   * Ademas del LLM
+      * Uso de Herramientas
+         * Puede interacturar con el exterior
+         * Puede hacer una busqeuda web
+         * Generar algo en otro sistema
+            * Un evento en un calendario
+            * Mandar un correo
+      * Capacidad de tener su propia base de conocimiento (RAG)
+         * EJ.  Un chatbot que tenga los manuales de procedimiento de una empresa
+      * Un objetivo plasmado en instrucciones personalizadas
+      * Un orquestador que cominique el Modelo (LLM) con las herramientas, la fuente de conocnimiento y las instrucciones
+
+* Tipos de Agente
+   * Agentes Conversacionales
+      * Interfaz basada en Chatbot
+   * Agentes autonomos
+      * Pueden funcionar en segundo plano
 
 # Glosario
 
@@ -162,4 +207,14 @@ Quiero que me respondas en poema. Todos lo que respondes tiene que estar en vers
    * Inventa, no responde lo que quiero
 * Grounding
    * Buscar fundamentar la respuesta de la IA en fuentes confiables y verificables
-     
+* Censura
+   * Capacidad de filtrar siertas respuestas de acuerdo a las politicas de la empresa que realizo el modelo
+* Jailbreak
+   * Encontrar la manaera de pedirle cosas a la IA para que pase por alto su censura
+   * Hackear a la IA
+* Human In the Loop
+   * Siempre debe haber uba persona responsable y que valide lo que hace la IA      
+
+# Proxima Clase
+
+## Vamos enumerar las distintas IAs que hay y ver para que situacion sirve cada una
