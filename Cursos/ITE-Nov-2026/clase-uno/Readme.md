@@ -215,6 +215,9 @@ Hasta y 25
 * Human In the Loop
    * Siempre debe haber uba persona responsable y que valide lo que hace la IA      
 
+> [!NOTE]
+> https://www.instagram.com/p/DaV3CEPFXkF/?img_index=1
+
 # Proxima Clase
 
 ## Vamos enumerar las distintas IAs que hay y ver para que situacion sirve cada una
