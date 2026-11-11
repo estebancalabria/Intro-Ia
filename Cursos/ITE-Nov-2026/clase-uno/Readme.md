@@ -36,3 +36,53 @@
   * Vibe Codding con Agentes
 * Modulo 9 : AI-901
   * Certificacion en IA de Microsoft
+
+---
+
+# Requerimientos
+
+* Crearse una cuenta de Google para el curso (RECOMENDADO)
+   * Para evitar el correo de las herramientas que probemos
+* Crear una cuenta en Hugging Face (HF)
+   * https://huggingface.co/
+* Requisito par aaprobacion, seguir el profe
+   * https://www.instagram.com/mct.esteban.calabria/
+   * https://www.linkedin.com/in/esteban-calabria-7a44401a/
+
+# Modulo 1 : Fundamentos de la IA
+
+## Licenciamiento
+
+* Propietarios
+   * ChatGPT (OpenAI)
+      * https://chatgpt.com/
+   * Claude (Anthopic)
+      * https://claude.ai/
+   * Gemini
+      * https://gemini.google.com/
+* Open Source
+   * DeepSeek
+      * https://chat.deepseek.com/
+   * Qwen
+      * https://www.qwen.com/
+   * Mistral
+      * https://chat.mistral.ai/
+* Puentes
+   * Copilot
+      * No un Modelo de lenguaje sino que delega la tarea un llm
+
+> [!NOTE]
+> Los Modelos Open Source se pueden ejecutar localmente lo cual agrega privacidad
+
+> [!NOTE]
+> Cada modelo se trata de especializar en una tarea Especifica
+
+# Glosario
+
+* Modelos de Lenguaje (LLM)
+* Token
+   * Minima subdivision de texto que maneja un LLM
+   * Por lo general es similar a una palabra
+   * https://platform.openai.com/tokenizer
+* Tokenizacion
+   * Dividir un texto en partes minimas
