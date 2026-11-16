@@ -25,6 +25,8 @@
       * El estandar si queres instalar un modelo os local
     * Kimi
       * Similar a Claude con Enfoque Tecnico
+    * DeepSeek
+      * Modo pensado
     * Mistral
       * Enfoque a la legislacion Europea
 * Comparar modelos
@@ -99,10 +101,66 @@ Quiero que actúes como una hoja de cálculo basada en texto. Solo responderás 
 Dame una propuesta para comer hoy para mi almuerzo. Haceme pregutnas DE A UNA para obtener el contexto suficiente para encontrar la mejor propuesta de comida personalizada para mi."
 ```
 
- 
 ---
 # Break
 HAsta y 15
 ---
 
+### Planificar
 
+* Idea
+  * Antes de pedirle a la IA que me haga una tarea, que me responda la una planificacion
+  * Antes de darela la tarea directamente, darle un espacio para pensar lo que va a hacer
+ 
+* Sin plan
+   * Redactame un plan de negocio para mi empresa de vender limonadas en la puerta de mi casa
+   * https://chatgpt.com/share/6afb4d4b-c724-83e8-a60c-2c6700164ca5
+* Con Plan
+  * Planifica como vas a hacer un plan de negocio para mi empresa de vender limonadas en la puerta de mi casa. No generes el plan de negocios sino que quiero que planifiques y analices como hacerlo previamente
+  * https://chatgpt.com/share/6afb4d5b-cbe0-83e9-b51c-fc102f2afa3a
+  * Redactame el plan en base a tu planificacion
+
+> [!NOTE]
+> Se ve claramente que cuando le pido a la IA que planfique antes de darme una respuesta directamente 
+
+----
+
+## Formato de Salida
+
+* Primero le voy a pedir a la IA una lista de algo sin formato
+
+```
+Dame una lista de los 10 libros que tengo que leer antes de morir indicando titulo, autor, fecha, longitud, tematica, argumento.
+```
+
+### Formatos tecnicos
+
+* Para tener una reperesetnacion uniforme y estandar de la informacion
+* Se utilizan mucho en sistemas
+ * JSON
+   * Dame la lista en json
+   * Es muy imortante porque la IA usa muchisimo este  lenguaje por dentro
+ * XML
+   * Dame la lista en XML
+
+### Formatos pseudo tecnicos
+
+* PDF
+  * "Generame la lista en pdf"
+  * Tenemos poco control o a veces requiere demasiadas interacciones sobre como se va a ver el resultado final
+* HTML
+  * Puedo usarlo sin conocer el lenguaje
+  * Es el lenguaje con el que estan hecha las pagina web
+  * Puedo generar pdf con mas control a partir del html
+  * Me permiten salidas que puedo compartir porque se ven mas profesionales
+* CSV
+  * Generame la lista como csv
+  * Comma separated Values
+  * Con ese formato lo puedo abrir en excel
+  * Tambien me sirve para guardar los excel como archivos CSV para parsarselos a la IA
+
+
+---
+# Break
+Y 10 
+---
