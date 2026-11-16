@@ -79,4 +79,28 @@ Quiero que actúes como una hoja de cálculo basada en texto. Solo responderás 
 
 ---
 
+## Contexto 
 
+* Contexto = Lo que escribis en el prompt + Toda la conversacion + Instrucciones Personaliadas + System Prompt + Memoria + Busqueda con Herramientas o busqueda web
+* Muchas veces la IA me da mejores respuesta cuanta mas informacion tiene y es ahi donde resulta util aplicar el modo dictado y en vez de escribir prompts cortitos darle a la Ia todo el contexto para que trabaje
+
+### Interaccion o Prompt Chainning (encadenamiento de prompts)
+
+* Idea
+  * Encadenar prompts generando una convesacion que tenga el contexto necesario antes de de pedirle la respuesta concreta de lo que quiero
+ 
+* Interaccion
+ * Le voy a pedir a la IA que me haga pregutnas "DE A UNA" para responder de forma mas precisa
+ * Utlimamente los LLM a veces lo implementan sin que se lo ida
+
+* Ejemplo
+
+```
+Dame una propuesta para comer hoy para mi almuerzo. Haceme pregutnas DE A UNA para obtener el contexto suficiente para encontrar la mejor propuesta de comida personalizada para mi."
+```
+
+ 
+---
+# Break
+HAsta y 15
+---
