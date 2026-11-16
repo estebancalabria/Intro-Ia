@@ -273,3 +273,13 @@ pie showData
     "Deportes y actividades al aire libre" : 14
     "Aficiones, informática y juegos" : 12
 ```
+
+---
+
+# Proxima Clase
+
+* Mencionar
+  * Claude code y el pongo (Generacion de Codigo como Formato)
+    * Agentes de codificacion y Vibe Coding
+  * Otras alternativas para hacer Graficos con MatPlotLib
+* Herramientas de IA
