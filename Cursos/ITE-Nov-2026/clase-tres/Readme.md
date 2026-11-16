@@ -142,6 +142,8 @@ Dame una lista de los 10 libros que tengo que leer antes de morir indicando titu
    * Es muy imortante porque la IA usa muchisimo este  lenguaje por dentro
  * XML
    * Dame la lista en XML
+ * Codigo
+    * Javascript / Python
 
 ### Formatos pseudo tecnicos
 
@@ -164,3 +166,6 @@ Dame una lista de los 10 libros que tengo que leer antes de morir indicando titu
 # Break
 Y 10 
 ---
+
+## Markdown
+
