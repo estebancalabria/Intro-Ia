@@ -169,3 +169,34 @@ Y 10
 
 ## Markdown
 
+* Es un lenguaje para darle formato la salida de forma sencilla
+* La IA utiliza markdown por defecto aunque no nos demos cuenta
+* Documentacion : https://es.wikipedia.org/wiki/Markdown
+
+* Problemas qeu resuelve
+  * Poder especificar el formato exacto de la salida mediante una plantilla
+
+* Especificacion exacta como quiero la respuesta de acuerdo a esta plantilla
+
+```
+
+# [TITULO]
+
+## Informacion General
+
+* Fecha : [FECHA]
+* **Autor** : [AUTOR] 
+* Genero  : [GENERO]
+
+## Argumento
+
+> [EL ARGUMENTO DEL LIBRO]
+
+## Personajes
+
+1. [Personaje 1]
+2. [Personaje 2]
+...
+
+---
+```
