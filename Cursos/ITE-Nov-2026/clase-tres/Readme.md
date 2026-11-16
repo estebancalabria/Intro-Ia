@@ -256,3 +256,20 @@ flowchart TB
     class COMM,CAI,CFO,BRAD,HR,MKT executive
     class SALES,M365,AZURE,PARTNERS,AZ,AI,DEV,DATA,FIN,IR,LEGAL,POLICY,GOV,PEOPLE,TALENT,BRAND,GTM division
 ```
+
+* Con este prompt
+
+```
+Haceme un diagrama de Pie en memaid donde se muestre el reparto de tiempo de ocio (cine, libros, etc) en la pobacion de Epania.
+```
+
+* Genero esto
+
+```mermaid
+pie showData
+    title Distribución del tiempo de ocio en España
+    "Medios de comunicación (TV, lectura, radio)" : 54
+    "Vida social y diversión" : 20
+    "Deportes y actividades al aire libre" : 14
+    "Aficiones, informática y juegos" : 12
+```
