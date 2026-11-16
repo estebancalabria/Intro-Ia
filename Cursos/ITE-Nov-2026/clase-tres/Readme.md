@@ -200,3 +200,59 @@ Y 10
 
 ---
 ```
+
+## Mermaid
+
+* Lenguaje para generar Diagramas
+  * https://mermaid.live/
+ 
+* Un Flowchart
+
+```
+Generame en mermaid un flowchart donde se vea el organigrama de Microsoft
+```
+
+* Hizo esto
+
+```mermaid
+flowchart TB
+    SAT["Satya Nadella<br/>Chairman & CEO"]
+
+    SAT --> COMM["Judson Althoff<br/>CEO Microsoft Commercial Business"]
+    SAT --> CAI["Scott Guthrie<br/>EVP Cloud + AI Group"]
+    SAT --> CFO["Amy Hood<br/>EVP & CFO"]
+    SAT --> BRAD["Brad Smith<br/>Vice Chair & President"]
+    SAT --> HR["Amy Coleman<br/>EVP & Chief Human Resources Officer"]
+    SAT --> MKT["Takeshi Numoto<br/>EVP & Chief Marketing Officer"]
+
+    COMM --> SALES["Ventas y negocio comercial"]
+    COMM --> M365["Microsoft 365"]
+    COMM --> AZURE["Soluciones empresariales"]
+    COMM --> PARTNERS["Ecosistema de partners"]
+
+    CAI --> AZ["Azure"]
+    CAI --> AI["AI Platforms & Services"]
+    CAI --> DEV["Developer Tools"]
+    CAI --> DATA["Data & Cloud Infrastructure"]
+
+    CFO --> FIN["Finanzas"]
+    CFO --> IR["Investor Relations"]
+
+    BRAD --> LEGAL["Legal & Corporate Affairs"]
+    BRAD --> POLICY["Public Policy"]
+    BRAD --> GOV["Gobierno y regulación"]
+
+    HR --> PEOPLE["People & Culture"]
+    HR --> TALENT["Talent Acquisition"]
+
+    MKT --> BRAND["Brand & Communications"]
+    MKT --> GTM["Marketing Strategy"]
+
+    classDef ceo fill:#185ABD,color:#fff,stroke:#185ABD
+    classDef executive fill:#dceafe,color:#172554,stroke:#2563eb
+    classDef division fill:#f1f5f9,color:#1e293b,stroke:#94a3b8
+
+    class SAT ceo
+    class COMM,CAI,CFO,BRAD,HR,MKT executive
+    class SALES,M365,AZURE,PARTNERS,AZ,AI,DEV,DATA,FIN,IR,LEGAL,POLICY,GOV,PEOPLE,TALENT,BRAND,GTM division
+```
