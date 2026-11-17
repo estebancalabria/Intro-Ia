@@ -152,3 +152,36 @@ Hasta y 10
 Hasta y 15.
 Luego comparamos
 ---
+
+## Verificacion Cruzada con Claude
+
+* Tengo 3 presentaciones hechoa con 3 IA distinta
+* Voy a crizarlas con Claude para evaluar cual es mejor
+   * Claude al ser un modelo tecnico resulta muy efectivo para correcciones y validaciones cruzadas
+
+```
+TE adjunto 3 presentaciones. Ademas te adjunto el texto que utilice para generar las presetaciones (Contenido adjunto). quiero que analices las tres presentaciones en de detalle, las contraste con la investigacion en las cuales fueron basada, me hagas un analisis y me digas cual te parece mejor
+```
+
+* El resultado
+   * https://claude.ai/share/32d0fd09-35d6-4194-b425-87ca9c771889
+
+## Compedio de Herramientas
+
+* Repositorio de Herramientas
+   * https://theresanaiforthat.com/
+* Catalogo de Herramientas de IA (Como las que vimos hoy)
+
+## Videos Institucionles basados en Avatar (Hey Gen)
+
+* URL
+   * https://www.heygen.com/
+
+## Recomendacion
+
+* Herramienta de IA que incluye varias
+* Se las recomiendo para que la explorer
+* Es mas facil pagar una subscripcion a una sola herramienta que a varias
+   * https://passportai.app/
+
+# PRoxima Clase Creamos un video con Hey Gen
