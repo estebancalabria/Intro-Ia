@@ -108,3 +108,23 @@ Crear una aplicacion para cotizar automaticamente una propiedad. El uusario ingr
 Break
 Hasta y 10
 ---
+
+## IA para generar Diagramas
+
+### Mermaid
+
+* Ya vimos que la IA puede generar diagramas utilizando mermaid
+
+### Napkin
+
+* Herramienta para generar diagramas a partir de texto
+* URL
+   * https://www.napkin.ai/es/
+* Vamos pegarle el texto de la investigacion de gemini y enriquecerla con diagramas
+
+<img width="666" height="357" alt="image" src="https://github.com/user-attachments/assets/09d10d6a-4a78-4322-bcd9-a932f9f491c0" />
+
+> [!NOTE]
+> Ahora le agregaron la capacidad de hacer presentaciones que no lo habia probado. Probemoslo juntos!
+
+* Subimos aca el pdf y el ppt generado por napkin 
