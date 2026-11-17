@@ -109,7 +109,7 @@ Break
 Hasta y 10
 ---
 
-## IA para generar Diagramas
+## IA para generar Diagramas y Presentaciones
 
 ### Mermaid
 
@@ -127,4 +127,28 @@ Hasta y 10
 > [!NOTE]
 > Ahora le agregaron la capacidad de hacer presentaciones que no lo habia probado. Probemoslo juntos!
 
-* Subimos aca el pdf y el ppt generado por napkin 
+* Subimos aca el pdf y el ppt generado por napkin
+
+### Gamma
+
+* Esta herramienta es la opcion mas popular para generar presentaciones con IA
+* URL
+   * https://gamma.app/signup?r=cjucljp9heegmkv
+* Caracteristicas
+   * No solo genera presentaciones
+   * Paginas Web / Landings
+   * Contenido para redes sociales
+* Generamos esta presetacion
+   * https://gamma.app/docs/Nvidia-tras-Jensen-Huang-escenarios-y-estrategia-de-inversion-dr87cbpcckehqa7
+
+### PowerPoint
+
+* Dentro de 365 (con licencia) tambien podemos generar presentaciones pon Powerpoint directamente
+* Necesito la licencia de 365
+* Generamos esta presentacion
+
+---
+# Break
+Hasta y 15.
+Luego comparamos
+---
