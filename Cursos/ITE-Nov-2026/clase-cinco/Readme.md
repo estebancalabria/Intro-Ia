@@ -256,3 +256,7 @@ print(path)
 
 ---
 
+# Proxima Calse
+
+* Vamos a hacer una Automatizacion con IA
+* Vamos a hablar de las API keys
