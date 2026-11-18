@@ -1,0 +1,206 @@
+,,,,,,
+,TOTAL FACTURADO,,TRANSACCIONES,,TICKET PROMEDIO,
+,78095,,200,,390.475,
+,Total ingresos registrados,,Operaciones concretadas,,Promedio por operación,
+,,,,,,
+,ID Transacción,Fecha,Producto,Precio Unitario,Cantidad,Total
+,VTA-0001,2026-01-05,"Notebook Pro 15""",1250,1,1250
+,VTA-0002,2026-01-06,Mouse Inalámbrico Ergo,45,3,135
+,VTA-0003,2026-01-08,Teclado Mecánico RGB,85,2,170
+,VTA-0004,2026-01-09,"Monitor 27"" 4K",420,1,420
+,VTA-0005,2026-01-11,Auriculares Bluetooth,110,2,220
+,VTA-0006,2026-01-12,Disco SSD Externo 1TB,95,4,380
+,VTA-0007,2026-01-15,Cámara Web HD 1080p,65,2,130
+,VTA-0008,2026-01-16,Hub USB-C Multipuerto,50,5,250
+,VTA-0009,2026-01-18,Parlante Inteligente,75,1,75
+,VTA-0010,2026-01-20,Base Refrigerante Laptop,35,3,105
+,VTA-0011,2026-01-21,"Notebook Pro 15""",1250,2,2500
+,VTA-0012,2026-01-23,"Monitor 27"" 4K",420,2,840
+,VTA-0013,2026-01-25,Teclado Mecánico RGB,85,1,85
+,VTA-0014,2026-01-26,Mouse Inalámbrico Ergo,45,4,180
+,VTA-0015,2026-01-28,Auriculares Bluetooth,110,3,330
+,VTA-0016,2026-01-30,Disco SSD Externo 1TB,95,2,190
+,VTA-0017,2026-02-01,Cámara Web HD 1080p,65,1,65
+,VTA-0018,2026-02-03,Hub USB-C Multipuerto,50,2,100
+,VTA-0019,2026-02-05,Base Refrigerante Laptop,35,2,70
+,VTA-0020,2026-02-06,Parlante Inteligente,75,2,150
+,VTA-0021,2026-02-08,"Notebook Pro 15""",1250,1,1250
+,VTA-0022,2026-02-10,"Monitor 27"" 4K",420,1,420
+,VTA-0023,2026-02-11,Teclado Mecánico RGB,85,3,255
+,VTA-0024,2026-02-13,Auriculares Bluetooth,110,1,110
+,VTA-0025,2026-02-15,Mouse Inalámbrico Ergo,45,5,225
+,VTA-0026,2026-02-16,Disco SSD Externo 1TB,95,3,285
+,VTA-0027,2026-02-18,Cámara Web HD 1080p,65,2,130
+,VTA-0028,2026-02-20,Hub USB-C Multipuerto,50,3,150
+,VTA-0029,2026-02-22,Parlante Inteligente,75,1,75
+,VTA-0030,2026-02-24,Base Refrigerante Laptop,35,4,140
+,VTA-0031,2026-02-25,"Notebook Pro 15""",1250,1,1250
+,VTA-0032,2026-02-27,"Monitor 27"" 4K",420,3,1260
+,VTA-0033,2026-03-01,Teclado Mecánico RGB,85,2,170
+,VTA-0034,2026-03-02,Mouse Inalámbrico Ergo,45,2,90
+,VTA-0035,2026-03-04,Auriculares Bluetooth,110,4,440
+,VTA-0036,2026-03-06,Disco SSD Externo 1TB,95,1,95
+,VTA-0037,2026-03-07,Cámara Web HD 1080p,65,3,195
+,VTA-0038,2026-03-09,Hub USB-C Multipuerto,50,4,200
+,VTA-0039,2026-03-11,Base Refrigerante Laptop,35,1,35
+,VTA-0040,2026-03-13,Parlante Inteligente,75,2,150
+,VTA-0041,2026-03-15,"Notebook Pro 15""",1250,2,2500
+,VTA-0042,2026-03-16,"Monitor 27"" 4K",420,1,420
+,VTA-0043,2026-03-18,Teclado Mecánico RGB,85,1,85
+,VTA-0044,2026-03-20,Auriculares Bluetooth,110,2,220
+,VTA-0045,2026-03-22,Mouse Inalámbrico Ergo,45,3,135
+,VTA-0046,2026-03-23,Disco SSD Externo 1TB,95,2,190
+,VTA-0047,2026-03-25,Cámara Web HD 1080p,65,1,65
+,VTA-0048,2026-03-27,Hub USB-C Multipuerto,50,2,100
+,VTA-0049,2026-03-29,Parlante Inteligente,75,3,225
+,VTA-0050,2026-03-31,Base Refrigerante Laptop,35,2,70
+,VTA-0051,2026-04-02,"Notebook Pro 15""",1250,1,1250
+,VTA-0052,2026-04-03,"Monitor 27"" 4K",420,2,840
+,VTA-0053,2026-04-05,Teclado Mecánico RGB,85,4,340
+,VTA-0054,2026-04-07,Mouse Inalámbrico Ergo,45,2,90
+,VTA-0055,2026-04-09,Auriculares Bluetooth,110,1,110
+,VTA-0056,2026-04-10,Disco SSD Externo 1TB,95,5,475
+,VTA-0057,2026-04-12,Cámara Web HD 1080p,65,2,130
+,VTA-0058,2026-04-14,Hub USB-C Multipuerto,50,1,50
+,VTA-0059,2026-04-16,Base Refrigerante Laptop,35,3,105
+,VTA-0060,2026-04-17,Parlante Inteligente,75,2,150
+,VTA-0061,2026-04-19,"Notebook Pro 15""",1250,3,3750
+,VTA-0062,2026-04-21,"Monitor 27"" 4K",420,1,420
+,VTA-0063,2026-04-22,Teclado Mecánico RGB,85,2,170
+,VTA-0064,2026-04-24,Auriculares Bluetooth,110,3,330
+,VTA-0065,2026-04-26,Mouse Inalámbrico Ergo,45,4,180
+,VTA-0066,2026-04-28,Disco SSD Externo 1TB,95,2,190
+,VTA-0067,2026-04-30,Cámara Web HD 1080p,65,1,65
+,VTA-0068,2026-05-02,Hub USB-C Multipuerto,50,3,150
+,VTA-0069,2026-05-04,Parlante Inteligente,75,4,300
+,VTA-0070,2026-05-05,Base Refrigerante Laptop,35,2,70
+,VTA-0071,2026-05-07,"Notebook Pro 15""",1250,1,1250
+,VTA-0072,2026-05-09,"Monitor 27"" 4K",420,2,840
+,VTA-0073,2026-05-11,Teclado Mecánico RGB,85,1,85
+,VTA-0074,2026-05-12,Mouse Inalámbrico Ergo,45,3,135
+,VTA-0075,2026-05-14,Auriculares Bluetooth,110,2,220
+,VTA-0076,2026-05-16,Disco SSD Externo 1TB,95,3,285
+,VTA-0077,2026-05-18,Cámara Web HD 1080p,65,4,260
+,VTA-0078,2026-05-19,Hub USB-C Multipuerto,50,2,100
+,VTA-0079,2026-05-21,Base Refrigerante Laptop,35,1,35
+,VTA-0080,2026-05-23,Parlante Inteligente,75,3,225
+,VTA-0081,2026-05-25,"Notebook Pro 15""",1250,2,2500
+,VTA-0082,2026-05-26,"Monitor 27"" 4K",420,1,420
+,VTA-0083,2026-05-28,Teclado Mecánico RGB,85,5,425
+,VTA-0084,2026-05-30,Auriculares Bluetooth,110,1,110
+,VTA-0085,2026-06-01,Mouse Inalámbrico Ergo,45,2,90
+,VTA-0086,2026-06-03,Disco SSD Externo 1TB,95,4,380
+,VTA-0087,2026-06-04,Cámara Web HD 1080p,65,2,130
+,VTA-0088,2026-06-06,Hub USB-C Multipuerto,50,1,50
+,VTA-0089,2026-06-08,Parlante Inteligente,75,2,150
+,VTA-0090,2026-06-10,Base Refrigerante Laptop,35,3,105
+,VTA-0091,2026-06-11,"Notebook Pro 15""",1250,1,1250
+,VTA-0092,2026-06-13,"Monitor 27"" 4K",420,3,1260
+,VTA-0093,2026-06-15,Teclado Mecánico RGB,85,2,170
+,VTA-0094,2026-06-17,Mouse Inalámbrico Ergo,45,6,270
+,VTA-0095,2026-06-18,Auriculares Bluetooth,110,2,220
+,VTA-0096,2026-06-20,Disco SSD Externo 1TB,95,1,95
+,VTA-0097,2026-06-22,Cámara Web HD 1080p,65,3,195
+,VTA-0098,2026-06-24,Hub USB-C Multipuerto,50,4,200
+,VTA-0099,2026-06-25,Base Refrigerante Laptop,35,2,70
+,VTA-0100,2026-06-27,Parlante Inteligente,75,1,75
+,VTA-0101,2026-06-29,"Notebook Pro 15""",1250,1,1250
+,VTA-0102,2026-07-01,"Monitor 27"" 4K",420,1,420
+,VTA-0103,2026-07-02,Teclado Mecánico RGB,85,3,255
+,VTA-0104,2026-07-04,Auriculares Bluetooth,110,3,330
+,VTA-0105,2026-07-06,Mouse Inalámbrico Ergo,45,2,90
+,VTA-0106,2026-07-08,Disco SSD Externo 1TB,95,2,190
+,VTA-0107,2026-07-09,Cámara Web HD 1080p,65,1,65
+,VTA-0108,2026-07-11,Hub USB-C Multipuerto,50,5,250
+,VTA-0109,2026-07-13,Parlante Inteligente,75,2,150
+,VTA-0110,2026-07-15,Base Refrigerante Laptop,35,4,140
+,VTA-0111,2026-07-16,"Notebook Pro 15""",1250,2,2500
+,VTA-0112,2026-07-18,"Monitor 27"" 4K",420,2,840
+,VTA-0113,2026-07-20,Teclado Mecánico RGB,85,1,85
+,VTA-0114,2026-07-22,Mouse Inalámbrico Ergo,45,3,135
+,VTA-0115,2026-07-23,Auriculares Bluetooth,110,2,220
+,VTA-0116,2026-07-25,Disco SSD Externo 1TB,95,3,285
+,VTA-0117,2026-07-27,Cámara Web HD 1080p,65,2,130
+,VTA-0118,2026-07-29,Hub USB-C Multipuerto,50,2,100
+,VTA-0119,2026-07-30,Base Refrigerante Laptop,35,1,35
+,VTA-0120,2026-08-01,Parlante Inteligente,75,3,225
+,VTA-0121,2026-08-03,"Notebook Pro 15""",1250,1,1250
+,VTA-0122,2026-08-05,"Monitor 27"" 4K",420,1,420
+,VTA-0123,2026-08-06,Teclado Mecánico RGB,85,4,340
+,VTA-0124,2026-08-08,Auriculares Bluetooth,110,1,110
+,VTA-0125,2026-08-10,Mouse Inalámbrico Ergo,45,5,225
+,VTA-0126,2026-08-12,Disco SSD Externo 1TB,95,2,190
+,VTA-0127,2026-08-13,Cámara Web HD 1080p,65,1,65
+,VTA-0128,2026-08-15,Hub USB-C Multipuerto,50,3,150
+,VTA-0129,2026-08-17,Parlante Inteligente,75,2,150
+,VTA-0130,2026-08-19,Base Refrigerante Laptop,35,2,70
+,VTA-0131,2026-08-20,"Notebook Pro 15""",1250,2,2500
+,VTA-0132,2026-08-22,"Monitor 27"" 4K",420,2,840
+,VTA-0133,2026-08-24,Teclado Mecánico RGB,85,2,170
+,VTA-0134,2026-08-26,Mouse Inalámbrico Ergo,45,4,180
+,VTA-0135,2026-08-27,Auriculares Bluetooth,110,3,330
+,VTA-0136,2026-08-29,Disco SSD Externo 1TB,95,4,380
+,VTA-0137,2026-08-31,Cámara Web HD 1080p,65,3,195
+,VTA-0138,2026-09-02,Hub USB-C Multipuerto,50,1,50
+,VTA-0139,2026-09-03,Base Refrigerante Laptop,35,3,105
+,VTA-0140,2026-09-05,Parlante Inteligente,75,1,75
+,VTA-0141,2026-09-07,"Notebook Pro 15""",1250,1,1250
+,VTA-0142,2026-09-09,"Monitor 27"" 4K",420,1,420
+,VTA-0143,2026-09-10,Teclado Mecánico RGB,85,3,255
+,VTA-0144,2026-09-12,Auriculares Bluetooth,110,2,220
+,VTA-0145,2026-09-14,Mouse Inalámbrico Ergo,45,1,45
+,VTA-0146,2026-09-16,Disco SSD Externo 1TB,95,2,190
+,VTA-0147,2026-09-17,Cámara Web HD 1080p,65,2,130
+,VTA-0148,2026-09-19,Hub USB-C Multipuerto,50,4,200
+,VTA-0149,2026-09-21,Parlante Inteligente,75,3,225
+,VTA-0150,2026-09-23,Base Refrigerante Laptop,35,2,70
+,VTA-0151,2026-09-24,"Notebook Pro 15""",1250,1,1250
+,VTA-0152,2026-09-26,"Monitor 27"" 4K",420,2,840
+,VTA-0153,2026-09-28,Teclado Mecánico RGB,85,1,85
+,VTA-0154,2026-09-30,Mouse Inalámbrico Ergo,45,3,135
+,VTA-0155,2026-10-01,Auriculares Bluetooth,110,4,440
+,VTA-0156,2026-10-03,Disco SSD Externo 1TB,95,1,95
+,VTA-0157,2026-10-05,Cámara Web HD 1080p,65,3,195
+,VTA-0158,2026-10-06,Hub USB-C Multipuerto,50,2,100
+,VTA-0159,2026-10-08,Base Refrigerante Laptop,35,1,35
+,VTA-0160,2026-10-10,Parlante Inteligente,75,2,150
+,VTA-0161,2026-10-12,"Notebook Pro 15""",1250,2,2500
+,VTA-0162,2026-10-13,"Monitor 27"" 4K",420,1,420
+,VTA-0163,2026-10-15,Teclado Mecánico RGB,85,2,170
+,VTA-0164,2026-10-17,Auriculares Bluetooth,110,1,110
+,VTA-0165,2026-10-19,Mouse Inalámbrico Ergo,45,5,225
+,VTA-0166,2026-10-20,Disco SSD Externo 1TB,95,3,285
+,VTA-0167,2026-10-22,Cámara Web HD 1080p,65,1,65
+,VTA-0168,2026-10-24,Hub USB-C Multipuerto,50,3,150
+,VTA-0169,2026-10-26,Parlante Inteligente,75,4,300
+,VTA-0170,2026-10-27,Base Refrigerante Laptop,35,2,70
+,VTA-0171,2026-10-29,"Notebook Pro 15""",1250,1,1250
+,VTA-0172,2026-10-31,"Monitor 27"" 4K",420,3,1260
+,VTA-0173,2026-11-01,Teclado Mecánico RGB,85,1,85
+,VTA-0174,2026-11-02,Mouse Inalámbrico Ergo,45,2,90
+,VTA-0175,2026-11-03,Auriculares Bluetooth,110,2,220
+,VTA-0176,2026-11-04,Disco SSD Externo 1TB,95,5,475
+,VTA-0177,2026-11-05,Cámara Web HD 1080p,65,2,130
+,VTA-0178,2026-11-06,Hub USB-C Multipuerto,50,1,50
+,VTA-0179,2026-11-07,Base Refrigerante Laptop,35,3,105
+,VTA-0180,2026-11-08,Parlante Inteligente,75,1,75
+,VTA-0181,2026-11-09,"Notebook Pro 15""",1250,2,2500
+,VTA-0182,2026-11-09,"Monitor 27"" 4K",420,1,420
+,VTA-0183,2026-11-10,Teclado Mecánico RGB,85,3,255
+,VTA-0184,2026-11-10,Auriculares Bluetooth,110,3,330
+,VTA-0185,2026-11-11,Mouse Inalámbrico Ergo,45,4,180
+,VTA-0186,2026-11-11,Disco SSD Externo 1TB,95,2,190
+,VTA-0187,2026-11-12,Cámara Web HD 1080p,65,2,130
+,VTA-0188,2026-11-12,Hub USB-C Multipuerto,50,3,150
+,VTA-0189,2026-11-13,Parlante Inteligente,75,2,150
+,VTA-0190,2026-11-13,Base Refrigerante Laptop,35,4,140
+,VTA-0191,2026-11-14,"Notebook Pro 15""",1250,1,1250
+,VTA-0192,2026-11-14,"Monitor 27"" 4K",420,2,840
+,VTA-0193,2026-11-15,Teclado Mecánico RGB,85,2,170
+,VTA-0194,2026-11-15,Mouse Inalámbrico Ergo,45,1,45
+,VTA-0195,2026-11-16,Auriculares Bluetooth,110,2,220
+,VTA-0196,2026-11-16,Disco SSD Externo 1TB,95,3,285
+,VTA-0197,2026-11-17,Cámara Web HD 1080p,65,1,65
+,VTA-0198,2026-11-17,Hub USB-C Multipuerto,50,2,100
+,VTA-0199,2026-11-18,Parlante Inteligente,75,3,225
+,VTA-0200,2026-11-18,"Notebook Pro 15""",1250,1,1250
