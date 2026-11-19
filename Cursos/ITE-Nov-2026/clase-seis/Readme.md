@@ -132,4 +132,9 @@ LA descripcion del evento dice :
 
 <img width="657" height="455" alt="image" src="https://github.com/user-attachments/assets/1e3f61ee-645e-4d52-bd57-e6bb9d22c88e" />
 
+* La autmatizacion me queda asi:
+
+<img width="671" height="301" alt="image" src="https://github.com/user-attachments/assets/55f96be2-ba59-4ac2-8fc3-054cfbe9e5aa" />
+
+
 
