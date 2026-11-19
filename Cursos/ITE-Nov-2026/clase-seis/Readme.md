@@ -153,3 +153,27 @@ LA descripcion del evento dice :
 * URL
   * notebooklm.google.com
   
+* Vamos a usar estos documentos
+ * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Nov-2026/clase-uno/Readme.md
+ * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Nov-2026/clase-dos/Readme.md
+ * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Nov-2026/clase-tres/Readme.md
+ * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Nov-2026/clase-cuatro/Readme.md
+ * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Nov-2026/clase-cinco/Readme.md
+ * https://raw.githubusercontent.com/estebancalabria/Intro-Ia/refs/heads/main/Cursos/ITE-Nov-2026/clase-seis/Readme.md
+
+* Generamos este link
+  * https://notebooklm.link.google/AidgD8e4k8my
+
+## Alternativas
+
+* Cuadernos en 365
+   * Solo con licencia de copilot Microsoft
+* Claude
+    * Tiene los proyectos
+    * Podes adjuntar documentos
+    * No tiene lo del postcast, lo del audio
+* ChatGPT
+   * Tambien tiene proyectos
+ 
+ > [!NOTE]
+> Los proyecto son una buena forma de agrupar conversaciones y tenerlas todas vinculadas para compartir contexto en comun
