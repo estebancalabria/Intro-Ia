@@ -88,7 +88,48 @@
 * Vamos a usar nuestra API Key
     * https://cbsnagur.github.io/byok-chat/
         * Base URL : https://api.groq.com/openai/v1/
-
+---
+Break
 ---
 
 # Automatizacion con IA
+
+* Vamos a agregarle IA al ejemplo de la clase pasada de MAKE
+  * Lo que quiero es que ahora la IA me calcule una prioridad para el evento (ALTO, MEDIO, BAJO, DESCONOCIDO) y cuando complete la  planilla de excel le ponga la prioridad calculada
+ 
+* Setup
+  * Abrirl el Calendar
+  * Crear un xls
+  * Loguearnos en make
+ 
+* Creo Escenario nuevo y hacemos lo mismo que la clase pasada
+
+<img width="508" height="245" alt="image" src="https://github.com/user-attachments/assets/bb27b00e-4e83-48fe-8b0b-676720af7e4a" />
+
+* Vamos a agregrle IA
+ * Si bien make tiene IA nativa, esta te la cobran. En nuestro caso para abaratar costos y ademas entender nos conviene usar lo de la api key que vimos
+
+* Prompt
+```
+Quiero que analices el evento de calendar basado en su despcripcion y me devuelvas una prioridad que puede ser ALTA, MEDIA, BAJA o INDETERMINADO.
+Los eventos que tienen que ver con ocio, salidas, diversion y entretenimiento tienen que tener prioridad BAJA
+Los eventos que tienen que ver con tareaas laborales tienen que tener prioridad MEDIA
+Los eventos que tienen que ver con cuestiones de salud tienen que tener prioridad ALTA
+Si no podes determinar la prioridad devolver INDETERMINADO
+Devolver solamente el valor de la prioridad una sola palabra sin acotar nada mas
+LA descripcion del evento dice : 
+
+```
+
+
+* En el medio de los dos voy a poner un modulo que se llama Groq
+  * Si no tenemos una api key la saco de vueta en : https://console.groq.com/keys
+  * Agregar un modulo en el medio que sea "Create Chat Completion"
+
+<img width="615" height="449" alt="image" src="https://github.com/user-attachments/assets/d28c1911-03d0-4838-84e2-7e916d5d45be" />
+
+* Modifico el nodoo que agrega la columna a Google Sheets para que complete la prioridad que le devolvio la IA
+
+<img width="657" height="455" alt="image" src="https://github.com/user-attachments/assets/1e3f61ee-645e-4d52-bd57-e6bb9d22c88e" />
+
+
