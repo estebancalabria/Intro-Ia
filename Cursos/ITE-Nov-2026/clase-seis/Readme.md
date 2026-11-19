@@ -137,4 +137,19 @@ LA descripcion del evento dice :
 <img width="671" height="301" alt="image" src="https://github.com/user-attachments/assets/55f96be2-ba59-4ac2-8fc3-054cfbe9e5aa" />
 
 
+---
+# BREAK hasta y 15
+---
 
+# Cuadernos
+
+* Es un mecanismo para darle a un LLM una fuente de conocimiento concreta (una serie de documentos) para permitir hacerle pregutnas sobre los mismos.
+* Es el mecanismo de grounding por excelencia
+   * Esta en todos los LLM per la herramienta que destaca es notebookLM
+* Es la forma mas sencilla de implementar una suerte de RAG
+
+## NotebookLM
+
+* URL
+  * notebooklm.google.com
+  
