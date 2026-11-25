@@ -18,16 +18,16 @@
 - Diferencias entre modelos propietarios y modelos Open Source.
 - Gemini y el panorama actual de modelos de IA.
 - Comparativa entre Gemini y otros modelos: qué modelo utilizar según la tarea y necesidad.
-- Introducción al ecosistema de herramientas de Google.
+- Integración de Gemini con el ecosistema de Google.
 
 ## Módulo 2: Prompt Engineering (Ingeniería de Prompts)
 
-- Cómo comunicarnos con la IA para obtener respuestas mas efectivas
-- Arquitectura de un buen prompt
+- Cómo comunicarnos con la IA para obtener respuestas más efectivas.
+- Arquitectura de un buen prompt.
 - Manejo de contexto, información y datos a los modelos.
 - Técnicas y patrones de prompting.
 - Asignación de roles, objetivos y formatos de respuesta.
-- Generacion de diagramas y contenido visual
+- Generación de diagramas y contenido visual.
 - Uso de archivos y datos como contexto.
 - Iteración, validación y mejora de resultados.
 
@@ -40,20 +40,21 @@
 - Generación de música y audio.
 - Diseño de contenidos para diferentes canales y formatos.
 
-## Módulo 4: Agentes de IA Preconstruidos
-- Modo investigacion en Gemini y busqueda Wen
-- Grounding
-- Interpregte de Codigo
-- Niveles de Razonamiento segun tarea
-
-## Módulo 5: Agentes de IA Personalizados
+## Módulo 4: Capacidades Agénticas de Gemini y NotebookLM
 
 - Qué son los agentes de IA y cómo se diferencian de los chatbots.
-- Consumir modelos mediante API Keys
-- Agentes preconstruidos : Busqueda web, modo pensado e interpretes de codigo
-- Creación y utilización de proyectos con Gemini.
-- Gemini CLI: interacción con modelos de IA desde la terminal.
+- Modo investigación en Gemini y búsqueda web.
+- Grounding.
+- Intérprete de código.
+- Niveles de razonamiento según tarea.
 - NotebookLM: investigación, análisis y generación de conocimiento a partir de fuentes propias.
+
+## Módulo 5: Agentes de IA con Gemini CLI
+
+- Google AI Studio.
+- Consumir modelos mediante API Keys.
+- Seguridad y buenas prácticas en el uso de API Key.
+- Gemini CLI: interacción con modelos de IA desde la terminal.
 
 ## Módulo 6: Herramientas de Productividad con IA
 
@@ -63,9 +64,9 @@
 - Automatización de procesos mediante inteligencia artificial.
 - Integración de herramientas y servicios mediante automatizaciones.
 - Aplicación de IA para optimizar flujos de trabajo y tareas recurrentes.
-- Laboratorios de Google
+- Laboratorios de Google.
 
-# Módulo 7: Uso Responsable de la Inteligencia Artificial (Transversal)
+## Eje Transversal: Uso Responsable de la Inteligencia Artificial 
 
 - Ética y responsabilidad en el uso de la inteligencia artificial.
 - Privacidad y protección de datos.
