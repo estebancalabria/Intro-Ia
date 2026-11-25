@@ -34,7 +34,17 @@
   * Es el principal ingreso hoy en dia para Microsoft
   * Para contratar Azure uno necesita obtener una subscripcion
 
+## Conceptos Azure
+
+* Subscripcion
+  * Para que mes a mes Microsoft me mande una factura (Invoce) con el costo de todos los servicios que consumi
+  * Funciona generamente por un sistema de pago por uso
+
 <img width="751" height="194" alt="image" src="https://github.com/user-attachments/assets/66cf3fc9-6743-48cb-a3aa-70bf4edd764a" />
+
+* Resource Group (RG)
+ * Controlador de Ciclo de Vida de varios Recursos Relacionados
+ * Si borro el RG se borran todos los recursos contenido
 
 ## Microsoft Foundy
 
@@ -53,7 +63,7 @@
       * Analisis de sentimiento
       * Extrar frases clase
     * Azure OpenAI
-      * * https://ai.azure.com/
+      * https://ai.azure.com/
     * Translator
       *  https://language.cognitive.azure.com/
     * Content Safety
@@ -85,5 +95,11 @@
       * https://www.customvision.ai/
       * Ejemplo: En una linea de produccion podemos entrenar a un modelo que reconozca productos defectuosos de productos que estan bien
      
-* 
+* El el portal voy a cualquiera de estos servicios, lo creo
+ * ME da una KEY para que los desarrolladores pueda usar el servicio
+ * Necesito tener una subscripcion y un resource group crearo
+ * Los servicios de Foundri muchos son gratuitos
+
+<img width="522" height="361" alt="image" src="https://github.com/user-attachments/assets/14d559ef-9015-4f7e-b168-59278b4cb9a6" />
+
     
