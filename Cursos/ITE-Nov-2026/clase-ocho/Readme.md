@@ -103,3 +103,43 @@
 <img width="522" height="361" alt="image" src="https://github.com/user-attachments/assets/14d559ef-9015-4f7e-b168-59278b4cb9a6" />
 
     
+---
+# BREAK hasta las 19
+---
+
+## Custom Vision
+
+* Creo el RG
+  * Name : rg-ite-clase-08
+* Voy a crear un recurso de custom vision
+ * Name : cus-vision-ite-clase-08
+* Entramos al portal
+ * https://www.customvision.ai/
+* Cargamo imagenes ya clasificadas
+* Entrenamos el modelo
+* Probamos con imagenes nuevas
+
+
+## Principios de la IA Responsable
+
+* https://www.microsoft.com/en/ai/principles-and-approach
+* Principios
+ * Equidad / Fairness
+   * Se debe tratar a todas las personas por igual
+ * Confiabilidad
+   * Los sistemas de IA deben funcionar de una manera predecible
+ * Privacidad
+   * Los datos sensibles de las peronas deben ser tratados de manera responsable
+   * Avisarle a las personas que datos vamos a recolectar de ellos
+ * Inclusividad
+   * Los sistemas no deben tener sesgos que dejen a personas afuera
+ * Transparencia
+   * Avisar cuando usmos la IA
+   * Hay que decir como y en que momento estamos usando la IA
+ * Responsabilidad
+   * La IA no tiene culpa de nada, siempre una persona es responsable por lo que hace la IA
+
+* Recomiendo ver preguntas de ejemplos
+  * https://www.examtopics.com/exams/microsoft/ai-900/view/
+  * https://www.youtube.com/watch?v=lo2oKz4v8G4&list=PLiUrl-SQRR7IeC174R-WmpiQCB6uA_Ah0
+* Recomiendo rendir el examen en ingles
