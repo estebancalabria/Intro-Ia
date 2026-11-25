@@ -143,3 +143,9 @@
   * https://www.examtopics.com/exams/microsoft/ai-900/view/
   * https://www.youtube.com/watch?v=lo2oKz4v8G4&list=PLiUrl-SQRR7IeC174R-WmpiQCB6uA_Ah0
 * Recomiendo rendir el examen en ingles
+
+
+# Proxima clase
+
+* Explorar algun otro servicio del AI-900
+* IA Tradicional (Machine Learning)
