@@ -37,13 +37,47 @@
         * https://simplemlforsheets.com/
       * Refrescr el google sheets y verificar que aparece la extension instalada
   * Obtener los datos
-      * Ir a Kaggle y loguearse : https://www.kaggle.com/
-      * Ir al dataset : https://www.kaggle.com/datasets/meeratif/titanic
-      * Descargar el DataSet
-          * Descarga un archivo que se llama achived.zip
-          * Extraemos un test.csv
+      * DEscargar dataset de https://github.com/estebancalabria/Intro-Ia/blob/main/Cursos/ITE-Nov-2026/clase-nueve/tested.csv
       * Importar el archivo test.csv en el google sheets
-          * File -> Import -> Upload -> (Elijo el archivo test.csv) -> Reemplazar hoja actual
+          * File -> Import -> Upload -> (Elijo el archivo tested.csv) -> Reemplazar hoja actual
   * Preparar los datos
       * Columna Age -> Format -> Number -> Number
       * Lo mismo para la columna Fare
+      * Clasificar columnas
+        * Label (Quiero predecir)
+          * Survived
+        * Features (Columnas que uso para predecir)
+          * PClass
+          * Sex
+          * Age
+          * SibSP
+          * Parch
+          * Fare
+          * Embarqued
+        * Descartadas
+          * PassengerID
+          * Name
+          * Cabin
+            * Muchos valores faltante
+          * Ticket
+     * Separar datos de prueba y entrenamento
+         * Duplicar el libro original (para no perder los datos originales)
+         * De la celda 2 a la cenda 30 borrar el conenido de la columna survived
+            * Estos van a ser mis datos de prueba
+     * Entrenar y evaluar el modelo
+         * Extensiones -> SimpleML for Sheets -> Start -> Predict Missing Values
+            * Columna con Celda vacia (Label) : Survived
+            * Source Columns (Features) : Sacamos PaggenterID, Name, Cabin, Ticket
+
+> [!NOTE]
+> Verificamos que el modelo pudo predecir correctamente los que se salvan
+
+---
+# BREAK hasta y 25
+---
+
+## IA Tradicional y Codificacion
+
+* Esto mismo que hicimos con SimpleML for Sheets lo podemos hacer con el Intrprete de codigo que traen los llm
+  * Los mostramos con el agente analista de Copilot que requiere licencia 365
+* Si lo quisieramos hacer en una escala masica tendriamos que usar el rescuero de Azure ML
